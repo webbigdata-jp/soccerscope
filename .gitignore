@@ -1,0 +1,18 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# secrets / env  ← .env は絶対にコミットしない
+.env
+soccer_agent/.env
+*.env.local
+
+# logs / misc
+*.log
+.DS_Store
+
+# node
+node_modules/

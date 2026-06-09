@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SoccerScope</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js"></script>
+<style>
+  :root{
+    --ink:#0a0f0d; --ink-2:#0e1714; --surface:#111b17; --surface-2:#16221d;
+    --line:#23332c; --pitch:#16e08a; --pitch-dim:#0f8f59; --gold:#ffd23f;
+    --text:#f1f6f3; --muted:#8ba096; --muted-2:#5f7268;
+    --pos:#16e08a; --neg:#ff6b5e; --maxw:1080px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--ink);color:var(--text);font-family:"Zen Kaku Gothic New",sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden;min-height:100vh}
+  .num{font-family:"Anton",sans-serif;letter-spacing:.01em;font-feature-settings:"tnum"}
+  a{color:var(--pitch)}
+
+  .field-bg{position:fixed;inset:0;z-index:0;opacity:.5;pointer-events:none}
+  .field-bg::before{content:"";position:absolute;inset:0;background:radial-gradient(900px 520px at 80% -12%,rgba(22,224,138,.10),transparent 60%),radial-gradient(680px 600px at 6% 112%,rgba(255,210,63,.06),transparent 55%)}
+  .field-lines{position:absolute;top:0;right:-8%;width:56%;height:100%;opacity:.14}
+
+  .wrap{position:relative;z-index:1;max-width:var(--maxw);margin:0 auto;padding:0 26px}
+
+  /* header */
+  header{padding:26px 0 6px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+  .brand{display:flex;align-items:center;font-family:"Anton",sans-serif;font-size:24px;letter-spacing:.04em}
+  .brand .dot{color:var(--pitch);margin:0 .12ch}
+  .brand .lens{display:inline-block;width:12px;height:12px;border:3px solid var(--pitch);border-radius:50%;margin-left:7px;box-shadow:0 0 14px rgba(22,224,138,.6)}
+  .lang-toggle{display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 7px;cursor:pointer;font-size:12.5px;letter-spacing:.04em;color:var(--muted);transition:border-color .25s,color .25s}
+  .lang-toggle:hover{border-color:var(--pitch-dim);color:var(--text)}
+  .lang-toggle .globe{width:15px;height:15px;display:inline-block}
+  .lang-toggle b{font-family:"Anton";color:var(--pitch);letter-spacing:.06em}
+
+  /* intro */
+  .intro{padding:38px 0 26px}
+  .kicker{display:inline-flex;align-items:center;gap:9px;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--pitch);font-weight:700;margin-bottom:18px}
+  .kicker .pulse{width:8px;height:8px;border-radius:50%;background:var(--pitch);animation:pulse 2.2s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(22,224,138,.55)}70%{box-shadow:0 0 0 11px rgba(22,224,138,0)}100%{box-shadow:0 0 0 0 rgba(22,224,138,0)}}
+  .intro h1{font-weight:900;font-size:clamp(30px,5.2vw,56px);line-height:1.04;letter-spacing:-.01em;max-width:18ch}
+  .intro h1 em{font-style:normal;color:var(--pitch)}
+  .intro h1 .gold{color:var(--gold)}
+  .intro p.lead{margin-top:18px;max-width:54ch;font-size:clamp(14px,1.6vw,16.5px);color:var(--muted)}
+
+  /* form */
+  .panel{margin-top:8px;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 30px 70px -46px rgba(0,0,0,.9)}
+  .field-label{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-2);margin-bottom:10px;display:block}
+  textarea#q{width:100%;min-height:96px;resize:vertical;background:var(--ink-2);border:1px solid var(--line);border-radius:12px;color:var(--text);font-family:inherit;font-size:15.5px;line-height:1.6;padding:14px 16px;outline:none;transition:border-color .2s}
+  textarea#q:focus{border-color:var(--pitch-dim)}
+  textarea#q::placeholder{color:var(--muted-2)}
+
+  .controls{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-top:18px;flex-wrap:wrap}
+  .seg{display:flex;flex-direction:column;gap:10px;flex:1;min-width:260px}
+  .seg .row{display:flex;gap:8px;flex-wrap:wrap}
+  .fmt{flex:1;min-width:120px;text-align:left;background:var(--ink-2);border:1px solid var(--line);border-radius:12px;padding:11px 13px;cursor:pointer;transition:border-color .2s,background .2s,transform .15s;color:var(--text)}
+  .fmt:hover{transform:translateY(-2px)}
+  .fmt.active{border-color:var(--pitch);background:linear-gradient(180deg,rgba(22,224,138,.10),rgba(22,224,138,.02))}
+  .fmt .ic{font-size:16px}
+  .fmt .nm{display:block;font-weight:700;font-size:13.5px;margin-top:4px}
+  .fmt .ds{display:block;font-size:11px;color:var(--muted-2);margin-top:2px;line-height:1.4}
+
+  .go{font-family:"Anton",sans-serif;letter-spacing:.06em;font-size:16px;background:var(--pitch);color:#06140d;border:none;border-radius:12px;padding:14px 28px;cursor:pointer;white-space:nowrap;transition:filter .2s,transform .15s;align-self:flex-end;box-shadow:0 10px 30px -12px rgba(22,224,138,.6)}
+  .go:hover{filter:brightness(1.08);transform:translateY(-2px)}
+  .go:disabled{filter:grayscale(.6) brightness(.7);cursor:not-allowed;transform:none;box-shadow:none}
+  .hint{font-size:11px;color:var(--muted-2);margin-top:12px;letter-spacing:.02em}
+
+  /* result */
+  .result{margin:34px 0 20px;display:none}
+  .result.show{display:block;animation:fade .5s ease}
+  @keyframes fade{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+  .res-head{display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding-bottom:13px;margin-bottom:24px;flex-wrap:wrap}
+  .res-head .badge{font-family:"Anton";font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);background:var(--gold);padding:5px 11px;border-radius:999px}
+  .res-head .copyall{font-size:12px;color:var(--muted);background:var(--surface-2);border:1px solid var(--line);border-radius:999px;padding:6px 13px;cursor:pointer;transition:color .2s,border-color .2s}
+  .res-head .copyall:hover{color:var(--pitch);border-color:var(--pitch-dim)}
+
+  /* loading */
+  .loading{display:none;align-items:center;gap:16px;padding:30px 4px;color:var(--muted)}
+  .loading.show{display:flex}
+  .scoreboard{font-family:"Anton";font-size:22px;color:var(--pitch);letter-spacing:.1em;min-width:54px}
+  .scoreboard span{display:inline-block;animation:flick 1.1s infinite}
+  .scoreboard span:nth-child(2){animation-delay:.15s}
+  @keyframes flick{0%,100%{opacity:.25}50%{opacity:1}}
+  .loading .lt{font-size:14px}
+
+  /* rendered markdown (report / webpage) */
+  .doc{font-size:15.5px;color:#e6ede9}
+  .doc.page{background:linear-gradient(180deg,var(--surface),var(--ink-2));border:1px solid var(--line);border-radius:18px;padding:40px 44px;position:relative;overflow:hidden}
+  .doc.page::before{content:"";position:absolute;top:-40px;left:-10%;width:60%;height:240px;background:radial-gradient(closest-side,rgba(22,224,138,.10),transparent);pointer-events:none}
+  .doc h1{font-weight:900;font-size:clamp(26px,4vw,40px);line-height:1.1;margin:6px 0 14px;letter-spacing:-.01em}
+  .doc h2{font-weight:900;font-size:clamp(19px,2.4vw,25px);margin:34px 0 12px;padding-top:8px;border-top:1px solid var(--line)}
+  .doc h3{font-weight:700;font-size:17px;margin:22px 0 8px}
+  .doc p{margin:12px 0;color:#dce6e1}
+  .doc a{text-decoration:none;border-bottom:1px solid rgba(22,224,138,.4)}
+  .doc a:hover{border-color:var(--pitch)}
+  .doc img{max-width:100%;width:420px;border-radius:12px;display:block;margin:14px 0;border:1px solid var(--line)}
+  .doc ul,.doc ol{margin:12px 0 12px 22px}
+  .doc li{margin:5px 0}
+  .doc blockquote{border-left:3px solid var(--pitch);background:var(--surface-2);padding:12px 18px;margin:16px 0;border-radius:0 10px 10px 0;color:#e6ede9}
+  .doc hr{border:none;border-top:1px solid var(--line);margin:26px 0}
+  .doc code{background:var(--ink-2);padding:2px 6px;border-radius:6px;font-size:.9em}
+  .doc strong{color:#fff}
+
+  /* SNS cards */
+  .posts{display:grid;gap:16px}
+  .post{background:var(--surface-2);border:1px solid var(--line);border-radius:14px;padding:18px 20px;position:relative}
+  .post .pn{position:absolute;top:14px;right:16px;font-family:"Anton";font-size:13px;color:var(--muted-2)}
+  .post .pc{font-size:15px;line-height:1.65;color:#e6ede9;white-space:pre-wrap}
+  .post .pc a{word-break:break-all}
+  .post .cp{margin-top:14px;font-size:11.5px;color:var(--muted);background:var(--ink-2);border:1px solid var(--line);border-radius:999px;padding:5px 13px;cursor:pointer;transition:color .2s,border-color .2s}
+  .post .cp:hover{color:var(--pitch);border-color:var(--pitch-dim)}
+
+  .err{display:none;color:var(--neg);background:rgba(255,107,94,.07);border:1px solid rgba(255,107,94,.3);border-radius:12px;padding:14px 18px;font-size:14px;margin-top:24px}
+  .err.show{display:block}
+
+  footer{border-top:1px solid var(--line);margin-top:54px;padding:28px 0 56px;font-size:12px;color:var(--muted-2);letter-spacing:.04em;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  footer b{color:var(--muted)}
+
+  @media(max-width:640px){
+    .wrap{padding:0 16px}
+    .controls{flex-direction:column;align-items:stretch}
+    .go{align-self:stretch}
+    .doc.page{padding:26px 20px}
+    .fmt{min-width:100%}
+  }
+</style>
+</head>
+<body>
+
+<div class="field-bg" aria-hidden="true">
+  <svg class="field-lines" viewBox="0 0 600 800" fill="none" stroke="rgba(22,224,138,.35)" stroke-width="1.4">
+    <rect x="40" y="40" width="520" height="720" rx="4"/>
+    <line x1="40" y1="400" x2="560" y2="400"/>
+    <circle cx="300" cy="400" r="92"/>
+    <rect x="40" y="250" width="120" height="300"/>
+    <rect x="440" y="250" width="120" height="300"/>
+    <circle cx="300" cy="400" r="4" fill="rgba(22,224,138,.5)" stroke="none"/>
+  </svg>
+</div>
+
+<div class="wrap">
+
+  <header>
+    <div class="brand">SOCCER<span class="dot">·</span>SCOPE<span class="lens"></span></div>
+    <div class="lang-toggle" id="langToggle" role="button" tabindex="0">
+      <svg class="globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+        <circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15.5 0 18M12 3c-2.5 2.5-2.5 15.5 0 18"/>
+      </svg>
+      <span data-i18n="toggleLabel">日本語 / </span><b id="langTarget">EN</b>
+    </div>
+  </header>
+
+  <section class="intro">
+    <div class="kicker"><span class="pulse"></span><span data-i18n="kicker">Live football-buzz agent</span></div>
+    <h1 data-i18n="h1"></h1>
+    <p class="lead" data-i18n="lead"></p>
+  </section>
+
+  <section class="panel">
+    <label class="field-label" for="q" data-i18n="inputLabel">Your request</label>
+    <textarea id="q"></textarea>
+
+    <div class="controls">
+      <div class="seg">
+        <span class="field-label" style="margin:0" data-i18n="formatLabel">Output format</span>
+        <div class="row" id="fmtRow">
+          <button class="fmt active" data-format="report">
+            <span class="ic">📰</span><span class="nm" data-i18n="fmtReportNm">Report</span>
+            <span class="ds" data-i18n="fmtReportDs">国別＋総合コメントの記事</span>
+          </button>
+          <button class="fmt" data-format="sns">
+            <span class="ic">⚡</span><span class="nm" data-i18n="fmtSnsNm">SNS posts</span>
+            <span class="ds" data-i18n="fmtSnsDs">X投稿ドラフト 2〜3本</span>
+          </button>
+          <button class="fmt" data-format="webpage">
+            <span class="ic">🖥️</span><span class="nm" data-i18n="fmtWebNm">Web page</span>
+            <span class="ds" data-i18n="fmtWebDs">共有用のページ表示</span>
+          </button>
+        </div>
+      </div>
+      <button class="go" id="go" data-i18n="go">Generate</button>
+    </div>
+    <div class="hint" data-i18n="hint">⌘/Ctrl + Enter で実行。データは事前解析済みの動画（公式MongoDB MCP経由）から取得します。</div>
+  </section>
+
+  <section class="loading" id="loading">
+    <span class="scoreboard"><span>•</span><span>•</span><span>•</span></span>
+    <span class="lt" data-i18n="loading">世界のバズをスカウト中…（初回はMCP起動で少し時間がかかります）</span>
+  </section>
+
+  <section class="result" id="result">
+    <div class="res-head">
+      <span class="badge" id="resBadge">REPORT</span>
+      <span class="copyall" id="copyAll" data-i18n="copyAll">Markdownをコピー</span>
+    </div>
+    <div id="resBody"></div>
+  </section>
+
+  <div class="err" id="err"></div>
+
+  <footer>
+    <div data-i18n="footL">© 2026 SoccerScope</div>
+    <div><b>Built with</b> Google ADK · Gemini · MongoDB Atlas Vector Search · Model Context Protocol</div>
+  </footer>
+
+</div>
+
+<script>
+/* ---------- i18n ---------- */
+const I18N = {
+  ja:{
+    toggleLabel:"日本語 / ", langTarget:"EN",
+    kicker:"ライブ・サッカーバズ・エージェント",
+    h1:'世界中の<em>熱狂</em>を、<br>あなたの<span class="gold">視点</span>でまとめる。',
+    lead:"知りたいことを自由に書いてください。各国で今バズっているサッカー動画を意味検索で横断的に集め、記事・SNS投稿・Webページとして即座に書き出します。",
+    inputLabel:"リクエスト（自由入力）",
+    placeholder:"例：W杯2026に向けて世界でバズっているサッカー動画を集めて、日本のファン視点で総合コメントして",
+    formatLabel:"出力形式",
+    fmtReportNm:"レポート", fmtReportDs:"国別＋総合コメントの記事",
+    fmtSnsNm:"SNS投稿",   fmtSnsDs:"X投稿ドラフト 2〜3本",
+    fmtWebNm:"Webページ", fmtWebDs:"共有用のページ表示",
+    go:"生成する",
+    hint:"⌘/Ctrl + Enter で実行。データは事前解析済みの動画（公式MongoDB MCP経由）から取得します。",
+    loading:"世界のバズをスカウト中…（初回はMCP起動で少し時間がかかります）",
+    copyAll:"Markdownをコピー", copied:"コピーしました", copyPost:"投稿をコピー",
+    footL:"© 2026 SoccerScope",
+    errEmpty:"リクエストを入力してください。",
+    errGeneric:"生成に失敗しました：",
+    badge:{report:"レポート",sns:"SNS投稿",webpage:"Webページ"}
+  },
+  en:{
+    toggleLabel:"English / ", langTarget:"日本語",
+    kicker:"Live football-buzz agent",
+    h1:'Turn the world’s <em>frenzy</em><br>into <span class="gold">your</span> story.',
+    lead:"Just describe what you want. The agent runs a semantic search across football videos buzzing in many countries and writes it up instantly as a report, social posts, or a web page.",
+    inputLabel:"Your request",
+    placeholder:"e.g. Gather the football videos buzzing worldwide ahead of World Cup 2026 and summarize them from a Japanese fan's perspective",
+    formatLabel:"Output format",
+    fmtReportNm:"Report",   fmtReportDs:"Article: per-country + synthesis",
+    fmtSnsNm:"SNS posts",   fmtSnsDs:"2–3 ready X post drafts",
+    fmtWebNm:"Web page",    fmtWebDs:"Shareable page view",
+    go:"Generate",
+    hint:"Press ⌘/Ctrl + Enter to run. Data comes from pre-analyzed videos via the official MongoDB MCP.",
+    loading:"Scouting the world's buzz… (the first call spins up MCP, so it may take a moment)",
+    copyAll:"Copy Markdown", copied:"Copied", copyPost:"Copy post",
+    footL:"© 2026 SoccerScope",
+    errEmpty:"Please enter a request.",
+    errGeneric:"Generation failed: ",
+    badge:{report:"REPORT",sns:"SNS POSTS",webpage:"WEB PAGE"}
+  }
+};
+
+let LANG = "ja";
+let FORMAT = "report";
+
+function applyI18n(){
+  const t = I18N[LANG];
+  document.documentElement.lang = LANG;
+  document.querySelectorAll("[data-i18n]").forEach(el=>{
+    const key = el.getAttribute("data-i18n");
+    if(t[key] != null) el.innerHTML = t[key];
+  });
+  document.getElementById("q").placeholder = t.placeholder;
+  document.getElementById("langTarget").textContent = t.langTarget;
+  document.querySelector("#langToggle span[data-i18n='toggleLabel']").textContent = t.toggleLabel;
+}
+
+/* ---------- language toggle ---------- */
+function toggleLang(){
+  LANG = (LANG === "ja") ? "en" : "ja";
+  applyI18n();
+}
+document.getElementById("langToggle").addEventListener("click", toggleLang);
+document.getElementById("langToggle").addEventListener("keydown", e=>{ if(e.key==="Enter"||e.key===" ") toggleLang(); });
+
+/* ---------- format selector ---------- */
+document.getElementById("fmtRow").addEventListener("click", e=>{
+  const btn = e.target.closest(".fmt");
+  if(!btn) return;
+  FORMAT = btn.dataset.format;
+  document.querySelectorAll(".fmt").forEach(b=>b.classList.toggle("active", b===btn));
+});
+
+/* ---------- markdown render (safe) ---------- */
+function renderMarkdown(md){
+  if(window.marked && window.DOMPurify){
+    return window.DOMPurify.sanitize(window.marked.parse(md));
+  }
+  // フォールバック：ライブラリ未ロード時はプレーン表示
+  const div = document.createElement("div");
+  div.textContent = md;
+  return "<pre style='white-space:pre-wrap'>"+div.innerHTML+"</pre>";
+}
+
+/* ---------- result rendering per format ---------- */
+function showResult(format, content){
+  const body = document.getElementById("resBody");
+  const t = I18N[LANG];
+  document.getElementById("resBadge").textContent = t.badge[format] || format.toUpperCase();
+  body.className = "";
+
+  if(format === "sns"){
+    // 空行で区切ってカード化（番号プレフィックスは見出しとして残す）
+    const parts = content.split(/\n\s*\n/).map(s=>s.trim()).filter(Boolean);
+    const wrap = document.createElement("div");
+    wrap.className = "posts";
+    parts.forEach((p,i)=>{
+      const card = document.createElement("div");
+      card.className = "post";
+      const text = p.replace(/^\s*\d+[\.\)]\s*/,"");
+      card.innerHTML =
+        `<div class="pn">#${i+1}</div>`+
+        `<div class="pc">${renderMarkdown(text)}</div>`+
+        `<button class="cp">${t.copyPost}</button>`;
+      card.querySelector(".cp").addEventListener("click", ()=>copy(text, card.querySelector(".cp")));
+      wrap.appendChild(card);
+    });
+    body.innerHTML = "";
+    body.appendChild(wrap);
+  } else {
+    const doc = document.createElement("div");
+    doc.className = (format === "webpage") ? "doc page" : "doc";
+    doc.innerHTML = renderMarkdown(content);
+    body.innerHTML = "";
+    body.appendChild(doc);
+  }
+
+  // copy-all は raw markdown を渡す
+  const copyAllBtn = document.getElementById("copyAll");
+  copyAllBtn.onclick = ()=>copy(content, copyAllBtn);
+}
+
+/* ---------- clipboard ---------- */
+function copy(text, btn){
+  navigator.clipboard.writeText(text).then(()=>{
+    const old = btn.textContent;
+    btn.textContent = I18N[LANG].copied;
+    setTimeout(()=>{ btn.textContent = old; }, 1400);
+  }).catch(()=>{});
+}
+
+/* ---------- generate ---------- */
+async function generate(){
+  const q = document.getElementById("q").value.trim();
+  const errEl = document.getElementById("err");
+  const resEl = document.getElementById("result");
+  const loadEl = document.getElementById("loading");
+  const goBtn = document.getElementById("go");
+  errEl.className = "err"; resEl.className = "result";
+
+  if(!q){ errEl.textContent = I18N[LANG].errEmpty; errEl.className = "err show"; return; }
+
+  goBtn.disabled = true;
+  loadEl.className = "loading show";
+  try{
+    const r = await fetch("/api/generate", {
+      method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body: JSON.stringify({ query:q, format:FORMAT, lang:LANG })
+    });
+    if(!r.ok){
+      let detail = r.status + " " + r.statusText;
+      try{ const j = await r.json(); if(j.detail) detail = j.detail; }catch(_){}
+      throw new Error(detail);
+    }
+    const data = await r.json();
+    showResult(data.format || FORMAT, data.content || "");
+    resEl.className = "result show";
+    resEl.scrollIntoView({behavior:"smooth", block:"start"});
+  }catch(e){
+    errEl.textContent = I18N[LANG].errGeneric + e.message;
+    errEl.className = "err show";
+  }finally{
+    loadEl.className = "loading";
+    goBtn.disabled = false;
+  }
+}
+document.getElementById("go").addEventListener("click", generate);
+document.getElementById("q").addEventListener("keydown", e=>{
+  if((e.metaKey||e.ctrlKey) && e.key === "Enter") generate();
+});
+
+/* ---------- init ---------- */
+applyI18n();
+</script>
+</body>
+</html>
