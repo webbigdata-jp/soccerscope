@@ -1,43 +1,95 @@
-# SoccerScope — 独自Web UI（ライブ・エージェント）
+# SoccerScope  - powered by TubeSaku -
 
-各国で“今バズっている”サッカー動画を意味検索で横断的に集め、**レポート / SNS投稿 / Webページ**
-として書き出す ADK エージェントに、独自フロント（英日切替・自由入力フォーム・出力形式選択）を
-被せたもの。`adk web`（ローカル開発用）ではなく、**自前の FastAPI バックエンド**でエージェントを
-配信し、提出物URLとして Cloud Run に出す構成。
+**SoccerScope is an AI agent that scouts the football (soccer) videos going viral *right now* across many countries, reads the room from fan comments, and writes it up — as a report, ready-to-post social drafts, or a shareable web page — in English or Japanese.**
 
+It is built for independent sports journalists and creators chasing a fresh, cross-border angle — and for anyone who just wants a great story to bring to the table tomorrow.
+
+> The agent goes beyond chat: from one plain-language request it plans the steps, runs a semantic search over a real video dataset through the **official MongoDB MCP server**, reads audience sentiment, and produces a finished deliverable.
+
+---
+
+## Architecture
+
+### Live query path (the app)
+
+```mermaid
+flowchart TD
+    U["User (browser)"] -->|"prompt · format · language"| FE["Custom Web UI<br/>EN/JA toggle · free-form input · output format"]
+    FE -->|"POST /api/generate"| API["FastAPI backend<br/>(Google Cloud Run)"]
+    API --> RUN["ADK Runner → Gemini<br/>(gemini-3.1-flash-lite)"]
+    RUN -->|"search_videos tool<br/>embeds query → 768-dim vector"| MCP["Official MongoDB<br/>MCP server"]
+    RUN -->|"find / count"| MCP
+    MCP -->|"$vectorSearch · queries"| ATLAS[("MongoDB Atlas<br/>Vector Search")]
+    RUN -->|"Report · SNS posts · Web page"| API --> FE
 ```
-[ブラウザ / static/index.html]                         [FastAPI: main.py]
-  ・右上 EN/JA トグル                       POST /api/generate
-  ・自由入力フォーム            ───────────▶  └ ADK Runner で root_agent を実行
-  ・出力形式 Report/SNS/Web                       └ search_videos → 公式MongoDB MCP($vectorSearch)
-  ・結果を即レンダリング        ◀───────────       └ find/count（詳細・件数）
-                                                   ▼
-                                       MongoDB Atlas  soccertube.videos (768次元)
+
+**Key design choice:** the 768-dimension query vector is embedded inside a tool and passed *by code* straight to `$vectorSearch` via MCP — it never round-trips through the LLM. This keeps responses fast and stable, while every database read still flows through the partner MCP server (the integration requirement).
+
+### Data pipeline (ingestion)
+
+```mermaid
+flowchart LR
+    YT["YouTube Data API"] --> P2["phase2<br/>search video IDs<br/>(48 countries)"]
+    P2 --> P3["phase3<br/>fetch metadata"]
+    P3 --> P7["phase7<br/>buzz score + flag top-N"]
+    P7 --> P4["phase4<br/>fetch comments"]
+    P7 --> E1["embed videos<br/>(gemini-embedding-001, 768-dim)"]
+    E1 --> L2["load → videos<br/>+ vector index"]
+    P4 --> A3["analyze comments<br/>(Gemini, structured)"]
+    A3 --> L4["load → videos.comment_analysis"]
+    L2 --> DB[("MongoDB Atlas")]
+    L4 --> DB
 ```
 
-- 出力形式と言語は、エージェント本体（`soccer_agent/agent.py`）を**無改変**のまま、
-  サーバ側（`main.py`）で**プロンプトに指示を注入**して切り替える。
-- 読み出しはすべて公式MongoDB MCP経由（MCP統合要件を維持）。書き込み（日次更新バッチ）は別系統。
+During the World Cup the pipeline is run **daily on a local machine** and writes into a **dedicated, configurable database** (set via the `DB_NAME` environment variable). Every load **upserts by `video_id`**, so daily re-runs are idempotent. The live data therefore refreshes daily throughout the tournament.
 
-## 構成ファイル
+---
+
+## Tech stack
+
+- **Agent / LLM:** Google Agent Development Kit (ADK), Gemini `gemini-3.1-flash-lite`, `gemini-embedding-001` (768-dim, L2-normalized)
+- **Partner integration (MCP):** official `mongodb-mcp-server` (Model Context Protocol)
+- **Data store:** MongoDB Atlas + Atlas Vector Search
+- **Backend / serving:** Python, FastAPI, Uvicorn, Docker, Google Cloud Run
+- **Frontend:** HTML, CSS, vanilla JavaScript, `marked.js`, `DOMPurify`
+- **Ingestion:** YouTube Data API v3, pymongo
+
+---
+
+## Repository layout
 
 ```
 soccerscope-app/
-├── main.py                  FastAPI: /api/generate ＋ 静的配信
+├── main.py                     FastAPI: /api/generate + serves the UI
 ├── soccer_agent/
-│   ├── __init__.py          root_agent を export
-│   ├── agent.py             既存 v1（無改変）
-│   └── .env.example         GOOGLE_API_KEY / MONGODB_URI
+│   ├── __init__.py             exports root_agent
+│   ├── agent.py                ADK agent: search_videos + MongoDB MCP
+│   └── .env.example            GOOGLE_API_KEY / MONGODB_URI / DB_NAME ...
 ├── static/
-│   └── index.html           独自フロント（英日切替・フォーム・出力形式）
+│   └── index.html              custom web UI (EN/JA, form, output format)
+├── pipeline/                   daily ingestion (run locally)
+│   ├── phase2_collect_video_ids.py
+│   ├── phase3_fetch_metadata.py
+│   ├── phase7_calc_buzz_score.py
+│   ├── phase4_fetch_comments.py
+│   ├── 1_embed_videos.py
+│   ├── 2_load_to_mongo.py
+│   ├── 3_analyze_comments.py
+│   ├── 4_load_comment_analysis.py
+│   └── api_utils.py
 ├── requirements.txt
-├── Dockerfile               Python + Node 22（npx で MCP 起動するため）
+├── Dockerfile                  Python + Node 22 (MCP runs via npx)
+├── DEMO_SCRIPT.md
 └── README.md
 ```
 
-## ローカル実行
+> Note: the `pipeline/` scripts above reflect the logical grouping; adjust paths to match your working tree.
 
-前提: Python 3.10+ / Node.js v20.19+ または v22+（`node --version`）。
+---
+
+## Run the app locally
+
+Requires Python 3.10+ and Node.js v20.19+ / v22+.
 
 ```bash
 cd soccerscope-app
@@ -45,38 +97,25 @@ python3 -m venv venv && . venv/bin/activate
 pip install -r requirements.txt
 
 cp soccer_agent/.env.example soccer_agent/.env
-# soccer_agent/.env を編集: GOOGLE_API_KEY と MONGODB_URI を記入
+# edit soccer_agent/.env: GOOGLE_API_KEY and MONGODB_URI
 
-python main.py
-# → http://localhost:8080 を開く
+python main.py            # open http://localhost:8080
 ```
 
-初回の生成は `npx` が `mongodb-mcp-server` を取得・起動するため数十秒かかることがある
-（`agent.py` 側で timeout=120 を設定済み）。
-
-## Cloud Run デプロイ
-
-`.env` は使わず、環境変数はデプロイ時に渡す。
+## Deploy to Google Cloud Run
 
 ```bash
 gcloud run deploy soccerscope \
   --source . \
   --region asia-northeast1 \
   --allow-unauthenticated \
-  --memory 1Gi \
-  --timeout 300 \
-  --set-env-vars "GOOGLE_API_KEY=xxxx,GOOGLE_GENAI_USE_VERTEXAI=FALSE,MONGODB_URI=mongodb+srv://...."
+  --memory 2Gi --cpu 2 --timeout 300 \
+  --set-env-vars "GOOGLE_API_KEY=...,GOOGLE_GENAI_USE_VERTEXAI=FALSE,MONGODB_URI=mongodb+srv://...,DB_NAME=soccertube"
 ```
 
-メモ:
-- `--timeout 300`：初回 MCP コールドスタート＋生成に余裕を持たせる。
-- `--memory 1Gi`：Node プロセス（MCP）＋ Python の同居分。足りなければ増やす。
-- 機微情報（APIキー / 接続文字列）は Secret Manager 経由が望ましい
-  （`--set-secrets` を使用）。
-- Atlas 側のネットワークアクセス（IP許可リスト）に Cloud Run からの egress を許可しておく
-  （簡易には 0.0.0.0/0、本番は VPC コネクタ＋固定IP）。
+To point the app at the daily-updated live database, deploy with `DB_NAME=<your-live-db>` (and `COLL_NAME` if different). Names default to `soccertube` / `videos` / `video_semantic_index` when unset.
 
-## API
+### API
 
 ```
 POST /api/generate
@@ -86,7 +125,33 @@ POST /api/generate
 GET /healthz → {"status":"ok","agent":"soccer_agent"}
 ```
 
-## TODO（後日）
+---
 
-- W杯期間中の**日次データ更新**：Cloud Scheduler → Cloud Run Job（既存の取り込み＋
-  `gemini-embedding-001`＋pymongo upsert パイプライン）を cron 実行。本リポジトリに `batch/` として追加予定。
+## Daily data update (during the World Cup)
+
+Run the ingestion pipeline locally, targeting the live database via environment variables:
+
+```bash
+export YOUTUBE_API_GLC_KEY=...   # YouTube Data API
+export GEMINI_API_KEY=...        # embeddings + comment analysis
+export MONGODB_URI=mongodb+srv://...
+export DB_NAME=soccertube_live   # write to the dedicated live DB
+export COLL_NAME=videos
+
+python phase2_collect_video_ids.py --days 2
+python phase3_fetch_metadata.py
+python phase7_calc_buzz_score.py
+python phase4_fetch_comments.py
+python 1_embed_videos.py
+python 2_load_to_mongo.py         # creates the vector index on first run
+python 3_analyze_comments.py
+python 4_load_comment_analysis.py
+```
+
+Quotas to keep in mind: YouTube `search.list` costs 100 units/call (≈100 searches/day on the default 10k quota), and the embedding/analysis steps consume Gemini quota. Free-tier MongoDB Atlas (M0) allows up to **3 search indexes per cluster**, so ensure a free slot before creating the live collection's index.
+
+---
+
+## License
+
+MIT — see [LICENSE](./LICENSE).
