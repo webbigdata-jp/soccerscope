@@ -152,6 +152,11 @@ Quotas to keep in mind: YouTube `search.list` costs 100 units/call (≈100 searc
 
 ---
 
+## Demo site
+
+[SOCCER·SCOPE](https://soccer.tubesaku.com/)  
+Powerd by [tubesaku:YouTube data analysis tool provider website](https://tubesaku.com/)
+
 ## License
 
 MIT — see [LICENSE](./LICENSE).
