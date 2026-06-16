@@ -155,8 +155,94 @@
       "url": "https://www.youtube.com/watch?v=AUwi_vOt-xg"
     }
   ],
-  "sentiment_avg": null,
-  "comments_analyzed": 0,
-  "top_positive_themes": [],
-  "top_negative_themes": []
+  "sentiment_avg": {
+    "positive": 56.4212962962963,
+    "negative": 24.76388888888889,
+    "neutral": 18.814814814814813
+  },
+  "comments_analyzed": 13310,
+  "top_positive_themes": [
+    {
+      "theme_en": "Passionate support for Cristiano Ronaldo",
+      "theme_ja": "クリスティアーノ・ロナウドへの熱狂的な支持",
+      "mentions": 137
+    },
+    {
+      "theme_en": "Keisuke Honda's commentary is entertaining",
+      "theme_ja": "本田圭佑の解説が面白い",
+      "mentions": 130
+    },
+    {
+      "theme_en": "Support for Cristiano Ronaldo",
+      "theme_ja": "クリスティアーノ・ロナウドへの支持",
+      "mentions": 97
+    },
+    {
+      "theme_en": "Passionate support for the Brazilian national team",
+      "theme_ja": "ブラジル代表への熱い応援",
+      "mentions": 90
+    },
+    {
+      "theme_en": "Support for Brazil national team",
+      "theme_ja": "ブラジル代表への応援",
+      "mentions": 87
+    },
+    {
+      "theme_en": "Arab solidarity and pride",
+      "theme_ja": "アラブ諸国の連帯と誇り",
+      "mentions": 85
+    },
+    {
+      "theme_en": "Congratulations and support for Qatar national team",
+      "theme_ja": "カタール代表への祝福と応援",
+      "mentions": 85
+    },
+    {
+      "theme_en": "Support and prayers for Morocco's victory",
+      "theme_ja": "モロッコ代表への応援と勝利の祈り",
+      "mentions": 85
+    }
+  ],
+  "top_negative_themes": [
+    {
+      "theme_en": "Anger over not playing Endrick",
+      "theme_ja": "エンドリッキを起用しないことへの怒り",
+      "mentions": 100
+    },
+    {
+      "theme_en": "Dissatisfaction with Ancelotti's management",
+      "theme_ja": "アンチェロッティ監督の采配への不満",
+      "mentions": 65
+    },
+    {
+      "theme_en": "Dislike and distrust towards Taiwan",
+      "theme_ja": "台湾に対する嫌悪感・不信感",
+      "mentions": 65
+    },
+    {
+      "theme_en": "Casemiro's poor performance and lack of speed",
+      "theme_ja": "カゼミーロのパフォーマンス不足と鈍重さ",
+      "mentions": 65
+    },
+    {
+      "theme_en": "Seol Young-woo's attitude and defiance",
+      "theme_ja": "ソル・ヨンウの態度・反抗的な姿勢",
+      "mentions": 65
+    },
+    {
+      "theme_en": "Disappointment with the result (1-1 draw)",
+      "theme_ja": "試合結果への落胆（1-1の引き分け）",
+      "mentions": 65
+    },
+    {
+      "theme_en": "Dissatisfaction with Ancelotti's substitution decisions",
+      "theme_ja": "アンチェロッティ監督の起用への不満",
+      "mentions": 60
+    },
+    {
+      "theme_en": "Dissatisfaction with refereeing",
+      "theme_ja": "審判の判定への不満",
+      "mentions": 56
+    }
+  ]
 }
