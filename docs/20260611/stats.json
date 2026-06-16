@@ -1,0 +1,236 @@
+{
+  "generated": "2026-06-11",
+  "videos_analyzed": 111,
+  "countries": 12,
+  "totals": {
+    "views": 1087658078,
+    "likes": 12530450,
+    "comments": 194432
+  },
+  "videos_by_country": [
+    {
+      "country": "MX",
+      "name_en": "Mexico",
+      "name_ja": "メキシコ",
+      "count": 20
+    },
+    {
+      "country": "QA",
+      "name_en": "Qatar",
+      "name_ja": "カタール",
+      "count": 18
+    },
+    {
+      "country": "ZA",
+      "name_en": "South Africa",
+      "name_ja": "南アフリカ",
+      "count": 17
+    },
+    {
+      "country": "BR",
+      "name_en": "Brazil",
+      "name_ja": "ブラジル",
+      "count": 15
+    },
+    {
+      "country": "KR",
+      "name_en": "South Korea",
+      "name_ja": "韓国",
+      "count": 14
+    },
+    {
+      "country": "JP",
+      "name_en": "Japan",
+      "name_ja": "日本",
+      "count": 11
+    },
+    {
+      "country": "CZ",
+      "name_en": "Czech Republic",
+      "name_ja": "チェコ",
+      "count": 5
+    },
+    {
+      "country": "UZ",
+      "name_en": "Uzbekistan",
+      "name_ja": "ウズベキスタン",
+      "count": 3
+    },
+    {
+      "country": "CH",
+      "name_en": "Switzerland",
+      "name_ja": "スイス",
+      "count": 3
+    },
+    {
+      "country": "BA",
+      "name_en": "Bosnia and Herzegovina",
+      "name_ja": "ボスニア・ヘルツェゴビナ",
+      "count": 2
+    },
+    {
+      "country": "MA",
+      "name_en": "Morocco",
+      "name_ja": "モロッコ",
+      "count": 2
+    },
+    {
+      "country": "NZ",
+      "name_en": "New Zealand",
+      "name_ja": "ニュージーランド",
+      "count": 1
+    }
+  ],
+  "top_videos_by_views": [
+    {
+      "title": "Other Players Respecting Moments ❤️",
+      "country": "ZA",
+      "views": 52351688,
+      "url": "https://www.youtube.com/watch?v=ecDKEwdEbL8"
+    },
+    {
+      "title": "Player Getting Cooked 💀",
+      "country": "NZ",
+      "views": 49921412,
+      "url": "https://www.youtube.com/watch?v=NzJKxvt2dCI"
+    },
+    {
+      "title": "Premier league Cosco Premier Vs Cosco Hurricanes Football ⚽️ Unboxing",
+      "country": "ZA",
+      "views": 46088686,
+      "url": "https://www.youtube.com/watch?v=t8dvL5Ztmh4"
+    },
+    {
+      "title": "Yildiz VS Lehmann VS Dybala VS Yamal VS Mbappe VS Messi VS Ronaldo",
+      "country": "ZA",
+      "views": 46035874,
+      "url": "https://www.youtube.com/watch?v=vZpqZiqHz1s"
+    },
+    {
+      "title": "When Ronaldo chose his Biggest Fan ❤️",
+      "country": "ZA",
+      "views": 34343885,
+      "url": "https://www.youtube.com/watch?v=LZrGmLup72M"
+    },
+    {
+      "title": "Players Getting Cooked 🤯😆",
+      "country": "ZA",
+      "views": 31633442,
+      "url": "https://www.youtube.com/watch?v=WMktc0FzQQQ"
+    },
+    {
+      "title": "Reading Japanese names during my first soccer match! ⚽️🎙️📋🇯🇵💮💭 #japan #soccer #football",
+      "country": "ZA",
+      "views": 28720092,
+      "url": "https://www.youtube.com/watch?v=g3Vpb_RAPRE"
+    },
+    {
+      "title": "Nos pidieron el de Argentina 🇦🇷 FIFA World Cup Song 🎶 #Argentina #worldcup #lionelmessi #messi",
+      "country": "MX",
+      "views": 24129591,
+      "url": "https://www.youtube.com/watch?v=-WumdEpyDZQ"
+    },
+    {
+      "title": "Khaby Lame And Footballers😍☠️ #shorts #football #khabylame #ronaldo",
+      "country": "ZA",
+      "views": 24104594,
+      "url": "https://www.youtube.com/watch?v=uP1JCkZY-zQ"
+    },
+    {
+      "title": "Budweiser | Let It Pour ft. Erling Haaland & Jürgen Klopp | FIFA World Cup 26™️",
+      "country": "MX",
+      "views": 24064176,
+      "url": "https://www.youtube.com/watch?v=w0oRTljtx0o"
+    }
+  ],
+  "sentiment_avg": {
+    "positive": 61.8411214953271,
+    "negative": 22.1588785046729,
+    "neutral": 16.0
+  },
+  "comments_analyzed": 10050,
+  "top_positive_themes": [
+    {
+      "theme_en": "Praise for Cristiano Ronaldo",
+      "theme_ja": "クリスティアーノ・ロナウドへの称賛",
+      "mentions": 120
+    },
+    {
+      "theme_en": "Humor and comedy",
+      "theme_ja": "コメディとしての面白さ",
+      "mentions": 85
+    },
+    {
+      "theme_en": "Overwhelming patriotism for Turkey",
+      "theme_ja": "トルコへの圧倒的な愛国心",
+      "mentions": 85
+    },
+    {
+      "theme_en": "Humor and Comedy",
+      "theme_ja": "面白さ・ユーモア",
+      "mentions": 85
+    },
+    {
+      "theme_en": "Humor and laughter",
+      "theme_ja": "面白さ・笑い",
+      "mentions": 77
+    },
+    {
+      "theme_en": "Enthusiastic support for Cristiano Ronaldo",
+      "theme_ja": "クリスティアーノ・ロナウドへの熱狂的な支持",
+      "mentions": 75
+    },
+    {
+      "theme_en": "Love and support from various countries",
+      "theme_ja": "各国のファンからの愛と応援",
+      "mentions": 75
+    },
+    {
+      "theme_en": "Gratitude and farewell to Lewandowski",
+      "theme_ja": "レヴァンドフスキへの感謝と別れ",
+      "mentions": 75
+    }
+  ],
+  "top_negative_themes": [
+    {
+      "theme_en": "Incompetence and low level of the referee",
+      "theme_ja": "審判の無能さとレベルの低さ",
+      "mentions": 75
+    },
+    {
+      "theme_en": "Sadness over missing star players",
+      "theme_ja": "主要選手の欠場に対する悲しみ",
+      "mentions": 65
+    },
+    {
+      "theme_en": "Severity and painful nature of injuries",
+      "theme_ja": "怪我の深刻さと痛々しさ",
+      "mentions": 50
+    },
+    {
+      "theme_en": "Criticism of fake/made-up stories",
+      "theme_ja": "捏造されたストーリーへの批判",
+      "mentions": 45
+    },
+    {
+      "theme_en": "Dissatisfaction with the new auction rules",
+      "theme_ja": "新しいオークションルールの不満",
+      "mentions": 45
+    },
+    {
+      "theme_en": "Questionable referee decisions",
+      "theme_ja": "審判の判定への疑問",
+      "mentions": 45
+    },
+    {
+      "theme_en": "Criticism of the 'closed legs' static playstyle",
+      "theme_ja": "足を閉じて動かないプレイスタイルへの批判",
+      "mentions": 45
+    },
+    {
+      "theme_en": "Sounds like a commercial/ad rather than a WC song",
+      "theme_ja": "ワールドカップの楽曲ではなくCM曲のように聞こえる",
+      "mentions": 45
+    }
+  ]
+}

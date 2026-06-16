@@ -1,0 +1,230 @@
+{
+  "generated": "2026-06-12",
+  "videos_analyzed": 110,
+  "countries": 11,
+  "totals": {
+    "views": 1454209879,
+    "likes": 16302670,
+    "comments": 449263
+  },
+  "videos_by_country": [
+    {
+      "country": "MX",
+      "name_en": "Mexico",
+      "name_ja": "メキシコ",
+      "count": 20
+    },
+    {
+      "country": "QA",
+      "name_en": "Qatar",
+      "name_ja": "カタール",
+      "count": 18
+    },
+    {
+      "country": "KR",
+      "name_en": "South Korea",
+      "name_ja": "韓国",
+      "count": 16
+    },
+    {
+      "country": "ZA",
+      "name_en": "South Africa",
+      "name_ja": "南アフリカ",
+      "count": 15
+    },
+    {
+      "country": "JP",
+      "name_en": "Japan",
+      "name_ja": "日本",
+      "count": 12
+    },
+    {
+      "country": "CZ",
+      "name_en": "Czech Republic",
+      "name_ja": "チェコ",
+      "count": 10
+    },
+    {
+      "country": "BR",
+      "name_en": "Brazil",
+      "name_ja": "ブラジル",
+      "count": 9
+    },
+    {
+      "country": "CH",
+      "name_en": "Switzerland",
+      "name_ja": "スイス",
+      "count": 6
+    },
+    {
+      "country": "MA",
+      "name_en": "Morocco",
+      "name_ja": "モロッコ",
+      "count": 2
+    },
+    {
+      "country": "DE",
+      "name_en": "Germany",
+      "name_ja": "ドイツ",
+      "count": 1
+    },
+    {
+      "country": "BA",
+      "name_en": "Bosnia and Herzegovina",
+      "name_ja": "ボスニア・ヘルツェゴビナ",
+      "count": 1
+    }
+  ],
+  "top_videos_by_views": [
+    {
+      "title": "Next Starts Now | Hyundai X FIFA World Cup 2026™",
+      "country": "MX",
+      "views": 133041859,
+      "url": "https://www.youtube.com/watch?v=aVGDC2KPRfA"
+    },
+    {
+      "title": "Yildiz VS Lehmann VS Yamal VS Messi VS Ronaldo",
+      "country": "ZA",
+      "views": 99119051,
+      "url": "https://www.youtube.com/watch?v=w-wd3WAGwbs"
+    },
+    {
+      "title": "Rip The Script | Nike Football",
+      "country": "MX",
+      "views": 75938050,
+      "url": "https://www.youtube.com/watch?v=IyZ1WIua_1s"
+    },
+    {
+      "title": "That’s What Best Friends Are For 😂 #football #haaland #parody",
+      "country": "MX",
+      "views": 65709813,
+      "url": "https://www.youtube.com/watch?v=i9uK9A3Omyg"
+    },
+    {
+      "title": "Haaland vs Mbappé: Bubble Edition 😂🫧 #football #haaland #parody",
+      "country": "ZA",
+      "views": 57738890,
+      "url": "https://www.youtube.com/watch?v=W1WdY5OwOF4"
+    },
+    {
+      "title": "Who Was Actually Faster? 👀⚡ #football #haaland #parody",
+      "country": "MX",
+      "views": 53218047,
+      "url": "https://www.youtube.com/watch?v=O8HdHWCmu48"
+    },
+    {
+      "title": "The Reason Behind Neymar's Latest Injury ⚽🤕🚑",
+      "country": "ZA",
+      "views": 46752778,
+      "url": "https://www.youtube.com/watch?v=ccgvEpKSl9o"
+    },
+    {
+      "title": "IShowSpeed - World Cup (Champions) [Official Music Video]",
+      "country": "ZA",
+      "views": 44760540,
+      "url": "https://www.youtube.com/watch?v=vrY1THC_NQE"
+    },
+    {
+      "title": "Nora Fatehi, Vegedream, Sanjoy, FIFA Sound - Siir Siir (FIFA World Cup 2026™) [Official Music Video]",
+      "country": "DE",
+      "views": 41042454,
+      "url": "https://www.youtube.com/watch?v=afiNbSxg7aw"
+    },
+    {
+      "title": "Ronaldo Reacts To 2026 World Cup 🏆😶",
+      "country": "ZA",
+      "views": 39035046,
+      "url": "https://www.youtube.com/watch?v=sY6dyCqPROo"
+    }
+  ],
+  "sentiment_avg": {
+    "positive": 66.4622641509434,
+    "negative": 16.641509433962263,
+    "neutral": 16.89622641509434
+  },
+  "comments_analyzed": 9940,
+  "top_positive_themes": [
+    {
+      "theme_en": "Amazement at AI technology",
+      "theme_ja": "AI技術への驚き",
+      "mentions": 178
+    },
+    {
+      "theme_en": "Humor and entertainment value",
+      "theme_ja": "動画のユーモアと面白さ",
+      "mentions": 140
+    },
+    {
+      "theme_en": "Solidarity and brotherhood among Arab nations",
+      "theme_ja": "アラブ諸国間の連帯と兄弟愛",
+      "mentions": 140
+    },
+    {
+      "theme_en": "Congratulations and praise for the Algerian national team",
+      "theme_ja": "アルジェリア代表への祝福と称賛",
+      "mentions": 95
+    },
+    {
+      "theme_en": "Achraf Hakimi's achievement and congratulations",
+      "theme_ja": "アクラフ・ハキミの偉業と祝福",
+      "mentions": 85
+    },
+    {
+      "theme_en": "Praise and support for the Iraqi national team",
+      "theme_ja": "イラク代表チームへの称賛と応援",
+      "mentions": 85
+    },
+    {
+      "theme_en": "Excitement and anticipation for the World Cup",
+      "theme_ja": "ワールドカップ開催への期待と興奮",
+      "mentions": 77
+    },
+    {
+      "theme_en": "Praise for Tyla's performance",
+      "theme_ja": "Tylaのパフォーマンスへの称賛",
+      "mentions": 75
+    }
+  ],
+  "top_negative_themes": [
+    {
+      "theme_en": "Anger and sadness over destroying a valuable ball",
+      "theme_ja": "貴重なボールを破壊することへの怒り・悲しみ",
+      "mentions": 65
+    },
+    {
+      "theme_en": "Subscription price is too expensive",
+      "theme_ja": "サブスクリプション料金が高すぎる",
+      "mentions": 65
+    },
+    {
+      "theme_en": "Hardship of watching at dawn/late night due to time zones",
+      "theme_ja": "時差による早朝・深夜観戦の過酷さ",
+      "mentions": 60
+    },
+    {
+      "theme_en": "AI physics errors (ball spawning)",
+      "theme_ja": "AI特有の物理演算ミス（ボールの増殖）",
+      "mentions": 55
+    },
+    {
+      "theme_en": "Sadness over Italy missing the World Cup",
+      "theme_ja": "イタリアのワールドカップ予選敗退への悲しみ",
+      "mentions": 45
+    },
+    {
+      "theme_en": "Lack of Mexican cultural representation",
+      "theme_ja": "メキシコ文化の表現不足",
+      "mentions": 45
+    },
+    {
+      "theme_en": "Security concerns",
+      "theme_ja": "セキュリティへの懸念",
+      "mentions": 45
+    },
+    {
+      "theme_en": "Pointing out AI unnaturalness",
+      "theme_ja": "AIの不自然さへの指摘",
+      "mentions": 45
+    }
+  ]
+}

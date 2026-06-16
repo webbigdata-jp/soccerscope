@@ -1,0 +1,162 @@
+{
+  "generated": "2026-06-15",
+  "videos_analyzed": 227,
+  "countries": 14,
+  "totals": {
+    "views": 223732043,
+    "likes": 2915215,
+    "comments": 102078
+  },
+  "videos_by_country": [
+    {
+      "country": "QA",
+      "name_en": "Qatar",
+      "name_ja": "カタール",
+      "count": 50
+    },
+    {
+      "country": "MX",
+      "name_en": "Mexico",
+      "name_ja": "メキシコ",
+      "count": 50
+    },
+    {
+      "country": "ZA",
+      "name_en": "South Africa",
+      "name_ja": "南アフリカ",
+      "count": 37
+    },
+    {
+      "country": "BR",
+      "name_en": "Brazil",
+      "name_ja": "ブラジル",
+      "count": 26
+    },
+    {
+      "country": "KR",
+      "name_en": "South Korea",
+      "name_ja": "韓国",
+      "count": 16
+    },
+    {
+      "country": "CZ",
+      "name_en": "Czech Republic",
+      "name_ja": "チェコ",
+      "count": 14
+    },
+    {
+      "country": "JP",
+      "name_en": "Japan",
+      "name_ja": "日本",
+      "count": 12
+    },
+    {
+      "country": "CA",
+      "name_en": "Canada",
+      "name_ja": "カナダ",
+      "count": 8
+    },
+    {
+      "country": "US",
+      "name_en": "United States",
+      "name_ja": "アメリカ",
+      "count": 3
+    },
+    {
+      "country": "CH",
+      "name_en": "Switzerland",
+      "name_ja": "スイス",
+      "count": 3
+    },
+    {
+      "country": "MA",
+      "name_en": "Morocco",
+      "name_ja": "モロッコ",
+      "count": 3
+    },
+    {
+      "country": "CI",
+      "name_en": "Ivory Coast",
+      "name_ja": "コートジボワール",
+      "count": 2
+    },
+    {
+      "country": "UZ",
+      "name_en": "Uzbekistan",
+      "name_ja": "ウズベキスタン",
+      "count": 2
+    },
+    {
+      "country": "HT",
+      "name_en": "Haiti",
+      "name_ja": "ハイチ",
+      "count": 1
+    }
+  ],
+  "top_videos_by_views": [
+    {
+      "title": "How Many World Cup Stickers to Cover a Car?",
+      "country": "HT",
+      "views": 7688876,
+      "url": "https://www.youtube.com/watch?v=-ltr2MaAtn0"
+    },
+    {
+      "title": "ملخص مباراة البرازيل والمغرب | دور المجموعات - كأس العالم FIFA 2026™",
+      "country": "QA",
+      "views": 6870046,
+      "url": "https://www.youtube.com/watch?v=qRpBU1iYy64"
+    },
+    {
+      "title": "Brazil vs Morocco | World Cup 2026 | Full Match Streaming | Video Game - Simulation",
+      "country": "MX",
+      "views": 6570565,
+      "url": "https://www.youtube.com/watch?v=yDsFoEA-b7o"
+    },
+    {
+      "title": "El Mundial ANTES vs AHORA💀🏆⚽️ #futbol",
+      "country": "UZ",
+      "views": 6104164,
+      "url": "https://www.youtube.com/watch?v=1A6-vgCbXIk"
+    },
+    {
+      "title": "Valverde VS De Jong VS Walker VS Messi VS Ronaldo",
+      "country": "ZA",
+      "views": 5176038,
+      "url": "https://www.youtube.com/watch?v=GScWMJ2zrIg"
+    },
+    {
+      "title": "Only Ronaldo Can Score A Goal Like This...",
+      "country": "CI",
+      "views": 4986111,
+      "url": "https://www.youtube.com/watch?v=LwEmbve3imE"
+    },
+    {
+      "title": "Imagine Complaining About A Wave😭 #ishowspeed #football #edit",
+      "country": "ZA",
+      "views": 3771916,
+      "url": "https://www.youtube.com/watch?v=LfLiJGEW6y4"
+    },
+    {
+      "title": "ملخص مباراة السويد وتونس | دور المجموعات - كأس العالم FIFA 2026™",
+      "country": "QA",
+      "views": 3348858,
+      "url": "https://www.youtube.com/watch?v=5PgVkZRgAHo"
+    },
+    {
+      "title": "🔴Brazil vs Morocco I FIFA World Cup 2026 Gameplay Match Stream I Video Game Simulation",
+      "country": "MX",
+      "views": 3196965,
+      "url": "https://www.youtube.com/watch?v=9QZf_LBHExk"
+    },
+    {
+      "title": "Haaland, Mbappé and Yamal All Lost 😂⚔️ #football #haaland #parody",
+      "country": "ZA",
+      "views": 3164606,
+      "url": "https://www.youtube.com/watch?v=AUwi_vOt-xg"
+    }
+  ],
+  "sentiment_avg": null,
+  "comments_analyzed": 0,
+  "top_positive_themes": [],
+  "top_negative_themes": []
+}

@@ -7,6 +7,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WYSVNC3TDM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-WYSVNC3TDM');
+</script>
 <script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js"></script>
 <style>
@@ -120,6 +128,9 @@
 
   footer{border-top:1px solid var(--line);margin-top:54px;padding:28px 0 56px;font-size:12px;color:var(--muted-2);letter-spacing:.04em;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   footer b{color:var(--muted)}
+  .powered-by{display:inline-flex;align-items:center;gap:5px}
+  .powered-by a{color:var(--pitch-dim);text-decoration:none;border-bottom:1px solid transparent;transition:color .2s,border-color .2s}
+  .powered-by a:hover{color:var(--pitch);border-color:var(--pitch)}
 
   @media(max-width:640px){
     .wrap{padding:0 16px}
@@ -205,6 +216,7 @@
 
   <footer>
     <div data-i18n="footL">© 2026 SoccerScope</div>
+    <div class="powered-by"><b>Powered by</b> <a href="https://tubesaku.com/" target="_blank" rel="noopener">TubeSaku</a></div>
     <div><b>Built with</b> Google ADK · Gemini · MongoDB Atlas Vector Search · Model Context Protocol</div>
   </footer>
 

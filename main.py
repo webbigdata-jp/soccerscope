@@ -31,10 +31,13 @@ try:
 except Exception:  # noqa: BLE001
     pass
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
+from slowapi import Limiter, _rate_limit_exceeded_handler
+from slowapi.errors import RateLimitExceeded
+from slowapi.util import get_remote_address
 
 from google.genai import types
 from google.adk.runners import Runner
@@ -43,6 +46,12 @@ from google.adk.sessions import InMemorySessionService
 from soccer_agent.agent import root_agent  # noqa: E402  (.env 読み込み後にimport)
 
 APP_NAME = "soccerscope"
+
+# ② レートリミット（IP別、インメモリ）
+limiter = Limiter(key_func=get_remote_address)
+
+# ① クエリ長上限（文字数）
+QUERY_MAX_LEN = 500
 
 # Runner / Session は起動時に一度だけ構築（root_agent は使い回す）
 _session_service = InMemorySessionService()
@@ -132,6 +141,10 @@ class GenerateRequest(BaseModel):
 
 app = FastAPI(title="SoccerScope")
 
+# ② slowapi をアプリに接続
+app.state.limiter = limiter
+app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],     # 本番は提出URLのオリジンに絞ってよい
@@ -146,7 +159,14 @@ async def healthz():
 
 
 @app.post("/api/generate")
-async def generate(req: GenerateRequest):
+@limiter.limit("3/minute")          # ② IP別 1分間に3リクエストまで
+async def generate(req: GenerateRequest, request: Request):
+    # ① クエリ長チェック
+    if len(req.query) > QUERY_MAX_LEN:
+        raise HTTPException(
+            status_code=400,
+            detail=f"query too long (max {QUERY_MAX_LEN} chars, got {len(req.query)})",
+        )
     if not req.query.strip():
         raise HTTPException(status_code=400, detail="query is empty")
     if req.format not in FORMAT_DIRECTIVES:

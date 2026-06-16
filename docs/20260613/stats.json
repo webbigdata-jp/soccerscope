@@ -1,0 +1,254 @@
+{
+  "generated": "2026-06-13",
+  "videos_analyzed": 273,
+  "countries": 15,
+  "totals": {
+    "views": 2054409386,
+    "likes": 24562984,
+    "comments": 626069
+  },
+  "videos_by_country": [
+    {
+      "country": "MX",
+      "name_en": "Mexico",
+      "name_ja": "メキシコ",
+      "count": 50
+    },
+    {
+      "country": "QA",
+      "name_en": "Qatar",
+      "name_ja": "カタール",
+      "count": 49
+    },
+    {
+      "country": "JP",
+      "name_en": "Japan",
+      "name_ja": "日本",
+      "count": 43
+    },
+    {
+      "country": "ZA",
+      "name_en": "South Africa",
+      "name_ja": "南アフリカ",
+      "count": 40
+    },
+    {
+      "country": "KR",
+      "name_en": "South Korea",
+      "name_ja": "韓国",
+      "count": 35
+    },
+    {
+      "country": "BR",
+      "name_en": "Brazil",
+      "name_ja": "ブラジル",
+      "count": 22
+    },
+    {
+      "country": "CZ",
+      "name_en": "Czech Republic",
+      "name_ja": "チェコ",
+      "count": 11
+    },
+    {
+      "country": "CH",
+      "name_en": "Switzerland",
+      "name_ja": "スイス",
+      "count": 8
+    },
+    {
+      "country": "UZ",
+      "name_en": "Uzbekistan",
+      "name_ja": "ウズベキスタン",
+      "count": 3
+    },
+    {
+      "country": "BA",
+      "name_en": "Bosnia and Herzegovina",
+      "name_ja": "ボスニア・ヘルツェゴビナ",
+      "count": 3
+    },
+    {
+      "country": "CA",
+      "name_en": "Canada",
+      "name_ja": "カナダ",
+      "count": 3
+    },
+    {
+      "country": "CI",
+      "name_en": "Ivory Coast",
+      "name_ja": "コートジボワール",
+      "count": 2
+    },
+    {
+      "country": "MA",
+      "name_en": "Morocco",
+      "name_ja": "モロッコ",
+      "count": 2
+    },
+    {
+      "country": "HR",
+      "name_en": "Croatia",
+      "name_ja": "クロアチア",
+      "count": 1
+    },
+    {
+      "country": "TR",
+      "name_en": "Turkey",
+      "name_ja": "トルコ",
+      "count": 1
+    }
+  ],
+  "top_videos_by_views": [
+    {
+      "title": "Next Starts Now | Hyundai X FIFA World Cup 2026™",
+      "country": "MX",
+      "views": 145715398,
+      "url": "https://www.youtube.com/watch?v=aVGDC2KPRfA"
+    },
+    {
+      "title": "Yildiz VS Lehmann VS Yamal VS Messi VS Ronaldo",
+      "country": "ZA",
+      "views": 100546435,
+      "url": "https://www.youtube.com/watch?v=w-wd3WAGwbs"
+    },
+    {
+      "title": "Rip The Script | Nike Football",
+      "country": "MX",
+      "views": 76136663,
+      "url": "https://www.youtube.com/watch?v=IyZ1WIua_1s"
+    },
+    {
+      "title": "Haaland vs Mbappé: Bubble Edition 😂🫧 #football #haaland #parody",
+      "country": "CI",
+      "views": 59744193,
+      "url": "https://www.youtube.com/watch?v=W1WdY5OwOF4"
+    },
+    {
+      "title": "The Reason Behind Neymar's Latest Injury ⚽🤕🚑",
+      "country": "ZA",
+      "views": 49060281,
+      "url": "https://www.youtube.com/watch?v=ccgvEpKSl9o"
+    },
+    {
+      "title": "IShowSpeed - World Cup (Champions) [Official Music Video]",
+      "country": "ZA",
+      "views": 48268232,
+      "url": "https://www.youtube.com/watch?v=vrY1THC_NQE"
+    },
+    {
+      "title": "Nora Fatehi, Vegedream, Sanjoy, FIFA Sound - Siir Siir (FIFA World Cup 2026™) [Official Music Video]",
+      "country": "MX",
+      "views": 43595903,
+      "url": "https://www.youtube.com/watch?v=afiNbSxg7aw"
+    },
+    {
+      "title": "2 Genius Japan Free Kicks, 1 Match #shorts #japan #worldcup",
+      "country": "ZA",
+      "views": 38363930,
+      "url": "https://www.youtube.com/watch?v=-loy6iYMUqM"
+    },
+    {
+      "title": "World Cup Cake",
+      "country": "ZA",
+      "views": 38063106,
+      "url": "https://www.youtube.com/watch?v=41IuDfMOSNU"
+    },
+    {
+      "title": "Haaland Let Mbappé Think He Won 😏💀 #football #haaland #parody",
+      "country": "ZA",
+      "views": 29742681,
+      "url": "https://www.youtube.com/watch?v=IqnQ6pcOxY4"
+    }
+  ],
+  "sentiment_avg": {
+    "positive": 63.6578947368421,
+    "negative": 19.360902255639097,
+    "neutral": 16.981203007518797
+  },
+  "comments_analyzed": 19626,
+  "top_positive_themes": [
+    {
+      "theme_en": "Enthusiastic support for Cristiano Ronaldo",
+      "theme_ja": "クリスティアーノ・ロナウドへの熱狂的な支持",
+      "mentions": 170
+    },
+    {
+      "theme_en": "Humor and entertainment value",
+      "theme_ja": "動画の面白さ・笑い",
+      "mentions": 160
+    },
+    {
+      "theme_en": "Passionate support for Cristiano Ronaldo",
+      "theme_ja": "クリスティアーノ・ロナウドへの熱狂的な支持",
+      "mentions": 155
+    },
+    {
+      "theme_en": "Praise for Cristiano Ronaldo",
+      "theme_ja": "クリスティアーノ・ロナウドへの称賛",
+      "mentions": 132
+    },
+    {
+      "theme_en": "Excitement for the World Cup",
+      "theme_ja": "ワールドカップへの期待感",
+      "mentions": 114
+    },
+    {
+      "theme_en": "Amazement at AI technology",
+      "theme_ja": "AI技術への驚き",
+      "mentions": 107
+    },
+    {
+      "theme_en": "Excitement and support for the World Cup",
+      "theme_ja": "ワールドカップへの期待と応援",
+      "mentions": 94
+    },
+    {
+      "theme_en": "Entertainment value of the video",
+      "theme_ja": "動画の面白さ・エンターテインメント性",
+      "mentions": 90
+    }
+  ],
+  "top_negative_themes": [
+    {
+      "theme_en": "South Korean rough play and fouls",
+      "theme_ja": "韓国のラフプレー・反則行為",
+      "mentions": 65
+    },
+    {
+      "theme_en": "Pointing out counterfeit/unofficial album",
+      "theme_ja": "偽造品・非公式アルバムへの指摘",
+      "mentions": 65
+    },
+    {
+      "theme_en": "Suspicion of video editing/faking",
+      "theme_ja": "動画編集による偽造の疑い",
+      "mentions": 65
+    },
+    {
+      "theme_en": "Difficulty of watching at dawn/late night due to time zones",
+      "theme_ja": "時差による早朝・深夜観戦の困難",
+      "mentions": 55
+    },
+    {
+      "theme_en": "Anger towards violent behavior",
+      "theme_ja": "暴力行為への怒り",
+      "mentions": 55
+    },
+    {
+      "theme_en": "Subscription price is too expensive",
+      "theme_ja": "サブスクリプション価格が高すぎる",
+      "mentions": 55
+    },
+    {
+      "theme_en": "Dissatisfaction with subscription costs",
+      "theme_ja": "サブスクリプション料金への不満",
+      "mentions": 47
+    },
+    {
+      "theme_en": "Boycott of the World Cup",
+      "theme_ja": "ワールドカップのボイコット推奨",
+      "mentions": 45
+    }
+  ]
+}

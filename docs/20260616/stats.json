@@ -1,0 +1,254 @@
+{
+  "generated": "2026-06-16",
+  "videos_analyzed": 253,
+  "countries": 15,
+  "totals": {
+    "views": 218509318,
+    "likes": 2869065,
+    "comments": 83073
+  },
+  "videos_by_country": [
+    {
+      "country": "QA",
+      "name_en": "Qatar",
+      "name_ja": "カタール",
+      "count": 50
+    },
+    {
+      "country": "MX",
+      "name_en": "Mexico",
+      "name_ja": "メキシコ",
+      "count": 50
+    },
+    {
+      "country": "BR",
+      "name_en": "Brazil",
+      "name_ja": "ブラジル",
+      "count": 33
+    },
+    {
+      "country": "ZA",
+      "name_en": "South Africa",
+      "name_ja": "南アフリカ",
+      "count": 32
+    },
+    {
+      "country": "BA",
+      "name_en": "Bosnia and Herzegovina",
+      "name_ja": "ボスニア・ヘルツェゴビナ",
+      "count": 25
+    },
+    {
+      "country": "JP",
+      "name_en": "Japan",
+      "name_ja": "日本",
+      "count": 21
+    },
+    {
+      "country": "KR",
+      "name_en": "South Korea",
+      "name_ja": "韓国",
+      "count": 20
+    },
+    {
+      "country": "CA",
+      "name_en": "Canada",
+      "name_ja": "カナダ",
+      "count": 6
+    },
+    {
+      "country": "CZ",
+      "name_en": "Czech Republic",
+      "name_ja": "チェコ",
+      "count": 5
+    },
+    {
+      "country": "CH",
+      "name_en": "Switzerland",
+      "name_ja": "スイス",
+      "count": 5
+    },
+    {
+      "country": "MA",
+      "name_en": "Morocco",
+      "name_ja": "モロッコ",
+      "count": 2
+    },
+    {
+      "country": "US",
+      "name_en": "United States",
+      "name_ja": "アメリカ",
+      "count": 1
+    },
+    {
+      "country": "UZ",
+      "name_en": "Uzbekistan",
+      "name_ja": "ウズベキスタン",
+      "count": 1
+    },
+    {
+      "country": "DE",
+      "name_en": "Germany",
+      "name_ja": "ドイツ",
+      "count": 1
+    },
+    {
+      "country": "TR",
+      "name_en": "Turkey",
+      "name_ja": "トルコ",
+      "count": 1
+    }
+  ],
+  "top_videos_by_views": [
+    {
+      "title": "Imagine Complaining About A Wave😭 #ishowspeed #football #edit",
+      "country": "ZA",
+      "views": 6947609,
+      "url": "https://www.youtube.com/watch?v=LfLiJGEW6y4"
+    },
+    {
+      "title": "Valverde VS De Jong VS Walker VS Messi VS Ronaldo",
+      "country": "ZA",
+      "views": 6358629,
+      "url": "https://www.youtube.com/watch?v=GScWMJ2zrIg"
+    },
+    {
+      "title": "Haaland Trained Hard… Mbappé Trained Harder 😂🍗 #football #haaland #parody",
+      "country": "ZA",
+      "views": 5390653,
+      "url": "https://www.youtube.com/watch?v=7yDie41YNlE"
+    },
+    {
+      "title": "⚽ FIFA World Cup 2026 🌍 #football",
+      "country": "ZA",
+      "views": 5143394,
+      "url": "https://www.youtube.com/watch?v=ywgRPbOfLog"
+    },
+    {
+      "title": "\"The Guy Will Destroy You\" is crazy 🥶🥶",
+      "country": "ZA",
+      "views": 5063736,
+      "url": "https://www.youtube.com/watch?v=y6HsR-owBiQ"
+    },
+    {
+      "title": "ملخص مباراة السويد وتونس | دور المجموعات - كأس العالم FIFA 2026™",
+      "country": "QA",
+      "views": 4801829,
+      "url": "https://www.youtube.com/watch?v=5PgVkZRgAHo"
+    },
+    {
+      "title": "『日本はコンパクトで崩すのは困難だった』ファンダイク、クーマン、デヨングの日本戦後のインタビュー",
+      "country": "JP",
+      "views": 4051333,
+      "url": "https://www.youtube.com/watch?v=RLSfHj0jWO8"
+    },
+    {
+      "title": "FUÉ FALTA? XD",
+      "country": "UZ",
+      "views": 4023807,
+      "url": "https://www.youtube.com/watch?v=qtQplEUhTKY"
+    },
+    {
+      "title": "Tell me the winner☠️⚽️🏆 ? #fifa ##world cup 2026 #copa del mundo 2026 #spainsooccer",
+      "country": "CZ",
+      "views": 3726864,
+      "url": "https://www.youtube.com/watch?v=0kgtO9jCSh0"
+    },
+    {
+      "title": "⏯️ ملخص مباراة هولندا واليابان | دور المجموعات - كأس العالم FIFA 2026™",
+      "country": "QA",
+      "views": 3296917,
+      "url": "https://www.youtube.com/watch?v=SNvnUSkOqQM"
+    }
+  ],
+  "sentiment_avg": {
+    "positive": 58.0323275862069,
+    "negative": 20.767241379310345,
+    "neutral": 21.200431034482758
+  },
+  "comments_analyzed": 13980,
+  "top_positive_themes": [
+    {
+      "theme_en": "Passionate support for Cristiano Ronaldo",
+      "theme_ja": "クリスティアーノ・ロナウドへの熱狂的な支持",
+      "mentions": 255
+    },
+    {
+      "theme_en": "Solidarity and support from Arab nations",
+      "theme_ja": "アラブ諸国からの連帯と応援",
+      "mentions": 150
+    },
+    {
+      "theme_en": "Humor and entertainment value",
+      "theme_ja": "動画の面白さ・笑い",
+      "mentions": 110
+    },
+    {
+      "theme_en": "Support for the Egyptian national team",
+      "theme_ja": "エジプト代表への応援",
+      "mentions": 94
+    },
+    {
+      "theme_en": "Brotherhood between Mexico and Korea",
+      "theme_ja": "メキシコと韓国の兄弟愛",
+      "mentions": 85
+    },
+    {
+      "theme_en": "Requesting their own country's flag to be drawn",
+      "theme_ja": "自分の国の国旗を描いてほしいというリクエスト",
+      "mentions": 82
+    },
+    {
+      "theme_en": "Humor and laughter",
+      "theme_ja": "面白さ・笑い",
+      "mentions": 77
+    },
+    {
+      "theme_en": "Excellent performance by the Egyptian national team",
+      "theme_ja": "エジプト代表の素晴らしいパフォーマンス",
+      "mentions": 70
+    }
+  ],
+  "top_negative_themes": [
+    {
+      "theme_en": "Running without results",
+      "theme_ja": "走るだけで結果が出ない",
+      "mentions": 65
+    },
+    {
+      "theme_en": "Criticism of diving/acting",
+      "theme_ja": "大げさな演技（ダイブ）への批判",
+      "mentions": 65
+    },
+    {
+      "theme_en": "Criticism of bent cards",
+      "theme_ja": "カードが折れ曲がっていることへの批判",
+      "mentions": 65
+    },
+    {
+      "theme_en": "Dissatisfaction with referee decisions",
+      "theme_ja": "審判の判定への不満",
+      "mentions": 60
+    },
+    {
+      "theme_en": "Disappointing performance by Spain",
+      "theme_ja": "スペイン代表の不甲斐ない戦いぶり",
+      "mentions": 58
+    },
+    {
+      "theme_en": "Disappointment with match results",
+      "theme_ja": "試合結果への落胆",
+      "mentions": 55
+    },
+    {
+      "theme_en": "Player simulation/diving",
+      "theme_ja": "選手の過剰な演技（ダイブ）",
+      "mentions": 55
+    },
+    {
+      "theme_en": "Frustration with Ancelotti's selection policy",
+      "theme_ja": "アンチェロッティ監督の起用方針への不満",
+      "mentions": 55
+    }
+  ]
+}
