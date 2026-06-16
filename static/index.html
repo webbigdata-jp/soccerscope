@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -131,6 +131,9 @@
   .powered-by{display:inline-flex;align-items:center;gap:5px}
   .powered-by a{color:var(--pitch-dim);text-decoration:none;border-bottom:1px solid transparent;transition:color .2s,border-color .2s}
   .powered-by a:hover{color:var(--pitch);border-color:var(--pitch)}
+  .site-links{display:flex;flex-direction:column;gap:5px}
+  .site-links a{color:var(--pitch-dim);text-decoration:none;border-bottom:1px solid transparent;transition:color .2s,border-color .2s}
+  .site-links a:hover{color:var(--pitch);border-color:var(--pitch)}
 
   @media(max-width:640px){
     .wrap{padding:0 16px}
@@ -217,6 +220,10 @@
   <footer>
     <div data-i18n="footL">© 2026 SoccerScope</div>
     <div class="powered-by"><b>Powered by</b> <a href="https://tubesaku.com/" target="_blank" rel="noopener">TubeSaku</a></div>
+    <div class="site-links">
+      <a href="https://webbigdata-jp.github.io/soccerscope/" target="_blank" rel="noopener" data-i18n="linkStats">World Cup video stats site →</a>
+      <a href="https://tubesaku.com" target="_blank" rel="noopener" data-i18n="linkTubesaku">TubeSaku — YouTube video analysis →</a>
+    </div>
     <div><b>Built with</b> Google ADK · Gemini · MongoDB Atlas Vector Search · Model Context Protocol</div>
   </footer>
 
@@ -241,6 +248,8 @@ const I18N = {
     loading:"世界のバズをスカウト中…（初回はMCP起動で少し時間がかかります）",
     copyAll:"Markdownをコピー", copied:"コピーしました", copyPost:"投稿をコピー",
     footL:"© 2026 SoccerScope",
+    linkStats:"ワールドカップ動画の統計情報サイト →",
+    linkTubesaku:"YouTube動画分析サイト TubeSaku →",
     errEmpty:"リクエストを入力してください。",
     errGeneric:"生成に失敗しました：",
     badge:{report:"レポート",sns:"SNS投稿",webpage:"Webページ"}
@@ -261,13 +270,15 @@ const I18N = {
     loading:"Scouting the world's buzz… (the first call spins up MCP, so it may take a moment)",
     copyAll:"Copy Markdown", copied:"Copied", copyPost:"Copy post",
     footL:"© 2026 SoccerScope",
+    linkStats:"World Cup video stats site →",
+    linkTubesaku:"TubeSaku — YouTube video analysis →",
     errEmpty:"Please enter a request.",
     errGeneric:"Generation failed: ",
     badge:{report:"REPORT",sns:"SNS POSTS",webpage:"WEB PAGE"}
   }
 };
 
-let LANG = "ja";
+let LANG = "en";
 let FORMAT = "report";
 
 function applyI18n(){
