@@ -1,0 +1,254 @@
+{
+  "generated": "2026-06-17",
+  "videos_analyzed": 211,
+  "countries": 15,
+  "totals": {
+    "views": 202230397,
+    "likes": 2457992,
+    "comments": 86982
+  },
+  "videos_by_country": [
+    {
+      "country": "MX",
+      "name_en": "Mexico",
+      "name_ja": "メキシコ",
+      "count": 50
+    },
+    {
+      "country": "QA",
+      "name_en": "Qatar",
+      "name_ja": "カタール",
+      "count": 49
+    },
+    {
+      "country": "ZA",
+      "name_en": "South Africa",
+      "name_ja": "南アフリカ",
+      "count": 31
+    },
+    {
+      "country": "BR",
+      "name_en": "Brazil",
+      "name_ja": "ブラジル",
+      "count": 25
+    },
+    {
+      "country": "JP",
+      "name_en": "Japan",
+      "name_ja": "日本",
+      "count": 17
+    },
+    {
+      "country": "KR",
+      "name_en": "South Korea",
+      "name_ja": "韓国",
+      "count": 17
+    },
+    {
+      "country": "CZ",
+      "name_en": "Czech Republic",
+      "name_ja": "チェコ",
+      "count": 7
+    },
+    {
+      "country": "CH",
+      "name_en": "Switzerland",
+      "name_ja": "スイス",
+      "count": 5
+    },
+    {
+      "country": "CA",
+      "name_en": "Canada",
+      "name_ja": "カナダ",
+      "count": 2
+    },
+    {
+      "country": "BA",
+      "name_en": "Bosnia and Herzegovina",
+      "name_ja": "ボスニア・ヘルツェゴビナ",
+      "count": 2
+    },
+    {
+      "country": "MA",
+      "name_en": "Morocco",
+      "name_ja": "モロッコ",
+      "count": 2
+    },
+    {
+      "country": "NZ",
+      "name_en": "New Zealand",
+      "name_ja": "ニュージーランド",
+      "count": 1
+    },
+    {
+      "country": "US",
+      "name_en": "United States",
+      "name_ja": "アメリカ",
+      "count": 1
+    },
+    {
+      "country": "CV",
+      "name_en": "Cape Verde",
+      "name_ja": "カーボベルデ",
+      "count": 1
+    },
+    {
+      "country": "TR",
+      "name_en": "Turkey",
+      "name_ja": "トルコ",
+      "count": 1
+    }
+  ],
+  "top_videos_by_views": [
+    {
+      "title": "\"The Guy Will Destroy You\" is crazy 🥶🥶",
+      "country": "CA",
+      "views": 9350695,
+      "url": "https://www.youtube.com/watch?v=y6HsR-owBiQ"
+    },
+    {
+      "title": "Haaland Trained Hard… Mbappé Trained Harder 😂🍗 #football #haaland #parody",
+      "country": "ZA",
+      "views": 5990782,
+      "url": "https://www.youtube.com/watch?v=7yDie41YNlE"
+    },
+    {
+      "title": "Germany Won 7-1 Again 😳",
+      "country": "NZ",
+      "views": 5612796,
+      "url": "https://www.youtube.com/watch?v=_siwBBR-d5c"
+    },
+    {
+      "title": "Haaland Was Not Ready for the Milk Prank 🥛😳 #football #haaland #parody",
+      "country": "MX",
+      "views": 5180215,
+      "url": "https://www.youtube.com/watch?v=AAE6iEX1QHM"
+    },
+    {
+      "title": "ملخص مباراة السويد وتونس | دور المجموعات - كأس العالم FIFA 2026™",
+      "country": "QA",
+      "views": 5072286,
+      "url": "https://www.youtube.com/watch?v=5PgVkZRgAHo"
+    },
+    {
+      "title": "New Zealand score a brilliant team goal in the FIFA World Cup 🇳🇿⚽️ #FIFAWorldCupOnYT",
+      "country": "BA",
+      "views": 4054743,
+      "url": "https://www.youtube.com/watch?v=Xf4VMBYX2-Q"
+    },
+    {
+      "title": "World Cup in USA vs Rest of World.  #usa #football",
+      "country": "ZA",
+      "views": 4002713,
+      "url": "https://www.youtube.com/watch?v=bGc-9KOKSv4"
+    },
+    {
+      "title": "ملخص مباراة السعودية وأوروغواي | دور المجموعات - كأس العالم FIFA 2026™",
+      "country": "QA",
+      "views": 3808213,
+      "url": "https://www.youtube.com/watch?v=flehSVBAF5k"
+    },
+    {
+      "title": "ملخص مباراة إيران ونيوزيلندا | دور المجموعات - كأس العالم FIFA 2026™",
+      "country": "QA",
+      "views": 3471152,
+      "url": "https://www.youtube.com/watch?v=fqlL0iPb1XA"
+    },
+    {
+      "title": "ملخص مباراة بلجيكا ومصر | دور المجموعات - كأس العالم FIFA 2026™",
+      "country": "QA",
+      "views": 3375195,
+      "url": "https://www.youtube.com/watch?v=ON2HAIottAY"
+    }
+  ],
+  "sentiment_avg": {
+    "positive": 60.27461139896373,
+    "negative": 18.704663212435232,
+    "neutral": 21.020725388601036
+  },
+  "comments_analyzed": 10917,
+  "top_positive_themes": [
+    {
+      "theme_en": "Keisuke Honda's commentary is entertaining",
+      "theme_ja": "本田圭佑の解説が面白い",
+      "mentions": 175
+    },
+    {
+      "theme_en": "Solidarity and support from Arab nations",
+      "theme_ja": "アラブ諸国からの連帯と応援",
+      "mentions": 147
+    },
+    {
+      "theme_en": "Passionate support for Algeria national team",
+      "theme_ja": "アルジェリア代表への熱烈な応援",
+      "mentions": 147
+    },
+    {
+      "theme_en": "Support for Algeria national team",
+      "theme_ja": "アルジェリア代表への応援",
+      "mentions": 121
+    },
+    {
+      "theme_en": "Excellent performance by the Egyptian national team",
+      "theme_ja": "エジプト代表の素晴らしいパフォーマンス",
+      "mentions": 85
+    },
+    {
+      "theme_en": "Brotherhood between Mexico and Korea",
+      "theme_ja": "メキシコと韓国の兄弟愛",
+      "mentions": 85
+    },
+    {
+      "theme_en": "Subscription notification",
+      "theme_ja": "チャンネル登録の報告",
+      "mentions": 85
+    },
+    {
+      "theme_en": "Humor and laughter",
+      "theme_ja": "面白さ・笑い",
+      "mentions": 80
+    }
+  ],
+  "top_negative_themes": [
+    {
+      "theme_en": "Pointing out it was an own goal",
+      "theme_ja": "オウンゴールであるという指摘",
+      "mentions": 95
+    },
+    {
+      "theme_en": "Sleep deprivation due to time zones",
+      "theme_ja": "時差による睡眠不足",
+      "mentions": 65
+    },
+    {
+      "theme_en": "Criticism of modern players' softness",
+      "theme_ja": "現代選手の軟弱さへの批判",
+      "mentions": 65
+    },
+    {
+      "theme_en": "Running like an athlete without results",
+      "theme_ja": "陸上選手のように走るだけで結果が出ない",
+      "mentions": 55
+    },
+    {
+      "theme_en": "Criticism of favoring veteran players",
+      "theme_ja": "ベテラン選手偏重の選考への批判",
+      "mentions": 55
+    },
+    {
+      "theme_en": "Difficulty of watching at night/early morning",
+      "theme_ja": "深夜・早朝の観戦の辛さ",
+      "mentions": 50
+    },
+    {
+      "theme_en": "Spain's disappointing performance",
+      "theme_ja": "スペイン代表の不甲斐なさ",
+      "mentions": 47
+    },
+    {
+      "theme_en": "Frustration with USA's refusal to let people in",
+      "theme_ja": "アメリカの入国拒否に対する不満",
+      "mentions": 45
+    }
+  ]
+}
