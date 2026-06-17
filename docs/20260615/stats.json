@@ -1,7 +1,7 @@
 {
   "generated": "2026-06-15",
   "videos_analyzed": 227,
-  "countries": 14,
+  "countries": 23,
   "totals": {
     "views": 223732043,
     "likes": 2915215,
@@ -9,87 +9,141 @@
   },
   "videos_by_country": [
     {
-      "country": "QA",
-      "name_en": "Qatar",
-      "name_ja": "カタール",
-      "count": 50
-    },
-    {
-      "country": "MX",
-      "name_en": "Mexico",
-      "name_ja": "メキシコ",
-      "count": 50
-    },
-    {
-      "country": "ZA",
-      "name_en": "South Africa",
-      "name_ja": "南アフリカ",
-      "count": 37
-    },
-    {
       "country": "BR",
       "name_en": "Brazil",
       "name_ja": "ブラジル",
-      "count": 26
-    },
-    {
-      "country": "KR",
-      "name_en": "South Korea",
-      "name_ja": "韓国",
-      "count": 16
-    },
-    {
-      "country": "CZ",
-      "name_en": "Czech Republic",
-      "name_ja": "チェコ",
-      "count": 14
-    },
-    {
-      "country": "JP",
-      "name_en": "Japan",
-      "name_ja": "日本",
-      "count": 12
+      "count": 40
     },
     {
       "country": "CA",
       "name_en": "Canada",
       "name_ja": "カナダ",
-      "count": 8
+      "count": 37
     },
     {
-      "country": "US",
-      "name_en": "United States",
-      "name_ja": "アメリカ",
-      "count": 3
+      "country": "QA",
+      "name_en": "Qatar",
+      "name_ja": "カタール",
+      "count": 36
+    },
+    {
+      "country": "KR",
+      "name_en": "South Korea",
+      "name_ja": "韓国",
+      "count": 18
     },
     {
       "country": "CH",
       "name_en": "Switzerland",
       "name_ja": "スイス",
-      "count": 3
+      "count": 13
+    },
+    {
+      "country": "JP",
+      "name_en": "Japan",
+      "name_ja": "日本",
+      "count": 13
+    },
+    {
+      "country": "BA",
+      "name_en": "Bosnia and Herzegovina",
+      "name_ja": "ボスニア・ヘルツェゴビナ",
+      "count": 12
+    },
+    {
+      "country": "ZA",
+      "name_en": "South Africa",
+      "name_ja": "南アフリカ",
+      "count": 10
+    },
+    {
+      "country": "MX",
+      "name_en": "Mexico",
+      "name_ja": "メキシコ",
+      "count": 10
     },
     {
       "country": "MA",
       "name_en": "Morocco",
       "name_ja": "モロッコ",
-      "count": 3
+      "count": 10
     },
     {
-      "country": "CI",
-      "name_en": "Ivory Coast",
-      "name_ja": "コートジボワール",
+      "country": "IQ",
+      "name_en": "Iraq",
+      "name_ja": "イラク",
+      "count": 7
+    },
+    {
+      "country": "US",
+      "name_en": "United States",
+      "name_ja": "アメリカ",
+      "count": 4
+    },
+    {
+      "country": "HR",
+      "name_en": "Croatia",
+      "name_ja": "クロアチア",
+      "count": 4
+    },
+    {
+      "country": "NZ",
+      "name_en": "New Zealand",
+      "name_ja": "ニュージーランド",
       "count": 2
     },
     {
-      "country": "UZ",
-      "name_en": "Uzbekistan",
-      "name_ja": "ウズベキスタン",
+      "country": "CZ",
+      "name_en": "Czech Republic",
+      "name_ja": "チェコ",
+      "count": 2
+    },
+    {
+      "country": "DE",
+      "name_en": "Germany",
+      "name_ja": "ドイツ",
       "count": 2
     },
     {
       "country": "HT",
       "name_en": "Haiti",
       "name_ja": "ハイチ",
+      "count": 1
+    },
+    {
+      "country": "FR",
+      "name_en": "France",
+      "name_ja": "フランス",
+      "count": 1
+    },
+    {
+      "country": "TR",
+      "name_en": "Turkey",
+      "name_ja": "トルコ",
+      "count": 1
+    },
+    {
+      "country": "UZ",
+      "name_en": "Uzbekistan",
+      "name_ja": "ウズベキスタン",
+      "count": 1
+    },
+    {
+      "country": "CI",
+      "name_en": "Ivory Coast",
+      "name_ja": "コートジボワール",
+      "count": 1
+    },
+    {
+      "country": "PA",
+      "name_en": "Panama",
+      "name_ja": "パナマ",
+      "count": 1
+    },
+    {
+      "country": "PT",
+      "name_en": "Portugal",
+      "name_ja": "ポルトガル",
       "count": 1
     }
   ],
@@ -132,7 +186,7 @@
     },
     {
       "title": "Imagine Complaining About A Wave😭 #ishowspeed #football #edit",
-      "country": "ZA",
+      "country": "US",
       "views": 3771916,
       "url": "https://www.youtube.com/watch?v=LfLiJGEW6y4"
     },
@@ -150,7 +204,7 @@
     },
     {
       "title": "Haaland, Mbappé and Yamal All Lost 😂⚔️ #football #haaland #parody",
-      "country": "ZA",
+      "country": "CA",
       "views": 3164606,
       "url": "https://www.youtube.com/watch?v=AUwi_vOt-xg"
     }

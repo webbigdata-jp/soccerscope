@@ -1,7 +1,7 @@
 {
   "generated": "2026-06-12",
   "videos_analyzed": 110,
-  "countries": 11,
+  "countries": 14,
   "totals": {
     "views": 1454209879,
     "likes": 16302670,
@@ -9,40 +9,34 @@
   },
   "videos_by_country": [
     {
-      "country": "MX",
-      "name_en": "Mexico",
-      "name_ja": "メキシコ",
-      "count": 20
-    },
-    {
-      "country": "QA",
-      "name_en": "Qatar",
-      "name_ja": "カタール",
-      "count": 18
-    },
-    {
       "country": "KR",
       "name_en": "South Korea",
       "name_ja": "韓国",
-      "count": 16
-    },
-    {
-      "country": "ZA",
-      "name_en": "South Africa",
-      "name_ja": "南アフリカ",
-      "count": 15
+      "count": 18
     },
     {
       "country": "JP",
       "name_en": "Japan",
       "name_ja": "日本",
-      "count": 12
+      "count": 15
     },
     {
-      "country": "CZ",
-      "name_en": "Czech Republic",
-      "name_ja": "チェコ",
-      "count": 10
+      "country": "ZA",
+      "name_en": "South Africa",
+      "name_ja": "南アフリカ",
+      "count": 13
+    },
+    {
+      "country": "MX",
+      "name_en": "Mexico",
+      "name_ja": "メキシコ",
+      "count": 11
+    },
+    {
+      "country": "CH",
+      "name_en": "Switzerland",
+      "name_ja": "スイス",
+      "count": 11
     },
     {
       "country": "BR",
@@ -51,15 +45,39 @@
       "count": 9
     },
     {
-      "country": "CH",
-      "name_en": "Switzerland",
-      "name_ja": "スイス",
-      "count": 6
-    },
-    {
       "country": "MA",
       "name_en": "Morocco",
       "name_ja": "モロッコ",
+      "count": 9
+    },
+    {
+      "country": "QA",
+      "name_en": "Qatar",
+      "name_ja": "カタール",
+      "count": 9
+    },
+    {
+      "country": "CZ",
+      "name_en": "Czech Republic",
+      "name_ja": "チェコ",
+      "count": 4
+    },
+    {
+      "country": "BA",
+      "name_en": "Bosnia and Herzegovina",
+      "name_ja": "ボスニア・ヘルツェゴビナ",
+      "count": 4
+    },
+    {
+      "country": "DZ",
+      "name_en": "Algeria",
+      "name_ja": "アルジェリア",
+      "count": 3
+    },
+    {
+      "country": "CI",
+      "name_en": "Ivory Coast",
+      "name_ja": "コートジボワール",
       "count": 2
     },
     {
@@ -69,16 +87,16 @@
       "count": 1
     },
     {
-      "country": "BA",
-      "name_en": "Bosnia and Herzegovina",
-      "name_ja": "ボスニア・ヘルツェゴビナ",
+      "country": "IR",
+      "name_en": "Iran",
+      "name_ja": "イラン",
       "count": 1
     }
   ],
   "top_videos_by_views": [
     {
       "title": "Next Starts Now | Hyundai X FIFA World Cup 2026™",
-      "country": "MX",
+      "country": "KR",
       "views": 133041859,
       "url": "https://www.youtube.com/watch?v=aVGDC2KPRfA"
     },
@@ -96,13 +114,13 @@
     },
     {
       "title": "That’s What Best Friends Are For 😂 #football #haaland #parody",
-      "country": "MX",
+      "country": "CI",
       "views": 65709813,
       "url": "https://www.youtube.com/watch?v=i9uK9A3Omyg"
     },
     {
       "title": "Haaland vs Mbappé: Bubble Edition 😂🫧 #football #haaland #parody",
-      "country": "ZA",
+      "country": "CI",
       "views": 57738890,
       "url": "https://www.youtube.com/watch?v=W1WdY5OwOF4"
     },
@@ -132,7 +150,7 @@
     },
     {
       "title": "Ronaldo Reacts To 2026 World Cup 🏆😶",
-      "country": "ZA",
+      "country": "BA",
       "views": 39035046,
       "url": "https://www.youtube.com/watch?v=sY6dyCqPROo"
     }

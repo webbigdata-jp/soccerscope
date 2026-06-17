@@ -1,7 +1,7 @@
 {
   "generated": "2026-06-11",
   "videos_analyzed": 111,
-  "countries": 12,
+  "countries": 17,
   "totals": {
     "views": 1087658078,
     "likes": 12530450,
@@ -9,57 +9,69 @@
   },
   "videos_by_country": [
     {
-      "country": "MX",
-      "name_en": "Mexico",
-      "name_ja": "メキシコ",
-      "count": 20
-    },
-    {
-      "country": "QA",
-      "name_en": "Qatar",
-      "name_ja": "カタール",
+      "country": "JP",
+      "name_en": "Japan",
+      "name_ja": "日本",
       "count": 18
-    },
-    {
-      "country": "ZA",
-      "name_en": "South Africa",
-      "name_ja": "南アフリカ",
-      "count": 17
     },
     {
       "country": "BR",
       "name_en": "Brazil",
       "name_ja": "ブラジル",
-      "count": 15
+      "count": 16
+    },
+    {
+      "country": "MA",
+      "name_en": "Morocco",
+      "name_ja": "モロッコ",
+      "count": 12
+    },
+    {
+      "country": "ZA",
+      "name_en": "South Africa",
+      "name_ja": "南アフリカ",
+      "count": 10
+    },
+    {
+      "country": "QA",
+      "name_en": "Qatar",
+      "name_ja": "カタール",
+      "count": 9
     },
     {
       "country": "KR",
       "name_en": "South Korea",
       "name_ja": "韓国",
-      "count": 14
-    },
-    {
-      "country": "JP",
-      "name_en": "Japan",
-      "name_ja": "日本",
-      "count": 11
+      "count": 9
     },
     {
       "country": "CZ",
       "name_en": "Czech Republic",
       "name_ja": "チェコ",
-      "count": 5
+      "count": 8
     },
     {
-      "country": "UZ",
-      "name_en": "Uzbekistan",
-      "name_ja": "ウズベキスタン",
-      "count": 3
+      "country": "MX",
+      "name_en": "Mexico",
+      "name_ja": "メキシコ",
+      "count": 7
     },
     {
       "country": "CH",
       "name_en": "Switzerland",
       "name_ja": "スイス",
+      "count": 7
+    },
+    {
+      "country": "CI",
+      "name_en": "Ivory Coast",
+      "name_ja": "コートジボワール",
+      "count": 4
+    },
+    {
+      "country": "UZ",
+      "name_en": "Uzbekistan",
+      "name_ja": "ウズベキスタン",
       "count": 3
     },
     {
@@ -69,15 +81,33 @@
       "count": 2
     },
     {
-      "country": "MA",
-      "name_en": "Morocco",
-      "name_ja": "モロッコ",
+      "country": "UY",
+      "name_en": "Uruguay",
+      "name_ja": "ウルグアイ",
       "count": 2
     },
     {
       "country": "NZ",
       "name_en": "New Zealand",
       "name_ja": "ニュージーランド",
+      "count": 1
+    },
+    {
+      "country": "US",
+      "name_en": "United States",
+      "name_ja": "アメリカ",
+      "count": 1
+    },
+    {
+      "country": "FR",
+      "name_en": "France",
+      "name_ja": "フランス",
+      "count": 1
+    },
+    {
+      "country": "EG",
+      "name_en": "Egypt",
+      "name_ja": "エジプト",
       "count": 1
     }
   ],
@@ -96,31 +126,31 @@
     },
     {
       "title": "Premier league Cosco Premier Vs Cosco Hurricanes Football ⚽️ Unboxing",
-      "country": "ZA",
+      "country": "CI",
       "views": 46088686,
       "url": "https://www.youtube.com/watch?v=t8dvL5Ztmh4"
     },
     {
       "title": "Yildiz VS Lehmann VS Dybala VS Yamal VS Mbappe VS Messi VS Ronaldo",
-      "country": "ZA",
+      "country": "US",
       "views": 46035874,
       "url": "https://www.youtube.com/watch?v=vZpqZiqHz1s"
     },
     {
       "title": "When Ronaldo chose his Biggest Fan ❤️",
-      "country": "ZA",
+      "country": "CI",
       "views": 34343885,
       "url": "https://www.youtube.com/watch?v=LZrGmLup72M"
     },
     {
       "title": "Players Getting Cooked 🤯😆",
-      "country": "ZA",
+      "country": "FR",
       "views": 31633442,
       "url": "https://www.youtube.com/watch?v=WMktc0FzQQQ"
     },
     {
       "title": "Reading Japanese names during my first soccer match! ⚽️🎙️📋🇯🇵💮💭 #japan #soccer #football",
-      "country": "ZA",
+      "country": "CI",
       "views": 28720092,
       "url": "https://www.youtube.com/watch?v=g3Vpb_RAPRE"
     },
@@ -132,13 +162,13 @@
     },
     {
       "title": "Khaby Lame And Footballers😍☠️ #shorts #football #khabylame #ronaldo",
-      "country": "ZA",
+      "country": "CI",
       "views": 24104594,
       "url": "https://www.youtube.com/watch?v=uP1JCkZY-zQ"
     },
     {
       "title": "Budweiser | Let It Pour ft. Erling Haaland & Jürgen Klopp | FIFA World Cup 26™️",
-      "country": "MX",
+      "country": "CH",
       "views": 24064176,
       "url": "https://www.youtube.com/watch?v=w0oRTljtx0o"
     }

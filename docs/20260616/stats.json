@@ -1,7 +1,7 @@
 {
   "generated": "2026-06-16",
   "videos_analyzed": 253,
-  "countries": 15,
+  "countries": 21,
   "totals": {
     "views": 218509318,
     "likes": 2869065,
@@ -15,58 +15,82 @@
       "count": 50
     },
     {
-      "country": "MX",
-      "name_en": "Mexico",
-      "name_ja": "メキシコ",
-      "count": 50
-    },
-    {
       "country": "BR",
       "name_en": "Brazil",
       "name_ja": "ブラジル",
-      "count": 33
-    },
-    {
-      "country": "ZA",
-      "name_en": "South Africa",
-      "name_ja": "南アフリカ",
-      "count": 32
+      "count": 39
     },
     {
       "country": "BA",
       "name_en": "Bosnia and Herzegovina",
       "name_ja": "ボスニア・ヘルツェゴビナ",
-      "count": 25
+      "count": 36
     },
     {
       "country": "JP",
       "name_en": "Japan",
       "name_ja": "日本",
-      "count": 21
+      "count": 26
     },
     {
       "country": "KR",
       "name_en": "South Korea",
       "name_ja": "韓国",
-      "count": 20
+      "count": 23
     },
     {
       "country": "CA",
       "name_en": "Canada",
       "name_ja": "カナダ",
-      "count": 6
+      "count": 21
     },
     {
-      "country": "CZ",
-      "name_en": "Czech Republic",
-      "name_ja": "チェコ",
-      "count": 5
+      "country": "MX",
+      "name_en": "Mexico",
+      "name_ja": "メキシコ",
+      "count": 10
+    },
+    {
+      "country": "ZA",
+      "name_en": "South Africa",
+      "name_ja": "南アフリカ",
+      "count": 9
     },
     {
       "country": "CH",
       "name_en": "Switzerland",
       "name_ja": "スイス",
+      "count": 9
+    },
+    {
+      "country": "CV",
+      "name_en": "Cape Verde",
+      "name_ja": "カーボベルデ",
+      "count": 6
+    },
+    {
+      "country": "DE",
+      "name_en": "Germany",
+      "name_ja": "ドイツ",
+      "count": 6
+    },
+    {
+      "country": "PT",
+      "name_en": "Portugal",
+      "name_ja": "ポルトガル",
       "count": 5
+    },
+    {
+      "country": "TR",
+      "name_en": "Turkey",
+      "name_ja": "トルコ",
+      "count": 3
+    },
+    {
+      "country": "CZ",
+      "name_en": "Czech Republic",
+      "name_ja": "チェコ",
+      "count": 2
     },
     {
       "country": "MA",
@@ -81,21 +105,33 @@
       "count": 1
     },
     {
+      "country": "IR",
+      "name_en": "Iran",
+      "name_ja": "イラン",
+      "count": 1
+    },
+    {
+      "country": "PY",
+      "name_en": "Paraguay",
+      "name_ja": "パラグアイ",
+      "count": 1
+    },
+    {
+      "country": "GB",
+      "name_en": "England",
+      "name_ja": "イングランド",
+      "count": 1
+    },
+    {
+      "country": "CI",
+      "name_en": "Ivory Coast",
+      "name_ja": "コートジボワール",
+      "count": 1
+    },
+    {
       "country": "UZ",
       "name_en": "Uzbekistan",
       "name_ja": "ウズベキスタン",
-      "count": 1
-    },
-    {
-      "country": "DE",
-      "name_en": "Germany",
-      "name_ja": "ドイツ",
-      "count": 1
-    },
-    {
-      "country": "TR",
-      "name_en": "Turkey",
-      "name_ja": "トルコ",
       "count": 1
     }
   ],
@@ -120,7 +156,7 @@
     },
     {
       "title": "⚽ FIFA World Cup 2026 🌍 #football",
-      "country": "ZA",
+      "country": "CZ",
       "views": 5143394,
       "url": "https://www.youtube.com/watch?v=ywgRPbOfLog"
     },
@@ -144,13 +180,13 @@
     },
     {
       "title": "FUÉ FALTA? XD",
-      "country": "UZ",
+      "country": "TR",
       "views": 4023807,
       "url": "https://www.youtube.com/watch?v=qtQplEUhTKY"
     },
     {
       "title": "Tell me the winner☠️⚽️🏆 ? #fifa ##world cup 2026 #copa del mundo 2026 #spainsooccer",
-      "country": "CZ",
+      "country": "IR",
       "views": 3726864,
       "url": "https://www.youtube.com/watch?v=0kgtO9jCSh0"
     },
