@@ -7,338 +7,8 @@
     "likes": 2915215,
     "comments": 102078
   },
-  "country_attribution": "multi (b): a video is counted in every country whose search surfaced it",
-  "videos_by_country": [
-    {
-      "country": "HT",
-      "name_en": "Haiti",
-      "name_ja": "ハイチ",
-      "top_videos_view_sum": 36241376,
-      "videos_count": 10
-    },
-    {
-      "country": "FR",
-      "name_en": "France",
-      "name_ja": "フランス",
-      "top_videos_view_sum": 33577541,
-      "videos_count": 10
-    },
-    {
-      "country": "SN",
-      "name_en": "Senegal",
-      "name_ja": "セネガル",
-      "top_videos_view_sum": 33577541,
-      "videos_count": 10
-    },
-    {
-      "country": "CD",
-      "name_en": "DR Congo",
-      "name_ja": "コンゴ民主共和国",
-      "top_videos_view_sum": 33577541,
-      "videos_count": 10
-    },
-    {
-      "country": "CI",
-      "name_en": "Ivory Coast",
-      "name_ja": "コートジボワール",
-      "top_videos_view_sum": 33577541,
-      "videos_count": 10
-    },
-    {
-      "country": "CA",
-      "name_en": "Canada",
-      "name_ja": "カナダ",
-      "top_videos_view_sum": 32181540,
-      "videos_count": 50
-    },
-    {
-      "country": "ZA",
-      "name_en": "South Africa",
-      "name_ja": "南アフリカ",
-      "top_videos_view_sum": 31383384,
-      "videos_count": 50
-    },
-    {
-      "country": "UZ",
-      "name_en": "Uzbekistan",
-      "name_ja": "ウズベキスタン",
-      "top_videos_view_sum": 30615416,
-      "videos_count": 10
-    },
-    {
-      "country": "TR",
-      "name_en": "Turkey",
-      "name_ja": "トルコ",
-      "top_videos_view_sum": 29652707,
-      "videos_count": 10
-    },
-    {
-      "country": "NZ",
-      "name_en": "New Zealand",
-      "name_ja": "ニュージーランド",
-      "top_videos_view_sum": 28774254,
-      "videos_count": 10
-    },
-    {
-      "country": "AU",
-      "name_en": "Australia",
-      "name_ja": "オーストラリア",
-      "top_videos_view_sum": 28516732,
-      "videos_count": 10
-    },
-    {
-      "country": "GB",
-      "name_en": "England",
-      "name_ja": "イングランド",
-      "top_videos_view_sum": 28516732,
-      "videos_count": 10
-    },
-    {
-      "country": "CZ",
-      "name_en": "Czech Republic",
-      "name_ja": "チェコ",
-      "top_videos_view_sum": 28265987,
-      "videos_count": 50
-    },
-    {
-      "country": "JP",
-      "name_en": "Japan",
-      "name_ja": "日本",
-      "top_videos_view_sum": 27786145,
-      "videos_count": 50
-    },
-    {
-      "country": "SE",
-      "name_en": "Sweden",
-      "name_ja": "スウェーデン",
-      "top_videos_view_sum": 27763663,
-      "videos_count": 10
-    },
-    {
-      "country": "BA",
-      "name_en": "Bosnia and Herzegovina",
-      "name_ja": "ボスニア・ヘルツェゴビナ",
-      "top_videos_view_sum": 27711168,
-      "videos_count": 50
-    },
-    {
-      "country": "KR",
-      "name_en": "South Korea",
-      "name_ja": "韓国",
-      "top_videos_view_sum": 27219476,
-      "videos_count": 50
-    },
-    {
-      "country": "BE",
-      "name_en": "Belgium",
-      "name_ja": "ベルギー",
-      "top_videos_view_sum": 26925811,
-      "videos_count": 10
-    },
-    {
-      "country": "CW",
-      "name_en": "Curaçao",
-      "name_ja": "キュラソー",
-      "top_videos_view_sum": 26925811,
-      "videos_count": 10
-    },
-    {
-      "country": "IR",
-      "name_en": "Iran",
-      "name_ja": "イラン",
-      "top_videos_view_sum": 26925811,
-      "videos_count": 10
-    },
-    {
-      "country": "NL",
-      "name_en": "Netherlands",
-      "name_ja": "オランダ",
-      "top_videos_view_sum": 26925811,
-      "videos_count": 10
-    },
-    {
-      "country": "NO",
-      "name_en": "Norway",
-      "name_ja": "ノルウェー",
-      "top_videos_view_sum": 26925811,
-      "videos_count": 10
-    },
-    {
-      "country": "MX",
-      "name_en": "Mexico",
-      "name_ja": "メキシコ",
-      "top_videos_view_sum": 26918677,
-      "videos_count": 50
-    },
-    {
-      "country": "US",
-      "name_en": "United States",
-      "name_ja": "アメリカ",
-      "top_videos_view_sum": 26673285,
-      "videos_count": 10
-    },
-    {
-      "country": "GH",
-      "name_en": "Ghana",
-      "name_ja": "ガーナ",
-      "top_videos_view_sum": 26443357,
-      "videos_count": 10
-    },
-    {
-      "country": "MA",
-      "name_en": "Morocco",
-      "name_ja": "モロッコ",
-      "top_videos_view_sum": 26420497,
-      "videos_count": 50
-    },
-    {
-      "country": "QA",
-      "name_en": "Qatar",
-      "name_ja": "カタール",
-      "top_videos_view_sum": 26420497,
-      "videos_count": 50
-    },
-    {
-      "country": "DZ",
-      "name_en": "Algeria",
-      "name_ja": "アルジェリア",
-      "top_videos_view_sum": 26338932,
-      "videos_count": 10
-    },
-    {
-      "country": "EG",
-      "name_en": "Egypt",
-      "name_ja": "エジプト",
-      "top_videos_view_sum": 26338932,
-      "videos_count": 10
-    },
-    {
-      "country": "JO",
-      "name_en": "Jordan",
-      "name_ja": "ヨルダン",
-      "top_videos_view_sum": 26338932,
-      "videos_count": 10
-    },
-    {
-      "country": "SA",
-      "name_en": "Saudi Arabia",
-      "name_ja": "サウジアラビア",
-      "top_videos_view_sum": 26338932,
-      "videos_count": 10
-    },
-    {
-      "country": "TN",
-      "name_en": "Tunisia",
-      "name_ja": "チュニジア",
-      "top_videos_view_sum": 26338932,
-      "videos_count": 10
-    },
-    {
-      "country": "AR",
-      "name_en": "Argentina",
-      "name_ja": "アルゼンチン",
-      "top_videos_view_sum": 25780005,
-      "videos_count": 10
-    },
-    {
-      "country": "CH",
-      "name_en": "Switzerland",
-      "name_ja": "スイス",
-      "top_videos_view_sum": 25780005,
-      "videos_count": 50
-    },
-    {
-      "country": "CO",
-      "name_en": "Colombia",
-      "name_ja": "コロンビア",
-      "top_videos_view_sum": 25780005,
-      "videos_count": 10
-    },
-    {
-      "country": "EC",
-      "name_en": "Ecuador",
-      "name_ja": "エクアドル",
-      "top_videos_view_sum": 25780005,
-      "videos_count": 10
-    },
-    {
-      "country": "ES",
-      "name_en": "Spain",
-      "name_ja": "スペイン",
-      "top_videos_view_sum": 25780005,
-      "videos_count": 10
-    },
-    {
-      "country": "PY",
-      "name_en": "Paraguay",
-      "name_ja": "パラグアイ",
-      "top_videos_view_sum": 25780005,
-      "videos_count": 10
-    },
-    {
-      "country": "UY",
-      "name_en": "Uruguay",
-      "name_ja": "ウルグアイ",
-      "top_videos_view_sum": 25780005,
-      "videos_count": 10
-    },
-    {
-      "country": "BR",
-      "name_en": "Brazil",
-      "name_ja": "ブラジル",
-      "top_videos_view_sum": 24679340,
-      "videos_count": 50
-    },
-    {
-      "country": "IQ",
-      "name_en": "Iraq",
-      "name_ja": "イラク",
-      "top_videos_view_sum": 24623663,
-      "videos_count": 10
-    },
-    {
-      "country": "PT",
-      "name_en": "Portugal",
-      "name_ja": "ポルトガル",
-      "top_videos_view_sum": 24479106,
-      "videos_count": 10
-    },
-    {
-      "country": "AT",
-      "name_en": "Austria",
-      "name_ja": "オーストリア",
-      "top_videos_view_sum": 23816868,
-      "videos_count": 10
-    },
-    {
-      "country": "DE",
-      "name_en": "Germany",
-      "name_ja": "ドイツ",
-      "top_videos_view_sum": 23816868,
-      "videos_count": 10
-    },
-    {
-      "country": "CV",
-      "name_en": "Cape Verde",
-      "name_ja": "カーボベルデ",
-      "top_videos_view_sum": 23588770,
-      "videos_count": 10
-    },
-    {
-      "country": "HR",
-      "name_en": "Croatia",
-      "name_ja": "クロアチア",
-      "top_videos_view_sum": 21826378,
-      "videos_count": 10
-    },
-    {
-      "country": "PA",
-      "name_en": "Panama",
-      "name_ja": "パナマ",
-      "top_videos_view_sum": 20737006,
-      "videos_count": 10
-    }
-  ],
+  "country_attribution": "multi (b): a video is counted in every country whose search surfaced it; no per-country ranking (unreliable)",
+  "top_teams": [],
   "top_videos_by_views": [
     {
       "title": "How Many World Cup Stickers to Cover a Car?",
@@ -346,6 +16,8 @@
         "HT"
       ],
       "reach": 1,
+      "narration_en": "This unique project shows someone covering a car in World Cup stickers, sparking lively debate about car maintenance and waste. Trending in Haiti, viewers expressed mixed reactions ranging from humor to practical concerns about the stickers.",
+      "narration_ja": "ワールドカップのステッカーで車を覆い尽くすというユニークな企画がハイチで急上昇。洗車や雨天時のダメージを心配する声から、企画そのものを楽しむ声まで様々な反応が寄せられています。",
       "views": 7688876,
       "url": "https://www.youtube.com/watch?v=-ltr2MaAtn0"
     },
@@ -362,6 +34,8 @@
         "TN"
       ],
       "reach": 8,
+      "narration_en": "Highlights from the Brazil vs. Morocco World Cup 2026 match drew massive, positive support across Arab nations. Fans praised the Atlas Lions' performance and the intensity of the goalkeepers.",
+      "narration_ja": "ワールドカップ2026のブラジル対モロッコ戦のハイライトは、アラブ諸国で圧倒的な支持を集めました。モロッコ代表の健闘と両GKの好セーブに対し、称賛の声が溢れています。",
       "views": 6870046,
       "url": "https://www.youtube.com/watch?v=qRpBU1iYy64"
     },
@@ -409,6 +83,8 @@
         "ZA"
       ],
       "reach": 39,
+      "narration_en": "This eFootball simulation of Brazil vs. Morocco trended globally, drawing praise for its production quality. While audiences enjoyed the digital match, some expressed mixed feelings about the creator's presence on screen.",
+      "narration_ja": "eFootballを使用したブラジル対モロッコ戦のシミュレーション動画が世界各国でトレンド入りし、そのクオリティの高さが評価されています。一方で、クリエイター自身の映り込みについては賛否が分かれました。",
       "views": 6570565,
       "url": "https://www.youtube.com/watch?v=yDsFoEA-b7o"
     },
@@ -419,6 +95,8 @@
         "UZ"
       ],
       "reach": 2,
+      "narration_en": "This humorous look at past versus present World Cups trended in Turkey and Uzbekistan, stirring frustration over visa policies and internet meme culture. Opinions were largely negative due to the controversial topics discussed.",
+      "narration_ja": "過去と現在のワールドカップを比較するコミカルな動画がトルコとウズベキスタンで注目されました。ビザ規制やネットミーム文化への言及が多く、内容に対して厳しい意見も目立ちます。",
       "views": 6104164,
       "url": "https://www.youtube.com/watch?v=1A6-vgCbXIk"
     },
@@ -439,6 +117,8 @@
         "SN"
       ],
       "reach": 12,
+      "narration_en": "A short video comparing football stars like Messi and Ronaldo trended across multiple continents, generating high engagement. The comments reflect passionate fan debates and confusion regarding the comparison format.",
+      "narration_ja": "メッシやロナウドらスター選手を比較するショート動画が世界各地でトレンド入りし、熱心なファンによる議論を呼んでいます。比較手法に対する困惑の声も上がっています。",
       "views": 5176038,
       "url": "https://www.youtube.com/watch?v=GScWMJ2zrIg"
     },
@@ -451,6 +131,8 @@
         "SN"
       ],
       "reach": 4,
+      "narration_en": "Focusing on a Ronaldo highlight, this video sparked intense debate in French-speaking regions regarding his status as the GOAT. Viewers engaged in sarcasm, comparing the clip to anime or other legendary players.",
+      "narration_ja": "ロナウドのプレーに焦点を当てた動画は、フランス語圏で大きな反響を呼びました。「史上最高」という称賛から他の選手との比較、アニメキャラクターへの例えまで、議論が白熱しています。",
       "views": 4986111,
       "url": "https://www.youtube.com/watch?v=LwEmbve3imE"
     },
@@ -470,6 +152,8 @@
         "ZA"
       ],
       "reach": 11,
+      "narration_en": "",
+      "narration_ja": "",
       "views": 3771916,
       "url": "https://www.youtube.com/watch?v=LfLiJGEW6y4"
     },
@@ -486,6 +170,8 @@
         "TN"
       ],
       "reach": 8,
+      "narration_en": "Following Tunisia's loss to Sweden in the World Cup, the match highlights trended in Arab nations with a largely negative sentiment. Fans expressed disappointment in the team's defensive performance and tactical setup.",
+      "narration_ja": "ワールドカップでのチュニジア対スウェーデン戦のハイライトは、アラブ諸国で大きな注目を集めましたが、結果は否定的に捉えられています。守備の脆さや戦術に対してファンの失望が広がりました。",
       "views": 3348858,
       "url": "https://www.youtube.com/watch?v=5PgVkZRgAHo"
     },
@@ -512,6 +198,8 @@
         "UY"
       ],
       "reach": 18,
+      "narration_en": "A virtual simulation of Brazil vs. Morocco drew international attention for its balanced, draw-result narrative. Viewers across various regions engaged positively with the gameplay and the spirit of the match.",
+      "narration_ja": "ブラジル対モロッコ戦のシミュレーション動画が世界各地で関心を集めています。引き分けという結果に対し、両国のプレーを称える温かいコメントが多く寄せられました。",
       "views": 3196965,
       "url": "https://www.youtube.com/watch?v=9QZf_LBHExk"
     },
@@ -526,6 +214,8 @@
         "GH"
       ],
       "reach": 6,
+      "narration_en": "This surreal, AI-assisted parody featuring football stars trended in English-speaking territories. While many viewers praised the humor, others voiced criticism regarding the use of AI in creative content.",
+      "narration_ja": "AIを駆使したサッカー選手のパロディ動画が英語圏でトレンド入りしました。ユーモアを称賛する声がある一方、クリエイティブ制作におけるAIの使用には批判的な意見も出ています。",
       "views": 3164606,
       "url": "https://www.youtube.com/watch?v=AUwi_vOt-xg"
     }

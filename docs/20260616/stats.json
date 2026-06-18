@@ -7,338 +7,8 @@
     "likes": 2869065,
     "comments": 83073
   },
-  "country_attribution": "multi (b): a video is counted in every country whose search surfaced it",
-  "videos_by_country": [
-    {
-      "country": "CA",
-      "name_en": "Canada",
-      "name_ja": "カナダ",
-      "top_videos_view_sum": 42365243,
-      "videos_count": 50
-    },
-    {
-      "country": "ZA",
-      "name_en": "South Africa",
-      "name_ja": "南アフリカ",
-      "top_videos_view_sum": 42365243,
-      "videos_count": 50
-    },
-    {
-      "country": "CD",
-      "name_en": "DR Congo",
-      "name_ja": "コンゴ民主共和国",
-      "top_videos_view_sum": 41346062,
-      "videos_count": 10
-    },
-    {
-      "country": "FR",
-      "name_en": "France",
-      "name_ja": "フランス",
-      "top_videos_view_sum": 41346062,
-      "videos_count": 10
-    },
-    {
-      "country": "SN",
-      "name_en": "Senegal",
-      "name_ja": "セネガル",
-      "top_videos_view_sum": 41346062,
-      "videos_count": 10
-    },
-    {
-      "country": "CI",
-      "name_en": "Ivory Coast",
-      "name_ja": "コートジボワール",
-      "top_videos_view_sum": 41215725,
-      "videos_count": 10
-    },
-    {
-      "country": "US",
-      "name_en": "United States",
-      "name_ja": "アメリカ",
-      "top_videos_view_sum": 40648286,
-      "videos_count": 10
-    },
-    {
-      "country": "AU",
-      "name_en": "Australia",
-      "name_ja": "オーストラリア",
-      "top_videos_view_sum": 40456788,
-      "videos_count": 10
-    },
-    {
-      "country": "GH",
-      "name_en": "Ghana",
-      "name_ja": "ガーナ",
-      "top_videos_view_sum": 40456788,
-      "videos_count": 10
-    },
-    {
-      "country": "HT",
-      "name_en": "Haiti",
-      "name_ja": "ハイチ",
-      "top_videos_view_sum": 40456788,
-      "videos_count": 10
-    },
-    {
-      "country": "NZ",
-      "name_en": "New Zealand",
-      "name_ja": "ニュージーランド",
-      "top_videos_view_sum": 40456788,
-      "videos_count": 10
-    },
-    {
-      "country": "GB",
-      "name_en": "England",
-      "name_ja": "イングランド",
-      "top_videos_view_sum": 37321058,
-      "videos_count": 10
-    },
-    {
-      "country": "CZ",
-      "name_en": "Czech Republic",
-      "name_ja": "チェコ",
-      "top_videos_view_sum": 25429033,
-      "videos_count": 50
-    },
-    {
-      "country": "IR",
-      "name_en": "Iran",
-      "name_ja": "イラン",
-      "top_videos_view_sum": 24596414,
-      "videos_count": 10
-    },
-    {
-      "country": "BE",
-      "name_en": "Belgium",
-      "name_ja": "ベルギー",
-      "top_videos_view_sum": 22427829,
-      "videos_count": 10
-    },
-    {
-      "country": "CW",
-      "name_en": "Curaçao",
-      "name_ja": "キュラソー",
-      "top_videos_view_sum": 22427829,
-      "videos_count": 10
-    },
-    {
-      "country": "HR",
-      "name_en": "Croatia",
-      "name_ja": "クロアチア",
-      "top_videos_view_sum": 22427829,
-      "videos_count": 10
-    },
-    {
-      "country": "NL",
-      "name_en": "Netherlands",
-      "name_ja": "オランダ",
-      "top_videos_view_sum": 22427829,
-      "videos_count": 10
-    },
-    {
-      "country": "SE",
-      "name_en": "Sweden",
-      "name_ja": "スウェーデン",
-      "top_videos_view_sum": 22427829,
-      "videos_count": 10
-    },
-    {
-      "country": "JP",
-      "name_en": "Japan",
-      "name_ja": "日本",
-      "top_videos_view_sum": 21787835,
-      "videos_count": 50
-    },
-    {
-      "country": "MA",
-      "name_en": "Morocco",
-      "name_ja": "モロッコ",
-      "top_videos_view_sum": 21615867,
-      "videos_count": 50
-    },
-    {
-      "country": "QA",
-      "name_en": "Qatar",
-      "name_ja": "カタール",
-      "top_videos_view_sum": 21615867,
-      "videos_count": 50
-    },
-    {
-      "country": "DZ",
-      "name_en": "Algeria",
-      "name_ja": "アルジェリア",
-      "top_videos_view_sum": 21035748,
-      "videos_count": 10
-    },
-    {
-      "country": "EG",
-      "name_en": "Egypt",
-      "name_ja": "エジプト",
-      "top_videos_view_sum": 21035748,
-      "videos_count": 10
-    },
-    {
-      "country": "IQ",
-      "name_en": "Iraq",
-      "name_ja": "イラク",
-      "top_videos_view_sum": 21035748,
-      "videos_count": 10
-    },
-    {
-      "country": "JO",
-      "name_en": "Jordan",
-      "name_ja": "ヨルダン",
-      "top_videos_view_sum": 21035748,
-      "videos_count": 10
-    },
-    {
-      "country": "SA",
-      "name_en": "Saudi Arabia",
-      "name_ja": "サウジアラビア",
-      "top_videos_view_sum": 21035748,
-      "videos_count": 10
-    },
-    {
-      "country": "TN",
-      "name_en": "Tunisia",
-      "name_ja": "チュニジア",
-      "top_videos_view_sum": 21035748,
-      "videos_count": 10
-    },
-    {
-      "country": "MX",
-      "name_en": "Mexico",
-      "name_ja": "メキシコ",
-      "top_videos_view_sum": 21018868,
-      "videos_count": 50
-    },
-    {
-      "country": "AR",
-      "name_en": "Argentina",
-      "name_ja": "アルゼンチン",
-      "top_videos_view_sum": 19302653,
-      "videos_count": 10
-    },
-    {
-      "country": "CO",
-      "name_en": "Colombia",
-      "name_ja": "コロンビア",
-      "top_videos_view_sum": 19302653,
-      "videos_count": 10
-    },
-    {
-      "country": "EC",
-      "name_en": "Ecuador",
-      "name_ja": "エクアドル",
-      "top_videos_view_sum": 19302653,
-      "videos_count": 10
-    },
-    {
-      "country": "ES",
-      "name_en": "Spain",
-      "name_ja": "スペイン",
-      "top_videos_view_sum": 19302653,
-      "videos_count": 10
-    },
-    {
-      "country": "PA",
-      "name_en": "Panama",
-      "name_ja": "パナマ",
-      "top_videos_view_sum": 19302653,
-      "videos_count": 10
-    },
-    {
-      "country": "PY",
-      "name_en": "Paraguay",
-      "name_ja": "パラグアイ",
-      "top_videos_view_sum": 19302653,
-      "videos_count": 10
-    },
-    {
-      "country": "UY",
-      "name_en": "Uruguay",
-      "name_ja": "ウルグアイ",
-      "top_videos_view_sum": 19302653,
-      "videos_count": 10
-    },
-    {
-      "country": "CH",
-      "name_en": "Switzerland",
-      "name_ja": "スイス",
-      "top_videos_view_sum": 18969334,
-      "videos_count": 50
-    },
-    {
-      "country": "KR",
-      "name_en": "South Korea",
-      "name_ja": "韓国",
-      "top_videos_view_sum": 18969334,
-      "videos_count": 50
-    },
-    {
-      "country": "NO",
-      "name_en": "Norway",
-      "name_ja": "ノルウェー",
-      "top_videos_view_sum": 18563390,
-      "videos_count": 10
-    },
-    {
-      "country": "TR",
-      "name_en": "Turkey",
-      "name_ja": "トルコ",
-      "top_videos_view_sum": 18045056,
-      "videos_count": 10
-    },
-    {
-      "country": "BA",
-      "name_en": "Bosnia and Herzegovina",
-      "name_ja": "ボスニア・ヘルツェゴビナ",
-      "top_videos_view_sum": 17286686,
-      "videos_count": 50
-    },
-    {
-      "country": "UZ",
-      "name_en": "Uzbekistan",
-      "name_ja": "ウズベキスタン",
-      "top_videos_view_sum": 16675315,
-      "videos_count": 10
-    },
-    {
-      "country": "DE",
-      "name_en": "Germany",
-      "name_ja": "ドイツ",
-      "top_videos_view_sum": 16212007,
-      "videos_count": 10
-    },
-    {
-      "country": "AT",
-      "name_en": "Austria",
-      "name_ja": "オーストリア",
-      "top_videos_view_sum": 15825019,
-      "videos_count": 10
-    },
-    {
-      "country": "BR",
-      "name_en": "Brazil",
-      "name_ja": "ブラジル",
-      "top_videos_view_sum": 15088824,
-      "videos_count": 50
-    },
-    {
-      "country": "PT",
-      "name_en": "Portugal",
-      "name_ja": "ポルトガル",
-      "top_videos_view_sum": 13597712,
-      "videos_count": 10
-    },
-    {
-      "country": "CV",
-      "name_en": "Cape Verde",
-      "name_ja": "カーボベルデ",
-      "top_videos_view_sum": 12907436,
-      "videos_count": 10
-    }
-  ],
+  "country_attribution": "multi (b): a video is counted in every country whose search surfaced it; no per-country ranking (unreliable)",
+  "top_teams": [],
   "top_videos_by_views": [
     {
       "title": "Imagine Complaining About A Wave😭 #ishowspeed #football #edit",
@@ -357,6 +27,8 @@
         "ZA"
       ],
       "reach": 12,
+      "narration_en": "This video featuring an interaction with iShowSpeed trended across 12 countries. Viewers are split between finding the humor in the synchronized reactions and debating the reality of the AI voiceover.",
+      "narration_ja": "iShowSpeedとのやり取りを収めたこの動画は12カ国で急上昇しました。視聴者の間では、同期したリアクションへの笑いと、AI音声の真偽を巡る議論で盛り上がっています。",
       "views": 6947609,
       "url": "https://www.youtube.com/watch?v=LfLiJGEW6y4"
     },
@@ -377,6 +49,8 @@
         "ZA"
       ],
       "reach": 12,
+      "narration_en": "A highly positive comparison of football legends like Ronaldo, Messi, and others. The audience shows strong support for their favorites while largely rejecting toxic rivalry.",
+      "narration_ja": "ロナウドやメッシといった伝説的選手たちを比較する非常に好評な動画です。視聴者は自分の推しを応援しつつも、不毛な対立を避ける傾向にあります。",
       "views": 6358629,
       "url": "https://www.youtube.com/watch?v=GScWMJ2zrIg"
     },
@@ -397,6 +71,8 @@
         "ZA"
       ],
       "reach": 12,
+      "narration_en": "A surreal parody featuring Haaland and Mbappé that trended internationally. While many enjoyed the humor, others expressed skepticism regarding the AI-generated visual quality.",
+      "narration_ja": "ハーランドとエムバペを起用したシュールなパロディ動画が世界中で急上昇しました。笑いを呼ぶ一方で、AI生成された映像の品質に対する疑問の声も上がっています。",
       "views": 5390653,
       "url": "https://www.youtube.com/watch?v=7yDie41YNlE"
     },
@@ -424,6 +100,8 @@
         "ZA"
       ],
       "reach": 19,
+      "narration_en": "This World Cup 2026 forecast video drew a diverse international audience. Comments range from bold winner predictions and team support to confusion over tournament facts.",
+      "narration_ja": "2026年ワールドカップを予想するこの動画は、多言語圏の視聴者を集めました。優勝予想や国別の応援メッセージから、大会情報に対する困惑まで幅広い意見が寄せられています。",
       "views": 5143394,
       "url": "https://www.youtube.com/watch?v=ywgRPbOfLog"
     },
@@ -443,6 +121,8 @@
         "SN"
       ],
       "reach": 11,
+      "narration_en": "Viewers are captivated by Thierry Henry's speed and legendary status in this iShowSpeed edit. The sentiment is overwhelmingly positive as fans celebrate Henry's iconic skill.",
+      "narration_ja": "ティエリ・アンリのスピードとレジェンドとしての貫禄が注目を集めるiShowSpeedの編集動画です。アンリの象徴的なスキルを称える声が多く、非常に高い評価を得ています。",
       "views": 5063736,
       "url": "https://www.youtube.com/watch?v=y6HsR-owBiQ"
     },
@@ -459,6 +139,8 @@
         "TN"
       ],
       "reach": 8,
+      "narration_en": "A match highlight recap between Sweden and Tunisia that sparked disappointment among Arab-speaking fans. Viewers focused on defensive critiques and sympathy for the commentator.",
+      "narration_ja": "スウェーデン対チュニジア戦のハイライトに対し、アラビア語圏の視聴者からは落胆の声が多く寄せられました。守備への批判や実況者への同情が中心的なトピックです。",
       "views": 4801829,
       "url": "https://www.youtube.com/watch?v=5PgVkZRgAHo"
     },
@@ -468,6 +150,8 @@
         "JP"
       ],
       "reach": 1,
+      "narration_en": "Japanese fans are celebrating their national team's gritty performance against the Netherlands. The sentiment is very positive, highlighting pride in the squad's tactical growth.",
+      "narration_ja": "オランダ相手に奮闘した日本代表の試合後インタビュー動画です。チームの戦術的な成長に対する誇りが感じられ、日本のファンから非常に高い評価を得ています。",
       "views": 4051333,
       "url": "https://www.youtube.com/watch?v=RLSfHj0jWO8"
     },
@@ -478,6 +162,8 @@
         "UZ"
       ],
       "reach": 2,
+      "narration_en": "This humor-focused video on refereeing decisions was met with significant negativity from Turkish and Uzbek audiences. Many criticized the perceived unfairness and simulation in the clips.",
+      "narration_ja": "判定に焦点を当てたこのユーモア動画は、トルコやウズベキスタンの視聴者から厳しい評価を受けました。不公平さや選手の演技に対する批判が多く見られます。",
       "views": 4023807,
       "url": "https://www.youtube.com/watch?v=qtQplEUhTKY"
     },
@@ -488,6 +174,8 @@
         "CZ"
       ],
       "reach": 2,
+      "narration_en": "A viral challenge video where viewers attempt to identify the winner. Most fans enjoyed the engagement, focusing on the specific visual clues provided in the footage.",
+      "narration_ja": "視聴者が勝者を当てるバイラルチャレンジ動画です。映像内の視覚的な手がかりを基に、多くのファンが楽しみながら参加しています。",
       "views": 3726864,
       "url": "https://www.youtube.com/watch?v=0kgtO9jCSh0"
     },
@@ -504,6 +192,8 @@
         "TN"
       ],
       "reach": 8,
+      "narration_en": "This recap of the Netherlands vs. Japan match received widespread praise for the level of play. Viewers highlighted the impressive performance of Asian and African teams.",
+      "narration_ja": "オランダ対日本戦のハイライトは、そのプレーレベルの高さから多くの賞賛を受けました。特にアジアやアフリカのチームの躍進が視聴者の注目を集めています。",
       "views": 3296917,
       "url": "https://www.youtube.com/watch?v=SNvnUSkOqQM"
     }

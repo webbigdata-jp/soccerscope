@@ -7,338 +7,8 @@
     "likes": 2186611,
     "comments": 69405
   },
-  "country_attribution": "multi (b): a video is counted in every country whose search surfaced it",
-  "videos_by_country": [
-    {
-      "country": "CZ",
-      "name_en": "Czech Republic",
-      "name_ja": "チェコ",
-      "top_videos_view_sum": 42659124,
-      "videos_count": 50
-    },
-    {
-      "country": "BE",
-      "name_en": "Belgium",
-      "name_ja": "ベルギー",
-      "top_videos_view_sum": 40978898,
-      "videos_count": 10
-    },
-    {
-      "country": "CW",
-      "name_en": "Curaçao",
-      "name_ja": "キュラソー",
-      "top_videos_view_sum": 40978898,
-      "videos_count": 10
-    },
-    {
-      "country": "NL",
-      "name_en": "Netherlands",
-      "name_ja": "オランダ",
-      "top_videos_view_sum": 40978898,
-      "videos_count": 10
-    },
-    {
-      "country": "NO",
-      "name_en": "Norway",
-      "name_ja": "ノルウェー",
-      "top_videos_view_sum": 40978898,
-      "videos_count": 10
-    },
-    {
-      "country": "SE",
-      "name_en": "Sweden",
-      "name_ja": "スウェーデン",
-      "top_videos_view_sum": 40978898,
-      "videos_count": 10
-    },
-    {
-      "country": "BA",
-      "name_en": "Bosnia and Herzegovina",
-      "name_ja": "ボスニア・ヘルツェゴビナ",
-      "top_videos_view_sum": 40682420,
-      "videos_count": 50
-    },
-    {
-      "country": "JP",
-      "name_en": "Japan",
-      "name_ja": "日本",
-      "top_videos_view_sum": 40262804,
-      "videos_count": 50
-    },
-    {
-      "country": "KR",
-      "name_en": "South Korea",
-      "name_ja": "韓国",
-      "top_videos_view_sum": 40166486,
-      "videos_count": 50
-    },
-    {
-      "country": "MX",
-      "name_en": "Mexico",
-      "name_ja": "メキシコ",
-      "top_videos_view_sum": 39957515,
-      "videos_count": 50
-    },
-    {
-      "country": "CH",
-      "name_en": "Switzerland",
-      "name_ja": "スイス",
-      "top_videos_view_sum": 39713262,
-      "videos_count": 50
-    },
-    {
-      "country": "HR",
-      "name_en": "Croatia",
-      "name_ja": "クロアチア",
-      "top_videos_view_sum": 38684356,
-      "videos_count": 10
-    },
-    {
-      "country": "IR",
-      "name_en": "Iran",
-      "name_ja": "イラン",
-      "top_videos_view_sum": 38590207,
-      "videos_count": 10
-    },
-    {
-      "country": "AT",
-      "name_en": "Austria",
-      "name_ja": "オーストリア",
-      "top_videos_view_sum": 38231132,
-      "videos_count": 10
-    },
-    {
-      "country": "DE",
-      "name_en": "Germany",
-      "name_ja": "ドイツ",
-      "top_videos_view_sum": 38231132,
-      "videos_count": 10
-    },
-    {
-      "country": "UZ",
-      "name_en": "Uzbekistan",
-      "name_ja": "ウズベキスタン",
-      "top_videos_view_sum": 37510093,
-      "videos_count": 10
-    },
-    {
-      "country": "BR",
-      "name_en": "Brazil",
-      "name_ja": "ブラジル",
-      "top_videos_view_sum": 36888111,
-      "videos_count": 50
-    },
-    {
-      "country": "CO",
-      "name_en": "Colombia",
-      "name_ja": "コロンビア",
-      "top_videos_view_sum": 35872263,
-      "videos_count": 10
-    },
-    {
-      "country": "EC",
-      "name_en": "Ecuador",
-      "name_ja": "エクアドル",
-      "top_videos_view_sum": 35872263,
-      "videos_count": 10
-    },
-    {
-      "country": "ES",
-      "name_en": "Spain",
-      "name_ja": "スペイン",
-      "top_videos_view_sum": 35872263,
-      "videos_count": 10
-    },
-    {
-      "country": "PA",
-      "name_en": "Panama",
-      "name_ja": "パナマ",
-      "top_videos_view_sum": 35872263,
-      "videos_count": 10
-    },
-    {
-      "country": "AR",
-      "name_en": "Argentina",
-      "name_ja": "アルゼンチン",
-      "top_videos_view_sum": 35128343,
-      "videos_count": 10
-    },
-    {
-      "country": "PY",
-      "name_en": "Paraguay",
-      "name_ja": "パラグアイ",
-      "top_videos_view_sum": 35128343,
-      "videos_count": 10
-    },
-    {
-      "country": "UY",
-      "name_en": "Uruguay",
-      "name_ja": "ウルグアイ",
-      "top_videos_view_sum": 35128343,
-      "videos_count": 10
-    },
-    {
-      "country": "CA",
-      "name_en": "Canada",
-      "name_ja": "カナダ",
-      "top_videos_view_sum": 31681181,
-      "videos_count": 50
-    },
-    {
-      "country": "ZA",
-      "name_en": "South Africa",
-      "name_ja": "南アフリカ",
-      "top_videos_view_sum": 31681181,
-      "videos_count": 50
-    },
-    {
-      "country": "AU",
-      "name_en": "Australia",
-      "name_ja": "オーストラリア",
-      "top_videos_view_sum": 31432893,
-      "videos_count": 10
-    },
-    {
-      "country": "TR",
-      "name_en": "Turkey",
-      "name_ja": "トルコ",
-      "top_videos_view_sum": 30088359,
-      "videos_count": 10
-    },
-    {
-      "country": "CD",
-      "name_en": "DR Congo",
-      "name_ja": "コンゴ民主共和国",
-      "top_videos_view_sum": 28694272,
-      "videos_count": 10
-    },
-    {
-      "country": "CI",
-      "name_en": "Ivory Coast",
-      "name_ja": "コートジボワール",
-      "top_videos_view_sum": 28694272,
-      "videos_count": 10
-    },
-    {
-      "country": "FR",
-      "name_en": "France",
-      "name_ja": "フランス",
-      "top_videos_view_sum": 28694272,
-      "videos_count": 10
-    },
-    {
-      "country": "GB",
-      "name_en": "England",
-      "name_ja": "イングランド",
-      "top_videos_view_sum": 28694272,
-      "videos_count": 10
-    },
-    {
-      "country": "GH",
-      "name_en": "Ghana",
-      "name_ja": "ガーナ",
-      "top_videos_view_sum": 28694272,
-      "videos_count": 10
-    },
-    {
-      "country": "HT",
-      "name_en": "Haiti",
-      "name_ja": "ハイチ",
-      "top_videos_view_sum": 28694272,
-      "videos_count": 10
-    },
-    {
-      "country": "NZ",
-      "name_en": "New Zealand",
-      "name_ja": "ニュージーランド",
-      "top_videos_view_sum": 28694272,
-      "videos_count": 10
-    },
-    {
-      "country": "SN",
-      "name_en": "Senegal",
-      "name_ja": "セネガル",
-      "top_videos_view_sum": 28694272,
-      "videos_count": 10
-    },
-    {
-      "country": "US",
-      "name_en": "United States",
-      "name_ja": "アメリカ",
-      "top_videos_view_sum": 28319721,
-      "videos_count": 10
-    },
-    {
-      "country": "CV",
-      "name_en": "Cape Verde",
-      "name_ja": "カーボベルデ",
-      "top_videos_view_sum": 27883849,
-      "videos_count": 10
-    },
-    {
-      "country": "PT",
-      "name_en": "Portugal",
-      "name_ja": "ポルトガル",
-      "top_videos_view_sum": 27883849,
-      "videos_count": 10
-    },
-    {
-      "country": "MA",
-      "name_en": "Morocco",
-      "name_ja": "モロッコ",
-      "top_videos_view_sum": 16683677,
-      "videos_count": 50
-    },
-    {
-      "country": "QA",
-      "name_en": "Qatar",
-      "name_ja": "カタール",
-      "top_videos_view_sum": 16683677,
-      "videos_count": 50
-    },
-    {
-      "country": "DZ",
-      "name_en": "Algeria",
-      "name_ja": "アルジェリア",
-      "top_videos_view_sum": 16303244,
-      "videos_count": 10
-    },
-    {
-      "country": "EG",
-      "name_en": "Egypt",
-      "name_ja": "エジプト",
-      "top_videos_view_sum": 16303244,
-      "videos_count": 10
-    },
-    {
-      "country": "JO",
-      "name_en": "Jordan",
-      "name_ja": "ヨルダン",
-      "top_videos_view_sum": 16303244,
-      "videos_count": 10
-    },
-    {
-      "country": "IQ",
-      "name_en": "Iraq",
-      "name_ja": "イラク",
-      "top_videos_view_sum": 16239208,
-      "videos_count": 10
-    },
-    {
-      "country": "SA",
-      "name_en": "Saudi Arabia",
-      "name_ja": "サウジアラビア",
-      "top_videos_view_sum": 16239208,
-      "videos_count": 10
-    },
-    {
-      "country": "TN",
-      "name_en": "Tunisia",
-      "name_ja": "チュニジア",
-      "top_videos_view_sum": 16239208,
-      "videos_count": 10
-    }
-  ],
+  "country_attribution": "multi (b): a video is counted in every country whose search surfaced it; no per-country ranking (unreliable)",
+  "top_teams": [],
   "top_videos_by_views": [
     {
       "title": "⚽️🌍 DAI DAI FIFA World Cup 2026 (English Translation + Lyrics) Shakira",
@@ -369,6 +39,8 @@
         "SE"
       ],
       "reach": 24,
+      "narration_en": "This video features multilingual lyrics for the official World Cup 2026 anthem by Shakira and Burna Boy. Viewers from many countries expressed excitement for the tournament and appreciation for the song's creativity.",
+      "narration_ja": "シャキーラとバーナ・ボーイによる2026年FIFAワールドカップ公式ソングの多言語歌詞動画です。世界中の視聴者から、大会への期待と楽曲の創造性に対する称賛の声が寄せられています。",
       "views": 9298059,
       "url": "https://www.youtube.com/watch?v=fC7TfYGui8g"
     },
@@ -414,6 +86,8 @@
         "UZ"
       ],
       "reach": 37,
+      "narration_en": "Nora Fatehi, Vegedream, and Sanjoy delivered a highly praised live performance of 'Siir Siir' at the World Cup opening match. The collaboration was met with overwhelming positivity for its global energy and diversity.",
+      "narration_ja": "ワールドカップ開幕戦で披露された『Siir Siir』のライブパフォーマンスは、高い評価を受けています。多国籍なコラボレーションと国際的なエネルギーが、視聴者から絶賛されています。",
       "views": 7095957,
       "url": "https://www.youtube.com/watch?v=9CpVYJQOsOc"
     },
@@ -431,6 +105,8 @@
         "SE"
       ],
       "reach": 9,
+      "narration_en": "This simulation of South Korea versus Czech Republic uses eFootball PES 21 gameplay. The comment section consists primarily of friendly greetings from fans.",
+      "narration_ja": "『eFootball PES 2021』を使用した韓国対チェコ戦のシミュレーション動画です。コメント欄は主にファン同士の友好的な挨拶で溢れています。",
       "views": 4711299,
       "url": "https://www.youtube.com/watch?v=qBqwnR_ODJc"
     },
@@ -442,6 +118,8 @@
         "ZA"
       ],
       "reach": 3,
+      "narration_en": "A viral short featuring football skills and humor that has received exclusively positive feedback. Viewers have found the content entertaining and helpful.",
+      "narration_ja": "フットボールのスキルとユーモアを収めたバイラル動画で、視聴者から非常に好評です。多くのファンがこのコンテンツを面白く、また役に立つと評価しています。",
       "views": 4578875,
       "url": "https://www.youtube.com/watch?v=magzpZmsX_Y"
     },
@@ -463,6 +141,8 @@
         "SE"
       ],
       "reach": 13,
+      "narration_en": "This PES 21 simulation of USA versus Paraguay explores viewer support and excitement for the simulated matchup. Reactions were mixed, with some users raising copyright concerns.",
+      "narration_ja": "『eFootball PES 2021』によるアメリカ対パラグアイのシミュレーション動画です。視聴者からの応援や期待が寄せられる一方、著作権に関する懸念を示す声も見られました。",
       "views": 4258075,
       "url": "https://www.youtube.com/watch?v=Wy_CngjE5c8"
     },
@@ -472,6 +152,8 @@
         "MX"
       ],
       "reach": 1,
+      "narration_en": "This World Cup prediction video for Brazil vs. Morocco sparked a passionate debate in the comments. Users displayed strong national pride and skepticism toward the game's outcome.",
+      "narration_ja": "ブラジル対モロッコ戦のワールドカップ予想動画に対し、コメント欄では熱い議論が交わされています。各国のファンが強い誇りを見せる一方、試合結果の予想には懐疑的な意見も出ています。",
       "views": 3771111,
       "url": "https://www.youtube.com/watch?v=r3i9oIVcn7s"
     },
@@ -482,6 +164,8 @@
         "CA"
       ],
       "reach": 2,
+      "narration_en": "This short video on World Cup winners received critical feedback regarding the depicted gameplay actions. Viewers expressed support for Ronaldo and Portugal while debating the content.",
+      "narration_ja": "ワールドカップ優勝国をテーマにしたこのショート動画には、ゲーム内の動きに対する批判的な意見が寄せられています。クリスティアーノ・ロナウドやポルトガル代表への支持の声と共に、内容に対する議論が活発です。",
       "views": 3585789,
       "url": "https://www.youtube.com/watch?v=weFrWIoOwjs"
     },
@@ -498,6 +182,8 @@
         "TN"
       ],
       "reach": 8,
+      "narration_en": "Highlights of the USA vs. Paraguay match have generated significant interest among Arabic-speaking fans. Viewers praised the tactical performance of the US team while discussing the challenges of watching late-night matches.",
+      "narration_ja": "アメリカ対パラグアイ戦のハイライトは、アラビア語圏の視聴者から高い関心を集めています。アメリカ代表の戦術的なパフォーマンスを称賛する声や、深夜の観戦に関する話題が注目されています。",
       "views": 3553214,
       "url": "https://www.youtube.com/watch?v=DBYnGeiYnV4"
     },
@@ -512,6 +198,8 @@
         "CZ"
       ],
       "reach": 6,
+      "narration_en": "Fans reacted positively to Balogun's brace for the USA against Paraguay in this World Cup highlight. The discussion focused on Tillman’s assist and frustrations regarding match officiating.",
+      "narration_ja": "ワールドカップでのアメリカ対パラグアイ戦、バログンの2得点ハイライトにファンが熱狂しました。コメント欄ではティルマンのアシストが称賛され、一方で審判の判定への不満も議論されています。",
       "views": 3445663,
       "url": "https://www.youtube.com/watch?v=LBxuZvreM2c"
     },
@@ -559,6 +247,8 @@
         "SE"
       ],
       "reach": 39,
+      "narration_en": "Katy Perry's performance of 'Wonder' at the World Cup opening ceremony received widespread acclaim. Viewers praised her live vocals and expressed emotional connection to the lyrics.",
+      "narration_ja": "ワールドカップ開会式でのケイティ・ペリーによる『Wonder』のパフォーマンスは、圧倒的な称賛を浴びています。視聴者は彼女の生歌の質を高く評価し、歌詞から受けた感動を伝えています。",
       "views": 3309926,
       "url": "https://www.youtube.com/watch?v=fhFuPYzOjPA"
     }

@@ -7,338 +7,8 @@
     "likes": 16302670,
     "comments": 449263
   },
-  "country_attribution": "multi (b): a video is counted in every country whose search surfaced it",
-  "videos_by_country": [
-    {
-      "country": "CA",
-      "name_en": "Canada",
-      "name_ja": "カナダ",
-      "top_videos_view_sum": 554783871,
-      "videos_count": 20
-    },
-    {
-      "country": "ZA",
-      "name_en": "South Africa",
-      "name_ja": "南アフリカ",
-      "top_videos_view_sum": 554783871,
-      "videos_count": 20
-    },
-    {
-      "country": "MX",
-      "name_en": "Mexico",
-      "name_ja": "メキシコ",
-      "top_videos_view_sum": 437826288,
-      "videos_count": 20
-    },
-    {
-      "country": "CO",
-      "name_en": "Colombia",
-      "name_ja": "コロンビア",
-      "top_videos_view_sum": 355343827,
-      "videos_count": 5
-    },
-    {
-      "country": "EC",
-      "name_en": "Ecuador",
-      "name_ja": "エクアドル",
-      "top_videos_view_sum": 355343827,
-      "videos_count": 5
-    },
-    {
-      "country": "ES",
-      "name_en": "Spain",
-      "name_ja": "スペイン",
-      "top_videos_view_sum": 355343827,
-      "videos_count": 5
-    },
-    {
-      "country": "PA",
-      "name_en": "Panama",
-      "name_ja": "パナマ",
-      "top_videos_view_sum": 355343827,
-      "videos_count": 5
-    },
-    {
-      "country": "PY",
-      "name_en": "Paraguay",
-      "name_ja": "パラグアイ",
-      "top_videos_view_sum": 355343827,
-      "videos_count": 5
-    },
-    {
-      "country": "UY",
-      "name_en": "Uruguay",
-      "name_ja": "ウルグアイ",
-      "top_videos_view_sum": 355343827,
-      "videos_count": 5
-    },
-    {
-      "country": "AU",
-      "name_en": "Australia",
-      "name_ja": "オーストラリア",
-      "top_videos_view_sum": 343266344,
-      "videos_count": 5
-    },
-    {
-      "country": "GB",
-      "name_en": "England",
-      "name_ja": "イングランド",
-      "top_videos_view_sum": 343266344,
-      "videos_count": 5
-    },
-    {
-      "country": "GH",
-      "name_en": "Ghana",
-      "name_ja": "ガーナ",
-      "top_videos_view_sum": 343266344,
-      "videos_count": 5
-    },
-    {
-      "country": "NZ",
-      "name_en": "New Zealand",
-      "name_ja": "ニュージーランド",
-      "top_videos_view_sum": 343266344,
-      "videos_count": 5
-    },
-    {
-      "country": "US",
-      "name_en": "United States",
-      "name_ja": "アメリカ",
-      "top_videos_view_sum": 343266344,
-      "videos_count": 5
-    },
-    {
-      "country": "CD",
-      "name_en": "DR Congo",
-      "name_ja": "コンゴ民主共和国",
-      "top_videos_view_sum": 291639846,
-      "videos_count": 5
-    },
-    {
-      "country": "CI",
-      "name_en": "Ivory Coast",
-      "name_ja": "コートジボワール",
-      "top_videos_view_sum": 291639846,
-      "videos_count": 5
-    },
-    {
-      "country": "FR",
-      "name_en": "France",
-      "name_ja": "フランス",
-      "top_videos_view_sum": 291639846,
-      "videos_count": 5
-    },
-    {
-      "country": "HT",
-      "name_en": "Haiti",
-      "name_ja": "ハイチ",
-      "top_videos_view_sum": 291639846,
-      "videos_count": 5
-    },
-    {
-      "country": "SN",
-      "name_en": "Senegal",
-      "name_ja": "セネガル",
-      "top_videos_view_sum": 291639846,
-      "videos_count": 5
-    },
-    {
-      "country": "UZ",
-      "name_en": "Uzbekistan",
-      "name_ja": "ウズベキスタン",
-      "top_videos_view_sum": 286891441,
-      "videos_count": 5
-    },
-    {
-      "country": "BA",
-      "name_en": "Bosnia and Herzegovina",
-      "name_ja": "ボスニア・ヘルツェゴビナ",
-      "top_videos_view_sum": 280472048,
-      "videos_count": 20
-    },
-    {
-      "country": "AR",
-      "name_en": "Argentina",
-      "name_ja": "アルゼンチン",
-      "top_videos_view_sum": 273437855,
-      "videos_count": 5
-    },
-    {
-      "country": "TR",
-      "name_en": "Turkey",
-      "name_ja": "トルコ",
-      "top_videos_view_sum": 273437855,
-      "videos_count": 5
-    },
-    {
-      "country": "CZ",
-      "name_en": "Czech Republic",
-      "name_ja": "チェコ",
-      "top_videos_view_sum": 261856588,
-      "videos_count": 20
-    },
-    {
-      "country": "AT",
-      "name_en": "Austria",
-      "name_ja": "オーストリア",
-      "top_videos_view_sum": 238542259,
-      "videos_count": 5
-    },
-    {
-      "country": "DE",
-      "name_en": "Germany",
-      "name_ja": "ドイツ",
-      "top_videos_view_sum": 238542259,
-      "videos_count": 5
-    },
-    {
-      "country": "BR",
-      "name_en": "Brazil",
-      "name_ja": "ブラジル",
-      "top_videos_view_sum": 238385838,
-      "videos_count": 20
-    },
-    {
-      "country": "HR",
-      "name_en": "Croatia",
-      "name_ja": "クロアチア",
-      "top_videos_view_sum": 236534851,
-      "videos_count": 5
-    },
-    {
-      "country": "NO",
-      "name_en": "Norway",
-      "name_ja": "ノルウェー",
-      "top_videos_view_sum": 236534851,
-      "videos_count": 5
-    },
-    {
-      "country": "BE",
-      "name_en": "Belgium",
-      "name_ja": "ベルギー",
-      "top_videos_view_sum": 217919391,
-      "videos_count": 5
-    },
-    {
-      "country": "CW",
-      "name_en": "Curaçao",
-      "name_ja": "キュラソー",
-      "top_videos_view_sum": 217919391,
-      "videos_count": 5
-    },
-    {
-      "country": "NL",
-      "name_en": "Netherlands",
-      "name_ja": "オランダ",
-      "top_videos_view_sum": 217919391,
-      "videos_count": 5
-    },
-    {
-      "country": "CH",
-      "name_en": "Switzerland",
-      "name_ja": "スイス",
-      "top_videos_view_sum": 212183172,
-      "videos_count": 20
-    },
-    {
-      "country": "CV",
-      "name_en": "Cape Verde",
-      "name_ja": "カーボベルデ",
-      "top_videos_view_sum": 208440634,
-      "videos_count": 5
-    },
-    {
-      "country": "PT",
-      "name_en": "Portugal",
-      "name_ja": "ポルトガル",
-      "top_videos_view_sum": 208440634,
-      "videos_count": 5
-    },
-    {
-      "country": "SE",
-      "name_en": "Sweden",
-      "name_ja": "スウェーデン",
-      "top_videos_view_sum": 208021948,
-      "videos_count": 5
-    },
-    {
-      "country": "IR",
-      "name_en": "Iran",
-      "name_ja": "イラン",
-      "top_videos_view_sum": 206066214,
-      "videos_count": 5
-    },
-    {
-      "country": "KR",
-      "name_en": "South Korea",
-      "name_ja": "韓国",
-      "top_videos_view_sum": 200464563,
-      "videos_count": 20
-    },
-    {
-      "country": "QA",
-      "name_en": "Qatar",
-      "name_ja": "カタール",
-      "top_videos_view_sum": 138558355,
-      "videos_count": 20
-    },
-    {
-      "country": "MA",
-      "name_en": "Morocco",
-      "name_ja": "モロッコ",
-      "top_videos_view_sum": 138365873,
-      "videos_count": 20
-    },
-    {
-      "country": "EG",
-      "name_en": "Egypt",
-      "name_ja": "エジプト",
-      "top_videos_view_sum": 111521874,
-      "videos_count": 5
-    },
-    {
-      "country": "IQ",
-      "name_en": "Iraq",
-      "name_ja": "イラク",
-      "top_videos_view_sum": 111521874,
-      "videos_count": 5
-    },
-    {
-      "country": "JO",
-      "name_en": "Jordan",
-      "name_ja": "ヨルダン",
-      "top_videos_view_sum": 111521874,
-      "videos_count": 5
-    },
-    {
-      "country": "SA",
-      "name_en": "Saudi Arabia",
-      "name_ja": "サウジアラビア",
-      "top_videos_view_sum": 111521874,
-      "videos_count": 5
-    },
-    {
-      "country": "TN",
-      "name_en": "Tunisia",
-      "name_ja": "チュニジア",
-      "top_videos_view_sum": 111521874,
-      "videos_count": 5
-    },
-    {
-      "country": "DZ",
-      "name_en": "Algeria",
-      "name_ja": "アルジェリア",
-      "top_videos_view_sum": 97787486,
-      "videos_count": 5
-    },
-    {
-      "country": "JP",
-      "name_en": "Japan",
-      "name_ja": "日本",
-      "top_videos_view_sum": 66710457,
-      "videos_count": 20
-    }
-  ],
+  "country_attribution": "multi (b): a video is counted in every country whose search surfaced it; no per-country ranking (unreliable)",
+  "top_teams": [],
   "top_videos_by_views": [
     {
       "title": "Next Starts Now | Hyundai X FIFA World Cup 2026™",
@@ -371,6 +41,8 @@
         "UZ"
       ],
       "reach": 26,
+      "narration_en": "This Hyundai World Cup campaign sparks global debate over AI-powered technology and the future of football. Reactions are split between admiration for the ad's quality and skepticism toward its digital themes.",
+      "narration_ja": "ヒョンデによるW杯キャンペーン動画は、AI技術とサッカーの未来を巡り世界中で議論を呼んでいます。動画のクオリティを称賛する声と、AI技術への不信感を示す声が入り混じっています。",
       "views": 133041859,
       "url": "https://www.youtube.com/watch?v=aVGDC2KPRfA"
     },
@@ -386,6 +58,8 @@
         "ZA"
       ],
       "reach": 7,
+      "narration_en": "Featuring stars like Ronaldo and Messi, this short has drawn criticism from English-speaking audiences regarding the accuracy of its content. Many viewers are debating whether the edits are AI-generated and expressing disappointment.",
+      "narration_ja": "ロナウドやメッシらが登場するこのショート動画は、内容の正確性を巡り英語圏の視聴者から批判を受けています。AI加工への疑念や内容に対する不満が多く投稿されています。",
       "views": 99119051,
       "url": "https://www.youtube.com/watch?v=w-wd3WAGwbs"
     },
@@ -424,6 +98,8 @@
         "ZA"
       ],
       "reach": 30,
+      "narration_en": "Nike's star-studded 'Rip The Script' ad is a massive hit, earning widespread praise for its cinematic quality and nostalgic feel. The cameo-heavy production is generating mostly positive buzz across international markets.",
+      "narration_ja": "豪華スターが共演するナイキの広告『Rip The Script』は、その映画のようなクオリティと懐かしさで圧倒的な高評価を得ています。多くの著名人の登場が、世界中の視聴者を魅了しています。",
       "views": 75938050,
       "url": "https://www.youtube.com/watch?v=IyZ1WIua_1s"
     },
@@ -451,6 +127,8 @@
         "ZA"
       ],
       "reach": 19,
+      "narration_en": "This surreal Haaland parody blends CGI and AI to create a humorous and uncanny football experience. Viewers are generally entertained, though some express mixed feelings about the nature of the AI-generated imagery.",
+      "narration_ja": "ハーランドを題材にしたこのシュールなパロディ動画は、CGIとAIを融合させた独特の映像が特徴です。視聴者は概ね楽しんでいますが、AIによる映像表現に対して複雑な反応も見られます。",
       "views": 65709813,
       "url": "https://www.youtube.com/watch?v=i9uK9A3Omyg"
     },
@@ -471,6 +149,8 @@
         "ZA"
       ],
       "reach": 12,
+      "narration_en": "A playful AI-generated parody of Haaland and Mbappé has trended for its amusing 'bubble' theme. While many find the characters cute and funny, others are wary of the AI animation's surreal quality.",
+      "narration_ja": "ハーランドとエムバペをAIでパロディ化した動画は、「シャボン玉」をテーマにした演出で注目を集めています。キャラクターの可愛さを評価する声がある一方、AIアニメーション特有の不気味さを指摘する視聴者もいます。",
       "views": 57738890,
       "url": "https://www.youtube.com/watch?v=W1WdY5OwOF4"
     },
@@ -493,6 +173,8 @@
         "ZA"
       ],
       "reach": 14,
+      "narration_en": "This AI-generated speed test parody has received a neutral-leaning reception as audiences weigh its entertainment value against fears of AI advancement. Viewers are debating the uncanny movements and the reliability of generated content.",
+      "narration_ja": "AIを用いた速度比較パロディ動画は、エンタメとしての楽しさとAI技術への警戒感の間で、中立的な評価を受けています。AI特有の不自然な動きや生成コンテンツの信頼性について議論されています。",
       "views": 53218047,
       "url": "https://www.youtube.com/watch?v=O8HdHWCmu48"
     },
@@ -503,6 +185,8 @@
         "ZA"
       ],
       "reach": 2,
+      "narration_en": "This video covering Neymar’s injury highlights ongoing public fascination with AI video evolution. Viewers are impressed by the visual quality while remaining concerned about the difficulty of distinguishing real footage from AI simulations.",
+      "narration_ja": "ネイマールの怪我を扱ったこの動画は、AI映像技術の進化に対する世間の強い関心を集めています。高い映像品質に驚く一方で、実写とAI生成動画の区別がつかなくなることへの懸念も寄せられています。",
       "views": 46752778,
       "url": "https://www.youtube.com/watch?v=ccgvEpKSl9o"
     },
@@ -518,6 +202,8 @@
         "ZA"
       ],
       "reach": 7,
+      "narration_en": "IShowSpeed's 'World Cup (Champions)' track has become a viral favorite, with many fans arguing it deserves to be the official tournament anthem. Viewers are praising its energy and ability to unite global football fans.",
+      "narration_ja": "IShowSpeedの楽曲『World Cup (Champions)』は、W杯の公式ソングにふさわしいという声が上がるほど大きな反響を呼んでいます。そのエネルギーと世界中のファンを一つにする熱量が絶賛されています。",
       "views": 44760540,
       "url": "https://www.youtube.com/watch?v=vrY1THC_NQE"
     },
@@ -529,6 +215,8 @@
         "UZ"
       ],
       "reach": 3,
+      "narration_en": "Featuring Nora Fatehi and Sanjoy, this official FIFA World Cup 2026 track is trending primarily in German and Uzbek-speaking regions. The reception is highly positive, highlighting Moroccan cultural pride and its record-breaking views.",
+      "narration_ja": "ノラ・ファテヒとサンジョイが参加したW杯公式曲は、主にドイツ語圏やウズベキスタンでトレンド入りしています。モロッコの文化への誇りや記録的な再生数が注目され、非常に高い評価を得ています。",
       "views": 41042454,
       "url": "https://www.youtube.com/watch?v=afiNbSxg7aw"
     },
@@ -547,6 +235,8 @@
         "ZA"
       ],
       "reach": 10,
+      "narration_en": "This edited tribute to Ronaldo and the upcoming 2026 World Cup has garnered strong support from fans. The video is praised for its animation style, though some viewers pointed out that the footage is recycled.",
+      "narration_ja": "ロナウドと2026年W杯をテーマにしたこの編集動画は、多くのファンから熱烈な支持を受けています。アニメーションのようなスタイルが高く評価されていますが、映像が過去のものであることを指摘する声もあります。",
       "views": 39035046,
       "url": "https://www.youtube.com/watch?v=sY6dyCqPROo"
     }

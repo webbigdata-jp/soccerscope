@@ -7,338 +7,8 @@
     "likes": 12530450,
     "comments": 194432
   },
-  "country_attribution": "multi (b): a video is counted in every country whose search surfaced it",
-  "videos_by_country": [
-    {
-      "country": "CA",
-      "name_en": "Canada",
-      "name_ja": "カナダ",
-      "top_videos_view_sum": 328629319,
-      "videos_count": 20
-    },
-    {
-      "country": "ZA",
-      "name_en": "South Africa",
-      "name_ja": "南アフリカ",
-      "top_videos_view_sum": 328629319,
-      "videos_count": 20
-    },
-    {
-      "country": "NZ",
-      "name_en": "New Zealand",
-      "name_ja": "ニュージーランド",
-      "top_videos_view_sum": 228741545,
-      "videos_count": 5
-    },
-    {
-      "country": "AU",
-      "name_en": "Australia",
-      "name_ja": "オーストラリア",
-      "top_videos_view_sum": 210453575,
-      "videos_count": 5
-    },
-    {
-      "country": "GB",
-      "name_en": "England",
-      "name_ja": "イングランド",
-      "top_videos_view_sum": 210453575,
-      "videos_count": 5
-    },
-    {
-      "country": "GH",
-      "name_en": "Ghana",
-      "name_ja": "ガーナ",
-      "top_videos_view_sum": 210453575,
-      "videos_count": 5
-    },
-    {
-      "country": "US",
-      "name_en": "United States",
-      "name_ja": "アメリカ",
-      "top_videos_view_sum": 186821979,
-      "videos_count": 5
-    },
-    {
-      "country": "FR",
-      "name_en": "France",
-      "name_ja": "フランス",
-      "top_videos_view_sum": 164890699,
-      "videos_count": 5
-    },
-    {
-      "country": "SN",
-      "name_en": "Senegal",
-      "name_ja": "セネガル",
-      "top_videos_view_sum": 164890699,
-      "videos_count": 5
-    },
-    {
-      "country": "CD",
-      "name_en": "DR Congo",
-      "name_ja": "コンゴ民主共和国",
-      "top_videos_view_sum": 157386848,
-      "videos_count": 5
-    },
-    {
-      "country": "CI",
-      "name_en": "Ivory Coast",
-      "name_ja": "コートジボワール",
-      "top_videos_view_sum": 157386848,
-      "videos_count": 5
-    },
-    {
-      "country": "HT",
-      "name_en": "Haiti",
-      "name_ja": "ハイチ",
-      "top_videos_view_sum": 157386848,
-      "videos_count": 5
-    },
-    {
-      "country": "MX",
-      "name_en": "Mexico",
-      "name_ja": "メキシコ",
-      "top_videos_view_sum": 148641199,
-      "videos_count": 20
-    },
-    {
-      "country": "BA",
-      "name_en": "Bosnia and Herzegovina",
-      "name_ja": "ボスニア・ヘルツェゴビナ",
-      "top_videos_view_sum": 108298962,
-      "videos_count": 20
-    },
-    {
-      "country": "CZ",
-      "name_en": "Czech Republic",
-      "name_ja": "チェコ",
-      "top_videos_view_sum": 107884898,
-      "videos_count": 20
-    },
-    {
-      "country": "CH",
-      "name_en": "Switzerland",
-      "name_ja": "スイス",
-      "top_videos_view_sum": 103197396,
-      "videos_count": 20
-    },
-    {
-      "country": "KR",
-      "name_en": "South Korea",
-      "name_ja": "韓国",
-      "top_videos_view_sum": 102861719,
-      "videos_count": 20
-    },
-    {
-      "country": "BR",
-      "name_en": "Brazil",
-      "name_ja": "ブラジル",
-      "top_videos_view_sum": 90000738,
-      "videos_count": 20
-    },
-    {
-      "country": "JP",
-      "name_en": "Japan",
-      "name_ja": "日本",
-      "top_videos_view_sum": 89788268,
-      "videos_count": 20
-    },
-    {
-      "country": "AR",
-      "name_en": "Argentina",
-      "name_ja": "アルゼンチン",
-      "top_videos_view_sum": 83679042,
-      "videos_count": 5
-    },
-    {
-      "country": "CO",
-      "name_en": "Colombia",
-      "name_ja": "コロンビア",
-      "top_videos_view_sum": 83679042,
-      "videos_count": 5
-    },
-    {
-      "country": "EC",
-      "name_en": "Ecuador",
-      "name_ja": "エクアドル",
-      "top_videos_view_sum": 83679042,
-      "videos_count": 5
-    },
-    {
-      "country": "ES",
-      "name_en": "Spain",
-      "name_ja": "スペイン",
-      "top_videos_view_sum": 83679042,
-      "videos_count": 5
-    },
-    {
-      "country": "PA",
-      "name_en": "Panama",
-      "name_ja": "パナマ",
-      "top_videos_view_sum": 83679042,
-      "videos_count": 5
-    },
-    {
-      "country": "PY",
-      "name_en": "Paraguay",
-      "name_ja": "パラグアイ",
-      "top_videos_view_sum": 83679042,
-      "videos_count": 5
-    },
-    {
-      "country": "BE",
-      "name_en": "Belgium",
-      "name_ja": "ベルギー",
-      "top_videos_view_sum": 80730363,
-      "videos_count": 5
-    },
-    {
-      "country": "CW",
-      "name_en": "Curaçao",
-      "name_ja": "キュラソー",
-      "top_videos_view_sum": 80730363,
-      "videos_count": 5
-    },
-    {
-      "country": "HR",
-      "name_en": "Croatia",
-      "name_ja": "クロアチア",
-      "top_videos_view_sum": 80730363,
-      "videos_count": 5
-    },
-    {
-      "country": "IR",
-      "name_en": "Iran",
-      "name_ja": "イラン",
-      "top_videos_view_sum": 80730363,
-      "videos_count": 5
-    },
-    {
-      "country": "NL",
-      "name_en": "Netherlands",
-      "name_ja": "オランダ",
-      "top_videos_view_sum": 80730363,
-      "videos_count": 5
-    },
-    {
-      "country": "NO",
-      "name_en": "Norway",
-      "name_ja": "ノルウェー",
-      "top_videos_view_sum": 80730363,
-      "videos_count": 5
-    },
-    {
-      "country": "QA",
-      "name_en": "Qatar",
-      "name_ja": "カタール",
-      "top_videos_view_sum": 80099213,
-      "videos_count": 20
-    },
-    {
-      "country": "UY",
-      "name_en": "Uruguay",
-      "name_ja": "ウルグアイ",
-      "top_videos_view_sum": 76778551,
-      "videos_count": 5
-    },
-    {
-      "country": "TR",
-      "name_en": "Turkey",
-      "name_ja": "トルコ",
-      "top_videos_view_sum": 75401222,
-      "videos_count": 5
-    },
-    {
-      "country": "UZ",
-      "name_en": "Uzbekistan",
-      "name_ja": "ウズベキスタン",
-      "top_videos_view_sum": 75401222,
-      "videos_count": 5
-    },
-    {
-      "country": "AT",
-      "name_en": "Austria",
-      "name_ja": "オーストリア",
-      "top_videos_view_sum": 74563059,
-      "videos_count": 5
-    },
-    {
-      "country": "DE",
-      "name_en": "Germany",
-      "name_ja": "ドイツ",
-      "top_videos_view_sum": 74563059,
-      "videos_count": 5
-    },
-    {
-      "country": "MA",
-      "name_en": "Morocco",
-      "name_ja": "モロッコ",
-      "top_videos_view_sum": 72450955,
-      "videos_count": 20
-    },
-    {
-      "country": "SE",
-      "name_en": "Sweden",
-      "name_ja": "スウェーデン",
-      "top_videos_view_sum": 64968523,
-      "videos_count": 5
-    },
-    {
-      "country": "CV",
-      "name_en": "Cape Verde",
-      "name_ja": "カーボベルデ",
-      "top_videos_view_sum": 64161365,
-      "videos_count": 5
-    },
-    {
-      "country": "PT",
-      "name_en": "Portugal",
-      "name_ja": "ポルトガル",
-      "top_videos_view_sum": 64161365,
-      "videos_count": 5
-    },
-    {
-      "country": "EG",
-      "name_en": "Egypt",
-      "name_ja": "エジプト",
-      "top_videos_view_sum": 49689522,
-      "videos_count": 5
-    },
-    {
-      "country": "JO",
-      "name_en": "Jordan",
-      "name_ja": "ヨルダン",
-      "top_videos_view_sum": 49689522,
-      "videos_count": 5
-    },
-    {
-      "country": "DZ",
-      "name_en": "Algeria",
-      "name_ja": "アルジェリア",
-      "top_videos_view_sum": 49551945,
-      "videos_count": 5
-    },
-    {
-      "country": "IQ",
-      "name_en": "Iraq",
-      "name_ja": "イラク",
-      "top_videos_view_sum": 49551945,
-      "videos_count": 5
-    },
-    {
-      "country": "SA",
-      "name_en": "Saudi Arabia",
-      "name_ja": "サウジアラビア",
-      "top_videos_view_sum": 49551945,
-      "videos_count": 5
-    },
-    {
-      "country": "TN",
-      "name_en": "Tunisia",
-      "name_ja": "チュニジア",
-      "top_videos_view_sum": 49551945,
-      "videos_count": 5
-    }
-  ],
+  "country_attribution": "multi (b): a video is counted in every country whose search surfaced it; no per-country ranking (unreliable)",
+  "top_teams": [],
   "top_videos_by_views": [
     {
       "title": "Other Players Respecting Moments ❤️",
@@ -351,6 +21,8 @@
         "ZA"
       ],
       "reach": 6,
+      "narration_en": "This heartwarming video highlights athletes demonstrating sportsmanship and quick reflexes. It trended across six countries, with viewers praising the chivalry shown, though some questioned the inclusion of certain clips.",
+      "narration_ja": "スポーツマンシップや選手の反射神経を捉えた心温まる動画です。6カ国でトレンド入りし、選手の親切な振る舞いが称賛された一方、一部のクリップの選定には疑問の声も上がりました。",
       "views": 52351688,
       "url": "https://www.youtube.com/watch?v=ecDKEwdEbL8"
     },
@@ -360,6 +32,8 @@
         "NZ"
       ],
       "reach": 1,
+      "narration_en": "Featuring player highlights and edited skills, this video captured attention in New Zealand. While fans enjoyed the creative editing and featured stars like Lamine Yamal, there were also discussions surrounding fan bias and rough play.",
+      "narration_ja": "選手のプレー集を編集したこの動画は、ニュージーランドで注目を集めました。ラミン・ヤマルなどのスター選手やクリエイティブな編集が楽しまれた一方で、ファンの偏りや荒いプレーについても議論が交わされました。",
       "views": 49921412,
       "url": "https://www.youtube.com/watch?v=NzJKxvt2dCI"
     },
@@ -380,6 +54,8 @@
         "NZ"
       ],
       "reach": 12,
+      "narration_en": "This unboxing video of Premier League-branded footballs faced significant criticism from a diverse international audience. Comments largely focused on dissatisfaction with the ball handling, inflation methods, and overall video quality.",
+      "narration_ja": "プレミアリーグ公式のサッカーボールを紹介する開封動画ですが、視聴者からは厳しい反応が目立ちました。ボールの扱い方や空気の入れ方、そして動画の品質に対する不満がコメントの大部分を占めています。",
       "views": 46088686,
       "url": "https://www.youtube.com/watch?v=t8dvL5Ztmh4"
     },
@@ -395,6 +71,8 @@
         "NZ"
       ],
       "reach": 7,
+      "narration_en": "A viral shorts compilation featuring global stars like Messi, Ronaldo, and Mbappe, trending across seven countries. The video serves as a quick showcase of talent for English-speaking football fans.",
+      "narration_ja": "メッシ、ロナウド、エムバペといった世界的なスター選手をまとめたショート動画で、7カ国でトレンド入りしました。英語圏のサッカーファンに向けて、各選手の才能を短く紹介する内容です。",
       "views": 46035874,
       "url": "https://www.youtube.com/watch?v=vZpqZiqHz1s"
     },
@@ -415,6 +93,8 @@
         "NZ"
       ],
       "reach": 12,
+      "narration_en": "This video about Cristiano Ronaldo and his fans trended in multiple regions but drew mixed reactions. Many viewers expressed skepticism, pointing out that the narrative appears fabricated and lacks factual accuracy.",
+      "narration_ja": "クリスティアーノ・ロナウドとファンを題材にした動画ですが、複数の地域でトレンド入りしたものの評価は分かれました。事実とは異なる演出であるとの指摘が多く、内容の信憑性に対して懐疑的な声が寄せられています。",
       "views": 34343885,
       "url": "https://www.youtube.com/watch?v=LZrGmLup72M"
     },
@@ -431,6 +111,8 @@
         "ZA"
       ],
       "reach": 8,
+      "narration_en": "A popular comedy edit featuring football players that gained traction in eight countries. Viewers largely praised the creative editing and humor, though a segment expressed discomfort with the parodying of players.",
+      "narration_ja": "選手をコミカルに編集した動画が8カ国で人気を博しました。創造的な編集とユーモアが多くの視聴者に高く評価されましたが、選手を揶揄するような内容に不快感を示す声も一部で見られました。",
       "views": 31633442,
       "url": "https://www.youtube.com/watch?v=WMktc0FzQQQ"
     },
@@ -447,6 +129,8 @@
         "ZA"
       ],
       "reach": 8,
+      "narration_en": "A video featuring a creator reading Japanese names during a football match received high praise for its cultural respect and pronunciation. It trended across eight countries with a highly positive audience sentiment.",
+      "narration_ja": "サッカーの試合中に日本語の名前を読み上げる動画で、文化への敬意と正確な発音が称賛されました。8カ国でトレンド入りし、視聴者からは非常にポジティブな反応を得ています。",
       "views": 28720092,
       "url": "https://www.youtube.com/watch?v=g3Vpb_RAPRE"
     },
@@ -486,6 +170,8 @@
         "ZA"
       ],
       "reach": 31,
+      "narration_en": "This tribute to the Argentina national team and Lionel Messi resonated deeply across 20 countries. Fans shared their excitement for the World Cup and appreciation for the music, despite some requests for missing players.",
+      "narration_ja": "アルゼンチン代表とリオネル・メッシを称えるこの動画は、20カ国で広く支持されました。ワールドカップへの期待や楽曲に対する称賛が多く、一部では未登場の選手を求めるリクエストも寄せられました。",
       "views": 24129591,
       "url": "https://www.youtube.com/watch?v=-WumdEpyDZQ"
     },
@@ -501,6 +187,8 @@
         "ZA"
       ],
       "reach": 7,
+      "narration_en": "This short featuring Khaby Lame and various football stars trended in several regions. While viewers enjoyed the entertainment value and collaborations, some debated the usage of AI and the absence of Cristiano Ronaldo.",
+      "narration_ja": "カビ・ラメとスター選手が共演するショート動画で、複数の地域でトレンド入りしました。エンターテインメント性やコラボレーションは好評でしたが、AI利用の是非やロナウドが出演していないことについて議論が起きました。",
       "views": 24104594,
       "url": "https://www.youtube.com/watch?v=uP1JCkZY-zQ"
     },
@@ -521,6 +209,8 @@
         "MX"
       ],
       "reach": 12,
+      "narration_en": "Featuring Erling Haaland and Jürgen Klopp, this advertisement for the 2026 World Cup saw varied reactions across Europe and Mexico. Fans discussed the creative content, while some expressed criticism regarding the host nation and product quality.",
+      "narration_ja": "アーリング・ハーランドとユルゲン・クロップが出演する2026年ワールドカップの広告は、欧州やメキシコで注目されました。創造的な内容が話題になった一方、開催地や製品の品質に対する批判的な声も見られました。",
       "views": 24064176,
       "url": "https://www.youtube.com/watch?v=w0oRTljtx0o"
     }

@@ -7,338 +7,8 @@
     "likes": 3150097,
     "comments": 124440
   },
-  "country_attribution": "multi (b): a video is counted in every country whose search surfaced it",
-  "videos_by_country": [
-    {
-      "country": "AR",
-      "name_en": "Argentina",
-      "name_ja": "アルゼンチン",
-      "top_videos_view_sum": 40759041,
-      "videos_count": 50
-    },
-    {
-      "country": "EC",
-      "name_en": "Ecuador",
-      "name_ja": "エクアドル",
-      "top_videos_view_sum": 40759041,
-      "videos_count": 50
-    },
-    {
-      "country": "ES",
-      "name_en": "Spain",
-      "name_ja": "スペイン",
-      "top_videos_view_sum": 40759041,
-      "videos_count": 50
-    },
-    {
-      "country": "MX",
-      "name_en": "Mexico",
-      "name_ja": "メキシコ",
-      "top_videos_view_sum": 40759041,
-      "videos_count": 50
-    },
-    {
-      "country": "PY",
-      "name_en": "Paraguay",
-      "name_ja": "パラグアイ",
-      "top_videos_view_sum": 40759041,
-      "videos_count": 50
-    },
-    {
-      "country": "UY",
-      "name_en": "Uruguay",
-      "name_ja": "ウルグアイ",
-      "top_videos_view_sum": 40759041,
-      "videos_count": 50
-    },
-    {
-      "country": "CW",
-      "name_en": "Curaçao",
-      "name_ja": "キュラソー",
-      "top_videos_view_sum": 40676129,
-      "videos_count": 50
-    },
-    {
-      "country": "CZ",
-      "name_en": "Czech Republic",
-      "name_ja": "チェコ",
-      "top_videos_view_sum": 40521038,
-      "videos_count": 50
-    },
-    {
-      "country": "BA",
-      "name_en": "Bosnia and Herzegovina",
-      "name_ja": "ボスニア・ヘルツェゴビナ",
-      "top_videos_view_sum": 40521038,
-      "videos_count": 50
-    },
-    {
-      "country": "NO",
-      "name_en": "Norway",
-      "name_ja": "ノルウェー",
-      "top_videos_view_sum": 40521038,
-      "videos_count": 50
-    },
-    {
-      "country": "SE",
-      "name_en": "Sweden",
-      "name_ja": "スウェーデン",
-      "top_videos_view_sum": 40521038,
-      "videos_count": 50
-    },
-    {
-      "country": "GH",
-      "name_en": "Ghana",
-      "name_ja": "ガーナ",
-      "top_videos_view_sum": 40165846,
-      "videos_count": 50
-    },
-    {
-      "country": "ZA",
-      "name_en": "South Africa",
-      "name_ja": "南アフリカ",
-      "top_videos_view_sum": 40165846,
-      "videos_count": 50
-    },
-    {
-      "country": "NZ",
-      "name_en": "New Zealand",
-      "name_ja": "ニュージーランド",
-      "top_videos_view_sum": 40165846,
-      "videos_count": 50
-    },
-    {
-      "country": "AU",
-      "name_en": "Australia",
-      "name_ja": "オーストラリア",
-      "top_videos_view_sum": 39023509,
-      "videos_count": 50
-    },
-    {
-      "country": "CA",
-      "name_en": "Canada",
-      "name_ja": "カナダ",
-      "top_videos_view_sum": 39023509,
-      "videos_count": 50
-    },
-    {
-      "country": "CO",
-      "name_en": "Colombia",
-      "name_ja": "コロンビア",
-      "top_videos_view_sum": 37997785,
-      "videos_count": 50
-    },
-    {
-      "country": "PA",
-      "name_en": "Panama",
-      "name_ja": "パナマ",
-      "top_videos_view_sum": 37997785,
-      "videos_count": 50
-    },
-    {
-      "country": "BE",
-      "name_en": "Belgium",
-      "name_ja": "ベルギー",
-      "top_videos_view_sum": 37609318,
-      "videos_count": 50
-    },
-    {
-      "country": "NL",
-      "name_en": "Netherlands",
-      "name_ja": "オランダ",
-      "top_videos_view_sum": 37609318,
-      "videos_count": 50
-    },
-    {
-      "country": "GB",
-      "name_en": "England",
-      "name_ja": "イングランド",
-      "top_videos_view_sum": 37115559,
-      "videos_count": 50
-    },
-    {
-      "country": "CI",
-      "name_en": "Ivory Coast",
-      "name_ja": "コートジボワール",
-      "top_videos_view_sum": 36775819,
-      "videos_count": 50
-    },
-    {
-      "country": "FR",
-      "name_en": "France",
-      "name_ja": "フランス",
-      "top_videos_view_sum": 36775819,
-      "videos_count": 50
-    },
-    {
-      "country": "SN",
-      "name_en": "Senegal",
-      "name_ja": "セネガル",
-      "top_videos_view_sum": 36775819,
-      "videos_count": 50
-    },
-    {
-      "country": "CH",
-      "name_en": "Switzerland",
-      "name_ja": "スイス",
-      "top_videos_view_sum": 36727395,
-      "videos_count": 50
-    },
-    {
-      "country": "US",
-      "name_en": "United States",
-      "name_ja": "アメリカ",
-      "top_videos_view_sum": 36644435,
-      "videos_count": 50
-    },
-    {
-      "country": "HT",
-      "name_en": "Haiti",
-      "name_ja": "ハイチ",
-      "top_videos_view_sum": 36114539,
-      "videos_count": 50
-    },
-    {
-      "country": "CD",
-      "name_en": "DR Congo",
-      "name_ja": "コンゴ民主共和国",
-      "top_videos_view_sum": 34745373,
-      "videos_count": 50
-    },
-    {
-      "country": "AT",
-      "name_en": "Austria",
-      "name_ja": "オーストリア",
-      "top_videos_view_sum": 33583478,
-      "videos_count": 50
-    },
-    {
-      "country": "DE",
-      "name_en": "Germany",
-      "name_ja": "ドイツ",
-      "top_videos_view_sum": 33583478,
-      "videos_count": 50
-    },
-    {
-      "country": "UZ",
-      "name_en": "Uzbekistan",
-      "name_ja": "ウズベキスタン",
-      "top_videos_view_sum": 33147117,
-      "videos_count": 50
-    },
-    {
-      "country": "JP",
-      "name_en": "Japan",
-      "name_ja": "日本",
-      "top_videos_view_sum": 30122431,
-      "videos_count": 50
-    },
-    {
-      "country": "CV",
-      "name_en": "Cape Verde",
-      "name_ja": "カーボベルデ",
-      "top_videos_view_sum": 29150836,
-      "videos_count": 50
-    },
-    {
-      "country": "KR",
-      "name_en": "South Korea",
-      "name_ja": "韓国",
-      "top_videos_view_sum": 28296904,
-      "videos_count": 50
-    },
-    {
-      "country": "DZ",
-      "name_en": "Algeria",
-      "name_ja": "アルジェリア",
-      "top_videos_view_sum": 26564076,
-      "videos_count": 50
-    },
-    {
-      "country": "EG",
-      "name_en": "Egypt",
-      "name_ja": "エジプト",
-      "top_videos_view_sum": 26564076,
-      "videos_count": 50
-    },
-    {
-      "country": "IQ",
-      "name_en": "Iraq",
-      "name_ja": "イラク",
-      "top_videos_view_sum": 26564076,
-      "videos_count": 50
-    },
-    {
-      "country": "JO",
-      "name_en": "Jordan",
-      "name_ja": "ヨルダン",
-      "top_videos_view_sum": 26564076,
-      "videos_count": 50
-    },
-    {
-      "country": "MA",
-      "name_en": "Morocco",
-      "name_ja": "モロッコ",
-      "top_videos_view_sum": 26564076,
-      "videos_count": 50
-    },
-    {
-      "country": "SA",
-      "name_en": "Saudi Arabia",
-      "name_ja": "サウジアラビア",
-      "top_videos_view_sum": 26564076,
-      "videos_count": 50
-    },
-    {
-      "country": "TN",
-      "name_en": "Tunisia",
-      "name_ja": "チュニジア",
-      "top_videos_view_sum": 26564076,
-      "videos_count": 50
-    },
-    {
-      "country": "QA",
-      "name_en": "Qatar",
-      "name_ja": "カタール",
-      "top_videos_view_sum": 26558400,
-      "videos_count": 50
-    },
-    {
-      "country": "BR",
-      "name_en": "Brazil",
-      "name_ja": "ブラジル",
-      "top_videos_view_sum": 26083728,
-      "videos_count": 50
-    },
-    {
-      "country": "HR",
-      "name_en": "Croatia",
-      "name_ja": "クロアチア",
-      "top_videos_view_sum": 23923723,
-      "videos_count": 50
-    },
-    {
-      "country": "TR",
-      "name_en": "Turkey",
-      "name_ja": "トルコ",
-      "top_videos_view_sum": 23853448,
-      "videos_count": 50
-    },
-    {
-      "country": "PT",
-      "name_en": "Portugal",
-      "name_ja": "ポルトガル",
-      "top_videos_view_sum": 23829551,
-      "videos_count": 50
-    },
-    {
-      "country": "IR",
-      "name_en": "Iran",
-      "name_ja": "イラン",
-      "top_videos_view_sum": 23636077,
-      "videos_count": 50
-    }
-  ],
+  "country_attribution": "multi (b): a video is counted in every country whose search surfaced it; no per-country ranking (unreliable)",
+  "top_teams": [],
   "top_videos_by_views": [
     {
       "title": "ملخص مباراة الأرجنتين والجزائر | دور المجموعات - كأس العالم FIFA 2026™",
@@ -353,6 +23,8 @@
         "TN"
       ],
       "reach": 8,
+      "narration_en": "This recap of Argentina's 3-0 World Cup win over Algeria trended across the Arab world. Viewers praised Messi's hat-trick while sharing diverse comments on match-day devotion and team performance.",
+      "narration_ja": "アルゼンチンがアルジェリアを3-0で下したワールドカップのハイライト動画は、アラブ諸国でトレンド入りしました。メッシのハットトリックへの称賛に加え、試合観戦と礼拝の関わりなど多様なコメントが寄せられました。",
       "views": 8904843,
       "url": "https://www.youtube.com/watch?v=dBvbm65tYRk"
     },
@@ -384,6 +56,8 @@
         "UY"
       ],
       "reach": 23,
+      "narration_en": "This World Cup 2026 prediction video trended globally, sparking enthusiastic debate about national teams and video trends. Sentiment was largely positive, though some viewers criticized specific staging choices.",
+      "narration_ja": "ワールドカップ2026の優勝国を予想するこの動画は世界中でトレンド入りし、各代表チームへの熱い声援や動画の演出について活発な議論が交わされました。概ね好意的な反応ですが、演出の一部には批判的な声もありました。",
       "views": 6791274,
       "url": "https://www.youtube.com/watch?v=wcd5EgSq6Sg"
     },
@@ -399,6 +73,8 @@
         "SE"
       ],
       "reach": 7,
+      "narration_en": "Trending across several European countries, this video features preparations for the 2026 Women's T20 World Cup. Viewers expressed support for the creator and enjoyed the celebratory atmosphere.",
+      "narration_ja": "欧州各国でトレンド入りした本動画は、2026年女子T20ワールドカップへの期待感を伝えています。投稿者への応援や、お祝いムードを楽しむ視聴者のコメントが目立ちました。",
       "views": 6297022,
       "url": "https://www.youtube.com/watch?v=XY1X3-tHwWE"
     },
@@ -422,6 +98,8 @@
         "US"
       ],
       "reach": 15,
+      "narration_en": "This surreal Haaland parody video trended in over a dozen countries across the Americas and beyond. The content received high praise for its humor and creative technical execution.",
+      "narration_ja": "ハーランドを題材にしたシュールなパロディ動画が、南北アメリカを含む世界十数カ国でトレンド入りしました。そのユーモアと技術的なクリエイティブさが高く評価されています。",
       "views": 5005178,
       "url": "https://www.youtube.com/watch?v=UdS02lz0BRw"
     },
@@ -437,6 +115,8 @@
         "ZA"
       ],
       "reach": 7,
+      "narration_en": "This high-quality football tribute edit trended in English-speaking nations, earning praise for its editing and emotional impact. Fans shared sentimental reactions to legendary players like Messi and Ronaldo.",
+      "narration_ja": "伝説的な選手たちを称える高品質な編集動画が、英語圏でトレンド入りしました。メッシやロナウドといったスター選手への感情的な反応と共に、映像編集技術が高く評価されています。",
       "views": 4918032,
       "url": "https://www.youtube.com/watch?v=hjV03L90lRI"
     },
@@ -466,6 +146,8 @@
         "UZ"
       ],
       "reach": 21,
+      "narration_en": "Trending across 20 countries, this match highlight reel of Argentina's victory over Algeria generated huge support for Messi. While most viewers loved the hat-trick, some pointed out flaws in the editing quality.",
+      "narration_ja": "20カ国でトレンド入りしたアルゼンチン対アルジェリアのハイライト動画は、メッシへの熱狂的な支持を集めました。ハットトリックを称える声が多い一方、編集の質に関する指摘も一部で見られました。",
       "views": 4879700,
       "url": "https://www.youtube.com/watch?v=fkuQQTnxP1o"
     },
@@ -486,6 +168,8 @@
         "ZA"
       ],
       "reach": 12,
+      "narration_en": "This video featuring acrobatic football throw-in attempts trended in various regions. Reactions were mixed, with many viewers finding the content humorous while others remained skeptical of its authenticity.",
+      "narration_ja": "アクロバティックなスローインに挑戦するこの動画は、様々な地域でトレンド入りしました。ユーモラスで面白いと評価する声がある一方、映像の真偽を疑う反応もあり、意見が分かれました。",
       "views": 4515134,
       "url": "https://www.youtube.com/watch?v=j46OdFPUGgY"
     },
@@ -501,6 +185,8 @@
         "SE"
       ],
       "reach": 7,
+      "narration_en": "This unboxing video for the official 2026 World Cup match ball trended in European regions. Viewers engaged in playful banter and expressed strong support for the Brazil and Portugal teams.",
+      "narration_ja": "2026年ワールドカップ公式試合球の開封動画が、欧州地域でトレンド入りしました。ブラジルやポルトガル代表への熱いエールが送られたほか、視聴者間で冗談を交えたやり取りも見られました。",
       "views": 4383613,
       "url": "https://www.youtube.com/watch?v=JKMk7VHXVsM"
     },
@@ -546,6 +232,8 @@
         "FR"
       ],
       "reach": 37,
+      "narration_en": "This clip of a brilliant New Zealand team goal trended worldwide, sparking widespread excitement. While the goal was highly praised, some commenters debated the fairness of the play.",
+      "narration_ja": "ニュージーランド代表の鮮やかなチームゴールを収めた動画が世界中でトレンド入りし、大きな反響を呼びました。ゴール自体は高く評価されたものの、プレーの妥当性について議論する視聴者もいました。",
       "views": 4374205,
       "url": "https://www.youtube.com/watch?v=Xf4VMBYX2-Q"
     },
@@ -593,6 +281,8 @@
         "UZ"
       ],
       "reach": 39,
+      "narration_en": "A PES 2026 simulation of the Argentina vs Algeria match trended globally. Fans showed great enthusiasm for Messi and the Argentine team, though some users clarified for others that it was not real footage.",
+      "narration_ja": "ウイニングイレブンによるアルゼンチン対アルジェリアのシミュレーション動画が世界中でトレンド入りしました。メッシやアルゼンチンへの熱い応援が寄せられた一方、これは実際の試合ではないと補足する視聴者も見受けられました。",
       "views": 4210343,
       "url": "https://www.youtube.com/watch?v=kCmFivCFnQg"
     }
