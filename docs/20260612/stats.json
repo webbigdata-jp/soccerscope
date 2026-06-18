@@ -1,156 +1,552 @@
 {
   "generated": "2026-06-12",
   "videos_analyzed": 110,
-  "countries": 14,
+  "countries": 47,
   "totals": {
     "views": 1454209879,
     "likes": 16302670,
     "comments": 449263
   },
+  "country_attribution": "multi (b): a video is counted in every country whose search surfaced it",
   "videos_by_country": [
     {
-      "country": "KR",
-      "name_en": "South Korea",
-      "name_ja": "韓国",
-      "count": 18
-    },
-    {
-      "country": "JP",
-      "name_en": "Japan",
-      "name_ja": "日本",
-      "count": 15
+      "country": "CA",
+      "name_en": "Canada",
+      "name_ja": "カナダ",
+      "top_videos_view_sum": 554783871,
+      "videos_count": 20
     },
     {
       "country": "ZA",
       "name_en": "South Africa",
       "name_ja": "南アフリカ",
-      "count": 13
+      "top_videos_view_sum": 554783871,
+      "videos_count": 20
     },
     {
       "country": "MX",
       "name_en": "Mexico",
       "name_ja": "メキシコ",
-      "count": 11
+      "top_videos_view_sum": 437826288,
+      "videos_count": 20
     },
     {
-      "country": "CH",
-      "name_en": "Switzerland",
-      "name_ja": "スイス",
-      "count": 11
+      "country": "CO",
+      "name_en": "Colombia",
+      "name_ja": "コロンビア",
+      "top_videos_view_sum": 355343827,
+      "videos_count": 5
     },
     {
-      "country": "BR",
-      "name_en": "Brazil",
-      "name_ja": "ブラジル",
-      "count": 9
+      "country": "EC",
+      "name_en": "Ecuador",
+      "name_ja": "エクアドル",
+      "top_videos_view_sum": 355343827,
+      "videos_count": 5
     },
     {
-      "country": "MA",
-      "name_en": "Morocco",
-      "name_ja": "モロッコ",
-      "count": 9
+      "country": "ES",
+      "name_en": "Spain",
+      "name_ja": "スペイン",
+      "top_videos_view_sum": 355343827,
+      "videos_count": 5
     },
     {
-      "country": "QA",
-      "name_en": "Qatar",
-      "name_ja": "カタール",
-      "count": 9
+      "country": "PA",
+      "name_en": "Panama",
+      "name_ja": "パナマ",
+      "top_videos_view_sum": 355343827,
+      "videos_count": 5
     },
     {
-      "country": "CZ",
-      "name_en": "Czech Republic",
-      "name_ja": "チェコ",
-      "count": 4
+      "country": "PY",
+      "name_en": "Paraguay",
+      "name_ja": "パラグアイ",
+      "top_videos_view_sum": 355343827,
+      "videos_count": 5
     },
     {
-      "country": "BA",
-      "name_en": "Bosnia and Herzegovina",
-      "name_ja": "ボスニア・ヘルツェゴビナ",
-      "count": 4
+      "country": "UY",
+      "name_en": "Uruguay",
+      "name_ja": "ウルグアイ",
+      "top_videos_view_sum": 355343827,
+      "videos_count": 5
     },
     {
-      "country": "DZ",
-      "name_en": "Algeria",
-      "name_ja": "アルジェリア",
-      "count": 3
+      "country": "AU",
+      "name_en": "Australia",
+      "name_ja": "オーストラリア",
+      "top_videos_view_sum": 343266344,
+      "videos_count": 5
+    },
+    {
+      "country": "GB",
+      "name_en": "England",
+      "name_ja": "イングランド",
+      "top_videos_view_sum": 343266344,
+      "videos_count": 5
+    },
+    {
+      "country": "GH",
+      "name_en": "Ghana",
+      "name_ja": "ガーナ",
+      "top_videos_view_sum": 343266344,
+      "videos_count": 5
+    },
+    {
+      "country": "NZ",
+      "name_en": "New Zealand",
+      "name_ja": "ニュージーランド",
+      "top_videos_view_sum": 343266344,
+      "videos_count": 5
+    },
+    {
+      "country": "US",
+      "name_en": "United States",
+      "name_ja": "アメリカ",
+      "top_videos_view_sum": 343266344,
+      "videos_count": 5
+    },
+    {
+      "country": "CD",
+      "name_en": "DR Congo",
+      "name_ja": "コンゴ民主共和国",
+      "top_videos_view_sum": 291639846,
+      "videos_count": 5
     },
     {
       "country": "CI",
       "name_en": "Ivory Coast",
       "name_ja": "コートジボワール",
-      "count": 2
+      "top_videos_view_sum": 291639846,
+      "videos_count": 5
+    },
+    {
+      "country": "FR",
+      "name_en": "France",
+      "name_ja": "フランス",
+      "top_videos_view_sum": 291639846,
+      "videos_count": 5
+    },
+    {
+      "country": "HT",
+      "name_en": "Haiti",
+      "name_ja": "ハイチ",
+      "top_videos_view_sum": 291639846,
+      "videos_count": 5
+    },
+    {
+      "country": "SN",
+      "name_en": "Senegal",
+      "name_ja": "セネガル",
+      "top_videos_view_sum": 291639846,
+      "videos_count": 5
+    },
+    {
+      "country": "UZ",
+      "name_en": "Uzbekistan",
+      "name_ja": "ウズベキスタン",
+      "top_videos_view_sum": 286891441,
+      "videos_count": 5
+    },
+    {
+      "country": "BA",
+      "name_en": "Bosnia and Herzegovina",
+      "name_ja": "ボスニア・ヘルツェゴビナ",
+      "top_videos_view_sum": 280472048,
+      "videos_count": 20
+    },
+    {
+      "country": "AR",
+      "name_en": "Argentina",
+      "name_ja": "アルゼンチン",
+      "top_videos_view_sum": 273437855,
+      "videos_count": 5
+    },
+    {
+      "country": "TR",
+      "name_en": "Turkey",
+      "name_ja": "トルコ",
+      "top_videos_view_sum": 273437855,
+      "videos_count": 5
+    },
+    {
+      "country": "CZ",
+      "name_en": "Czech Republic",
+      "name_ja": "チェコ",
+      "top_videos_view_sum": 261856588,
+      "videos_count": 20
+    },
+    {
+      "country": "AT",
+      "name_en": "Austria",
+      "name_ja": "オーストリア",
+      "top_videos_view_sum": 238542259,
+      "videos_count": 5
     },
     {
       "country": "DE",
       "name_en": "Germany",
       "name_ja": "ドイツ",
-      "count": 1
+      "top_videos_view_sum": 238542259,
+      "videos_count": 5
+    },
+    {
+      "country": "BR",
+      "name_en": "Brazil",
+      "name_ja": "ブラジル",
+      "top_videos_view_sum": 238385838,
+      "videos_count": 20
+    },
+    {
+      "country": "HR",
+      "name_en": "Croatia",
+      "name_ja": "クロアチア",
+      "top_videos_view_sum": 236534851,
+      "videos_count": 5
+    },
+    {
+      "country": "NO",
+      "name_en": "Norway",
+      "name_ja": "ノルウェー",
+      "top_videos_view_sum": 236534851,
+      "videos_count": 5
+    },
+    {
+      "country": "BE",
+      "name_en": "Belgium",
+      "name_ja": "ベルギー",
+      "top_videos_view_sum": 217919391,
+      "videos_count": 5
+    },
+    {
+      "country": "CW",
+      "name_en": "Curaçao",
+      "name_ja": "キュラソー",
+      "top_videos_view_sum": 217919391,
+      "videos_count": 5
+    },
+    {
+      "country": "NL",
+      "name_en": "Netherlands",
+      "name_ja": "オランダ",
+      "top_videos_view_sum": 217919391,
+      "videos_count": 5
+    },
+    {
+      "country": "CH",
+      "name_en": "Switzerland",
+      "name_ja": "スイス",
+      "top_videos_view_sum": 212183172,
+      "videos_count": 20
+    },
+    {
+      "country": "CV",
+      "name_en": "Cape Verde",
+      "name_ja": "カーボベルデ",
+      "top_videos_view_sum": 208440634,
+      "videos_count": 5
+    },
+    {
+      "country": "PT",
+      "name_en": "Portugal",
+      "name_ja": "ポルトガル",
+      "top_videos_view_sum": 208440634,
+      "videos_count": 5
+    },
+    {
+      "country": "SE",
+      "name_en": "Sweden",
+      "name_ja": "スウェーデン",
+      "top_videos_view_sum": 208021948,
+      "videos_count": 5
     },
     {
       "country": "IR",
       "name_en": "Iran",
       "name_ja": "イラン",
-      "count": 1
+      "top_videos_view_sum": 206066214,
+      "videos_count": 5
+    },
+    {
+      "country": "KR",
+      "name_en": "South Korea",
+      "name_ja": "韓国",
+      "top_videos_view_sum": 200464563,
+      "videos_count": 20
+    },
+    {
+      "country": "QA",
+      "name_en": "Qatar",
+      "name_ja": "カタール",
+      "top_videos_view_sum": 138558355,
+      "videos_count": 20
+    },
+    {
+      "country": "MA",
+      "name_en": "Morocco",
+      "name_ja": "モロッコ",
+      "top_videos_view_sum": 138365873,
+      "videos_count": 20
+    },
+    {
+      "country": "EG",
+      "name_en": "Egypt",
+      "name_ja": "エジプト",
+      "top_videos_view_sum": 111521874,
+      "videos_count": 5
+    },
+    {
+      "country": "IQ",
+      "name_en": "Iraq",
+      "name_ja": "イラク",
+      "top_videos_view_sum": 111521874,
+      "videos_count": 5
+    },
+    {
+      "country": "JO",
+      "name_en": "Jordan",
+      "name_ja": "ヨルダン",
+      "top_videos_view_sum": 111521874,
+      "videos_count": 5
+    },
+    {
+      "country": "SA",
+      "name_en": "Saudi Arabia",
+      "name_ja": "サウジアラビア",
+      "top_videos_view_sum": 111521874,
+      "videos_count": 5
+    },
+    {
+      "country": "TN",
+      "name_en": "Tunisia",
+      "name_ja": "チュニジア",
+      "top_videos_view_sum": 111521874,
+      "videos_count": 5
+    },
+    {
+      "country": "DZ",
+      "name_en": "Algeria",
+      "name_ja": "アルジェリア",
+      "top_videos_view_sum": 97787486,
+      "videos_count": 5
+    },
+    {
+      "country": "JP",
+      "name_en": "Japan",
+      "name_ja": "日本",
+      "top_videos_view_sum": 66710457,
+      "videos_count": 20
     }
   ],
   "top_videos_by_views": [
     {
       "title": "Next Starts Now | Hyundai X FIFA World Cup 2026™",
-      "country": "KR",
+      "countries": [
+        "AT",
+        "BA",
+        "BE",
+        "BR",
+        "CH",
+        "CV",
+        "CW",
+        "CZ",
+        "DE",
+        "HR",
+        "IR",
+        "KR",
+        "NL",
+        "NO",
+        "PT",
+        "SE",
+        "AR",
+        "CO",
+        "EC",
+        "ES",
+        "MX",
+        "PA",
+        "PY",
+        "TR",
+        "UY",
+        "UZ"
+      ],
+      "reach": 26,
       "views": 133041859,
       "url": "https://www.youtube.com/watch?v=aVGDC2KPRfA"
     },
     {
       "title": "Yildiz VS Lehmann VS Yamal VS Messi VS Ronaldo",
-      "country": "ZA",
+      "countries": [
+        "AU",
+        "CA",
+        "GB",
+        "GH",
+        "NZ",
+        "US",
+        "ZA"
+      ],
+      "reach": 7,
       "views": 99119051,
       "url": "https://www.youtube.com/watch?v=w-wd3WAGwbs"
     },
     {
       "title": "Rip The Script | Nike Football",
-      "country": "MX",
+      "countries": [
+        "AR",
+        "CD",
+        "CI",
+        "CO",
+        "DZ",
+        "EC",
+        "EG",
+        "ES",
+        "FR",
+        "HT",
+        "IQ",
+        "JO",
+        "MA",
+        "MX",
+        "PA",
+        "PY",
+        "QA",
+        "SA",
+        "SN",
+        "TN",
+        "TR",
+        "UY",
+        "UZ",
+        "AU",
+        "CA",
+        "GB",
+        "GH",
+        "NZ",
+        "US",
+        "ZA"
+      ],
+      "reach": 30,
       "views": 75938050,
       "url": "https://www.youtube.com/watch?v=IyZ1WIua_1s"
     },
     {
       "title": "That’s What Best Friends Are For 😂 #football #haaland #parody",
-      "country": "CI",
+      "countries": [
+        "CD",
+        "CI",
+        "FR",
+        "HT",
+        "SN",
+        "CO",
+        "EC",
+        "ES",
+        "MX",
+        "PA",
+        "PY",
+        "UY",
+        "AU",
+        "CA",
+        "GB",
+        "GH",
+        "NZ",
+        "US",
+        "ZA"
+      ],
+      "reach": 19,
       "views": 65709813,
       "url": "https://www.youtube.com/watch?v=i9uK9A3Omyg"
     },
     {
       "title": "Haaland vs Mbappé: Bubble Edition 😂🫧 #football #haaland #parody",
-      "country": "CI",
+      "countries": [
+        "CD",
+        "CI",
+        "FR",
+        "HT",
+        "SN",
+        "AU",
+        "CA",
+        "GB",
+        "GH",
+        "NZ",
+        "US",
+        "ZA"
+      ],
+      "reach": 12,
       "views": 57738890,
       "url": "https://www.youtube.com/watch?v=W1WdY5OwOF4"
     },
     {
       "title": "Who Was Actually Faster? 👀⚡ #football #haaland #parody",
-      "country": "MX",
+      "countries": [
+        "CD",
+        "CI",
+        "CO",
+        "EC",
+        "ES",
+        "FR",
+        "HT",
+        "MX",
+        "PA",
+        "PY",
+        "SN",
+        "UY",
+        "CA",
+        "ZA"
+      ],
+      "reach": 14,
       "views": 53218047,
       "url": "https://www.youtube.com/watch?v=O8HdHWCmu48"
     },
     {
       "title": "The Reason Behind Neymar's Latest Injury ⚽🤕🚑",
-      "country": "ZA",
+      "countries": [
+        "CA",
+        "ZA"
+      ],
+      "reach": 2,
       "views": 46752778,
       "url": "https://www.youtube.com/watch?v=ccgvEpKSl9o"
     },
     {
       "title": "IShowSpeed - World Cup (Champions) [Official Music Video]",
-      "country": "ZA",
+      "countries": [
+        "AU",
+        "CA",
+        "GB",
+        "GH",
+        "NZ",
+        "US",
+        "ZA"
+      ],
+      "reach": 7,
       "views": 44760540,
       "url": "https://www.youtube.com/watch?v=vrY1THC_NQE"
     },
     {
       "title": "Nora Fatehi, Vegedream, Sanjoy, FIFA Sound - Siir Siir (FIFA World Cup 2026™) [Official Music Video]",
-      "country": "DE",
+      "countries": [
+        "AT",
+        "DE",
+        "UZ"
+      ],
+      "reach": 3,
       "views": 41042454,
       "url": "https://www.youtube.com/watch?v=afiNbSxg7aw"
     },
     {
       "title": "Ronaldo Reacts To 2026 World Cup 🏆😶",
-      "country": "BA",
+      "countries": [
+        "BA",
+        "HR",
+        "NO",
+        "CD",
+        "CI",
+        "FR",
+        "HT",
+        "SN",
+        "CA",
+        "ZA"
+      ],
+      "reach": 10,
       "views": 39035046,
       "url": "https://www.youtube.com/watch?v=sY6dyCqPROo"
     }

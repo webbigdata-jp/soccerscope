@@ -1,0 +1,690 @@
+{
+  "generated": "2026-06-18",
+  "videos_analyzed": 291,
+  "countries": 47,
+  "totals": {
+    "views": 272539942,
+    "likes": 3150097,
+    "comments": 124440
+  },
+  "country_attribution": "multi (b): a video is counted in every country whose search surfaced it",
+  "videos_by_country": [
+    {
+      "country": "AR",
+      "name_en": "Argentina",
+      "name_ja": "アルゼンチン",
+      "top_videos_view_sum": 40759041,
+      "videos_count": 50
+    },
+    {
+      "country": "EC",
+      "name_en": "Ecuador",
+      "name_ja": "エクアドル",
+      "top_videos_view_sum": 40759041,
+      "videos_count": 50
+    },
+    {
+      "country": "ES",
+      "name_en": "Spain",
+      "name_ja": "スペイン",
+      "top_videos_view_sum": 40759041,
+      "videos_count": 50
+    },
+    {
+      "country": "MX",
+      "name_en": "Mexico",
+      "name_ja": "メキシコ",
+      "top_videos_view_sum": 40759041,
+      "videos_count": 50
+    },
+    {
+      "country": "PY",
+      "name_en": "Paraguay",
+      "name_ja": "パラグアイ",
+      "top_videos_view_sum": 40759041,
+      "videos_count": 50
+    },
+    {
+      "country": "UY",
+      "name_en": "Uruguay",
+      "name_ja": "ウルグアイ",
+      "top_videos_view_sum": 40759041,
+      "videos_count": 50
+    },
+    {
+      "country": "CW",
+      "name_en": "Curaçao",
+      "name_ja": "キュラソー",
+      "top_videos_view_sum": 40676129,
+      "videos_count": 50
+    },
+    {
+      "country": "CZ",
+      "name_en": "Czech Republic",
+      "name_ja": "チェコ",
+      "top_videos_view_sum": 40521038,
+      "videos_count": 50
+    },
+    {
+      "country": "BA",
+      "name_en": "Bosnia and Herzegovina",
+      "name_ja": "ボスニア・ヘルツェゴビナ",
+      "top_videos_view_sum": 40521038,
+      "videos_count": 50
+    },
+    {
+      "country": "NO",
+      "name_en": "Norway",
+      "name_ja": "ノルウェー",
+      "top_videos_view_sum": 40521038,
+      "videos_count": 50
+    },
+    {
+      "country": "SE",
+      "name_en": "Sweden",
+      "name_ja": "スウェーデン",
+      "top_videos_view_sum": 40521038,
+      "videos_count": 50
+    },
+    {
+      "country": "GH",
+      "name_en": "Ghana",
+      "name_ja": "ガーナ",
+      "top_videos_view_sum": 40165846,
+      "videos_count": 50
+    },
+    {
+      "country": "ZA",
+      "name_en": "South Africa",
+      "name_ja": "南アフリカ",
+      "top_videos_view_sum": 40165846,
+      "videos_count": 50
+    },
+    {
+      "country": "NZ",
+      "name_en": "New Zealand",
+      "name_ja": "ニュージーランド",
+      "top_videos_view_sum": 40165846,
+      "videos_count": 50
+    },
+    {
+      "country": "AU",
+      "name_en": "Australia",
+      "name_ja": "オーストラリア",
+      "top_videos_view_sum": 39023509,
+      "videos_count": 50
+    },
+    {
+      "country": "CA",
+      "name_en": "Canada",
+      "name_ja": "カナダ",
+      "top_videos_view_sum": 39023509,
+      "videos_count": 50
+    },
+    {
+      "country": "CO",
+      "name_en": "Colombia",
+      "name_ja": "コロンビア",
+      "top_videos_view_sum": 37997785,
+      "videos_count": 50
+    },
+    {
+      "country": "PA",
+      "name_en": "Panama",
+      "name_ja": "パナマ",
+      "top_videos_view_sum": 37997785,
+      "videos_count": 50
+    },
+    {
+      "country": "BE",
+      "name_en": "Belgium",
+      "name_ja": "ベルギー",
+      "top_videos_view_sum": 37609318,
+      "videos_count": 50
+    },
+    {
+      "country": "NL",
+      "name_en": "Netherlands",
+      "name_ja": "オランダ",
+      "top_videos_view_sum": 37609318,
+      "videos_count": 50
+    },
+    {
+      "country": "GB",
+      "name_en": "England",
+      "name_ja": "イングランド",
+      "top_videos_view_sum": 37115559,
+      "videos_count": 50
+    },
+    {
+      "country": "CI",
+      "name_en": "Ivory Coast",
+      "name_ja": "コートジボワール",
+      "top_videos_view_sum": 36775819,
+      "videos_count": 50
+    },
+    {
+      "country": "FR",
+      "name_en": "France",
+      "name_ja": "フランス",
+      "top_videos_view_sum": 36775819,
+      "videos_count": 50
+    },
+    {
+      "country": "SN",
+      "name_en": "Senegal",
+      "name_ja": "セネガル",
+      "top_videos_view_sum": 36775819,
+      "videos_count": 50
+    },
+    {
+      "country": "CH",
+      "name_en": "Switzerland",
+      "name_ja": "スイス",
+      "top_videos_view_sum": 36727395,
+      "videos_count": 50
+    },
+    {
+      "country": "US",
+      "name_en": "United States",
+      "name_ja": "アメリカ",
+      "top_videos_view_sum": 36644435,
+      "videos_count": 50
+    },
+    {
+      "country": "HT",
+      "name_en": "Haiti",
+      "name_ja": "ハイチ",
+      "top_videos_view_sum": 36114539,
+      "videos_count": 50
+    },
+    {
+      "country": "CD",
+      "name_en": "DR Congo",
+      "name_ja": "コンゴ民主共和国",
+      "top_videos_view_sum": 34745373,
+      "videos_count": 50
+    },
+    {
+      "country": "AT",
+      "name_en": "Austria",
+      "name_ja": "オーストリア",
+      "top_videos_view_sum": 33583478,
+      "videos_count": 50
+    },
+    {
+      "country": "DE",
+      "name_en": "Germany",
+      "name_ja": "ドイツ",
+      "top_videos_view_sum": 33583478,
+      "videos_count": 50
+    },
+    {
+      "country": "UZ",
+      "name_en": "Uzbekistan",
+      "name_ja": "ウズベキスタン",
+      "top_videos_view_sum": 33147117,
+      "videos_count": 50
+    },
+    {
+      "country": "JP",
+      "name_en": "Japan",
+      "name_ja": "日本",
+      "top_videos_view_sum": 30122431,
+      "videos_count": 50
+    },
+    {
+      "country": "CV",
+      "name_en": "Cape Verde",
+      "name_ja": "カーボベルデ",
+      "top_videos_view_sum": 29150836,
+      "videos_count": 50
+    },
+    {
+      "country": "KR",
+      "name_en": "South Korea",
+      "name_ja": "韓国",
+      "top_videos_view_sum": 28296904,
+      "videos_count": 50
+    },
+    {
+      "country": "DZ",
+      "name_en": "Algeria",
+      "name_ja": "アルジェリア",
+      "top_videos_view_sum": 26564076,
+      "videos_count": 50
+    },
+    {
+      "country": "EG",
+      "name_en": "Egypt",
+      "name_ja": "エジプト",
+      "top_videos_view_sum": 26564076,
+      "videos_count": 50
+    },
+    {
+      "country": "IQ",
+      "name_en": "Iraq",
+      "name_ja": "イラク",
+      "top_videos_view_sum": 26564076,
+      "videos_count": 50
+    },
+    {
+      "country": "JO",
+      "name_en": "Jordan",
+      "name_ja": "ヨルダン",
+      "top_videos_view_sum": 26564076,
+      "videos_count": 50
+    },
+    {
+      "country": "MA",
+      "name_en": "Morocco",
+      "name_ja": "モロッコ",
+      "top_videos_view_sum": 26564076,
+      "videos_count": 50
+    },
+    {
+      "country": "SA",
+      "name_en": "Saudi Arabia",
+      "name_ja": "サウジアラビア",
+      "top_videos_view_sum": 26564076,
+      "videos_count": 50
+    },
+    {
+      "country": "TN",
+      "name_en": "Tunisia",
+      "name_ja": "チュニジア",
+      "top_videos_view_sum": 26564076,
+      "videos_count": 50
+    },
+    {
+      "country": "QA",
+      "name_en": "Qatar",
+      "name_ja": "カタール",
+      "top_videos_view_sum": 26558400,
+      "videos_count": 50
+    },
+    {
+      "country": "BR",
+      "name_en": "Brazil",
+      "name_ja": "ブラジル",
+      "top_videos_view_sum": 26083728,
+      "videos_count": 50
+    },
+    {
+      "country": "HR",
+      "name_en": "Croatia",
+      "name_ja": "クロアチア",
+      "top_videos_view_sum": 23923723,
+      "videos_count": 50
+    },
+    {
+      "country": "TR",
+      "name_en": "Turkey",
+      "name_ja": "トルコ",
+      "top_videos_view_sum": 23853448,
+      "videos_count": 50
+    },
+    {
+      "country": "PT",
+      "name_en": "Portugal",
+      "name_ja": "ポルトガル",
+      "top_videos_view_sum": 23829551,
+      "videos_count": 50
+    },
+    {
+      "country": "IR",
+      "name_en": "Iran",
+      "name_ja": "イラン",
+      "top_videos_view_sum": 23636077,
+      "videos_count": 50
+    }
+  ],
+  "top_videos_by_views": [
+    {
+      "title": "ملخص مباراة الأرجنتين والجزائر | دور المجموعات - كأس العالم FIFA 2026™",
+      "countries": [
+        "DZ",
+        "EG",
+        "IQ",
+        "JO",
+        "MA",
+        "QA",
+        "SA",
+        "TN"
+      ],
+      "reach": 8,
+      "views": 8904843,
+      "url": "https://www.youtube.com/watch?v=dBvbm65tYRk"
+    },
+    {
+      "title": "Who will win the World Cup 2026🏆👀 #worldcup #worldcup2026",
+      "countries": [
+        "HR",
+        "IR",
+        "AT",
+        "DE",
+        "JP",
+        "BE",
+        "CH",
+        "KR",
+        "NL",
+        "BA",
+        "NO",
+        "SE",
+        "UZ",
+        "CO",
+        "CW",
+        "CZ",
+        "PA",
+        "AR",
+        "EC",
+        "ES",
+        "MX",
+        "PY",
+        "UY"
+      ],
+      "reach": 23,
+      "views": 6791274,
+      "url": "https://www.youtube.com/watch?v=wcd5EgSq6Sg"
+    },
+    {
+      "title": "Cricket icc womens t20 world cup 2026 Dekhne Ki Tyari 🤩 #shorts #preetigirdhar #ytshorts",
+      "countries": [
+        "BE",
+        "NL",
+        "BA",
+        "CW",
+        "CZ",
+        "NO",
+        "SE"
+      ],
+      "reach": 7,
+      "views": 6297022,
+      "url": "https://www.youtube.com/watch?v=XY1X3-tHwWE"
+    },
+    {
+      "title": "Haaland Didn’t Understand the Lollipop 🍭💀 #parody #football #haaland #norway",
+      "countries": [
+        "CA",
+        "CO",
+        "GB",
+        "NZ",
+        "PA",
+        "AR",
+        "AU",
+        "EC",
+        "ES",
+        "GH",
+        "MX",
+        "PY",
+        "UY",
+        "ZA",
+        "US"
+      ],
+      "reach": 15,
+      "views": 5005178,
+      "url": "https://www.youtube.com/watch?v=UdS02lz0BRw"
+    },
+    {
+      "title": "\"I Don't like Football...\"😭🥀 - Ronaldo, Messi, Neymar Edit | #edit #worldcup #football",
+      "countries": [
+        "AU",
+        "CA",
+        "GB",
+        "GH",
+        "NZ",
+        "US",
+        "ZA"
+      ],
+      "reach": 7,
+      "views": 4918032,
+      "url": "https://www.youtube.com/watch?v=hjV03L90lRI"
+    },
+    {
+      "title": "Argentina Vs Algeria 3-0 FIFA World Cup Goals Full highlights 2026 | Messi Epic Goals | Messi Hatric",
+      "countries": [
+        "AR",
+        "BA",
+        "BR",
+        "CD",
+        "CH",
+        "CI",
+        "CV",
+        "CW",
+        "CZ",
+        "EC",
+        "ES",
+        "FR",
+        "HT",
+        "JP",
+        "MX",
+        "NO",
+        "PY",
+        "SE",
+        "SN",
+        "UY",
+        "UZ"
+      ],
+      "reach": 21,
+      "views": 4879700,
+      "url": "https://www.youtube.com/watch?v=fkuQQTnxP1o"
+    },
+    {
+      "title": "Women vs Man Throw in Skills in Football 🤣",
+      "countries": [
+        "CA",
+        "CD",
+        "CI",
+        "FR",
+        "GB",
+        "HT",
+        "NZ",
+        "SN",
+        "US",
+        "AU",
+        "GH",
+        "ZA"
+      ],
+      "reach": 12,
+      "views": 4515134,
+      "url": "https://www.youtube.com/watch?v=j46OdFPUGgY"
+    },
+    {
+      "title": "FIFA WORLD CUP 2026 OFFICIAL MATCH BALL 🦵⚽🏆#shorts #youtubeshorts #unboxing #ball #football #funny",
+      "countries": [
+        "BE",
+        "CW",
+        "CZ",
+        "NL",
+        "BA",
+        "NO",
+        "SE"
+      ],
+      "reach": 7,
+      "views": 4383613,
+      "url": "https://www.youtube.com/watch?v=JKMk7VHXVsM"
+    },
+    {
+      "title": "New Zealand score a brilliant team goal in the FIFA World Cup 🇳🇿⚽️ #FIFAWorldCupOnYT",
+      "countries": [
+        "HR",
+        "IR",
+        "JP",
+        "TR",
+        "KR",
+        "PT",
+        "AT",
+        "BR",
+        "DE",
+        "CH",
+        "UZ",
+        "BE",
+        "CO",
+        "CV",
+        "MX",
+        "NL",
+        "PA",
+        "PY",
+        "AR",
+        "BA",
+        "CA",
+        "CW",
+        "CZ",
+        "EC",
+        "ES",
+        "NO",
+        "SE",
+        "UY",
+        "AU",
+        "HT",
+        "NZ",
+        "CD",
+        "GH",
+        "SN",
+        "ZA",
+        "CI",
+        "FR"
+      ],
+      "reach": 37,
+      "views": 4374205,
+      "url": "https://www.youtube.com/watch?v=Xf4VMBYX2-Q"
+    },
+    {
+      "title": "ARGENTINA vs ALGERIA - FIFA World Cup 2026 group stage | Match Today | Simulation PES",
+      "countries": [
+        "AT",
+        "AU",
+        "BE",
+        "CA",
+        "CO",
+        "DE",
+        "GB",
+        "GH",
+        "HR",
+        "IR",
+        "KR",
+        "NL",
+        "NZ",
+        "PA",
+        "PT",
+        "TR",
+        "US",
+        "ZA",
+        "AR",
+        "BA",
+        "BR",
+        "CD",
+        "CH",
+        "CI",
+        "CV",
+        "CW",
+        "CZ",
+        "EC",
+        "ES",
+        "FR",
+        "HT",
+        "JP",
+        "MX",
+        "NO",
+        "PY",
+        "SE",
+        "SN",
+        "UY",
+        "UZ"
+      ],
+      "reach": 39,
+      "views": 4210343,
+      "url": "https://www.youtube.com/watch?v=kCmFivCFnQg"
+    }
+  ],
+  "sentiment_avg": {
+    "positive": 57.516363636363636,
+    "negative": 22.443636363636365,
+    "neutral": 20.04
+  },
+  "comments_analyzed": 16172,
+  "top_positive_themes": [
+    {
+      "theme_en": "Messi is the GOAT",
+      "theme_ja": "メッシは史上最高の選手（GOAT）",
+      "mentions": 285
+    },
+    {
+      "theme_en": "Mbappe's dominant performance in the World Cup",
+      "theme_ja": "エムバペのワールドカップでの圧倒的なパフォーマンス",
+      "mentions": 125
+    },
+    {
+      "theme_en": "Enthusiastic support for Cristiano Ronaldo",
+      "theme_ja": "クリスティアーノ・ロナウドへの熱狂的な支持",
+      "mentions": 95
+    },
+    {
+      "theme_en": "Hopes and prayers for victory",
+      "theme_ja": "勝利への期待と祈り",
+      "mentions": 93
+    },
+    {
+      "theme_en": "Support for Cristiano Ronaldo",
+      "theme_ja": "クリスティアーノ・ロナウドへの応援",
+      "mentions": 90
+    },
+    {
+      "theme_en": "Admiration for Cristiano Ronaldo",
+      "theme_ja": "クリスティアーノ・ロナウドへの称賛",
+      "mentions": 90
+    },
+    {
+      "theme_en": "Support for Argentina",
+      "theme_ja": "アルゼンチンへの応援",
+      "mentions": 86
+    },
+    {
+      "theme_en": "Praise for Messi's greatness and GOAT status",
+      "theme_ja": "メッシの偉大さ・GOATとしての称賛",
+      "mentions": 85
+    }
+  ],
+  "top_negative_themes": [
+    {
+      "theme_en": "Mockery of the draw against Cape Verde",
+      "theme_ja": "キープベルデ戦の引き分けに対する嘲笑",
+      "mentions": 72
+    },
+    {
+      "theme_en": "Backlash against comparisons to Ronaldo, Messi, and Neymar",
+      "theme_ja": "ロナウド・メッシ・ネイマールとの比較への反発",
+      "mentions": 65
+    },
+    {
+      "theme_en": "Poor performance of Salem Al-Dawsari",
+      "theme_ja": "サレム・アル＝ドサリのパフォーマンス不振",
+      "mentions": 65
+    },
+    {
+      "theme_en": "Disappointment at the unexpected draw",
+      "theme_ja": "予想外の引き分けに対する失望",
+      "mentions": 60
+    },
+    {
+      "theme_en": "Rejection of video content",
+      "theme_ja": "動画内容への拒絶",
+      "mentions": 60
+    },
+    {
+      "theme_en": "Criticism of Ronaldo's decline and starting position",
+      "theme_ja": "ロナウドの衰えとスタメン起用への批判",
+      "mentions": 55
+    },
+    {
+      "theme_en": "Criticism of misleading 2026 World Cup title",
+      "theme_ja": "2026年ワールドカップという誤ったタイトルへの批判",
+      "mentions": 55
+    },
+    {
+      "theme_en": "False reporting and propaganda by Algerian authorities",
+      "theme_ja": "アルジェリア当局の虚偽報道とプロパガンダ",
+      "mentions": 55
+    }
+  ]
+}
