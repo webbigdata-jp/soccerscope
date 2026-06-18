@@ -1,379 +1,466 @@
 {
   "generated": "2026-06-18",
-  "videos_analyzed": 291,
+  "videos_analyzed": 282,
   "countries": 47,
   "totals": {
-    "views": 272539942,
-    "likes": 3150097,
-    "comments": 124440
+    "views": 888020759,
+    "likes": 10299820,
+    "comments": 247862
   },
   "country_attribution": "multi (b): a video is counted in every country whose search surfaced it; no per-country ranking (unreliable)",
-  "top_teams": [],
+  "top_teams": [
+    {
+      "team": "South Korea",
+      "mentions": 1616,
+      "lean": "positive",
+      "positive": 1552,
+      "neutral": 63,
+      "negative": 1
+    },
+    {
+      "team": "Mexico",
+      "mentions": 1149,
+      "lean": "positive",
+      "positive": 1084,
+      "neutral": 61,
+      "negative": 4
+    },
+    {
+      "team": "Brazil",
+      "mentions": 1092,
+      "lean": "positive",
+      "positive": 665,
+      "neutral": 352,
+      "negative": 75
+    },
+    {
+      "team": "Morocco",
+      "mentions": 817,
+      "lean": "positive",
+      "positive": 710,
+      "neutral": 107,
+      "negative": 0
+    },
+    {
+      "team": "Japan",
+      "mentions": 584,
+      "lean": "positive",
+      "positive": 487,
+      "neutral": 12,
+      "negative": 85
+    },
+    {
+      "team": "Algeria",
+      "mentions": 453,
+      "lean": "positive",
+      "positive": 430,
+      "neutral": 23,
+      "negative": 0
+    },
+    {
+      "team": "USA",
+      "mentions": 426,
+      "lean": "positive",
+      "positive": 300,
+      "neutral": 35,
+      "negative": 91
+    },
+    {
+      "team": "Argentina",
+      "mentions": 412,
+      "lean": "positive",
+      "positive": 207,
+      "neutral": 137,
+      "negative": 68
+    },
+    {
+      "team": "Portugal",
+      "mentions": 326,
+      "lean": "positive",
+      "positive": 153,
+      "neutral": 101,
+      "negative": 72
+    },
+    {
+      "team": "Qatar",
+      "mentions": 287,
+      "lean": "positive",
+      "positive": 261,
+      "neutral": 22,
+      "negative": 4
+    }
+  ],
   "top_videos_by_views": [
     {
-      "title": "ملخص مباراة الأرجنتين والجزائر | دور المجموعات - كأس العالم FIFA 2026™",
+      "title": "When Roberto Carlos scared Messi's bodyguard🥶🔥",
       "countries": [
-        "DZ",
+        "AR",
+        "CO",
+        "EC",
+        "ES",
+        "MX",
+        "PA",
+        "PY",
+        "UY"
+      ],
+      "reach": 8,
+      "narration_en": "This video humorously contrasts Messi's bodyguard's intimidation tactics with Roberto Carlos's legendary aura. It highlights the bodyguard's overreaction and the community's mix of amusement and concerns regarding violent jokes.",
+      "narration_ja": "メッシのボディーガードとロベルト・カルロスの対比を面白おかしく描いた動画。ボディーガードの過剰反応や、暴力的なジョークに対する視聴者の懸念と楽しさが話題です。",
+      "views": 32789303,
+      "url": "https://www.youtube.com/watch?v=OukZI3-Iz68"
+    },
+    {
+      "title": "POV: World Cup Iconic Moments ⚽🔥",
+      "countries": [
+        "CA",
+        "CD",
+        "CI",
+        "FR",
+        "GB",
+        "GH",
+        "HT",
+        "NZ",
+        "SN",
+        "US",
+        "ZA"
+      ],
+      "reach": 11,
+      "narration_en": "Viewers explore iconic World Cup moments through immersive AI-generated POV footage. While many praise the excellent technology, others criticize specific plays like Maradona's handball.",
+      "narration_ja": "AIを活用した臨場感あふれるPOV映像でワールドカップの名場面を振り返る動画。映像技術への称賛の一方で、マラドーナのハンドに対する批判的な声も上がっています。",
+      "views": 28614779,
+      "url": "https://www.youtube.com/watch?v=SOAv_BkevD0"
+    },
+    {
+      "title": "⚽️🌍 DAI DAI FIFA World Cup 2026 (English Translation + Lyrics) Shakira",
+      "countries": [
+        "BR",
+        "CV",
+        "KR",
+        "PT",
+        "IR",
+        "NL",
+        "TR",
+        "UZ",
+        "AT",
+        "AU",
+        "BA",
+        "BE",
+        "CH",
+        "CW",
+        "CZ",
+        "DE",
+        "HR",
+        "NO",
+        "PY",
+        "SE",
+        "US",
+        "AR",
+        "CA",
+        "CD",
+        "CI",
+        "CO",
+        "EC",
+        "ES",
+        "FR",
+        "GB",
+        "GH",
+        "HT",
+        "MX",
+        "PA",
+        "SN",
+        "UY",
+        "ZA",
+        "NZ"
+      ],
+      "reach": 38,
+      "narration_en": "This multilingual lyric video for the 2026 FIFA World Cup anthem has garnered high praise for Shakira's creativity. Fans are actively discussing the lyrics and expressing excitement for the upcoming tournament.",
+      "narration_ja": "2026年FIFAワールドカップ公式ソングの多言語リリックビデオ。シャキーラの創造性が高く評価され、歌詞への関心や大会に向けた期待が寄せられています。",
+      "views": 20818360,
+      "url": "https://www.youtube.com/watch?v=fC7TfYGui8g"
+    },
+    {
+      "title": "Trivela magic from Gio Reyna! 🪄#FIFAWorldCupOnYT",
+      "countries": [
         "EG",
         "IQ",
         "JO",
         "MA",
         "QA",
-        "SA",
         "TN"
       ],
-      "reach": 8,
-      "narration_en": "This recap of Argentina's 3-0 World Cup win over Algeria trended across the Arab world. Viewers praised Messi's hat-trick while sharing diverse comments on match-day devotion and team performance.",
-      "narration_ja": "アルゼンチンがアルジェリアを3-0で下したワールドカップのハイライト動画は、アラブ諸国でトレンド入りしました。メッシのハットトリックへの称賛に加え、試合観戦と礼拝の関わりなど多様なコメントが寄せられました。",
-      "views": 8904843,
-      "url": "https://www.youtube.com/watch?v=dBvbm65tYRk"
+      "reach": 6,
+      "narration_en": "Gio Reyna's world-class trivela goal has sparked significant enthusiasm among viewers. The conversation focuses on the USA's growth and lighthearted debates regarding the terminology of the sport.",
+      "narration_ja": "ジオ・レイナによるワールドクラスのトリベラゴールが大きな反響を呼んでいます。アメリカ代表の成長や、競技の呼び方をめぐる議論で盛り上がっています。",
+      "views": 19857231,
+      "url": "https://www.youtube.com/watch?v=pegqoZswVT0"
     },
     {
-      "title": "Who will win the World Cup 2026🏆👀 #worldcup #worldcup2026",
+      "title": "Kane Williamson RETIRE 🛑 Dhoni ke Sath Women's T20 World Cup 2026  #kenwilliamson #msdhoni #cricket",
       "countries": [
-        "HR",
-        "IR",
+        "NL",
         "AT",
-        "DE",
-        "JP",
+        "BA",
         "BE",
         "CH",
-        "KR",
-        "NL",
-        "BA",
-        "NO",
-        "SE",
-        "UZ",
-        "CO",
         "CW",
         "CZ",
-        "PA",
+        "DE",
+        "HR",
+        "NO",
+        "SE",
         "AR",
+        "CO",
         "EC",
         "ES",
         "MX",
+        "PA",
+        "UY"
+      ],
+      "reach": 18,
+      "narration_en": "This video sparked confusion and mixed reactions due to AI-generated content depicting cricket icons attending a Women's T20 World Cup match. Discussions highlight both admiration for the technology and concerns over misinformation.",
+      "narration_ja": "クリケットのスター選手が女子T20ワールドカップを観戦するAI生成動画に対し、困惑と様々な反応が寄せられました。技術への驚きと共に、誤情報に対する懸念も指摘されています。",
+      "views": 19673419,
+      "url": "https://www.youtube.com/watch?v=58uUXs5J5OI"
+    },
+    {
+      "title": "France Time Wasting 💀",
+      "countries": [
+        "NZ"
+      ],
+      "reach": 1,
+      "narration_en": "Focusing on France's tactical time-wasting, this video has triggered debates about fair play. Viewers are divided, with some enjoying the gameplay while others express frustration over the tactics used.",
+      "narration_ja": "フランス代表の時間稼ぎ戦術を取り上げた動画。フェアプレーをめぐり議論が分かれており、戦術を楽しむ声と、行為に対する不満の声が上がっています。",
+      "views": 19394608,
+      "url": "https://www.youtube.com/watch?v=xz8IJ9xtw-k"
+    },
+    {
+      "title": "Only Ronaldo Can Score A Goal Like This...",
+      "countries": [
+        "AU",
+        "CA",
+        "CD",
+        "CI",
+        "FR",
+        "GB",
+        "GH",
+        "HT",
+        "SN",
+        "ZA",
+        "NZ"
+      ],
+      "reach": 11,
+      "narration_en": "This video featuring Ronaldo has drawn criticism for misleading the audience, as many viewers pointed out the clip does not actually show a goal. The discussion highlights frustration with excessive hype and editing quality.",
+      "narration_ja": "ロナウドのプレーを扱った動画ですが、実際にはゴールシーンではないという指摘が相次ぎました。過剰な煽りや編集の質に対する不満がコメント欄で目立っています。",
+      "views": 17623185,
+      "url": "https://www.youtube.com/watch?v=LwEmbve3imE"
+    },
+    {
+      "title": "Nora Fatehi, Vegedream and Sanjoy perform Siir Siir at FIFA World Cup 2026 Opening Match in Canada!",
+      "countries": [
+        "AT",
+        "AU",
+        "BA",
+        "BE",
+        "BR",
+        "CA",
+        "CD",
+        "CH",
+        "CI",
+        "CV",
+        "CW",
+        "CZ",
+        "DE",
+        "FR",
+        "GB",
+        "GH",
+        "HR",
+        "HT",
+        "IR",
+        "JP",
+        "KR",
+        "NL",
+        "NO",
+        "NZ",
+        "PT",
+        "SE",
+        "SN",
+        "TR",
+        "US",
+        "UZ",
+        "ZA",
+        "AR",
+        "CO",
+        "EC",
+        "ES",
+        "MX",
+        "PA",
         "PY",
         "UY"
       ],
-      "reach": 23,
-      "narration_en": "This World Cup 2026 prediction video trended globally, sparking enthusiastic debate about national teams and video trends. Sentiment was largely positive, though some viewers criticized specific staging choices.",
-      "narration_ja": "ワールドカップ2026の優勝国を予想するこの動画は世界中でトレンド入りし、各代表チームへの熱い声援や動画の演出について活発な議論が交わされました。概ね好意的な反応ですが、演出の一部には批判的な声もありました。",
-      "views": 6791274,
-      "url": "https://www.youtube.com/watch?v=wcd5EgSq6Sg"
+      "reach": 39,
+      "narration_en": "A highly positive reception surrounds the opening performance of the FIFA World Cup 2026 featuring Nora Fatehi and other artists. Fans celebrated the multicultural collaboration and the historic atmosphere of the event.",
+      "narration_ja": "ノラ・ファテヒらによる2026年ワールドカップ開会式のパフォーマンスが絶賛されています。多文化の融合や、大会の歴史的な雰囲気が高く評価されました。",
+      "views": 16078193,
+      "url": "https://www.youtube.com/watch?v=9CpVYJQOsOc"
     },
     {
-      "title": "Cricket icc womens t20 world cup 2026 Dekhne Ki Tyari 🤩 #shorts #preetigirdhar #ytshorts",
+      "title": "POV it's Argentina vs Brazil 🥶 #football #ronaldo #messi #neymar",
       "countries": [
-        "BE",
-        "NL",
-        "BA",
-        "CW",
-        "CZ",
-        "NO",
-        "SE"
-      ],
-      "reach": 7,
-      "narration_en": "Trending across several European countries, this video features preparations for the 2026 Women's T20 World Cup. Viewers expressed support for the creator and enjoyed the celebratory atmosphere.",
-      "narration_ja": "欧州各国でトレンド入りした本動画は、2026年女子T20ワールドカップへの期待感を伝えています。投稿者への応援や、お祝いムードを楽しむ視聴者のコメントが目立ちました。",
-      "views": 6297022,
-      "url": "https://www.youtube.com/watch?v=XY1X3-tHwWE"
-    },
-    {
-      "title": "Haaland Didn’t Understand the Lollipop 🍭💀 #parody #football #haaland #norway",
-      "countries": [
-        "CA",
-        "CO",
-        "GB",
-        "NZ",
-        "PA",
-        "AR",
         "AU",
-        "EC",
-        "ES",
+        "US",
+        "CA",
+        "CD",
+        "CI",
+        "FR",
+        "GB",
         "GH",
-        "MX",
-        "PY",
-        "UY",
+        "HT",
+        "SN",
         "ZA",
-        "US"
-      ],
-      "reach": 15,
-      "narration_en": "This surreal Haaland parody video trended in over a dozen countries across the Americas and beyond. The content received high praise for its humor and creative technical execution.",
-      "narration_ja": "ハーランドを題材にしたシュールなパロディ動画が、南北アメリカを含む世界十数カ国でトレンド入りしました。そのユーモアと技術的なクリエイティブさが高く評価されています。",
-      "views": 5005178,
-      "url": "https://www.youtube.com/watch?v=UdS02lz0BRw"
-    },
-    {
-      "title": "\"I Don't like Football...\"😭🥀 - Ronaldo, Messi, Neymar Edit | #edit #worldcup #football",
-      "countries": [
-        "AU",
-        "CA",
-        "GB",
-        "GH",
-        "NZ",
-        "US",
-        "ZA"
-      ],
-      "reach": 7,
-      "narration_en": "This high-quality football tribute edit trended in English-speaking nations, earning praise for its editing and emotional impact. Fans shared sentimental reactions to legendary players like Messi and Ronaldo.",
-      "narration_ja": "伝説的な選手たちを称える高品質な編集動画が、英語圏でトレンド入りしました。メッシやロナウドといったスター選手への感情的な反応と共に、映像編集技術が高く評価されています。",
-      "views": 4918032,
-      "url": "https://www.youtube.com/watch?v=hjV03L90lRI"
-    },
-    {
-      "title": "Argentina Vs Algeria 3-0 FIFA World Cup Goals Full highlights 2026 | Messi Epic Goals | Messi Hatric",
-      "countries": [
-        "AR",
-        "BA",
-        "BR",
-        "CD",
-        "CH",
-        "CI",
-        "CV",
-        "CW",
-        "CZ",
-        "EC",
-        "ES",
-        "FR",
-        "HT",
-        "JP",
-        "MX",
-        "NO",
-        "PY",
-        "SE",
-        "SN",
-        "UY",
-        "UZ"
-      ],
-      "reach": 21,
-      "narration_en": "Trending across 20 countries, this match highlight reel of Argentina's victory over Algeria generated huge support for Messi. While most viewers loved the hat-trick, some pointed out flaws in the editing quality.",
-      "narration_ja": "20カ国でトレンド入りしたアルゼンチン対アルジェリアのハイライト動画は、メッシへの熱狂的な支持を集めました。ハットトリックを称える声が多い一方、編集の質に関する指摘も一部で見られました。",
-      "views": 4879700,
-      "url": "https://www.youtube.com/watch?v=fkuQQTnxP1o"
-    },
-    {
-      "title": "Women vs Man Throw in Skills in Football 🤣",
-      "countries": [
-        "CA",
-        "CD",
-        "CI",
-        "FR",
-        "GB",
-        "HT",
-        "NZ",
-        "SN",
-        "US",
-        "AU",
-        "GH",
-        "ZA"
+        "NZ"
       ],
       "reach": 12,
-      "narration_en": "This video featuring acrobatic football throw-in attempts trended in various regions. Reactions were mixed, with many viewers finding the content humorous while others remained skeptical of its authenticity.",
-      "narration_ja": "アクロバティックなスローインに挑戦するこの動画は、様々な地域でトレンド入りしました。ユーモラスで面白いと評価する声がある一方、映像の真偽を疑う反応もあり、意見が分かれました。",
-      "views": 4515134,
-      "url": "https://www.youtube.com/watch?v=j46OdFPUGgY"
+      "narration_en": "This POV animation captures the intense rivalry between Brazil and Argentina with humor. Comments show fans debating legendary players and expressing excitement for these iconic national matchups.",
+      "narration_ja": "ブラジル対アルゼンチンのライバル関係をPOVアニメーションでコミカルに表現。伝説的な選手をめぐるファンの熱い議論や、対戦への期待が寄せられています。",
+      "views": 15138744,
+      "url": "https://www.youtube.com/watch?v=A2mYP0KgM-Y"
     },
     {
-      "title": "FIFA WORLD CUP 2026 OFFICIAL MATCH BALL 🦵⚽🏆#shorts #youtubeshorts #unboxing #ball #football #funny",
+      "title": "I did NOT expect this at the FIFA World Cup 😱⚽️ #AD #fifaworldcup #fifa",
       "countries": [
-        "BE",
-        "CW",
-        "CZ",
-        "NL",
-        "BA",
-        "NO",
-        "SE"
-      ],
-      "reach": 7,
-      "narration_en": "This unboxing video for the official 2026 World Cup match ball trended in European regions. Viewers engaged in playful banter and expressed strong support for the Brazil and Portugal teams.",
-      "narration_ja": "2026年ワールドカップ公式試合球の開封動画が、欧州地域でトレンド入りしました。ブラジルやポルトガル代表への熱いエールが送られたほか、視聴者間で冗談を交えたやり取りも見られました。",
-      "views": 4383613,
-      "url": "https://www.youtube.com/watch?v=JKMk7VHXVsM"
-    },
-    {
-      "title": "New Zealand score a brilliant team goal in the FIFA World Cup 🇳🇿⚽️ #FIFAWorldCupOnYT",
-      "countries": [
-        "HR",
-        "IR",
-        "JP",
-        "TR",
+        "BR",
+        "CV",
         "KR",
         "PT",
-        "AT",
-        "BR",
-        "DE",
-        "CH",
-        "UZ",
-        "BE",
-        "CO",
-        "CV",
-        "MX",
+        "AU",
+        "IR",
         "NL",
-        "PA",
-        "PY",
-        "AR",
+        "TR",
+        "US",
+        "UZ",
+        "AT",
         "BA",
+        "BE",
         "CA",
+        "CD",
+        "CH",
+        "CI",
         "CW",
         "CZ",
-        "EC",
-        "ES",
-        "NO",
-        "SE",
-        "UY",
-        "AU",
-        "HT",
-        "NZ",
-        "CD",
-        "GH",
-        "SN",
-        "ZA",
-        "CI",
-        "FR"
-      ],
-      "reach": 37,
-      "narration_en": "This clip of a brilliant New Zealand team goal trended worldwide, sparking widespread excitement. While the goal was highly praised, some commenters debated the fairness of the play.",
-      "narration_ja": "ニュージーランド代表の鮮やかなチームゴールを収めた動画が世界中でトレンド入りし、大きな反響を呼びました。ゴール自体は高く評価されたものの、プレーの妥当性について議論する視聴者もいました。",
-      "views": 4374205,
-      "url": "https://www.youtube.com/watch?v=Xf4VMBYX2-Q"
-    },
-    {
-      "title": "ARGENTINA vs ALGERIA - FIFA World Cup 2026 group stage | Match Today | Simulation PES",
-      "countries": [
-        "AT",
-        "AU",
-        "BE",
-        "CA",
-        "CO",
         "DE",
+        "FR",
         "GB",
         "GH",
         "HR",
-        "IR",
-        "KR",
-        "NL",
-        "NZ",
-        "PA",
-        "PT",
-        "TR",
-        "US",
-        "ZA",
-        "AR",
-        "BA",
-        "BR",
-        "CD",
-        "CH",
-        "CI",
-        "CV",
-        "CW",
-        "CZ",
-        "EC",
-        "ES",
-        "FR",
         "HT",
-        "JP",
-        "MX",
         "NO",
         "PY",
         "SE",
         "SN",
+        "ZA",
+        "AR",
+        "CO",
+        "EC",
+        "ES",
+        "MX",
+        "PA",
         "UY",
-        "UZ"
+        "NZ"
       ],
-      "reach": 39,
-      "narration_en": "A PES 2026 simulation of the Argentina vs Algeria match trended globally. Fans showed great enthusiasm for Messi and the Argentine team, though some users clarified for others that it was not real footage.",
-      "narration_ja": "ウイニングイレブンによるアルゼンチン対アルジェリアのシミュレーション動画が世界中でトレンド入りしました。メッシやアルゼンチンへの熱い応援が寄せられた一方、これは実際の試合ではないと補足する視聴者も見受けられました。",
-      "views": 4210343,
-      "url": "https://www.youtube.com/watch?v=kCmFivCFnQg"
+      "reach": 38,
+      "narration_en": "This influencer-led FIFA World Cup collaboration has received mixed feedback. While many enjoy the content, others have voiced frustration regarding influencer prioritization and FIFA's ticket pricing strategies.",
+      "narration_ja": "インフルエンサーを起用したFIFAワールドカップ関連のコラボ動画に対し、賛否が分かれています。コンテンツを楽しむ層がいる一方、インフルエンサーの優遇やチケット価格への不満も出ています。",
+      "views": 14888268,
+      "url": "https://www.youtube.com/watch?v=wXlrdF8L0kg"
     }
   ],
   "sentiment_avg": {
-    "positive": 57.516363636363636,
-    "negative": 22.443636363636365,
-    "neutral": 20.04
+    "positive": 61.32727272727273,
+    "negative": 20.556363636363635,
+    "neutral": 18.116363636363637
   },
-  "comments_analyzed": 16172,
+  "comments_analyzed": 21550,
   "top_positive_themes": [
     {
-      "theme_en": "Messi is the GOAT",
-      "theme_ja": "メッシは史上最高の選手（GOAT）",
-      "mentions": 285
+      "theme_en": "Excellent performance by South Korea",
+      "theme_ja": "韓国代表の素晴らしいパフォーマンス",
+      "mentions": 187
     },
     {
-      "theme_en": "Mbappe's dominant performance in the World Cup",
-      "theme_ja": "エムバペのワールドカップでの圧倒的なパフォーマンス",
-      "mentions": 125
+      "theme_en": "Excitement for the World Cup",
+      "theme_ja": "ワールドカップへの期待",
+      "mentions": 160
     },
     {
-      "theme_en": "Enthusiastic support for Cristiano Ronaldo",
-      "theme_ja": "クリスティアーノ・ロナウドへの熱狂的な支持",
-      "mentions": 95
+      "theme_en": "Support for Brazil national team",
+      "theme_ja": "ブラジル代表への応援",
+      "mentions": 149
     },
     {
-      "theme_en": "Hopes and prayers for victory",
-      "theme_ja": "勝利への期待と祈り",
+      "theme_en": "Support for Morocco national team",
+      "theme_ja": "モロッコ代表への応援",
+      "mentions": 145
+    },
+    {
+      "theme_en": "Excellent performance and victory of South Korea",
+      "theme_ja": "韓国代表の素晴らしいプレーと勝利",
+      "mentions": 130
+    },
+    {
+      "theme_en": "Congratulations and support for Mexico",
+      "theme_ja": "メキシコ代表への祝福と応援",
       "mentions": 93
     },
     {
-      "theme_en": "Support for Cristiano Ronaldo",
-      "theme_ja": "クリスティアーノ・ロナウドへの応援",
+      "theme_en": "Congratulations on South Korea's victory",
+      "theme_ja": "韓国代表の勝利への祝福",
       "mentions": 90
     },
     {
-      "theme_en": "Admiration for Cristiano Ronaldo",
-      "theme_ja": "クリスティアーノ・ロナウドへの称賛",
-      "mentions": 90
-    },
-    {
-      "theme_en": "Support for Argentina",
-      "theme_ja": "アルゼンチンへの応援",
-      "mentions": 86
-    },
-    {
-      "theme_en": "Praise for Messi's greatness and GOAT status",
-      "theme_ja": "メッシの偉大さ・GOATとしての称賛",
+      "theme_en": "Praise for Son Heung-min's skill and contribution",
+      "theme_ja": "ソン・フンミンの実力と貢献への称賛",
       "mentions": 85
     }
   ],
   "top_negative_themes": [
     {
-      "theme_en": "Mockery of the draw against Cape Verde",
-      "theme_ja": "キープベルデ戦の引き分けに対する嘲笑",
-      "mentions": 72
+      "theme_en": "Lack of character and manners of the man",
+      "theme_ja": "男性の人間性・マナーの欠如",
+      "mentions": 85
     },
     {
-      "theme_en": "Backlash against comparisons to Ronaldo, Messi, and Neymar",
-      "theme_ja": "ロナウド・メッシ・ネイマールとの比較への反発",
+      "theme_en": "Anger and criticism toward the reporter",
+      "theme_ja": "記者に対する怒りと批判",
+      "mentions": 75
+    },
+    {
+      "theme_en": "Criticism of fabricated stories",
+      "theme_ja": "捏造されたストーリーへの批判",
       "mentions": 65
     },
     {
-      "theme_en": "Poor performance of Salem Al-Dawsari",
-      "theme_ja": "サレム・アル＝ドサリのパフォーマンス不振",
+      "theme_en": "Anger and distrust towards FIFA's handling",
+      "theme_ja": "FIFAの対応への怒りと不信感",
       "mentions": 65
     },
     {
-      "theme_en": "Disappointment at the unexpected draw",
-      "theme_ja": "予想外の引き分けに対する失望",
-      "mentions": 60
+      "theme_en": "Disappointment with the actual 1-1 draw",
+      "theme_ja": "実際の試合結果（1-1の引き分け）への落胆",
+      "mentions": 65
     },
     {
-      "theme_en": "Rejection of video content",
-      "theme_ja": "動画内容への拒絶",
-      "mentions": 60
+      "theme_en": "Distrust of AI-generated content",
+      "theme_ja": "AI生成動画への不信感",
+      "mentions": 58
     },
     {
-      "theme_en": "Criticism of Ronaldo's decline and starting position",
-      "theme_ja": "ロナウドの衰えとスタメン起用への批判",
-      "mentions": 55
+      "theme_en": "Dissatisfaction with refereeing standards",
+      "theme_ja": "審判の判定基準への不満",
+      "mentions": 57
     },
     {
-      "theme_en": "Criticism of misleading 2026 World Cup title",
-      "theme_ja": "2026年ワールドカップという誤ったタイトルへの批判",
-      "mentions": 55
-    },
-    {
-      "theme_en": "False reporting and propaganda by Algerian authorities",
-      "theme_ja": "アルジェリア当局の虚偽報道とプロパガンダ",
+      "theme_en": "Strong calls for retirement",
+      "theme_ja": "引退を強く推奨する声",
       "mentions": 55
     }
   ]

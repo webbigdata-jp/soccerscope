@@ -49,10 +49,9 @@ PROJECTION = {
     "_id": 0,
     "video_id": 1,
     "title": 1,
-    "country": 1,
-    "country_name_ja": 1,
-    "country_name_en": 1,
-    "primary_lang": 1,
+    "countries": 1,
+    "country_codes": 1,
+    "reach": 1,
     "url": 1,
     "thumbnail_url": 1,
     "buzz_score": 1,
@@ -166,6 +165,9 @@ async def search_videos(
         query_text: Natural-language search intent (any language; Japanese OK).
         country: Optional ISO-2 country code to restrict results
                  (e.g. "BR" Brazil, "JP" Japan, "SA" Saudi Arabia, "DE", "MX").
+                 A video matches if this country is ANY of the countries its
+                 search results appeared in (videos can belong to multiple
+                 countries — see country_codes in the DATA section).
                  Empty string means no country filter.
         limit: Max number of videos to return (default 8).
         buzz_only: If true, restrict to videos flagged is_buzz == true.
@@ -173,8 +175,8 @@ async def search_videos(
     Returns:
         dict with:
             count:   number of videos returned,
-            videos:  list of video docs (title, country, url, buzz_score,
-                     sentiment, vector score, ...),
+            videos:  list of video docs (title, countries, country_codes,
+                     reach, url, buzz_score, sentiment, vector score, ...),
             raw:     raw MCP text (fallback if structured parse failed),
             error:   present only if something went wrong.
     """
@@ -184,9 +186,13 @@ async def search_videos(
         return {"error": f"embedding failed: {e}", "count": 0, "videos": []}
 
     # $vectorSearch の filter を組み立て
+    # country_codes は動画ごとの出現国を表す文字列配列（phase3で複製生成）。
+    # $vectorSearch の filter は配列フィールドに対する $eq を「配列内のいずれかの
+    # 要素が一致すればヒット」として扱う（countries はオブジェクトの配列なので
+    # vectorSearch型インデックスで直接フィルタできないため、country_codes を使う）。
     vfilter: dict = {}
     if country.strip():
-        vfilter["country"] = country.strip().upper()
+        vfilter["country_codes"] = country.strip().upper()
     if buzz_only:
         vfilter["is_buzz"] = True
 
@@ -253,20 +259,32 @@ MongoDB Atlas collection of pre-analyzed videos.
 
 # DATA
 - Database "{DB_NAME}", main collection "{COLLECTION}".
-- Each video doc: video_id, country (ISO-2 e.g. "BR","JP"), country_name_en/ja,
-  primary_lang, title, description, url, thumbnail_url, embed_html,
+- Each video doc: video_id, countries (array of {{country, country_name_ja,
+  country_name_en, primary_lang, is_priority, rank}} — a video can belong to
+  MULTIPLE countries, since the same viral video often appears in several
+  countries' search results), country_codes (the same countries as a flat
+  string array, used for filtering), reach (= number of countries the video
+  appeared in), title, description, url, thumbnail_url, embed_html,
   stats(views/likes/comment_count), buzz_score, is_buzz, and comment_analysis
-  (sentiment ratios, positive/negative themes, quotable_comments).
+  (sentiment ratios, positive/negative themes, quotable_comments,
+  mentioned_teams).
+- IMPORTANT: there is no single "country" field anymore. A video's relevance to
+  a country means it appeared in that country's search results — it does NOT
+  mean the video is "from" or "about" only that one country. When describing a
+  video's country, list all countries in its countries array, not just one.
 
 # TOOLS — WHICH TO USE
 - **search_videos(query_text, country, limit, buzz_only)**: USE THIS for any
   semantic / "buzz" / "what's trending about X" search. It handles embedding and
   vector search internally. You DO NOT build vectors and DO NOT call aggregate.
-  Pass a country ISO-2 code to filter (Japan="JP", Brazil="BR", Saudi="SA",
-  Germany="DE", Mexico="MX"). Leave country empty for all countries.
+  Pass a country ISO-2 code to filter by country_codes (Japan="JP", Brazil="BR",
+  Saudi="SA", Germany="DE", Mexico="MX"); this matches videos where that country
+  is ANY of the countries the video appeared in. Leave country empty for all
+  countries.
 - **find / count**: USE THESE to fetch specific documents by exact fields — e.g.
   retrieve comment_analysis for known video_ids (find with a filter on video_id),
-  or count how many videos exist for a country. No vectors involved.
+  or count how many videos exist for a country (filter on country_codes). No
+  vectors involved.
 - **collection-schema / list-collections**: inspect structure if unsure.
 
 # CRITICAL
@@ -277,7 +295,8 @@ MongoDB Atlas collection of pre-analyzed videos.
 
 # STYLE
 - Respond in the user's language (Japanese if they write Japanese).
-- Summarize matched videos concisely: title, country, buzz_score, sentiment, link.
+- Summarize matched videos concisely: title, countries (list all, not just one),
+  buzz_score, sentiment, link.
 - Be honest when data is sparse for a country (the dataset covers some countries
   thinly); don't invent videos.
 
@@ -302,7 +321,9 @@ post, follow this flow:
 3. WRITE: Produce the deliverable as **Markdown** (the dev UI renders Markdown,
    not raw HTML). A good article includes:
    - a punchy title and a short lead,
-   - one section per country with: the country name + flag, a 1-2 sentence
+   - one section per video (a video may list multiple countries in its
+     countries array — show all flags it appeared in, e.g. 🇲🇽🇦🇷, rather than
+     picking just one), with: the country flag(s) + name(s), a 1-2 sentence
      summary of what's buzzing, the video thumbnail as a Markdown image
      ![title](thumbnail_url), and a link [▶ 動画を見る](url),
    - sentiment / quotable comments where available,

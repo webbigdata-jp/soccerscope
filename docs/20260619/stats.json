@@ -1,0 +1,407 @@
+{
+  "generated": "2026-06-19",
+  "videos_analyzed": 257,
+  "countries": 47,
+  "totals": {
+    "views": 402858185,
+    "likes": 4564307,
+    "comments": 152760
+  },
+  "country_attribution": "multi (b): a video is counted in every country whose search surfaced it; no per-country ranking (unreliable)",
+  "top_teams": [
+    {
+      "team": "Argentina",
+      "mentions": 1133,
+      "lean": "positive",
+      "positive": 935,
+      "neutral": 145,
+      "negative": 53
+    },
+    {
+      "team": "Algeria",
+      "mentions": 788,
+      "lean": "positive",
+      "positive": 406,
+      "neutral": 211,
+      "negative": 171
+    },
+    {
+      "team": "Portugal",
+      "mentions": 716,
+      "lean": "negative",
+      "positive": 236,
+      "neutral": 85,
+      "negative": 395
+    },
+    {
+      "team": "Iran",
+      "mentions": 605,
+      "lean": "positive",
+      "positive": 537,
+      "neutral": 52,
+      "negative": 16
+    },
+    {
+      "team": "Saudi Arabia",
+      "mentions": 475,
+      "lean": "positive",
+      "positive": 423,
+      "neutral": 51,
+      "negative": 1
+    },
+    {
+      "team": "Brazil",
+      "mentions": 448,
+      "lean": "negative",
+      "positive": 122,
+      "neutral": 69,
+      "negative": 257
+    },
+    {
+      "team": "France",
+      "mentions": 434,
+      "lean": "positive",
+      "positive": 380,
+      "neutral": 52,
+      "negative": 2
+    },
+    {
+      "team": "England",
+      "mentions": 390,
+      "lean": "positive",
+      "positive": 386,
+      "neutral": 4,
+      "negative": 0
+    },
+    {
+      "team": "Iraq",
+      "mentions": 339,
+      "lean": "positive",
+      "positive": 261,
+      "neutral": 48,
+      "negative": 30
+    },
+    {
+      "team": "DR Congo",
+      "mentions": 332,
+      "lean": "positive",
+      "positive": 328,
+      "neutral": 4,
+      "negative": 0
+    }
+  ],
+  "top_videos_by_views": [
+    {
+      "title": "Haaland Didn’t Understand the Lollipop 🍭💀 #parody #football #haaland #norway",
+      "countries": [
+        "CO",
+        "PA",
+        "AR",
+        "EC",
+        "ES",
+        "MX",
+        "PY",
+        "UY"
+      ],
+      "reach": 8,
+      "narration_en": "This surreal parody video featuring Haaland has resonated with audiences across Latin America and Spain. Viewers are entertained by the humor, though some express confusion regarding the AI-generated elements.",
+      "narration_ja": "ハーランドを題材にしたこのシュールなパロディ動画は、中南米やスペインで人気を集めています。視聴者はそのユーモアを楽しんでいますが、AI生成の技術的な側面には困惑の声も見られます。",
+      "views": 14747246,
+      "url": "https://www.youtube.com/watch?v=UdS02lz0BRw"
+    },
+    {
+      "title": "Footballers Crazy Dap VS Ronaldo",
+      "countries": [
+        "CD",
+        "CI",
+        "FR",
+        "HT",
+        "SN",
+        "ZA",
+        "NZ"
+      ],
+      "reach": 7,
+      "narration_en": "This video featuring Ronaldo's viral dap has trended in multiple regions, sparking a passionate debate between Messi and Ronaldo fans. While the sentiment is largely positive, some viewers criticize the use of fake sound effects.",
+      "narration_ja": "ロナウドの挨拶動画が各地でトレンド入りし、メッシとロナウドのファンによる議論を呼んでいます。全体的な評価は高いものの、一部からは不自然な効果音に対する批判も上がっています。",
+      "views": 14377150,
+      "url": "https://www.youtube.com/watch?v=qOVL2KCvHJM"
+    },
+    {
+      "title": "Mbappé Watched the Drink Disappear 🥤😭 #parody #football #haaland #worldcup",
+      "countries": [
+        "GB",
+        "US",
+        "AU",
+        "CA",
+        "GH",
+        "NZ",
+        "ZA",
+        "CO",
+        "AR",
+        "EC",
+        "PA",
+        "ES",
+        "MX",
+        "PY",
+        "UY"
+      ],
+      "reach": 15,
+      "narration_en": "This parody video showcases high production quality but has triggered mixed reactions globally. While many praise the humor, others are concerned by inconsistencies and counting errors linked to AI generation.",
+      "narration_ja": "このパロディ動画は制作クオリティの高さが評価される一方、反応は分かれています。ユーモアを称賛する声がある一方で、AI生成に起因する不自然さやカウントミスの多さに懸念を示す視聴者もいます。",
+      "views": 12307172,
+      "url": "https://www.youtube.com/watch?v=h7T5OSJiHsU"
+    },
+    {
+      "title": "Cricket icc womens t20 world cup 2026 Dekhne Ki Tyari 🤩 #shorts #preetigirdhar #ytshorts",
+      "countries": [
+        "AR",
+        "BA",
+        "BE",
+        "CO",
+        "CW",
+        "CZ",
+        "EC",
+        "ES",
+        "HR",
+        "IR",
+        "MX",
+        "NL",
+        "NO",
+        "PA",
+        "PY",
+        "SE",
+        "UY"
+      ],
+      "reach": 17,
+      "narration_en": "This short video building excitement for the 2026 Women's T20 World Cup has gained traction across diverse language regions. Audiences are largely enthusiastic, despite some confusion regarding the specific content.",
+      "narration_ja": "2026年女子T20ワールドカップに向けた期待感を高めるこの動画は、多様な地域で注目を集めています。内容の具体性については一部で戸惑いが見られるものの、全体的には大きな盛り上がりを見せています。",
+      "views": 10399245,
+      "url": "https://www.youtube.com/watch?v=XY1X3-tHwWE"
+    },
+    {
+      "title": "Who will win the World Cup 2026🏆👀 #worldcup #worldcup2026",
+      "countries": [
+        "AT",
+        "DE",
+        "KR",
+        "BE",
+        "CH",
+        "JP",
+        "NL",
+        "NO",
+        "BA",
+        "CW",
+        "CZ",
+        "HR",
+        "IR",
+        "SE",
+        "UZ",
+        "CO",
+        "PA",
+        "AR",
+        "EC",
+        "ES",
+        "MX",
+        "PY",
+        "UY"
+      ],
+      "reach": 23,
+      "narration_en": "This World Cup 2026-themed video trended widely, drawing appreciation for its dance content and support for various national teams. Some viewers expressed discomfort over specific segments and the treatment of national flags.",
+      "narration_ja": "2026年ワールドカップをテーマにしたこの動画は、ダンスの楽しさや各国の代表チームへの応援コメントで賑わっています。一方で、一部の演出や国旗の扱いに不快感を示す視聴者も存在します。",
+      "views": 9735352,
+      "url": "https://www.youtube.com/watch?v=wcd5EgSq6Sg"
+    },
+    {
+      "title": "ملخص مباراة الأرجنتين والجزائر | دور المجموعات - كأس العالم FIFA 2026™",
+      "countries": [
+        "DZ",
+        "EG",
+        "IQ",
+        "JO",
+        "MA",
+        "QA",
+        "SA",
+        "TN"
+      ],
+      "reach": 8,
+      "narration_en": "This match highlight video focusing on Messi's hat-trick against Algeria trended across the Arab world. The comments reflect high praise for Messi's skill alongside discussions about regional solidarity and spiritual obligations.",
+      "narration_ja": "アルゼンチン対アルジェリア戦でのメッシのハットトリックを収めたこの動画は、アラブ圏で広く視聴されました。メッシの技術への賞賛に加え、地域の連帯感や宗教的な義務に関する議論が交わされています。",
+      "views": 9381245,
+      "url": "https://www.youtube.com/watch?v=dBvbm65tYRk"
+    },
+    {
+      "title": "This Is How Ronaldo Scores Every Penalty In World Cup...",
+      "countries": [
+        "AT",
+        "DE",
+        "CH",
+        "PA",
+        "ES",
+        "MX",
+        "PY",
+        "UY",
+        "CO",
+        "EC",
+        "AR"
+      ],
+      "reach": 11,
+      "narration_en": "This analysis of Ronaldo's penalty technique has drawn significant criticism from viewers. Many expressed skepticism regarding the validity of the claims and dissatisfaction with the content's framing.",
+      "narration_ja": "ロナウドのペナルティ技術を分析したこの動画は、視聴者から厳しい批判を浴びています。分析の妥当性に対する懐疑的な声や、動画の構成そのものへの不満が多く寄せられています。",
+      "views": 7152789,
+      "url": "https://www.youtube.com/watch?v=QRonUKdknho"
+    },
+    {
+      "title": "The Drink Battle Had a Sweet Ending 🥤💞  #kpop #parody #football #meme",
+      "countries": [
+        "CD",
+        "CI",
+        "FR",
+        "HT",
+        "SN"
+      ],
+      "reach": 5,
+      "narration_en": "This cute and charming parody video is receiving a very positive reception in French-speaking territories. Viewers are highly appreciative of the characters and the overall production quality.",
+      "narration_ja": "可愛らしく魅力的なこのパロディ動画は、フランス語圏の視聴者から非常に高い評価を受けています。キャラクターの演出や作品のクオリティが多くのユーザーに喜ばれています。",
+      "views": 6478676,
+      "url": "https://www.youtube.com/watch?v=EY1d0byD87U"
+    },
+    {
+      "title": "Cricket icc womens t20 world cup 2026 Dekhne Ki Tyari 🤩 #shorts #ytshorts",
+      "countries": [
+        "BA",
+        "CZ",
+        "HR",
+        "SE"
+      ],
+      "reach": 4,
+      "narration_en": "This short clip about the 2026 Women's T20 World Cup sparked a variety of reactions ranging from cricket enthusiasm to criticism. Some viewers were frustrated by the content, while others expressed strong support for India.",
+      "narration_ja": "2026年女子T20ワールドカップに関するこの動画には、クリケットへの熱狂から批判まで様々な反応が寄せられています。内容に不満を持つ声もあれば、インドへの強い支持を表明する視聴者も見られます。",
+      "views": 6067862,
+      "url": "https://www.youtube.com/watch?v=-VgmVDbddWk"
+    },
+    {
+      "title": "Argentina Vs Algeria 3-0 FIFA World Cup Goals Full highlights 2026 | Messi Epic Goals | Messi Hatric",
+      "countries": [
+        "BR",
+        "CD",
+        "CH",
+        "CI",
+        "CV",
+        "FR",
+        "GH",
+        "HT",
+        "JP",
+        "NZ",
+        "SN",
+        "UZ",
+        "AR",
+        "BA",
+        "CW",
+        "CZ",
+        "EC",
+        "ES",
+        "HR",
+        "IR",
+        "MX",
+        "PY",
+        "SE",
+        "UY"
+      ],
+      "reach": 24,
+      "narration_en": "Global fans are celebrating Messi's hat-trick in this comprehensive highlight video of the Argentina versus Algeria match. While the sentiment is overwhelmingly positive, some fans raised concerns about copyright and editing quality.",
+      "narration_ja": "アルゼンチン対アルジェリア戦のハイライト動画は、メッシのハットトリックを称賛する世界中のファンから大好評です。大部分が肯定的な反応ですが、著作権や編集のクオリティについて疑問を呈する声も一部で見られました。",
+      "views": 5512546,
+      "url": "https://www.youtube.com/watch?v=fkuQQTnxP1o"
+    }
+  ],
+  "sentiment_avg": {
+    "positive": 59.37603305785124,
+    "negative": 20.764462809917354,
+    "neutral": 19.859504132231404
+  },
+  "comments_analyzed": 16058,
+  "top_positive_themes": [
+    {
+      "theme_en": "Messi is the GOAT",
+      "theme_ja": "メッシは史上最高の選手(GOAT)",
+      "mentions": 175
+    },
+    {
+      "theme_en": "Support for Algeria national team",
+      "theme_ja": "アルジェリア代表への応援",
+      "mentions": 145
+    },
+    {
+      "theme_en": "Praise for Messi",
+      "theme_ja": "メッシへの称賛",
+      "mentions": 140
+    },
+    {
+      "theme_en": "Support for Cristiano Ronaldo",
+      "theme_ja": "クリスティアーノ・ロナウドへの応援",
+      "mentions": 132
+    },
+    {
+      "theme_en": "Support for Portugal national team",
+      "theme_ja": "ポルトガル代表への応援",
+      "mentions": 112
+    },
+    {
+      "theme_en": "Solidarity and support from Arab nations",
+      "theme_ja": "アラブ諸国による連帯と応援",
+      "mentions": 85
+    },
+    {
+      "theme_en": "Messi's outstanding performance and GOAT status",
+      "theme_ja": "メッシの圧倒的なパフォーマンスとGOATとしての地位",
+      "mentions": 85
+    },
+    {
+      "theme_en": "Mentions of Angel Di Maria",
+      "theme_ja": "アンヘル・ディ・マリアへの言及",
+      "mentions": 85
+    }
+  ],
+  "top_negative_themes": [
+    {
+      "theme_en": "Rejection of the father",
+      "theme_ja": "父親に対する拒絶",
+      "mentions": 65
+    },
+    {
+      "theme_en": "Editing inconsistency (score mismatch)",
+      "theme_ja": "編集の矛盾（スコアの不整合）",
+      "mentions": 60
+    },
+    {
+      "theme_en": "Ronaldo's decline and poor performance",
+      "theme_ja": "ロナウドのパフォーマンス低下と衰え",
+      "mentions": 55
+    },
+    {
+      "theme_en": "Offense and anger towards video content",
+      "theme_ja": "動画内容への不快感・怒り",
+      "mentions": 55
+    },
+    {
+      "theme_en": "Ronaldo's poor performance",
+      "theme_ja": "ロナウドのパフォーマンス低下",
+      "mentions": 48
+    },
+    {
+      "theme_en": "Dislike for pink colored boots",
+      "theme_ja": "ピンク色のスパイクに対する嫌悪感",
+      "mentions": 45
+    },
+    {
+      "theme_en": "Lack of football knowledge",
+      "theme_ja": "知識不足への批判",
+      "mentions": 45
+    },
+    {
+      "theme_en": "Criticism of excessive glazing",
+      "theme_ja": "過度な称賛（Glazing）への批判",
+      "mentions": 45
+    }
+  ]
+}
