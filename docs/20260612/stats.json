@@ -1,334 +1,486 @@
 {
   "generated": "2026-06-12",
-  "videos_analyzed": 110,
+  "videos_analyzed": 266,
   "countries": 47,
   "totals": {
-    "views": 1454209879,
-    "likes": 16302670,
-    "comments": 449263
+    "views": 1129605042,
+    "likes": 13331760,
+    "comments": 246722
   },
   "country_attribution": "multi (b): a video is counted in every country whose search surfaced it; no per-country ranking (unreliable)",
-  "top_teams": [],
+  "top_teams": [
+    {
+      "team": "Mexico",
+      "mentions": 958,
+      "lean": "positive",
+      "positive": 672,
+      "neutral": 186,
+      "negative": 100
+    },
+    {
+      "team": "Brazil",
+      "mentions": 852,
+      "lean": "positive",
+      "positive": 637,
+      "neutral": 174,
+      "negative": 41
+    },
+    {
+      "team": "Argentina",
+      "mentions": 718,
+      "lean": "positive",
+      "positive": 542,
+      "neutral": 76,
+      "negative": 100
+    },
+    {
+      "team": "Algeria",
+      "mentions": 688,
+      "lean": "positive",
+      "positive": 639,
+      "neutral": 49,
+      "negative": 0
+    },
+    {
+      "team": "Portugal",
+      "mentions": 590,
+      "lean": "positive",
+      "positive": 367,
+      "neutral": 200,
+      "negative": 23
+    },
+    {
+      "team": "South Korea",
+      "mentions": 491,
+      "lean": "positive",
+      "positive": 398,
+      "neutral": 93,
+      "negative": 0
+    },
+    {
+      "team": "South Africa",
+      "mentions": 401,
+      "lean": "negative",
+      "positive": 118,
+      "neutral": 62,
+      "negative": 221
+    },
+    {
+      "team": "India",
+      "mentions": 372,
+      "lean": "positive",
+      "positive": 173,
+      "neutral": 87,
+      "negative": 112
+    },
+    {
+      "team": "Japan",
+      "mentions": 282,
+      "lean": "positive",
+      "positive": 255,
+      "neutral": 27,
+      "negative": 0
+    },
+    {
+      "team": "Morocco",
+      "mentions": 206,
+      "lean": "positive",
+      "positive": 192,
+      "neutral": 14,
+      "negative": 0
+    }
+  ],
   "top_videos_by_views": [
     {
-      "title": "Next Starts Now | Hyundai X FIFA World Cup 2026™",
+      "title": "Managers aura💀 #football",
       "countries": [
+        "AU",
+        "CA",
+        "CD",
+        "CI",
+        "FR",
+        "GB",
+        "GH",
+        "HT",
+        "NZ",
+        "SN",
+        "US",
+        "ZA"
+      ],
+      "reach": 12,
+      "narration_en": "This video highlights the legendary playing days and aura of iconic football managers like Fatih Terim and Xabi Alonso. While many admire their skill, some viewers expressed frustration regarding the editing and choice of background music.",
+      "narration_ja": "ファティ・テリムやシャビ・アロンソといった名将たちの現役時代のプレーやオーラに注目した動画です。その技術には称賛が集まる一方、編集やBGMの選曲に対する批判的な声も一部で見られました。",
+      "views": 65863280,
+      "url": "https://www.youtube.com/watch?v=L9mPlefd2gk"
+    },
+    {
+      "title": "Who Wins the FIFA World Cup? #ad",
+      "countries": [
+        "AR",
         "AT",
         "BA",
         "BE",
         "BR",
         "CH",
+        "CO",
         "CV",
         "CW",
         "CZ",
         "DE",
+        "EC",
+        "ES",
         "HR",
         "IR",
+        "JP",
         "KR",
+        "MX",
         "NL",
         "NO",
+        "PA",
         "PT",
+        "PY",
         "SE",
-        "AR",
-        "CO",
-        "EC",
-        "ES",
-        "MX",
-        "PA",
-        "PY",
-        "TR",
-        "UY",
-        "UZ"
-      ],
-      "reach": 26,
-      "narration_en": "This Hyundai World Cup campaign sparks global debate over AI-powered technology and the future of football. Reactions are split between admiration for the ad's quality and skepticism toward its digital themes.",
-      "narration_ja": "ヒョンデによるW杯キャンペーン動画は、AI技術とサッカーの未来を巡り世界中で議論を呼んでいます。動画のクオリティを称賛する声と、AI技術への不信感を示す声が入り混じっています。",
-      "views": 133041859,
-      "url": "https://www.youtube.com/watch?v=aVGDC2KPRfA"
-    },
-    {
-      "title": "Yildiz VS Lehmann VS Yamal VS Messi VS Ronaldo",
-      "countries": [
-        "AU",
-        "CA",
-        "GB",
-        "GH",
-        "NZ",
-        "US",
-        "ZA"
-      ],
-      "reach": 7,
-      "narration_en": "Featuring stars like Ronaldo and Messi, this short has drawn criticism from English-speaking audiences regarding the accuracy of its content. Many viewers are debating whether the edits are AI-generated and expressing disappointment.",
-      "narration_ja": "ロナウドやメッシらが登場するこのショート動画は、内容の正確性を巡り英語圏の視聴者から批判を受けています。AI加工への疑念や内容に対する不満が多く投稿されています。",
-      "views": 99119051,
-      "url": "https://www.youtube.com/watch?v=w-wd3WAGwbs"
-    },
-    {
-      "title": "Rip The Script | Nike Football",
-      "countries": [
-        "AR",
-        "CD",
-        "CI",
-        "CO",
-        "DZ",
-        "EC",
-        "EG",
-        "ES",
-        "FR",
-        "HT",
-        "IQ",
-        "JO",
-        "MA",
-        "MX",
-        "PA",
-        "PY",
-        "QA",
-        "SA",
-        "SN",
-        "TN",
         "TR",
         "UY",
         "UZ",
         "AU",
         "CA",
-        "GB",
-        "GH",
-        "NZ",
-        "US",
-        "ZA"
-      ],
-      "reach": 30,
-      "narration_en": "Nike's star-studded 'Rip The Script' ad is a massive hit, earning widespread praise for its cinematic quality and nostalgic feel. The cameo-heavy production is generating mostly positive buzz across international markets.",
-      "narration_ja": "豪華スターが共演するナイキの広告『Rip The Script』は、その映画のようなクオリティと懐かしさで圧倒的な高評価を得ています。多くの著名人の登場が、世界中の視聴者を魅了しています。",
-      "views": 75938050,
-      "url": "https://www.youtube.com/watch?v=IyZ1WIua_1s"
-    },
-    {
-      "title": "That’s What Best Friends Are For 😂 #football #haaland #parody",
-      "countries": [
         "CD",
         "CI",
         "FR",
-        "HT",
-        "SN",
-        "CO",
-        "EC",
-        "ES",
-        "MX",
-        "PA",
-        "PY",
-        "UY",
-        "AU",
-        "CA",
         "GB",
         "GH",
+        "HT",
         "NZ",
+        "SN",
         "US",
         "ZA"
       ],
-      "reach": 19,
-      "narration_en": "This surreal Haaland parody blends CGI and AI to create a humorous and uncanny football experience. Viewers are generally entertained, though some express mixed feelings about the nature of the AI-generated imagery.",
-      "narration_ja": "ハーランドを題材にしたこのシュールなパロディ動画は、CGIとAIを融合させた独特の映像が特徴です。視聴者は概ね楽しんでいますが、AIによる映像表現に対して複雑な反応も見られます。",
-      "views": 65709813,
-      "url": "https://www.youtube.com/watch?v=i9uK9A3Omyg"
+      "reach": 39,
+      "narration_en": "Global fans shared their excitement and frustration regarding the FIFA World Cup lineups in this trending video. Comments reflect a mix of national pride and confusion over the video's intended target audience.",
+      "narration_ja": "FIFAワールドカップの出場国をめぐり、世界中のファンが期待や不満を寄せている動画です。各国の誇りと共に、動画のターゲット層に対する戸惑いの声も混在しています。",
+      "views": 59081782,
+      "url": "https://www.youtube.com/watch?v=KprTbagX5XY"
     },
     {
-      "title": "Haaland vs Mbappé: Bubble Edition 😂🫧 #football #haaland #parody",
+      "title": "Haaland Let Mbappé Think He Won 😏💀 #football #haaland #parody",
       "countries": [
+        "AU",
+        "CA",
         "CD",
         "CI",
         "FR",
-        "HT",
-        "SN",
-        "AU",
-        "CA",
         "GB",
         "GH",
+        "HT",
         "NZ",
+        "SN",
         "US",
         "ZA"
       ],
       "reach": 12,
-      "narration_en": "A playful AI-generated parody of Haaland and Mbappé has trended for its amusing 'bubble' theme. While many find the characters cute and funny, others are wary of the AI animation's surreal quality.",
-      "narration_ja": "ハーランドとエムバペをAIでパロディ化した動画は、「シャボン玉」をテーマにした演出で注目を集めています。キャラクターの可愛さを評価する声がある一方、AIアニメーション特有の不気味さを指摘する視聴者もいます。",
-      "views": 57738890,
-      "url": "https://www.youtube.com/watch?v=W1WdY5OwOF4"
+      "narration_en": "This surreal parody featuring Haaland and Mbappé has sparked mixed reactions for its AI-generated visuals. While some enjoy the entertainment value, others are unsettled by the uncanny imagery and fake depictions.",
+      "narration_ja": "ハーランドとエムバペが登場するシュールなパロディ動画で、AI生成された映像が話題です。エンターテインメントとして楽しむ声がある一方、不気味な描写や映像の偽物感に対する困惑も見られます。",
+      "views": 39666652,
+      "url": "https://www.youtube.com/watch?v=IqnQ6pcOxY4"
     },
     {
-      "title": "Who Was Actually Faster? 👀⚡ #football #haaland #parody",
+      "title": "Ganhei o Ingresso mais Raro da Copa do Mundo da FIFA 2026 #ad",
       "countries": [
-        "CD",
-        "CI",
+        "CZ"
+      ],
+      "reach": 1,
+      "narration_en": "This video covering a rare 2026 World Cup ticket has generated excitement alongside skepticism. Viewers are questioning the authenticity of the ticket and the fairness of its distribution.",
+      "narration_ja": "2026年ワールドカップの貴重なチケットを紹介する動画に対し、期待が高まる一方で疑念の声も上がっています。視聴者はチケットの真偽や配布の公平性について議論しています。",
+      "views": 36899432,
+      "url": "https://www.youtube.com/watch?v=NoJF344NY3M"
+    },
+    {
+      "title": "Shakira and Burna Boy perform Dai Dai at FIFA World Cup 2026 Opening Match!",
+      "countries": [
+        "AR",
+        "AT",
+        "BA",
+        "BE",
+        "BR",
+        "CH",
         "CO",
+        "CV",
+        "CW",
+        "CZ",
+        "DE",
         "EC",
         "ES",
-        "FR",
-        "HT",
+        "HR",
+        "IR",
+        "JP",
+        "KR",
         "MX",
+        "NL",
+        "NO",
         "PA",
+        "PT",
         "PY",
-        "SN",
+        "SE",
+        "TR",
         "UY",
-        "CA",
-        "ZA"
-      ],
-      "reach": 14,
-      "narration_en": "This AI-generated speed test parody has received a neutral-leaning reception as audiences weigh its entertainment value against fears of AI advancement. Viewers are debating the uncanny movements and the reliability of generated content.",
-      "narration_ja": "AIを用いた速度比較パロディ動画は、エンタメとしての楽しさとAI技術への警戒感の間で、中立的な評価を受けています。AI特有の不自然な動きや生成コンテンツの信頼性について議論されています。",
-      "views": 53218047,
-      "url": "https://www.youtube.com/watch?v=O8HdHWCmu48"
-    },
-    {
-      "title": "The Reason Behind Neymar's Latest Injury ⚽🤕🚑",
-      "countries": [
-        "CA",
-        "ZA"
-      ],
-      "reach": 2,
-      "narration_en": "This video covering Neymar’s injury highlights ongoing public fascination with AI video evolution. Viewers are impressed by the visual quality while remaining concerned about the difficulty of distinguishing real footage from AI simulations.",
-      "narration_ja": "ネイマールの怪我を扱ったこの動画は、AI映像技術の進化に対する世間の強い関心を集めています。高い映像品質に驚く一方で、実写とAI生成動画の区別がつかなくなることへの懸念も寄せられています。",
-      "views": 46752778,
-      "url": "https://www.youtube.com/watch?v=ccgvEpKSl9o"
-    },
-    {
-      "title": "IShowSpeed - World Cup (Champions) [Official Music Video]",
-      "countries": [
+        "UZ",
         "AU",
         "CA",
+        "CD",
+        "CI",
+        "FR",
         "GB",
         "GH",
+        "HT",
         "NZ",
+        "SN",
         "US",
         "ZA"
       ],
-      "reach": 7,
-      "narration_en": "IShowSpeed's 'World Cup (Champions)' track has become a viral favorite, with many fans arguing it deserves to be the official tournament anthem. Viewers are praising its energy and ability to unite global football fans.",
-      "narration_ja": "IShowSpeedの楽曲『World Cup (Champions)』は、W杯の公式ソングにふさわしいという声が上がるほど大きな反響を呼んでいます。そのエネルギーと世界中のファンを一つにする熱量が絶賛されています。",
-      "views": 44760540,
-      "url": "https://www.youtube.com/watch?v=vrY1THC_NQE"
+      "reach": 39,
+      "narration_en": "Shakira and Burna Boy's opening performance for the 2026 World Cup is a massive hit, drawing widespread praise for their iconic collaboration. Fans celebrated the performance as a highlight of the tournament's beginning.",
+      "narration_ja": "2026年ワールドカップ開会式でのシャキーラとバーナ・ボーイによるパフォーマンスが大きな反響を呼んでいます。象徴的なコラボレーションは、大会の幕開けを飾る素晴らしい出来事として多くのファンから称賛されました。",
+      "views": 35469998,
+      "url": "https://www.youtube.com/watch?v=Sc0EBlXORQM"
     },
     {
-      "title": "Nora Fatehi, Vegedream, Sanjoy, FIFA Sound - Siir Siir (FIFA World Cup 2026™) [Official Music Video]",
+      "title": "GRWM for the FIFA World Cup! ⚽🏆 #ad @YouTube  @fifa  #FIFAWorldCup",
       "countries": [
+        "AR",
         "AT",
-        "DE",
-        "UZ"
-      ],
-      "reach": 3,
-      "narration_en": "Featuring Nora Fatehi and Sanjoy, this official FIFA World Cup 2026 track is trending primarily in German and Uzbek-speaking regions. The reception is highly positive, highlighting Moroccan cultural pride and its record-breaking views.",
-      "narration_ja": "ノラ・ファテヒとサンジョイが参加したW杯公式曲は、主にドイツ語圏やウズベキスタンでトレンド入りしています。モロッコの文化への誇りや記録的な再生数が注目され、非常に高い評価を得ています。",
-      "views": 41042454,
-      "url": "https://www.youtube.com/watch?v=afiNbSxg7aw"
-    },
-    {
-      "title": "Ronaldo Reacts To 2026 World Cup 🏆😶",
-      "countries": [
         "BA",
+        "BE",
+        "CH",
+        "CO",
+        "CW",
+        "CZ",
+        "DE",
+        "EC",
+        "ES",
         "HR",
+        "IR",
+        "JP",
+        "KR",
+        "MX",
+        "NL",
         "NO",
+        "PA",
+        "PY",
+        "SE",
+        "UY",
+        "AU",
+        "CA",
         "CD",
         "CI",
         "FR",
+        "GB",
+        "GH",
         "HT",
+        "NZ",
         "SN",
-        "CA",
+        "US",
         "ZA"
       ],
-      "reach": 10,
-      "narration_en": "This edited tribute to Ronaldo and the upcoming 2026 World Cup has garnered strong support from fans. The video is praised for its animation style, though some viewers pointed out that the footage is recycled.",
-      "narration_ja": "ロナウドと2026年W杯をテーマにしたこの編集動画は、多くのファンから熱烈な支持を受けています。アニメーションのようなスタイルが高く評価されていますが、映像が過去のものであることを指摘する声もあります。",
-      "views": 39035046,
-      "url": "https://www.youtube.com/watch?v=sY6dyCqPROo"
+      "reach": 34,
+      "narration_en": "This World Cup-themed 'get ready with me' video has drawn a polarized response from fans. While some appreciate the creator's excitement, others voiced skepticism toward influencer-led sports content.",
+      "narration_ja": "ワールドカップをテーマにした「準備動画」に対し、ファンから様々な反応が寄せられています。制作者の熱意を評価する声の一方で、インフルエンサーによるスポーツ関連コンテンツへの懐疑的な意見も目立ちました。",
+      "views": 34344069,
+      "url": "https://www.youtube.com/watch?v=iH9U6fe09ZA"
+    },
+    {
+      "title": "Yamal Hit Haaland’s Hand by Accident 🔨😱 #football #haaland #parody",
+      "countries": [
+        "AR",
+        "CO",
+        "EC",
+        "ES",
+        "JP",
+        "MX",
+        "PA",
+        "PY",
+        "UY",
+        "AU",
+        "CA",
+        "CD",
+        "CI",
+        "FR",
+        "GB",
+        "GH",
+        "HT",
+        "NZ",
+        "SN",
+        "US",
+        "ZA"
+      ],
+      "reach": 21,
+      "narration_en": "This AI-powered parody showing Yamal and Haaland has amazed viewers with its technical execution. The community remains focused on the entertainment value while discussing the implications of such technology.",
+      "narration_ja": "ヤマルとハーランドを描いたAIパロディ動画は、その技術的な完成度で視聴者を驚かせました。コミュニティでは、エンターテインメントとしての面白さと共に、技術のあり方についても議論が交わされています。",
+      "views": 28957325,
+      "url": "https://www.youtube.com/watch?v=qnkSZVPOC-U"
+    },
+    {
+      "title": "India Women Ready For World Cup 2026 🏆 🇮🇳🔥 Smriti Mandhana & Harmanpreet Kaur #T20WorldCup #cricket",
+      "countries": [
+        "AT",
+        "BA",
+        "BE",
+        "CH",
+        "CW",
+        "DE",
+        "HR",
+        "NL",
+        "NO",
+        "SE",
+        "AR",
+        "CO",
+        "CZ",
+        "EC",
+        "ES",
+        "MX",
+        "PA",
+        "PY",
+        "UY"
+      ],
+      "reach": 19,
+      "narration_en": "The Indian women's cricket team is receiving immense support and patriotic pride ahead of the 2026 T20 World Cup. Fans are celebrating the players' achievements and expressing strong hopes for a championship win.",
+      "narration_ja": "2026年T20ワールドカップに向け、インド女子クリケット代表チームに熱い声援と愛国的な誇りが寄せられています。選手たちの成功を祝い、優勝への期待が高まっています。",
+      "views": 26854499,
+      "url": "https://www.youtube.com/watch?v=Dj93MYwi4XE"
+    },
+    {
+      "title": "Who Is the Ultimate Winner? 🤔⚽️💔#football #nice #skills #viralvideo #edit #yt #ftypシ #gaming",
+      "countries": [
+        "AU",
+        "CA",
+        "CD",
+        "CI",
+        "FR",
+        "GB",
+        "GH",
+        "HT",
+        "NZ",
+        "SN",
+        "US",
+        "ZA"
+      ],
+      "reach": 12,
+      "narration_en": "This video comparing football stars like Ronaldo and Brazilian icons has sparked debate among fans. Viewers are split between admiring the skills shown and questioning the legitimacy of the edited footage.",
+      "narration_ja": "ロナウドやブラジルのスター選手たちを比較するこの動画は、ファンの間で議論を呼んでいます。プレーの技術を称える声と、編集された映像の信憑性を疑う声が分かれています。",
+      "views": 22054362,
+      "url": "https://www.youtube.com/watch?v=DEcUCdpsPPk"
+    },
+    {
+      "title": "Ronaldo Emotional Moments | Portugal vs Argentina World Cup Penalty Shootout 2026 #shorts #football",
+      "countries": [
+        "AU",
+        "CA",
+        "CD",
+        "CI",
+        "FR",
+        "GB",
+        "GH",
+        "HT",
+        "NZ",
+        "SN",
+        "US",
+        "ZA"
+      ],
+      "reach": 12,
+      "narration_en": "This edit depicting a 2026 World Cup penalty shootout between Ronaldo and Messi triggered an emotional response. While many fans expressed passion for the players, others pointed out that the footage is staged.",
+      "narration_ja": "2026年ワールドカップでのロナウド対メッシのPK戦を描いた動画は、ファンの感情を揺さぶりました。選手への熱い支持が寄せられる一方、映像が偽物であると指摘する声も多く上がりました。",
+      "views": 16547656,
+      "url": "https://www.youtube.com/watch?v=MNodUUgdvyc"
     }
   ],
   "sentiment_avg": {
-    "positive": 66.4622641509434,
-    "negative": 16.641509433962263,
-    "neutral": 16.89622641509434
+    "positive": 55.16412213740458,
+    "negative": 21.35496183206107,
+    "neutral": 23.480916030534353
   },
-  "comments_analyzed": 9940,
+  "comments_analyzed": 22263,
   "top_positive_themes": [
     {
-      "theme_en": "Amazement at AI technology",
-      "theme_ja": "AI技術への驚き",
-      "mentions": 178
+      "theme_en": "Praise for Cristiano Ronaldo",
+      "theme_ja": "クリスティアーノ・ロナウドへの称賛",
+      "mentions": 273
     },
     {
-      "theme_en": "Humor and entertainment value",
-      "theme_ja": "動画のユーモアと面白さ",
-      "mentions": 140
+      "theme_en": "Excitement for the World Cup",
+      "theme_ja": "ワールドカップへの期待",
+      "mentions": 260
     },
     {
-      "theme_en": "Solidarity and brotherhood among Arab nations",
-      "theme_ja": "アラブ諸国間の連帯と兄弟愛",
-      "mentions": 140
+      "theme_en": "Support for Cristiano Ronaldo",
+      "theme_ja": "クリスティアーノ・ロナウドへの支持",
+      "mentions": 207
     },
     {
-      "theme_en": "Congratulations and praise for the Algerian national team",
-      "theme_ja": "アルジェリア代表への祝福と称賛",
+      "theme_en": "Praise for Shakira's performance",
+      "theme_ja": "シャキーラのパフォーマンスへの称賛",
+      "mentions": 118
+    },
+    {
+      "theme_en": "Praise for Ronaldo",
+      "theme_ja": "ロナウドへの称賛",
       "mentions": 95
     },
     {
-      "theme_en": "Achraf Hakimi's achievement and congratulations",
-      "theme_ja": "アクラフ・ハキミの偉業と祝福",
+      "theme_en": "Support for Algeria national team",
+      "theme_ja": "アルジェリア代表への応援",
+      "mentions": 86
+    },
+    {
+      "theme_en": "Celebrating Mexico's victory",
+      "theme_ja": "メキシコの勝利を祝福",
       "mentions": 85
     },
     {
-      "theme_en": "Praise and support for the Iraqi national team",
-      "theme_ja": "イラク代表チームへの称賛と応援",
+      "theme_en": "Cuteness of the dogs",
+      "theme_ja": "犬の可愛さ",
       "mentions": 85
-    },
-    {
-      "theme_en": "Excitement and anticipation for the World Cup",
-      "theme_ja": "ワールドカップ開催への期待と興奮",
-      "mentions": 77
-    },
-    {
-      "theme_en": "Praise for Tyla's performance",
-      "theme_ja": "Tylaのパフォーマンスへの称賛",
-      "mentions": 75
     }
   ],
   "top_negative_themes": [
     {
-      "theme_en": "Anger and sadness over destroying a valuable ball",
-      "theme_ja": "貴重なボールを破壊することへの怒り・悲しみ",
+      "theme_en": "Criticism of President Lula",
+      "theme_ja": "ルラ大統領への批判",
+      "mentions": 70
+    },
+    {
+      "theme_en": "Lack of English proficiency",
+      "theme_ja": "英語力の不足",
       "mentions": 65
     },
     {
-      "theme_en": "Subscription price is too expensive",
-      "theme_ja": "サブスクリプション料金が高すぎる",
+      "theme_en": "Confusion and criticism regarding jersey number 67",
+      "theme_ja": "背番号67に対する困惑や批判",
       "mentions": 65
     },
     {
-      "theme_en": "Hardship of watching at dawn/late night due to time zones",
-      "theme_ja": "時差による早朝・深夜観戦の過酷さ",
+      "theme_en": "Annoying background music in highlights",
+      "theme_ja": "ハイライトのBGMが不快",
+      "mentions": 65
+    },
+    {
+      "theme_en": "Criticism of South Africa's poor performance",
+      "theme_ja": "南アフリカ代表の拙いプレーへの批判",
       "mentions": 60
     },
     {
-      "theme_en": "AI physics errors (ball spawning)",
-      "theme_ja": "AI特有の物理演算ミス（ボールの増殖）",
+      "theme_en": "Anxiety about school absence and failing",
+      "theme_ja": "学校の欠席・留年への不安",
+      "mentions": 60
+    },
+    {
+      "theme_en": "Inappropriate sexual jokes",
+      "theme_ja": "不適切な性的ジョーク",
+      "mentions": 60
+    },
+    {
+      "theme_en": "Sadness over player injuries",
+      "theme_ja": "選手の負傷に対する悲しみ",
       "mentions": 55
-    },
-    {
-      "theme_en": "Sadness over Italy missing the World Cup",
-      "theme_ja": "イタリアのワールドカップ予選敗退への悲しみ",
-      "mentions": 45
-    },
-    {
-      "theme_en": "Lack of Mexican cultural representation",
-      "theme_ja": "メキシコ文化の表現不足",
-      "mentions": 45
-    },
-    {
-      "theme_en": "Security concerns",
-      "theme_ja": "セキュリティへの懸念",
-      "mentions": 45
-    },
-    {
-      "theme_en": "Pointing out AI unnaturalness",
-      "theme_ja": "AIの不自然さへの指摘",
-      "mentions": 45
     }
   ]
 }

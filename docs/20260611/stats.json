@@ -1,308 +1,440 @@
 {
   "generated": "2026-06-11",
-  "videos_analyzed": 111,
+  "videos_analyzed": 260,
   "countries": 47,
   "totals": {
-    "views": 1087658078,
-    "likes": 12530450,
-    "comments": 194432
+    "views": 1074643445,
+    "likes": 13297536,
+    "comments": 219940
   },
   "country_attribution": "multi (b): a video is counted in every country whose search surfaced it; no per-country ranking (unreliable)",
-  "top_teams": [],
+  "top_teams": [
+    {
+      "team": "Argentina",
+      "mentions": 984,
+      "lean": "positive",
+      "positive": 779,
+      "neutral": 116,
+      "negative": 89
+    },
+    {
+      "team": "Brazil",
+      "mentions": 965,
+      "lean": "positive",
+      "positive": 619,
+      "neutral": 220,
+      "negative": 126
+    },
+    {
+      "team": "Portugal",
+      "mentions": 809,
+      "lean": "positive",
+      "positive": 511,
+      "neutral": 223,
+      "negative": 75
+    },
+    {
+      "team": "Algeria",
+      "mentions": 572,
+      "lean": "positive",
+      "positive": 563,
+      "neutral": 9,
+      "negative": 0
+    },
+    {
+      "team": "South Korea",
+      "mentions": 395,
+      "lean": "positive",
+      "positive": 300,
+      "neutral": 45,
+      "negative": 50
+    },
+    {
+      "team": "Mexico",
+      "mentions": 321,
+      "lean": "positive",
+      "positive": 206,
+      "neutral": 75,
+      "negative": 40
+    },
+    {
+      "team": "Japan",
+      "mentions": 259,
+      "lean": "positive",
+      "positive": 234,
+      "neutral": 25,
+      "negative": 0
+    },
+    {
+      "team": "India",
+      "mentions": 238,
+      "lean": "positive",
+      "positive": 74,
+      "neutral": 102,
+      "negative": 62
+    },
+    {
+      "team": "England",
+      "mentions": 202,
+      "lean": "positive",
+      "positive": 85,
+      "neutral": 72,
+      "negative": 45
+    },
+    {
+      "team": "France",
+      "mentions": 181,
+      "lean": "positive",
+      "positive": 59,
+      "neutral": 120,
+      "negative": 2
+    }
+  ],
   "top_videos_by_views": [
     {
-      "title": "Other Players Respecting Moments ❤️",
+      "title": "Managers aura💀 #football",
       "countries": [
+        "AU",
+        "CA",
+        "CD",
+        "CI",
+        "FR",
+        "GB",
+        "GH",
+        "HT",
+        "NZ",
+        "SN",
+        "US",
+        "ZA"
+      ],
+      "reach": 12,
+      "narration_en": "This video highlights the aura and technical skills of famous managers, though some viewers criticized the music and spam comments. It trended across several countries including the UK, France, and the US.",
+      "narration_ja": "有名監督のオーラや技術を特集した動画で、英米仏など各国で急上昇しました。音楽の選曲やスパムコメントに関する否定的な意見も一部で見られます。",
+      "views": 65753104,
+      "url": "https://www.youtube.com/watch?v=L9mPlefd2gk"
+    },
+    {
+      "title": "GRWM for the FIFA World Cup! ⚽🏆 #ad @YouTube  @fifa  #FIFAWorldCup",
+      "countries": [
+        "AT",
+        "BA",
+        "BE",
+        "BR",
+        "CH",
+        "CV",
+        "CW",
+        "CZ",
+        "DE",
+        "HR",
+        "IR",
+        "JP",
+        "NL",
+        "NO",
+        "PT",
+        "SE",
+        "UZ",
+        "AR",
+        "AU",
+        "CA",
+        "CD",
+        "CI",
+        "CO",
+        "EC",
+        "ES",
+        "FR",
+        "GB",
+        "GH",
+        "HT",
+        "MX",
+        "NZ",
+        "PA",
+        "PY",
+        "SN",
+        "US",
+        "UY",
+        "ZA"
+      ],
+      "reach": 37,
+      "narration_en": "Featuring World Cup preparation, this video saw global engagement but faced criticism regarding the creator's changes and influencer behavior. Viewers noted the soccer ball animation on the like button.",
+      "narration_ja": "ワールドカップに向けた準備動画で世界的に注目されましたが、投稿者の変化やインフルエンサーへの批判も寄せられました。いいねボタンのサッカーボール演出も話題です。",
+      "views": 34299715,
+      "url": "https://www.youtube.com/watch?v=iH9U6fe09ZA"
+    },
+    {
+      "title": "¡Nos fuimos de vacaciones a ver el fútbol! | Netflix",
+      "countries": [
+        "AR",
+        "CO",
+        "EC",
+        "ES",
+        "MX",
+        "PA",
+        "PY",
+        "UY"
+      ],
+      "reach": 8,
+      "narration_en": "This Netflix promotional video for the World Cup received high praise in Mexico and other Spanish-speaking countries. Fans enjoyed the cast's personality and the humorous anime character appearances.",
+      "narration_ja": "ワールドカップに向けたNetflixの広告動画で、メキシコを中心に高い評価を得ました。出演者の魅力や、アニメキャラクターの登場がファンを楽しませています。",
+      "views": 29768498,
+      "url": "https://www.youtube.com/watch?v=ZyEaX_7f2z0"
+    },
+    {
+      "title": "Neymar was dancing 🕺 🇧🇷 #shorts #fifaworldcup #brazil",
+      "countries": [
+        "CZ"
+      ],
+      "reach": 1,
+      "narration_en": "Focused on Neymar's skills and Brazil's World Cup run, this video resonated with Czech viewers. Comments reflect a mix of admiration for the team's magic and sadness over their tournament exit.",
+      "narration_ja": "ネイマールのスキルとブラジル代表を特集し、チェコでトレンド入りしました。プレーへの称賛と、大会敗退に対する悲しみの声が混在しています。",
+      "views": 25928825,
+      "url": "https://www.youtube.com/watch?v=vmidUsJ5e8Y"
+    },
+    {
+      "title": "Fer no sabe nada de fútbol?! 😤😵‍💫",
+      "countries": [
+        "TR",
+        "UZ",
+        "AR",
+        "CO",
+        "EC",
+        "ES",
+        "MX",
+        "PA",
+        "PY",
+        "UY"
+      ],
+      "reach": 10,
+      "narration_en": "This video captures the comedic dynamic between Fer and Pato as they discuss Cristiano Ronaldo. It trended in Turkey, Latin America, and Spain, drawing interest for their entertaining reactions.",
+      "narration_ja": "クリスティアーノ・ロナウドを巡るFerとPatoの掛け合いが面白い動画で、トルコや中南米、スペインでトレンド入りしました。",
+      "views": 23393478,
+      "url": "https://www.youtube.com/watch?v=PEpaIzvFf8I"
+    },
+    {
+      "title": "Who Is the Ultimate Winner? 🤔⚽️💔#football #nice #skills #viralvideo #edit #yt #ftypシ #gaming",
+      "countries": [
+        "CD",
+        "CI",
+        "FR",
+        "HT",
+        "SN",
+        "GB",
+        "US",
+        "AU",
+        "CA",
+        "GH",
+        "NZ",
+        "ZA"
+      ],
+      "reach": 12,
+      "narration_en": "This video features Cristiano Ronaldo, Portugal, and Brazil, sparking debates about video editing accuracy. It trended widely in Western countries and parts of Africa.",
+      "narration_ja": "C・ロナウドやポルトガル、ブラジルを取り上げた動画で、編集の真実性について視聴者間で議論が起きています。欧米やアフリカ諸国で広く視聴されました。",
+      "views": 22052826,
+      "url": "https://www.youtube.com/watch?v=DEcUCdpsPPk"
+    },
+    {
+      "title": "Who Can Build A Football Player First? 😳",
+      "countries": [
+        "CD",
+        "CI",
+        "FR",
+        "HT",
+        "SN",
         "AU",
         "CA",
         "GB",
         "GH",
         "NZ",
-        "ZA"
-      ],
-      "reach": 6,
-      "narration_en": "This heartwarming video highlights athletes demonstrating sportsmanship and quick reflexes. It trended across six countries, with viewers praising the chivalry shown, though some questioned the inclusion of certain clips.",
-      "narration_ja": "スポーツマンシップや選手の反射神経を捉えた心温まる動画です。6カ国でトレンド入りし、選手の親切な振る舞いが称賛された一方、一部のクリップの選定には疑問の声も上がりました。",
-      "views": 52351688,
-      "url": "https://www.youtube.com/watch?v=ecDKEwdEbL8"
-    },
-    {
-      "title": "Player Getting Cooked 💀",
-      "countries": [
-        "NZ"
-      ],
-      "reach": 1,
-      "narration_en": "Featuring player highlights and edited skills, this video captured attention in New Zealand. While fans enjoyed the creative editing and featured stars like Lamine Yamal, there were also discussions surrounding fan bias and rough play.",
-      "narration_ja": "選手のプレー集を編集したこの動画は、ニュージーランドで注目を集めました。ラミン・ヤマルなどのスター選手やクリエイティブな編集が楽しまれた一方で、ファンの偏りや荒いプレーについても議論が交わされました。",
-      "views": 49921412,
-      "url": "https://www.youtube.com/watch?v=NzJKxvt2dCI"
-    },
-    {
-      "title": "Premier league Cosco Premier Vs Cosco Hurricanes Football ⚽️ Unboxing",
-      "countries": [
-        "CD",
-        "CI",
-        "FR",
-        "HT",
-        "SN",
         "US",
-        "AU",
-        "CA",
-        "GB",
-        "GH",
-        "ZA",
-        "NZ"
+        "ZA"
       ],
       "reach": 12,
-      "narration_en": "This unboxing video of Premier League-branded footballs faced significant criticism from a diverse international audience. Comments largely focused on dissatisfaction with the ball handling, inflation methods, and overall video quality.",
-      "narration_ja": "プレミアリーグ公式のサッカーボールを紹介する開封動画ですが、視聴者からは厳しい反応が目立ちました。ボールの扱い方や空気の入れ方、そして動画の品質に対する不満がコメントの大部分を占めています。",
-      "views": 46088686,
-      "url": "https://www.youtube.com/watch?v=t8dvL5Ztmh4"
+      "narration_en": "A highly positive response followed this football guessing challenge, which highlights Ronaldo's 'Siuuu' celebration. The video trended in numerous countries across Europe, North America, and Africa.",
+      "narration_ja": "サッカー選手を当てるクイズ動画で、ロナウドの「Siuuu」セレブレーションが人気を集めました。欧米やアフリカの多くの国でトレンド入りし、好意的なコメントが多く寄せられています。",
+      "views": 21411827,
+      "url": "https://www.youtube.com/watch?v=iaGdpDD7ZCo"
     },
     {
-      "title": "Yildiz VS Lehmann VS Dybala VS Yamal VS Mbappe VS Messi VS Ronaldo",
+      "title": "Messi 🤝 Ronaldo Together! FIFA World Cup , Women's T20 World Cup #messi #ronaldo #fifa #t20worldcup",
       "countries": [
-        "US",
-        "AU",
-        "CA",
-        "GB",
-        "GH",
-        "ZA",
-        "NZ"
-      ],
-      "reach": 7,
-      "narration_en": "A viral shorts compilation featuring global stars like Messi, Ronaldo, and Mbappe, trending across seven countries. The video serves as a quick showcase of talent for English-speaking football fans.",
-      "narration_ja": "メッシ、ロナウド、エムバペといった世界的なスター選手をまとめたショート動画で、7カ国でトレンド入りしました。英語圏のサッカーファンに向けて、各選手の才能を短く紹介する内容です。",
-      "views": 46035874,
-      "url": "https://www.youtube.com/watch?v=vZpqZiqHz1s"
-    },
-    {
-      "title": "When Ronaldo chose his Biggest Fan ❤️",
-      "countries": [
-        "CD",
-        "CI",
-        "FR",
-        "HT",
-        "SN",
-        "US",
-        "AU",
-        "CA",
-        "GB",
-        "GH",
-        "ZA",
-        "NZ"
-      ],
-      "reach": 12,
-      "narration_en": "This video about Cristiano Ronaldo and his fans trended in multiple regions but drew mixed reactions. Many viewers expressed skepticism, pointing out that the narrative appears fabricated and lacks factual accuracy.",
-      "narration_ja": "クリスティアーノ・ロナウドとファンを題材にした動画ですが、複数の地域でトレンド入りしたものの評価は分かれました。事実とは異なる演出であるとの指摘が多く、内容の信憑性に対して懐疑的な声が寄せられています。",
-      "views": 34343885,
-      "url": "https://www.youtube.com/watch?v=LZrGmLup72M"
-    },
-    {
-      "title": "Players Getting Cooked 🤯😆",
-      "countries": [
-        "FR",
-        "SN",
-        "US",
-        "AU",
-        "CA",
-        "GB",
-        "GH",
-        "ZA"
-      ],
-      "reach": 8,
-      "narration_en": "A popular comedy edit featuring football players that gained traction in eight countries. Viewers largely praised the creative editing and humor, though a segment expressed discomfort with the parodying of players.",
-      "narration_ja": "選手をコミカルに編集した動画が8カ国で人気を博しました。創造的な編集とユーモアが多くの視聴者に高く評価されましたが、選手を揶揄するような内容に不快感を示す声も一部で見られました。",
-      "views": 31633442,
-      "url": "https://www.youtube.com/watch?v=WMktc0FzQQQ"
-    },
-    {
-      "title": "Reading Japanese names during my first soccer match! ⚽️🎙️📋🇯🇵💮💭 #japan #soccer #football",
-      "countries": [
-        "CD",
-        "CI",
-        "HT",
-        "FR",
-        "SN",
-        "US",
-        "CA",
-        "ZA"
-      ],
-      "reach": 8,
-      "narration_en": "A video featuring a creator reading Japanese names during a football match received high praise for its cultural respect and pronunciation. It trended across eight countries with a highly positive audience sentiment.",
-      "narration_ja": "サッカーの試合中に日本語の名前を読み上げる動画で、文化への敬意と正確な発音が称賛されました。8カ国でトレンド入りし、視聴者からは非常にポジティブな反応を得ています。",
-      "views": 28720092,
-      "url": "https://www.youtube.com/watch?v=g3Vpb_RAPRE"
-    },
-    {
-      "title": "Nos pidieron el de Argentina 🇦🇷 FIFA World Cup Song 🎶 #Argentina #worldcup #lionelmessi #messi",
-      "countries": [
+        "BR",
+        "CV",
+        "KR",
+        "PT",
+        "AT",
+        "CH",
+        "DE",
+        "JP",
+        "TR",
+        "BA",
+        "BE",
+        "CW",
+        "HR",
+        "IR",
+        "NL",
+        "NO",
+        "SE",
+        "UZ",
+        "CZ",
         "AR",
+        "CO",
+        "EC",
+        "ES",
+        "MX",
+        "PA",
+        "PY",
+        "UY"
+      ],
+      "reach": 27,
+      "narration_en": "Viewers expressed mixed feelings about this AI-generated video featuring Messi and Ronaldo. While some enjoyed the concept, others were confused by the appearance of cricket gear in a football context.",
+      "narration_ja": "メッシとロナウドをAIで合成した動画で、反応は賛否両論です。共演を喜ぶ声がある一方、なぜかクリケットの用具が登場することに困惑する視聴者もいました。",
+      "views": 20711330,
+      "url": "https://www.youtube.com/watch?v=4Fy5Vloao0g"
+    },
+    {
+      "title": "⚽ FIFA World Cup Messi-Ronaldo 😍 Women’s T20 World Cup Bhi #ronaldo  #messi #fifa #t20worldcup",
+      "countries": [
         "AT",
         "BA",
         "BE",
         "CH",
-        "CO",
-        "CV",
         "CW",
         "CZ",
         "DE",
-        "EC",
-        "ES",
         "HR",
         "IR",
         "JP",
-        "KR",
-        "MX",
         "NL",
         "NO",
-        "PA",
-        "PT",
-        "PY",
         "SE",
-        "UY",
-        "TR",
-        "UZ",
-        "CD",
-        "CI",
-        "HT",
+        "AU",
         "CA",
-        "ZA"
+        "GB",
+        "GH",
+        "NZ",
+        "US",
+        "ZA",
+        "AR",
+        "CO",
+        "EC",
+        "ES",
+        "MX",
+        "PA",
+        "PY",
+        "UY"
       ],
-      "reach": 31,
-      "narration_en": "This tribute to the Argentina national team and Lionel Messi resonated deeply across 20 countries. Fans shared their excitement for the World Cup and appreciation for the music, despite some requests for missing players.",
-      "narration_ja": "アルゼンチン代表とリオネル・メッシを称えるこの動画は、20カ国で広く支持されました。ワールドカップへの期待や楽曲に対する称賛が多く、一部では未登場の選手を求めるリクエストも寄せられました。",
-      "views": 24129591,
-      "url": "https://www.youtube.com/watch?v=-WumdEpyDZQ"
+      "reach": 28,
+      "narration_en": "This video, trending in many global regions, faced skepticism regarding AI deepfakes and the odd inclusion of cricket elements. Engagement remained largely neutral or critical.",
+      "narration_ja": "AIによるディープフェイクへの懸念や、場違いなクリケット要素への疑問から、視聴者の反応は懐疑的で中立的なものが目立ちました。",
+      "views": 18355044,
+      "url": "https://www.youtube.com/watch?v=ixD98OeMkIA"
     },
     {
-      "title": "Khaby Lame And Footballers😍☠️ #shorts #football #khabylame #ronaldo",
+      "title": "🤝 أجمل لحظات الاحترام في عالم كرة القدم ❤️✨😯⚽️#بث_مباشر_مباريات_اليوم#shrots",
       "countries": [
-        "CD",
-        "CI",
-        "HT",
-        "FR",
-        "SN",
-        "CA",
-        "ZA"
+        "DZ",
+        "EG",
+        "IQ",
+        "JO",
+        "MA",
+        "QA",
+        "SA",
+        "TN"
       ],
-      "reach": 7,
-      "narration_en": "This short featuring Khaby Lame and various football stars trended in several regions. While viewers enjoyed the entertainment value and collaborations, some debated the usage of AI and the absence of Cristiano Ronaldo.",
-      "narration_ja": "カビ・ラメとスター選手が共演するショート動画で、複数の地域でトレンド入りしました。エンターテインメント性やコラボレーションは好評でしたが、AI利用の是非やロナウドが出演していないことについて議論が起きました。",
-      "views": 24104594,
-      "url": "https://www.youtube.com/watch?v=uP1JCkZY-zQ"
-    },
-    {
-      "title": "Budweiser | Let It Pour ft. Erling Haaland & Jürgen Klopp | FIFA World Cup 26™️",
-      "countries": [
-        "AT",
-        "CH",
-        "DE",
-        "BA",
-        "BE",
-        "CW",
-        "CZ",
-        "HR",
-        "IR",
-        "NL",
-        "NO",
-        "MX"
-      ],
-      "reach": 12,
-      "narration_en": "Featuring Erling Haaland and Jürgen Klopp, this advertisement for the 2026 World Cup saw varied reactions across Europe and Mexico. Fans discussed the creative content, while some expressed criticism regarding the host nation and product quality.",
-      "narration_ja": "アーリング・ハーランドとユルゲン・クロップが出演する2026年ワールドカップの広告は、欧州やメキシコで注目されました。創造的な内容が話題になった一方、開催地や製品の品質に対する批判的な声も見られました。",
-      "views": 24064176,
-      "url": "https://www.youtube.com/watch?v=w0oRTljtx0o"
+      "reach": 8,
+      "narration_en": "Highlighting Ronaldo's sportsmanship, this video garnered strong positive sentiment in the Middle East and North Africa. It focuses on his character and legendary status in football.",
+      "narration_ja": "ロナウドのスポーツマンシップを称える動画で、中東や北アフリカで非常に高い評価を得ました。彼のキャラクターと伝説的な選手としての側面が強調されています。",
+      "views": 16770211,
+      "url": "https://www.youtube.com/watch?v=8DNmdZv_RLY"
     }
   ],
   "sentiment_avg": {
-    "positive": 61.8411214953271,
-    "negative": 22.1588785046729,
-    "neutral": 16.0
+    "positive": 54.785714285714285,
+    "negative": 21.055555555555557,
+    "neutral": 24.158730158730158
   },
-  "comments_analyzed": 10050,
+  "comments_analyzed": 21371,
   "top_positive_themes": [
+    {
+      "theme_en": "Excitement for the World Cup",
+      "theme_ja": "ワールドカップへの期待と興奮",
+      "mentions": 311
+    },
     {
       "theme_en": "Praise for Cristiano Ronaldo",
       "theme_ja": "クリスティアーノ・ロナウドへの称賛",
+      "mentions": 263
+    },
+    {
+      "theme_en": "Praise for Ronaldo",
+      "theme_ja": "ロナウドへの称賛",
+      "mentions": 165
+    },
+    {
+      "theme_en": "Support for Cristiano Ronaldo",
+      "theme_ja": "クリスティアーノ・ロナウドへの支持",
+      "mentions": 157
+    },
+    {
+      "theme_en": "Support for Algeria national team",
+      "theme_ja": "アルジェリア代表への応援",
+      "mentions": 143
+    },
+    {
+      "theme_en": "Support for national teams",
+      "theme_ja": "母国代表への応援",
       "mentions": 120
     },
     {
-      "theme_en": "Humor and comedy",
-      "theme_ja": "コメディとしての面白さ",
-      "mentions": 85
+      "theme_en": "Excitement for World Cup",
+      "theme_ja": "ワールドカップへの期待",
+      "mentions": 107
     },
     {
-      "theme_en": "Overwhelming patriotism for Turkey",
-      "theme_ja": "トルコへの圧倒的な愛国心",
-      "mentions": 85
-    },
-    {
-      "theme_en": "Humor and Comedy",
-      "theme_ja": "面白さ・ユーモア",
-      "mentions": 85
-    },
-    {
-      "theme_en": "Humor and laughter",
-      "theme_ja": "面白さ・笑い",
-      "mentions": 77
-    },
-    {
-      "theme_en": "Enthusiastic support for Cristiano Ronaldo",
-      "theme_ja": "クリスティアーノ・ロナウドへの熱狂的な支持",
-      "mentions": 75
-    },
-    {
-      "theme_en": "Love and support from various countries",
-      "theme_ja": "各国のファンからの愛と応援",
-      "mentions": 75
-    },
-    {
-      "theme_en": "Gratitude and farewell to Lewandowski",
-      "theme_ja": "レヴァンドフスキへの感謝と別れ",
-      "mentions": 75
+      "theme_en": "Expectation of victory",
+      "theme_ja": "勝利への期待",
+      "mentions": 100
     }
   ],
   "top_negative_themes": [
     {
-      "theme_en": "Incompetence and low level of the referee",
-      "theme_ja": "審判の無能さとレベルの低さ",
-      "mentions": 75
+      "theme_en": "Ronaldo's decline in performance",
+      "theme_ja": "ロナウドのパフォーマンス低下",
+      "mentions": 70
     },
     {
-      "theme_en": "Sadness over missing star players",
-      "theme_ja": "主要選手の欠場に対する悲しみ",
+      "theme_en": "Criticism of resale prices",
+      "theme_ja": "転売価格への批判",
       "mentions": 65
     },
     {
-      "theme_en": "Severity and painful nature of injuries",
-      "theme_ja": "怪我の深刻さと痛々しさ",
+      "theme_en": "Poor video quality",
+      "theme_ja": "映像品質の低さ",
+      "mentions": 65
+    },
+    {
+      "theme_en": "Inappropriate sexual jokes",
+      "theme_ja": "不適切な性的ジョーク",
+      "mentions": 60
+    },
+    {
+      "theme_en": "Immaturity and mental issues",
+      "theme_ja": "精神面・メンタルの未熟さ",
+      "mentions": 60
+    },
+    {
+      "theme_en": "Sadness over injuries and accidents",
+      "theme_ja": "怪我や事故への悲しみ",
+      "mentions": 55
+    },
+    {
+      "theme_en": "Corruption and business interests in national team selection",
+      "theme_ja": "代表招集の腐敗・ビジネス化",
+      "mentions": 55
+    },
+    {
+      "theme_en": "Poor performance of teammates",
+      "theme_ja": "チームメイトのプレーの質の低さ",
       "mentions": 50
-    },
-    {
-      "theme_en": "Criticism of fake/made-up stories",
-      "theme_ja": "捏造されたストーリーへの批判",
-      "mentions": 45
-    },
-    {
-      "theme_en": "Dissatisfaction with the new auction rules",
-      "theme_ja": "新しいオークションルールの不満",
-      "mentions": 45
-    },
-    {
-      "theme_en": "Questionable referee decisions",
-      "theme_ja": "審判の判定への疑問",
-      "mentions": 45
-    },
-    {
-      "theme_en": "Criticism of the 'closed legs' static playstyle",
-      "theme_ja": "足を閉じて動かないプレイスタイルへの批判",
-      "mentions": 45
-    },
-    {
-      "theme_en": "Sounds like a commercial/ad rather than a WC song",
-      "theme_ja": "ワールドカップの楽曲ではなくCM曲のように聞こえる",
-      "mentions": 45
     }
   ]
 }

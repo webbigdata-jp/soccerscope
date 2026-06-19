@@ -1,31 +1,99 @@
 {
   "generated": "2026-06-15",
-  "videos_analyzed": 227,
+  "videos_analyzed": 262,
   "countries": 47,
   "totals": {
-    "views": 223732043,
-    "likes": 2915215,
-    "comments": 102078
+    "views": 800907953,
+    "likes": 9633689,
+    "comments": 258258
   },
   "country_attribution": "multi (b): a video is counted in every country whose search surfaced it; no per-country ranking (unreliable)",
-  "top_teams": [],
-  "top_videos_by_views": [
+  "top_teams": [
     {
-      "title": "How Many World Cup Stickers to Cover a Car?",
-      "countries": [
-        "HT"
-      ],
-      "reach": 1,
-      "narration_en": "This unique project shows someone covering a car in World Cup stickers, sparking lively debate about car maintenance and waste. Trending in Haiti, viewers expressed mixed reactions ranging from humor to practical concerns about the stickers.",
-      "narration_ja": "ワールドカップのステッカーで車を覆い尽くすというユニークな企画がハイチで急上昇。洗車や雨天時のダメージを心配する声から、企画そのものを楽しむ声まで様々な反応が寄せられています。",
-      "views": 7688876,
-      "url": "https://www.youtube.com/watch?v=-ltr2MaAtn0"
+      "team": "Brazil",
+      "mentions": 1980,
+      "lean": "negative",
+      "positive": 436,
+      "neutral": 735,
+      "negative": 809
     },
     {
-      "title": "ملخص مباراة البرازيل والمغرب | دور المجموعات - كأس العالم FIFA 2026™",
+      "team": "Morocco",
+      "mentions": 1687,
+      "lean": "positive",
+      "positive": 1498,
+      "neutral": 187,
+      "negative": 2
+    },
+    {
+      "team": "South Korea",
+      "mentions": 777,
+      "lean": "positive",
+      "positive": 767,
+      "neutral": 7,
+      "negative": 3
+    },
+    {
+      "team": "Japan",
+      "mentions": 776,
+      "lean": "positive",
+      "positive": 727,
+      "neutral": 49,
+      "negative": 0
+    },
+    {
+      "team": "USA",
+      "mentions": 712,
+      "lean": "positive",
+      "positive": 577,
+      "neutral": 30,
+      "negative": 105
+    },
+    {
+      "team": "Mexico",
+      "mentions": 700,
+      "lean": "positive",
+      "positive": 621,
+      "neutral": 62,
+      "negative": 17
+    },
+    {
+      "team": "Germany",
+      "mentions": 412,
+      "lean": "positive",
+      "positive": 321,
+      "neutral": 88,
+      "negative": 3
+    },
+    {
+      "team": "Argentina",
+      "mentions": 359,
+      "lean": "positive",
+      "positive": 229,
+      "neutral": 103,
+      "negative": 27
+    },
+    {
+      "team": "Paraguay",
+      "mentions": 316,
+      "lean": "negative",
+      "positive": 0,
+      "neutral": 22,
+      "negative": 294
+    },
+    {
+      "team": "Turkey",
+      "mentions": 314,
+      "lean": "positive",
+      "positive": 145,
+      "neutral": 52,
+      "negative": 117
+    }
+  ],
+  "top_videos_by_views": [
+    {
+      "title": "Trivela magic from Gio Reyna! 🪄#FIFAWorldCupOnYT",
       "countries": [
-        "DZ",
-        "EG",
         "IQ",
         "JO",
         "MA",
@@ -33,16 +101,152 @@
         "SA",
         "TN"
       ],
-      "reach": 8,
-      "narration_en": "Highlights from the Brazil vs. Morocco World Cup 2026 match drew massive, positive support across Arab nations. Fans praised the Atlas Lions' performance and the intensity of the goalkeepers.",
-      "narration_ja": "ワールドカップ2026のブラジル対モロッコ戦のハイライトは、アラブ諸国で圧倒的な支持を集めました。モロッコ代表の健闘と両GKの好セーブに対し、称賛の声が溢れています。",
-      "views": 6870046,
-      "url": "https://www.youtube.com/watch?v=qRpBU1iYy64"
+      "reach": 6,
+      "narration_en": "Gio Reyna's trivela goal brilliance shines in this trending video across the Middle East and North Africa. Comments express excitement for the World Cup while debating USA's performance and the term soccer.",
+      "narration_ja": "ジオ・レイナのトリヴェラ・ゴールの輝きが、中東・北アフリカ地域で話題です。ワールドカップへの期待が高まる一方で、アメリカ代表のパフォーマンスや「サッカー」という呼称を巡る議論も寄せられています。",
+      "views": 19864822,
+      "url": "https://www.youtube.com/watch?v=pegqoZswVT0"
     },
     {
-      "title": "Brazil vs Morocco | World Cup 2026 | Full Match Streaming | Video Game - Simulation",
+      "title": "Kane Williamson RETIRE 🛑 Dhoni ke Sath Women's T20 World Cup 2026  #kenwilliamson #msdhoni #cricket",
       "countries": [
         "AR",
+        "CW",
+        "CZ",
+        "AT",
+        "BA",
+        "BE",
+        "CH",
+        "CO",
+        "DE",
+        "EC",
+        "ES",
+        "HR",
+        "MX",
+        "NL",
+        "PA",
+        "PY",
+        "SE",
+        "UY"
+      ],
+      "reach": 18,
+      "narration_en": "This video featuring Kane Williamson and MS Dhoni trended widely across Europe and Latin America. Viewers are discussing AI technology and the intersection of football and cricket themes.",
+      "narration_ja": "ケイン・ウィリアムソンとMSドーニが登場するこの動画は、欧州や中南米でトレンド入りしました。視聴者はAI技術の活用や、サッカーとクリケットのテーマが交差する内容について議論しています。",
+      "views": 19692048,
+      "url": "https://www.youtube.com/watch?v=58uUXs5J5OI"
+    },
+    {
+      "title": "France Time Wasting 💀",
+      "countries": [
+        "AU",
+        "GH",
+        "NZ",
+        "CI",
+        "FR",
+        "SN"
+      ],
+      "reach": 6,
+      "narration_en": "This video analyzing France's time-wasting tactics sparked debate across several English and French-speaking nations. Comments focus on tactical understanding and concerns over fair play.",
+      "narration_ja": "フランスの遅延行為を分析したこの動画は、英語圏・フランス語圏の複数国で議論を呼びました。戦術的な理解やフェアプレーの欠如に対する懸念の声が多く集まっています。",
+      "views": 19403289,
+      "url": "https://www.youtube.com/watch?v=xz8IJ9xtw-k"
+    },
+    {
+      "title": "Only Ronaldo Can Score A Goal Like This...",
+      "countries": [
+        "CA",
+        "GB",
+        "AU",
+        "CD",
+        "HT",
+        "NZ",
+        "CI",
+        "FR",
+        "SN"
+      ],
+      "reach": 9,
+      "narration_en": "Featuring Cristiano Ronaldo, this video trended in parts of the Americas and Africa. Viewers expressed frustration over exaggerated editing and clarified that the featured clip was not a goal.",
+      "narration_ja": "クリスティアーノ・ロナウドを扱ったこの動画は、米州とアフリカの一部でトレンド入りしました。視聴者からは編集の誇張に対する不満の声や、映像が実際にはゴールではないという指摘が上がっています。",
+      "views": 17700675,
+      "url": "https://www.youtube.com/watch?v=LwEmbve3imE"
+    },
+    {
+      "title": "How Many World Cup Stickers to Cover a Car?",
+      "countries": [
+        "CD",
+        "CI",
+        "FR",
+        "HT",
+        "SN"
+      ],
+      "reach": 5,
+      "narration_en": "A creative look at covering a car with World Cup stickers captivated French-speaking audiences. While many praised the unique idea, others raised concerns about costs and weather durability.",
+      "narration_ja": "ワールドカップのステッカーで車を覆うという独創的な企画が、フランス語圏の視聴者の注目を集めました。ユニークなアイデアへの称賛がある一方で、コストや雨天時の耐久性を懸念する声も出ています。",
+      "views": 17205565,
+      "url": "https://www.youtube.com/watch?v=-ltr2MaAtn0"
+    },
+    {
+      "title": "I did NOT expect this at the FIFA World Cup 😱⚽️ #AD #fifaworldcup #fifa",
+      "countries": [
+        "JP",
+        "AR",
+        "BR",
+        "CV",
+        "CW",
+        "CZ",
+        "IR",
+        "KR",
+        "NO",
+        "PT",
+        "TR",
+        "UZ",
+        "AT",
+        "BA",
+        "BE",
+        "CH",
+        "CO",
+        "DE",
+        "EC",
+        "ES",
+        "HR",
+        "MX",
+        "NL",
+        "PA",
+        "PY",
+        "SE",
+        "UY"
+      ],
+      "reach": 27,
+      "narration_en": "This World Cup-themed video saw global engagement, trending from Japan to South America. Comments vary from influencer support to criticism regarding high ticket prices and FIFA policies.",
+      "narration_ja": "日本から南米まで世界中でトレンド入りしたこのワールドカップ関連動画は、インフルエンサーへの支持から、高額なチケット代やFIFAの運営に対する批判まで、多様なコメントが寄せられています。",
+      "views": 15060768,
+      "url": "https://www.youtube.com/watch?v=wXlrdF8L0kg"
+    },
+    {
+      "title": "Mbappé Witnessed Haaland’s Sleep Chaos 😳🛏️ #football #haaland #parody",
+      "countries": [
+        "ZA",
+        "US",
+        "CA",
+        "GB",
+        "GH",
+        "AU",
+        "CD",
+        "HT",
+        "NZ",
+        "CI",
+        "FR",
+        "SN"
+      ],
+      "reach": 12,
+      "narration_en": "Surreal parody visuals of Mbappe and Haaland proved popular across multiple continents. The majority of viewers praised the quality of the CGI work and the humor of the video.",
+      "narration_ja": "エムバペとハーランドを起用したシュールなパロディ動画が、複数の大陸で人気を博しました。視聴者の多くが、CGのクオリティの高さや動画のユーモアを高く評価しています。",
+      "views": 14228347,
+      "url": "https://www.youtube.com/watch?v=T6a7Anx63dg"
+    },
+    {
+      "title": "LISA, Anitta and Rema perform Goals at the Opening Ceremony of FIFA World Cup 2026 in Los Angeles",
+      "countries": [
         "AT",
         "AU",
         "BA",
@@ -54,8 +258,6 @@
         "CI",
         "CO",
         "CV",
-        "CW",
-        "CZ",
         "DE",
         "EC",
         "ES",
@@ -65,7 +267,6 @@
         "HR",
         "HT",
         "IR",
-        "JP",
         "KR",
         "MX",
         "NL",
@@ -79,235 +280,147 @@
         "TR",
         "US",
         "UY",
-        "UZ",
-        "ZA"
-      ],
-      "reach": 39,
-      "narration_en": "This eFootball simulation of Brazil vs. Morocco trended globally, drawing praise for its production quality. While audiences enjoyed the digital match, some expressed mixed feelings about the creator's presence on screen.",
-      "narration_ja": "eFootballを使用したブラジル対モロッコ戦のシミュレーション動画が世界各国でトレンド入りし、そのクオリティの高さが評価されています。一方で、クリエイター自身の映り込みについては賛否が分かれました。",
-      "views": 6570565,
-      "url": "https://www.youtube.com/watch?v=yDsFoEA-b7o"
-    },
-    {
-      "title": "El Mundial ANTES vs AHORA💀🏆⚽️ #futbol",
-      "countries": [
-        "TR",
         "UZ"
       ],
-      "reach": 2,
-      "narration_en": "This humorous look at past versus present World Cups trended in Turkey and Uzbekistan, stirring frustration over visa policies and internet meme culture. Opinions were largely negative due to the controversial topics discussed.",
-      "narration_ja": "過去と現在のワールドカップを比較するコミカルな動画がトルコとウズベキスタンで注目されました。ビザ規制やネットミーム文化への言及が多く、内容に対して厳しい意見も目立ちます。",
-      "views": 6104164,
-      "url": "https://www.youtube.com/watch?v=1A6-vgCbXIk"
-    },
-    {
-      "title": "Valverde VS De Jong VS Walker VS Messi VS Ronaldo",
-      "countries": [
-        "AU",
-        "CA",
-        "GB",
-        "GH",
-        "NZ",
-        "ZA",
-        "US",
-        "CD",
-        "CI",
-        "FR",
-        "HT",
-        "SN"
-      ],
-      "reach": 12,
-      "narration_en": "A short video comparing football stars like Messi and Ronaldo trended across multiple continents, generating high engagement. The comments reflect passionate fan debates and confusion regarding the comparison format.",
-      "narration_ja": "メッシやロナウドらスター選手を比較するショート動画が世界各地でトレンド入りし、熱心なファンによる議論を呼んでいます。比較手法に対する困惑の声も上がっています。",
-      "views": 5176038,
-      "url": "https://www.youtube.com/watch?v=GScWMJ2zrIg"
-    },
-    {
-      "title": "Only Ronaldo Can Score A Goal Like This...",
-      "countries": [
-        "CD",
-        "CI",
-        "FR",
-        "SN"
-      ],
-      "reach": 4,
-      "narration_en": "Focusing on a Ronaldo highlight, this video sparked intense debate in French-speaking regions regarding his status as the GOAT. Viewers engaged in sarcasm, comparing the clip to anime or other legendary players.",
-      "narration_ja": "ロナウドのプレーに焦点を当てた動画は、フランス語圏で大きな反響を呼びました。「史上最高」という称賛から他の選手との比較、アニメキャラクターへの例えまで、議論が白熱しています。",
-      "views": 4986111,
-      "url": "https://www.youtube.com/watch?v=LwEmbve3imE"
+      "reach": 34,
+      "narration_en": "The FIFA World Cup 2026 opening ceremony performance by LISA, Anitta, and Rema received overwhelmingly positive feedback globally. Fans celebrated the historic collaboration and stage presence.",
+      "narration_ja": "2026年FIFAワールドカップ開会式でのLISA、アニッタ、レマによるパフォーマンスは、世界中から圧倒的な高評価を得ました。ファンは歴史的なコラボレーションと彼らのステージングを称賛しています。",
+      "views": 13615557,
+      "url": "https://www.youtube.com/watch?v=mSgfvdBlysI"
     },
     {
       "title": "Imagine Complaining About A Wave😭 #ishowspeed #football #edit",
       "countries": [
+        "ZA",
         "US",
-        "FR",
-        "SN",
-        "CD",
-        "CI",
-        "HT",
-        "AU",
         "CA",
         "GB",
+        "GH",
+        "AU",
+        "CD",
+        "HT",
         "NZ",
-        "ZA"
+        "CI",
+        "FR",
+        "SN"
       ],
-      "reach": 11,
-      "narration_en": "",
-      "narration_ja": "",
-      "views": 3771916,
+      "reach": 12,
+      "narration_en": "Focusing on a stadium interaction during a match, this edit trended across several English and French-speaking regions. The audience debated the appropriateness of disruptive fan behavior.",
+      "narration_ja": "試合中のスタジアムでの交流に焦点を当てたこの編集動画は、英語圏・フランス語圏の複数地域でトレンド入りしました。視聴者の間では、ファンの迷惑行為の是非について議論が交わされました。",
+      "views": 10631878,
       "url": "https://www.youtube.com/watch?v=LfLiJGEW6y4"
     },
     {
-      "title": "ملخص مباراة السويد وتونس | دور المجموعات - كأس العالم FIFA 2026™",
+      "title": "⚽ FIFA World Cup 2026 🌍 #football",
       "countries": [
-        "DZ",
-        "EG",
-        "IQ",
-        "JO",
-        "MA",
-        "QA",
-        "SA",
-        "TN"
-      ],
-      "reach": 8,
-      "narration_en": "Following Tunisia's loss to Sweden in the World Cup, the match highlights trended in Arab nations with a largely negative sentiment. Fans expressed disappointment in the team's defensive performance and tactical setup.",
-      "narration_ja": "ワールドカップでのチュニジア対スウェーデン戦のハイライトは、アラブ諸国で大きな注目を集めましたが、結果は否定的に捉えられています。守備の脆さや戦術に対してファンの失望が広がりました。",
-      "views": 3348858,
-      "url": "https://www.youtube.com/watch?v=5PgVkZRgAHo"
-    },
-    {
-      "title": "🔴Brazil vs Morocco I FIFA World Cup 2026 Gameplay Match Stream I Video Game Simulation",
-      "countries": [
-        "AR",
-        "BA",
-        "BE",
-        "CH",
-        "CO",
-        "CW",
-        "CZ",
-        "EC",
-        "ES",
-        "IR",
-        "JP",
-        "KR",
-        "MX",
-        "NL",
-        "NO",
-        "PY",
-        "SE",
-        "UY"
-      ],
-      "reach": 18,
-      "narration_en": "A virtual simulation of Brazil vs. Morocco drew international attention for its balanced, draw-result narrative. Viewers across various regions engaged positively with the gameplay and the spirit of the match.",
-      "narration_ja": "ブラジル対モロッコ戦のシミュレーション動画が世界各地で関心を集めています。引き分けという結果に対し、両国のプレーを称える温かいコメントが多く寄せられました。",
-      "views": 3196965,
-      "url": "https://www.youtube.com/watch?v=9QZf_LBHExk"
-    },
-    {
-      "title": "Haaland, Mbappé and Yamal All Lost 😂⚔️ #football #haaland #parody",
-      "countries": [
-        "CA",
-        "AU",
-        "GB",
-        "NZ",
         "ZA",
-        "GH"
+        "US",
+        "CA",
+        "GB",
+        "GH",
+        "AU",
+        "CD",
+        "FR",
+        "HT",
+        "NZ",
+        "CI",
+        "SN"
       ],
-      "reach": 6,
-      "narration_en": "This surreal, AI-assisted parody featuring football stars trended in English-speaking territories. While many viewers praised the humor, others voiced criticism regarding the use of AI in creative content.",
-      "narration_ja": "AIを駆使したサッカー選手のパロディ動画が英語圏でトレンド入りしました。ユーモアを称賛する声がある一方、クリエイティブ制作におけるAIの使用には批判的な意見も出ています。",
-      "views": 3164606,
-      "url": "https://www.youtube.com/watch?v=AUwi_vOt-xg"
+      "reach": 12,
+      "narration_en": "This general FIFA World Cup 2026 update attracted viewers from Africa to the Americas. The commentary features a mix of team support, player comparisons, and general excitement for the upcoming tournament.",
+      "narration_ja": "2026年FIFAワールドカップに関するこの動画は、アフリカからアメリカ大陸にかけて幅広い視聴者を獲得しました。コメント欄には、代表チームへの声援や選手比較、大会への期待の声が混在しています。",
+      "views": 9704089,
+      "url": "https://www.youtube.com/watch?v=ywgRPbOfLog"
     }
   ],
   "sentiment_avg": {
-    "positive": 56.4212962962963,
-    "negative": 24.76388888888889,
-    "neutral": 18.814814814814813
+    "positive": 55.4367816091954,
+    "negative": 21.272030651340994,
+    "neutral": 23.291187739463602
   },
-  "comments_analyzed": 13310,
+  "comments_analyzed": 21053,
   "top_positive_themes": [
     {
-      "theme_en": "Passionate support for Cristiano Ronaldo",
-      "theme_ja": "クリスティアーノ・ロナウドへの熱狂的な支持",
-      "mentions": 137
+      "theme_en": "Praise for Cristiano Ronaldo",
+      "theme_ja": "クリスティアーノ・ロナウドへの称賛",
+      "mentions": 248
     },
     {
-      "theme_en": "Keisuke Honda's commentary is entertaining",
-      "theme_ja": "本田圭佑の解説が面白い",
-      "mentions": 130
-    },
-    {
-      "theme_en": "Support for Cristiano Ronaldo",
-      "theme_ja": "クリスティアーノ・ロナウドへの支持",
-      "mentions": 97
-    },
-    {
-      "theme_en": "Passionate support for the Brazilian national team",
-      "theme_ja": "ブラジル代表への熱い応援",
-      "mentions": 90
+      "theme_en": "Support for Morocco national team",
+      "theme_ja": "モロッコ代表への応援",
+      "mentions": 217
     },
     {
       "theme_en": "Support for Brazil national team",
       "theme_ja": "ブラジル代表への応援",
-      "mentions": 87
+      "mentions": 172
     },
     {
-      "theme_en": "Arab solidarity and pride",
-      "theme_ja": "アラブ諸国の連帯と誇り",
-      "mentions": 85
+      "theme_en": "Excellent performance by Morocco national team",
+      "theme_ja": "モロッコ代表の素晴らしいパフォーマンス",
+      "mentions": 130
     },
     {
-      "theme_en": "Congratulations and support for Qatar national team",
-      "theme_ja": "カタール代表への祝福と応援",
-      "mentions": 85
+      "theme_en": "Lisa's beauty and charm",
+      "theme_ja": "リサの美しさと魅力",
+      "mentions": 130
     },
     {
-      "theme_en": "Support and prayers for Morocco's victory",
-      "theme_ja": "モロッコ代表への応援と勝利の祈り",
-      "mentions": 85
+      "theme_en": "Support for Algeria national team",
+      "theme_ja": "アルジェリア代表への応援",
+      "mentions": 130
+    },
+    {
+      "theme_en": "Funny/Humorous",
+      "theme_ja": "面白い・笑える",
+      "mentions": 112
+    },
+    {
+      "theme_en": "Praise for Ayoub Bouaddi's talent",
+      "theme_ja": "アイユーブ・ブーアディの才能への称賛",
+      "mentions": 110
     }
   ],
   "top_negative_themes": [
     {
-      "theme_en": "Anger over not playing Endrick",
-      "theme_ja": "エンドリッキを起用しないことへの怒り",
-      "mentions": 100
-    },
-    {
       "theme_en": "Dissatisfaction with Ancelotti's management",
       "theme_ja": "アンチェロッティ監督の采配への不満",
+      "mentions": 150
+    },
+    {
+      "theme_en": "Anger and criticism towards the reporter",
+      "theme_ja": "記者に対する怒りと批判",
+      "mentions": 85
+    },
+    {
+      "theme_en": "Cards are bent/curved",
+      "theme_ja": "カードが曲がっていることへの指摘",
+      "mentions": 75
+    },
+    {
+      "theme_en": "Anger at FIFA's language restriction",
+      "theme_ja": "FIFAの言語制限に対する怒り",
+      "mentions": 70
+    },
+    {
+      "theme_en": "Wasting paper towels",
+      "theme_ja": "ティッシュの無駄遣い",
       "mentions": 65
     },
     {
-      "theme_en": "Dislike and distrust towards Taiwan",
-      "theme_ja": "台湾に対する嫌悪感・不信感",
+      "theme_en": "Hostility or indifference toward Taiwan",
+      "theme_ja": "台湾に対する嫌悪感・無関心",
       "mentions": 65
     },
     {
-      "theme_en": "Casemiro's poor performance and lack of speed",
-      "theme_ja": "カゼミーロのパフォーマンス不足と鈍重さ",
+      "theme_en": "Criticism and dissatisfaction with Casemiro",
+      "theme_ja": "カゼミーロへの批判と不満",
       "mentions": 65
     },
     {
-      "theme_en": "Seol Young-woo's attitude and defiance",
-      "theme_ja": "ソル・ヨンウの態度・反抗的な姿勢",
+      "theme_en": "2014 Brazil World Cup trauma",
+      "theme_ja": "2014年ブラジル大会のトラウマ",
       "mentions": 65
-    },
-    {
-      "theme_en": "Disappointment with the result (1-1 draw)",
-      "theme_ja": "試合結果への落胆（1-1の引き分け）",
-      "mentions": 65
-    },
-    {
-      "theme_en": "Dissatisfaction with Ancelotti's substitution decisions",
-      "theme_ja": "アンチェロッティ監督の起用への不満",
-      "mentions": 60
-    },
-    {
-      "theme_en": "Dissatisfaction with refereeing",
-      "theme_ja": "審判の判定への不満",
-      "mentions": 56
     }
   ]
 }

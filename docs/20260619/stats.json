@@ -11,82 +11,82 @@
   "top_teams": [
     {
       "team": "Argentina",
-      "mentions": 1209,
+      "mentions": 1138,
       "lean": "positive",
-      "positive": 1059,
-      "neutral": 94,
-      "negative": 56
+      "positive": 973,
+      "neutral": 108,
+      "negative": 57
     },
     {
       "team": "Portugal",
-      "mentions": 989,
+      "mentions": 1011,
       "lean": "negative",
-      "positive": 206,
-      "neutral": 95,
-      "negative": 688
-    },
-    {
-      "team": "England",
-      "mentions": 735,
-      "lean": "positive",
-      "positive": 665,
-      "neutral": 65,
-      "negative": 5
+      "positive": 167,
+      "neutral": 134,
+      "negative": 710
     },
     {
       "team": "Uzbekistan",
-      "mentions": 679,
+      "mentions": 687,
       "lean": "positive",
-      "positive": 671,
-      "neutral": 7,
+      "positive": 677,
+      "neutral": 9,
       "negative": 1
     },
     {
-      "team": "DR Congo",
-      "mentions": 505,
+      "team": "England",
+      "mentions": 669,
       "lean": "positive",
-      "positive": 495,
-      "neutral": 8,
-      "negative": 2
+      "positive": 571,
+      "neutral": 93,
+      "negative": 5
+    },
+    {
+      "team": "DR Congo",
+      "mentions": 470,
+      "lean": "positive",
+      "positive": 438,
+      "neutral": 31,
+      "negative": 1
     },
     {
       "team": "Algeria",
-      "mentions": 484,
+      "mentions": 462,
       "lean": "negative",
-      "positive": 97,
-      "neutral": 96,
-      "negative": 291
-    },
-    {
-      "team": "Croatia",
-      "mentions": 338,
-      "lean": "positive",
-      "positive": 228,
-      "neutral": 110,
-      "negative": 0
+      "positive": 85,
+      "neutral": 146,
+      "negative": 231
     },
     {
       "team": "Colombia",
-      "mentions": 333,
+      "mentions": 327,
       "lean": "positive",
-      "positive": 309,
-      "neutral": 24,
+      "positive": 299,
+      "neutral": 28,
+      "negative": 0
+    },
+    {
+      "team": "Croatia",
+      "mentions": 302,
+      "lean": "positive",
+      "positive": 212,
+      "neutral": 90,
       "negative": 0
     },
     {
       "team": "France",
-      "mentions": 317,
+      "mentions": 290,
       "lean": "positive",
-      "positive": 200,
-      "neutral": 115,
-      "negative": 2
+      "positive": 185,
+      "neutral": 105,
+      "negative": 0
     },
     {
       "team": "Ghana",
-      "mentions": 294,
+      "mentions": 281,
       "lean": "positive",
-      "positive": 287,
-      "neutral": 7,
+      "positive": 273,
+      "neutral": 8,
       "negative": 0
     }
   ],
@@ -107,8 +107,8 @@
         "ZA"
       ],
       "reach": 11,
-      "narration_en": "Trending across 11 countries, this video featuring Messi and Ronaldo sparks debate over video authenticity and editing quality. Viewers share mixed opinions, ranging from praise for the stars to criticism of the production.",
-      "narration_ja": "11カ国でトレンド入りした本作は、メッシとロナウドを取り上げ、動画の真偽や編集の質を巡り議論を呼んでいます。視聴者からはスターへの称賛から制作に対する批判まで、様々な意見が寄せられています。",
+      "narration_en": "This viral video sparks debate over Cristiano Ronaldo's skills, with fans and critics discussing Messi, Neymar, and the authenticity of the content. It trended across eleven countries, drawing strong engagement from English and French-speaking audiences.",
+      "narration_ja": "クリスティアーノ・ロナウドのスキルを巡り、メッシやネイマールへの言及や動画の真偽を問う声まで様々な意見が交わされています。11カ国でトレンド入りし、英語とフランス語圏の視聴者から高い関心を集めました。",
       "views": 19302014,
       "url": "https://www.youtube.com/watch?v=qOVL2KCvHJM"
     },
@@ -132,8 +132,8 @@
         "ZA"
       ],
       "reach": 15,
-      "narration_en": "This surreal Haaland parody trended in 15 countries, drawing praise for its humor and creative production. While many enjoyed the content, some viewers expressed skepticism regarding the AI-generated elements.",
-      "narration_ja": "ハーランドを題材にしたこのシュールなパロディは15カ国でトレンド入りし、ユーモアと創造的な制作面で高く評価されています。多くの視聴者が楽しむ一方で、AI生成技術に対する懐疑的な声も見られました。",
+      "narration_en": "Viewers are reacting to this surreal Haaland parody, praising the humor while debating the creative use of AI in sports content. The video found a broad audience across fifteen countries throughout the Americas, Europe, and beyond.",
+      "narration_ja": "ハーランドを題材にしたシュールなパロディ動画に対し、ユーモアを評価する声や、スポーツコンテンツにおけるAI活用の是非を問う議論が活発です。南北アメリカや欧州など15カ国で広く視聴されました。",
       "views": 17956157,
       "url": "https://www.youtube.com/watch?v=UdS02lz0BRw"
     },
@@ -156,8 +156,8 @@
         "ZA"
       ],
       "reach": 14,
-      "narration_en": "Mbappé-themed parody content trended in 13 countries, with viewers split between admiring the production quality and criticizing AI inconsistencies. Comments also highlight counting errors within the video.",
-      "narration_ja": "ムバッペをテーマにしたこのパロディは13カ国でトレンド入りしました。視聴者は制作の質の高さを称賛する一方で、AIの不自然さや動画内の計算ミスを指摘する声もあり、評価が分かれています。",
+      "narration_en": "This Mbappé parody features surreal CGI, drawing mixed reviews regarding its AI-generated aesthetics and production quality. Trending in 13 countries, it sparked conversations about the creator's technical choices.",
+      "narration_ja": "エムバペのパロディ動画では、AIによるCG表現の品質を巡って評価が分かれています。13カ国でトレンド入りし、制作技術や演出に関する議論が巻き起こりました。",
       "views": 16095741,
       "url": "https://www.youtube.com/watch?v=h7T5OSJiHsU"
     },
@@ -174,8 +174,8 @@
         "TN"
       ],
       "reach": 8,
-      "narration_en": "This World Cup match summary between Argentina and Algeria sparked intense discussion across the Arab world. Fans expressed support for Messi's performance, sorrow for Algeria's loss, and concerns about prioritizing match-viewing over prayers.",
-      "narration_ja": "アルゼンチン対アルジェリアのワールドカップ戦をまとめたこの動画は、アラブ諸国で大きな反響を呼びました。メッシの活躍を称える声がある一方、アルジェリアの敗戦を悲しむ声や、礼拝よりも観戦を優先することへの懸念も議論されました。",
+      "narration_en": "Messi's hat-trick in Argentina's win over Algeria dominated Arab-language sports discourse, triggering debates on match results and the intersection of football with religious life. The video trended widely across North Africa and the Middle East.",
+      "narration_ja": "アルゼンチン対アルジェリア戦でのメッシのハットトリックは、アラブ圏のスポーツファンの注目を独占しました。試合結果や信仰生活との両立に関する議論が、中東・北アフリカ地域を中心に広まりました。",
       "views": 9670774,
       "url": "https://www.youtube.com/watch?v=dBvbm65tYRk"
     },
@@ -194,8 +194,8 @@
         "UY"
       ],
       "reach": 10,
-      "narration_en": "This analysis of Ronaldo's penalty technique trended in 10 countries but faced significant backlash. Many viewers criticized the content for being over-complicated and for excessive praise of the player.",
-      "narration_ja": "ロナウドのPK技術を分析したこの動画は10カ国でトレンド入りしましたが、否定的な反応が目立ちました。多くの視聴者が、分析が複雑すぎる点や、過度な称賛に対して批判的なコメントを寄せています。",
+      "narration_en": "This analysis of Ronaldo's penalty technique is met with high skepticism, featuring debates over the legitimacy of the claims and the repetitive nature of such content. The video trended primarily in European and Latin American markets.",
+      "narration_ja": "ロナウドのPK技術を分析した動画ですが、内容の信憑性や誇大広告を疑う声が多く、辛辣な意見が目立ちます。主に欧州や中南米の市場でトレンド入りしました。",
       "views": 9531859,
       "url": "https://www.youtube.com/watch?v=QRonUKdknho"
     },
@@ -216,8 +216,8 @@
         "GH"
       ],
       "reach": 12,
-      "narration_en": "Trending in 12 countries, this AI-generated parody received overwhelming positivity. Audiences praised the beauty of the characters and the friendly interaction between Mira and Rumi.",
-      "narration_ja": "12カ国でトレンド入りしたこのAI生成パロディは、非常に高い支持を得ました。視聴者はキャラクターの美しさや、ミラとルミの友情溢れるやり取りを高く評価しています。",
+      "narration_en": "Blending K-pop, memes, and football, this highly positive parody has charmed viewers across diverse global regions. Audiences praised the cute aesthetic, contributing to a very strong 85% sentiment score.",
+      "narration_ja": "K-popとミーム、サッカーを融合させたこのパロディ動画は、多くの視聴者から非常に好評です。可愛らしい世界観が支持され、ポジティブな意見が85%に達しています。",
       "views": 8472903,
       "url": "https://www.youtube.com/watch?v=EY1d0byD87U"
     },
@@ -228,8 +228,8 @@
         "CW"
       ],
       "reach": 2,
-      "narration_en": "This cricket-themed short trended in two countries, garnering positive engagement for the creator. However, some viewers raised questions regarding the overall content quality.",
-      "narration_ja": "クリケットを題材にしたこのショート動画は2カ国でトレンド入りし、クリエイターへの応援の声が多く集まりました。一方で、動画の全体的な質に疑問を呈する視聴者も一部見られました。",
+      "narration_en": "This highlight focused on the Women's T20 World Cup drew significant engagement, sparking comments on both the content quality and the appearance of the figures involved. It trended in niche markets like Bosnia and Herzegovina.",
+      "narration_ja": "女子T20ワールドカップに焦点を当てたこの動画は、映像品質や出演者へのコメントを通じて大きな反響を呼びました。ボスニア・ヘルツェゴビナなどでトレンド入りしています。",
       "views": 7472098,
       "url": "https://www.youtube.com/watch?v=X6PE5h7RRRk"
     },
@@ -246,8 +246,8 @@
         "BA"
       ],
       "reach": 8,
-      "narration_en": "Trending across 8 countries, this video shows mixed interest in women's cricket. While many appreciated the community interaction, others expressed a stronger preference for the FIFA World Cup.",
-      "narration_ja": "8カ国でトレンド入りした本作では、女子クリケットに対する関心が分かれました。コミュニティとの交流を楽しむ声がある一方で、FIFAワールドカップの方を好むという意見も寄せられています。",
+      "narration_en": "Viewers across Europe and the Middle East engaged with this T20 World Cup footage, leading to comparisons between cricket and football interests. The sentiment is largely positive, despite varying levels of interest in the women's sport.",
+      "narration_ja": "欧州や中東の視聴者がクリケットのワールドカップ映像に反応し、サッカーとの比較など活発な議論が交わされました。女子スポーツへの関心の差は見られるものの、全体的な反応は良好です。",
       "views": 7307693,
       "url": "https://www.youtube.com/watch?v=-VgmVDbddWk"
     },
@@ -268,8 +268,8 @@
         "ZA"
       ],
       "reach": 12,
-      "narration_en": "This surreal parody received high praise for its humor and production quality across 12 countries. While generally well-received, some viewers shared concerns about potential bot activity in the comments.",
-      "narration_ja": "12カ国でトレンド入りしたこのシュールなパロディは、ユーモアと制作の質の高さで好評を博しました。全体的にポジティブな評価を受ける一方で、コメント欄でのボット活動を懸念する声も一部ありました。",
+      "narration_en": "With an overwhelmingly positive reception, this surreal parody has captivated viewers with its charisma and aesthetic charm. It trended internationally across regions including North America, Europe, and Africa.",
+      "narration_ja": "その魅力的な映像と雰囲気で圧倒的な支持を集めているパロディ動画です。北米、欧州、アフリカなど世界各地でトレンド入りを果たしました。",
       "views": 6974546,
       "url": "https://www.youtube.com/watch?v=qUfruael1_Y"
     },
@@ -286,100 +286,100 @@
         "GH"
       ],
       "reach": 8,
-      "narration_en": "Following Norway's victory over Iraq, this post-game clip trended in 8 countries. The discussion centers on Haaland's performance, alongside debates regarding his status relative to other football stars.",
-      "narration_ja": "ノルウェーがイラクに勝利した後のこのハイライト動画は、8カ国でトレンド入りしました。ハーランドの圧倒的なパフォーマンスが話題の中心で、彼と他のサッカー界のスターを比較する議論も盛り上がっています。",
+      "narration_en": "Haaland's brace in Norway's victory over Iraq triggered a mix of celebration and player performance debate. The video saw significant traction across French and English-speaking audiences globally.",
+      "narration_ja": "ノルウェー対イラク戦でのハーランドの2得点は、称賛とパフォーマンスへの議論の両方を引き起こしました。フランス語圏および英語圏の視聴者を中心に広く拡散されています。",
       "views": 6035528,
       "url": "https://www.youtube.com/watch?v=0C3OTTMjLeA"
     }
   ],
   "sentiment_avg": {
-    "positive": 56.337704918032784,
-    "negative": 22.41967213114754,
-    "neutral": 21.242622950819673
+    "positive": 49.97196261682243,
+    "negative": 21.370716510903428,
+    "neutral": 28.657320872274145
   },
-  "comments_analyzed": 17200,
+  "comments_analyzed": 17096,
   "top_positive_themes": [
     {
       "theme_en": "Support for Uzbekistan national team",
       "theme_ja": "ウズベキスタン代表への応援",
-      "mentions": 167
-    },
-    {
-      "theme_en": "Greatness of Messi (GOAT)",
-      "theme_ja": "メッシの偉大さ（GOAT）",
-      "mentions": 143
+      "mentions": 312
     },
     {
       "theme_en": "Messi's greatness and GOAT status",
-      "theme_ja": "メッシの偉大さとGOATとしての地位",
-      "mentions": 140
+      "theme_ja": "メッシの偉大さとGOATとしての評価",
+      "mentions": 195
     },
     {
-      "theme_en": "Praise as the Greatest of All Time (GOAT)",
-      "theme_ja": "史上最高の選手（GOAT）としての称賛",
-      "mentions": 120
+      "theme_en": "High quality of the match",
+      "theme_ja": "試合の質の高さ",
+      "mentions": 130
     },
     {
-      "theme_en": "Praise for DR Congo's performance",
-      "theme_ja": "コンゴ代表の健闘と称賛",
-      "mentions": 107
+      "theme_en": "African pride",
+      "theme_ja": "アフリカの誇り",
+      "mentions": 130
     },
     {
-      "theme_en": "Humor and entertainment value",
-      "theme_ja": "動画のユーモア・面白さ",
-      "mentions": 107
+      "theme_en": "Praise for Messi",
+      "theme_ja": "メッシへの称賛",
+      "mentions": 115
     },
     {
-      "theme_en": "Enthusiastic support for Cristiano Ronaldo",
-      "theme_ja": "クリスティアーノ・ロナウドへの熱狂的な支持",
-      "mentions": 100
+      "theme_en": "Greatness of Messi",
+      "theme_ja": "メッシの偉大さ",
+      "mentions": 112
     },
     {
-      "theme_en": "Messi is the GOAT",
-      "theme_ja": "メッシは史上最高（GOAT）",
-      "mentions": 95
+      "theme_en": "Praise for the hat-trick",
+      "theme_ja": "ハットトリックへの称賛",
+      "mentions": 102
+    },
+    {
+      "theme_en": "Support for Cristiano Ronaldo",
+      "theme_ja": "クリスティアーノ・ロナウドへの支持",
+      "mentions": 90
     }
   ],
   "top_negative_themes": [
     {
-      "theme_en": "Ronaldo's poor performance",
-      "theme_ja": "ロナウドのパフォーマンス不振",
-      "mentions": 90
+      "theme_en": "Criticism of Ronaldo's performance",
+      "theme_ja": "ロナウドのパフォーマンスへの批判",
+      "mentions": 105
     },
     {
-      "theme_en": "Ronaldo's declining performance",
-      "theme_ja": "ロナウドのパフォーマンス低下",
+      "theme_en": "Rejection of father",
+      "theme_ja": "父親に対する拒絶",
       "mentions": 70
     },
     {
-      "theme_en": "Anger and criticism toward journalists",
-      "theme_ja": "記者に対する怒りと批判",
+      "theme_en": "Criticism of journalists (inappropriate behavior)",
+      "theme_ja": "記者に対する批判（機嫌取り・不適切取材）",
       "mentions": 65
     },
     {
-      "theme_en": "Portugal's disappointing result",
-      "theme_ja": "ポルトガルの期待外れな結果",
+      "theme_en": "Unsportsmanlike/Cowardly behavior",
+      "theme_ja": "非紳士的・卑怯な行為",
       "mentions": 65
     },
     {
-      "theme_en": "Lack of sportsmanship",
-      "theme_ja": "スポーツマンシップの欠如",
-      "mentions": 65
+      "theme_en": "Criticism of over-analysis and glazing",
+      "theme_ja": "過剰な分析・こじつけへの批判",
+      "mentions": 60
     },
     {
-      "theme_en": "Ronaldo's decline and calls for retirement",
-      "theme_ja": "ロナウドのパフォーマンス低下と引退論",
-      "mentions": 55
+      "theme_en": "Frustration with being told to sit",
+      "theme_ja": "観戦中に座るよう強要される不満",
+      "mentions": 60
     },
     {
-      "theme_en": "Frustration with people demanding others to sit",
-      "theme_ja": "座ることを強要する観客への不満",
-      "mentions": 55
+      "theme_en": "Ronaldo's poor performance",
+      "theme_ja": "ロナウドのパフォーマンス不振",
+      "mentions": 60
     },
     {
-      "theme_en": "Broadcast time lag",
-      "theme_ja": "放送のタイムラグ",
-      "mentions": 55
+      "theme_en": "Criticism of media and reporters",
+      "theme_ja": "メディア・記者の質への批判",
+      "mentions": 60
     }
   ]
 }

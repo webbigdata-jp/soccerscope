@@ -1,291 +1,407 @@
 {
   "generated": "2026-06-16",
-  "videos_analyzed": 253,
+  "videos_analyzed": 308,
   "countries": 47,
   "totals": {
-    "views": 218509318,
-    "likes": 2869065,
-    "comments": 83073
+    "views": 648776468,
+    "likes": 7674266,
+    "comments": 208201
   },
   "country_attribution": "multi (b): a video is counted in every country whose search surfaced it; no per-country ranking (unreliable)",
-  "top_teams": [],
+  "top_teams": [
+    {
+      "team": "Brazil",
+      "mentions": 2370,
+      "lean": "negative",
+      "positive": 418,
+      "neutral": 740,
+      "negative": 1212
+    },
+    {
+      "team": "Japan",
+      "mentions": 1800,
+      "lean": "positive",
+      "positive": 1754,
+      "neutral": 46,
+      "negative": 0
+    },
+    {
+      "team": "Morocco",
+      "mentions": 1615,
+      "lean": "positive",
+      "positive": 1514,
+      "neutral": 101,
+      "negative": 0
+    },
+    {
+      "team": "Germany",
+      "mentions": 682,
+      "lean": "positive",
+      "positive": 538,
+      "neutral": 140,
+      "negative": 4
+    },
+    {
+      "team": "Egypt",
+      "mentions": 639,
+      "lean": "positive",
+      "positive": 594,
+      "neutral": 45,
+      "negative": 0
+    },
+    {
+      "team": "Netherlands",
+      "mentions": 639,
+      "lean": "positive",
+      "positive": 332,
+      "neutral": 307,
+      "negative": 0
+    },
+    {
+      "team": "Cape Verde",
+      "mentions": 528,
+      "lean": "positive",
+      "positive": 509,
+      "neutral": 19,
+      "negative": 0
+    },
+    {
+      "team": "Turkey",
+      "mentions": 499,
+      "lean": "negative",
+      "positive": 69,
+      "neutral": 99,
+      "negative": 331
+    },
+    {
+      "team": "Argentina",
+      "mentions": 486,
+      "lean": "positive",
+      "positive": 268,
+      "neutral": 161,
+      "negative": 57
+    },
+    {
+      "team": "South Korea",
+      "mentions": 447,
+      "lean": "positive",
+      "positive": 440,
+      "neutral": 7,
+      "negative": 0
+    }
+  ],
   "top_videos_by_views": [
+    {
+      "title": "How Many World Cup Stickers to Cover a Car?",
+      "countries": [
+        "AU",
+        "CA",
+        "CD",
+        "CI",
+        "FR",
+        "GH",
+        "HT",
+        "NZ",
+        "SN",
+        "ZA"
+      ],
+      "reach": 10,
+      "narration_en": "This video features viewers discussing the costs and risks of using World Cup stickers for car decoration. Trending across multiple English and French-speaking regions, the sentiment is mixed with humor and financial concern.",
+      "narration_ja": "ワールドカップのステッカーで車をデコレーションするコストやリスクについて議論されています。英語とフランス語圏でトレンド入りしており、ユーモアと懸念が混ざった反応です。",
+      "views": 17315090,
+      "url": "https://www.youtube.com/watch?v=-ltr2MaAtn0"
+    },
+    {
+      "title": "\"The Guy Will Destroy You\" is crazy 🥶🥶",
+      "countries": [
+        "CD",
+        "CI",
+        "SN"
+      ],
+      "reach": 3,
+      "narration_en": "Featuring Thierry Henry and Zlatan Ibrahimovic, this edit draws strong positive sentiment from French-speaking audiences. Viewers expressed surprise at the legends' presence while critiquing IShowSpeed's reckless challenge.",
+      "narration_ja": "ティエリ・アンリとズラタン・イブラヒモビッチが登場するこの動画は、フランス語圏で非常に高く評価されています。レジェンドとの共演に驚きの声が上がる一方、IShowSpeedの無謀な挑戦には批判も寄せられました。",
+      "views": 15603990,
+      "url": "https://www.youtube.com/watch?v=y6HsR-owBiQ"
+    },
+    {
+      "title": "Spain 0 0 Cabo Verde | Highlights",
+      "countries": [
+        "AU",
+        "CA",
+        "GH",
+        "HT",
+        "NZ",
+        "ZA"
+      ],
+      "reach": 6,
+      "narration_en": "Spain's 0-0 draw against Cape Verde sparked intense debate over tactical play and finishing. English and French-speaking fans focused on the incredible performance of the goalkeepers.",
+      "narration_ja": "スペイン対カーボベルデの0-0の引き分けは、戦術や決定力不足を巡る激しい議論を呼びました。英語とフランス語圏のファンは、両チームのGKの素晴らしいパフォーマンスに注目しています。",
+      "views": 10804725,
+      "url": "https://www.youtube.com/watch?v=dc0Pdinz8IM"
+    },
     {
       "title": "Imagine Complaining About A Wave😭 #ishowspeed #football #edit",
       "countries": [
+        "GB",
+        "US",
         "AU",
         "CA",
-        "CD",
-        "CI",
         "FR",
-        "GB",
         "GH",
         "HT",
         "NZ",
-        "SN",
-        "US",
-        "ZA"
+        "ZA",
+        "CD",
+        "CI",
+        "SN"
       ],
       "reach": 12,
-      "narration_en": "This video featuring an interaction with iShowSpeed trended across 12 countries. Viewers are split between finding the humor in the synchronized reactions and debating the reality of the AI voiceover.",
-      "narration_ja": "iShowSpeedとのやり取りを収めたこの動画は12カ国で急上昇しました。視聴者の間では、同期したリアクションへの笑いと、AI音声の真偽を巡る議論で盛り上がっています。",
-      "views": 6947609,
+      "narration_en": "This clip of IShowSpeed reacting to a stadium wave generated mixed feelings among global viewers. The interaction is perceived as both funny and an annoying distraction from the match.",
+      "narration_ja": "スタジアムでのウェーブに対するIShowSpeedの反応は、世界中の視聴者の間で評価が分かれています。面白いという声と、試合の邪魔だという批判の両方が見られます。",
+      "views": 10664271,
       "url": "https://www.youtube.com/watch?v=LfLiJGEW6y4"
-    },
-    {
-      "title": "Valverde VS De Jong VS Walker VS Messi VS Ronaldo",
-      "countries": [
-        "AU",
-        "CA",
-        "CD",
-        "CI",
-        "FR",
-        "GB",
-        "GH",
-        "HT",
-        "NZ",
-        "SN",
-        "US",
-        "ZA"
-      ],
-      "reach": 12,
-      "narration_en": "A highly positive comparison of football legends like Ronaldo, Messi, and others. The audience shows strong support for their favorites while largely rejecting toxic rivalry.",
-      "narration_ja": "ロナウドやメッシといった伝説的選手たちを比較する非常に好評な動画です。視聴者は自分の推しを応援しつつも、不毛な対立を避ける傾向にあります。",
-      "views": 6358629,
-      "url": "https://www.youtube.com/watch?v=GScWMJ2zrIg"
-    },
-    {
-      "title": "Haaland Trained Hard… Mbappé Trained Harder 😂🍗 #football #haaland #parody",
-      "countries": [
-        "AU",
-        "CA",
-        "CD",
-        "CI",
-        "FR",
-        "GB",
-        "GH",
-        "HT",
-        "NZ",
-        "SN",
-        "US",
-        "ZA"
-      ],
-      "reach": 12,
-      "narration_en": "A surreal parody featuring Haaland and Mbappé that trended internationally. While many enjoyed the humor, others expressed skepticism regarding the AI-generated visual quality.",
-      "narration_ja": "ハーランドとエムバペを起用したシュールなパロディ動画が世界中で急上昇しました。笑いを呼ぶ一方で、AI生成された映像の品質に対する疑問の声も上がっています。",
-      "views": 5390653,
-      "url": "https://www.youtube.com/watch?v=7yDie41YNlE"
     },
     {
       "title": "⚽ FIFA World Cup 2026 🌍 #football",
       "countries": [
+        "FR",
+        "GB",
+        "US",
+        "CD",
+        "CI",
+        "HT",
+        "SN",
+        "AU",
+        "GH",
+        "ZA",
+        "CA"
+      ],
+      "reach": 11,
+      "narration_en": "The classic GOAT debate featuring Messi, Ronaldo, and Neymar dominates this video's comments. It trended globally in English and French, reflecting diverse fan loyalties.",
+      "narration_ja": "メッシ、ロナウド、ネイマールを巡る恒例のGOAT（史上最高）論争がコメント欄を席巻しています。英語とフランス語圏を中心に世界中でトレンド入りし、ファンの多様な支持が反映されています。",
+      "views": 9759892,
+      "url": "https://www.youtube.com/watch?v=ywgRPbOfLog"
+    },
+    {
+      "title": "Netherlands 🆚 Japan #FIFAWorldCup #FIFAWorldCupOnYT",
+      "countries": [
+        "BA",
         "BE",
         "CW",
         "CZ",
         "HR",
         "IR",
+        "KR",
         "NL",
-        "SE",
+        "NO",
+        "SE"
+      ],
+      "reach": 10,
+      "narration_en": "High praise for Japan's performance against the Netherlands has made this a top trending video. Fans across several languages celebrated the rise of Asian football, despite some frustration over officiating.",
+      "narration_ja": "オランダ戦での日本代表の活躍が大きな称賛を集め、トレンド上位に入りました。審判への不満はありつつも、多言語のファンがアジアサッカーの躍進を祝う内容となっています。",
+      "views": 9570466,
+      "url": "https://www.youtube.com/watch?v=njA-jfmz_gc"
+    },
+    {
+      "title": "Toni Kroos should chill😂😂😂#football #soccer",
+      "countries": [
+        "GB",
+        "US",
         "AU",
+        "GH",
+        "NZ",
+        "ZA",
         "CA",
+        "FR",
         "CD",
         "CI",
+        "HT",
+        "SN"
+      ],
+      "reach": 12,
+      "narration_en": "This humor-focused video about Toni Kroos has a largely neutral sentiment across English and French regions. Viewers primarily comment on the high editing quality and confusion regarding a non-contact tackle.",
+      "narration_ja": "トニ・クロースを題材にしたユーモア動画で、英語とフランス語圏で中立的な反応が主流です。高い編集技術や、接触のないタックルに関する困惑の声が中心です。",
+      "views": 9523852,
+      "url": "https://www.youtube.com/watch?v=0CJv6tr9ppw"
+    },
+    {
+      "title": "Australia's first goal of #FIFAWorldCup 2026 🇦🇺 #FIFAWorldCupOnYT",
+      "countries": [
+        "BR",
+        "CV",
+        "MX",
+        "PT",
+        "TR",
+        "UZ",
+        "AR",
+        "CO",
+        "EC",
+        "ES",
+        "PA",
+        "PY",
+        "UY",
         "FR",
+        "US",
+        "CD",
+        "CI",
         "GB",
+        "HT",
+        "SN",
+        "NZ",
+        "AU",
         "GH",
+        "ZA",
+        "CA"
+      ],
+      "reach": 25,
+      "narration_en": "Australia's victory over Turkey was met with great excitement and praise for their speed. The video trended in many countries across multiple languages, highlighting both appreciation and frustration.",
+      "narration_ja": "トルコに対するオーストラリアの勝利は、そのスピードと鮮やかなゴールで大きな興奮と称賛を呼びました。多言語圏で広くトレンド入りし、勝利への喜びと敗戦への悔しさが混ざっています。",
+      "views": 9126873,
+      "url": "https://www.youtube.com/watch?v=eRQsqOCMyXo"
+    },
+    {
+      "title": "🇧🇷1️⃣🆚1️⃣🇲🇦 !😳🔥 #football #worldcup #challenge #brasil #maroc",
+      "countries": [
+        "FR",
+        "NZ",
+        "CD",
+        "HT",
+        "SN",
+        "GB",
+        "CI",
+        "US",
+        "AU",
+        "GH",
+        "ZA",
+        "CA"
+      ],
+      "reach": 12,
+      "narration_en": "This prediction challenge between Brazil and Morocco saw mixed reactions due to scoring disagreements. Viewers in various regions engaged in heated discussions about refereeing and accuracy.",
+      "narration_ja": "ブラジル対モロッコの予想チャレンジ動画は、スコアの不一致から様々な反応を呼んでいます。各地の視聴者が審判の判定や結果の正確性を巡って活発な議論を繰り広げました。",
+      "views": 8935685,
+      "url": "https://www.youtube.com/watch?v=Q0v-3tvGhLA"
+    },
+    {
+      "title": "Vinicius Junior scores for Brazil against Morocco #FIFAWorldCupOnYT",
+      "countries": [
+        "AT",
+        "BR",
+        "CH",
+        "CV",
+        "PT",
+        "IR",
+        "BE",
+        "CZ",
+        "NL",
+        "FR",
+        "US",
+        "GB",
+        "CD",
+        "CI",
         "HT",
         "NZ",
         "SN",
-        "US",
-        "ZA"
-      ],
-      "reach": 19,
-      "narration_en": "This World Cup 2026 forecast video drew a diverse international audience. Comments range from bold winner predictions and team support to confusion over tournament facts.",
-      "narration_ja": "2026年ワールドカップを予想するこの動画は、多言語圏の視聴者を集めました。優勝予想や国別の応援メッセージから、大会情報に対する困惑まで幅広い意見が寄せられています。",
-      "views": 5143394,
-      "url": "https://www.youtube.com/watch?v=ywgRPbOfLog"
-    },
-    {
-      "title": "\"The Guy Will Destroy You\" is crazy 🥶🥶",
-      "countries": [
         "AU",
-        "CA",
-        "CI",
         "GH",
-        "HT",
-        "NZ",
-        "US",
         "ZA",
-        "CD",
-        "FR",
-        "SN"
+        "CA"
       ],
-      "reach": 11,
-      "narration_en": "Viewers are captivated by Thierry Henry's speed and legendary status in this iShowSpeed edit. The sentiment is overwhelmingly positive as fans celebrate Henry's iconic skill.",
-      "narration_ja": "ティエリ・アンリのスピードとレジェンドとしての貫禄が注目を集めるiShowSpeedの編集動画です。アンリの象徴的なスキルを称える声が多く、非常に高い評価を得ています。",
-      "views": 5063736,
-      "url": "https://www.youtube.com/watch?v=y6HsR-owBiQ"
-    },
-    {
-      "title": "ملخص مباراة السويد وتونس | دور المجموعات - كأس العالم FIFA 2026™",
-      "countries": [
-        "DZ",
-        "EG",
-        "IQ",
-        "JO",
-        "MA",
-        "QA",
-        "SA",
-        "TN"
-      ],
-      "reach": 8,
-      "narration_en": "A match highlight recap between Sweden and Tunisia that sparked disappointment among Arab-speaking fans. Viewers focused on defensive critiques and sympathy for the commentator.",
-      "narration_ja": "スウェーデン対チュニジア戦のハイライトに対し、アラビア語圏の視聴者からは落胆の声が多く寄せられました。守備への批判や実況者への同情が中心的なトピックです。",
-      "views": 4801829,
-      "url": "https://www.youtube.com/watch?v=5PgVkZRgAHo"
-    },
-    {
-      "title": "『日本はコンパクトで崩すのは困難だった』ファンダイク、クーマン、デヨングの日本戦後のインタビュー",
-      "countries": [
-        "JP"
-      ],
-      "reach": 1,
-      "narration_en": "Japanese fans are celebrating their national team's gritty performance against the Netherlands. The sentiment is very positive, highlighting pride in the squad's tactical growth.",
-      "narration_ja": "オランダ相手に奮闘した日本代表の試合後インタビュー動画です。チームの戦術的な成長に対する誇りが感じられ、日本のファンから非常に高い評価を得ています。",
-      "views": 4051333,
-      "url": "https://www.youtube.com/watch?v=RLSfHj0jWO8"
-    },
-    {
-      "title": "FUÉ FALTA? XD",
-      "countries": [
-        "TR",
-        "UZ"
-      ],
-      "reach": 2,
-      "narration_en": "This humor-focused video on refereeing decisions was met with significant negativity from Turkish and Uzbek audiences. Many criticized the perceived unfairness and simulation in the clips.",
-      "narration_ja": "判定に焦点を当てたこのユーモア動画は、トルコやウズベキスタンの視聴者から厳しい評価を受けました。不公平さや選手の演技に対する批判が多く見られます。",
-      "views": 4023807,
-      "url": "https://www.youtube.com/watch?v=qtQplEUhTKY"
-    },
-    {
-      "title": "Tell me the winner☠️⚽️🏆 ? #fifa ##world cup 2026 #copa del mundo 2026 #spainsooccer",
-      "countries": [
-        "IR",
-        "CZ"
-      ],
-      "reach": 2,
-      "narration_en": "A viral challenge video where viewers attempt to identify the winner. Most fans enjoyed the engagement, focusing on the specific visual clues provided in the footage.",
-      "narration_ja": "視聴者が勝者を当てるバイラルチャレンジ動画です。映像内の視覚的な手がかりを基に、多くのファンが楽しみながら参加しています。",
-      "views": 3726864,
-      "url": "https://www.youtube.com/watch?v=0kgtO9jCSh0"
-    },
-    {
-      "title": "⏯️ ملخص مباراة هولندا واليابان | دور المجموعات - كأس العالم FIFA 2026™",
-      "countries": [
-        "DZ",
-        "EG",
-        "IQ",
-        "JO",
-        "MA",
-        "QA",
-        "SA",
-        "TN"
-      ],
-      "reach": 8,
-      "narration_en": "This recap of the Netherlands vs. Japan match received widespread praise for the level of play. Viewers highlighted the impressive performance of Asian and African teams.",
-      "narration_ja": "オランダ対日本戦のハイライトは、そのプレーレベルの高さから多くの賞賛を受けました。特にアジアやアフリカのチームの躍進が視聴者の注目を集めています。",
-      "views": 3296917,
-      "url": "https://www.youtube.com/watch?v=SNvnUSkOqQM"
+      "reach": 21,
+      "narration_en": "Vinicius Junior's goal against Morocco received wide acclaim, though Brazil's defensive performance faced scrutiny. The video saw strong positive sentiment across a vast international audience.",
+      "narration_ja": "ヴィニシウス・ジュニオールのゴールは広く称賛されましたが、一方でブラジル代表の守備面には厳しい目が向けられました。国際的な幅広い視聴者層から、非常にポジティブな反応を得ています。",
+      "views": 8745157,
+      "url": "https://www.youtube.com/watch?v=UtVyBIOWvwQ"
     }
   ],
   "sentiment_avg": {
-    "positive": 58.0323275862069,
-    "negative": 20.767241379310345,
-    "neutral": 21.200431034482758
+    "positive": 54.60064935064935,
+    "negative": 21.75,
+    "neutral": 23.649350649350648
   },
-  "comments_analyzed": 13980,
+  "comments_analyzed": 23039,
   "top_positive_themes": [
     {
-      "theme_en": "Passionate support for Cristiano Ronaldo",
-      "theme_ja": "クリスティアーノ・ロナウドへの熱狂的な支持",
-      "mentions": 255
+      "theme_en": "Keisuke Honda's commentary is entertaining",
+      "theme_ja": "本田圭佑の解説が面白い",
+      "mentions": 260
     },
     {
-      "theme_en": "Solidarity and support from Arab nations",
-      "theme_ja": "アラブ諸国からの連帯と応援",
-      "mentions": 150
-    },
-    {
-      "theme_en": "Humor and entertainment value",
-      "theme_ja": "動画の面白さ・笑い",
-      "mentions": 110
-    },
-    {
-      "theme_en": "Support for the Egyptian national team",
-      "theme_ja": "エジプト代表への応援",
-      "mentions": 94
-    },
-    {
-      "theme_en": "Brotherhood between Mexico and Korea",
-      "theme_ja": "メキシコと韓国の兄弟愛",
-      "mentions": 85
-    },
-    {
-      "theme_en": "Requesting their own country's flag to be drawn",
-      "theme_ja": "自分の国の国旗を描いてほしいというリクエスト",
-      "mentions": 82
-    },
-    {
-      "theme_en": "Humor and laughter",
-      "theme_ja": "面白さ・笑い",
-      "mentions": 77
+      "theme_en": "Support for Algeria national team",
+      "theme_ja": "アルジェリア代表への応援",
+      "mentions": 205
     },
     {
       "theme_en": "Excellent performance by the Egyptian national team",
       "theme_ja": "エジプト代表の素晴らしいパフォーマンス",
-      "mentions": 70
+      "mentions": 195
+    },
+    {
+      "theme_en": "Support for Cristiano Ronaldo",
+      "theme_ja": "クリスティアーノ・ロナウドへの支持",
+      "mentions": 190
+    },
+    {
+      "theme_en": "Praise for Cristiano Ronaldo",
+      "theme_ja": "クリスティアーノ・ロナウドへの称賛",
+      "mentions": 170
+    },
+    {
+      "theme_en": "Solidarity and support among Arab nations",
+      "theme_ja": "アラブ諸国間の連帯と応援",
+      "mentions": 165
+    },
+    {
+      "theme_en": "Growth and strength of the Japan national team",
+      "theme_ja": "日本代表の成長と強さ",
+      "mentions": 155
+    },
+    {
+      "theme_en": "Choi Yong-soo's variety show talent",
+      "theme_ja": "崔龍洙のバラエティセンス",
+      "mentions": 150
     }
   ],
   "top_negative_themes": [
     {
-      "theme_en": "Running without results",
-      "theme_ja": "走るだけで結果が出ない",
-      "mentions": 65
+      "theme_en": "Frustration with Ancelotti's management",
+      "theme_ja": "アンチェロッティ監督の采配への不満",
+      "mentions": 115
     },
     {
-      "theme_en": "Criticism of diving/acting",
-      "theme_ja": "大げさな演技（ダイブ）への批判",
-      "mentions": 65
+      "theme_en": "Pointing out it was an own goal",
+      "theme_ja": "オウンゴールであるという指摘",
+      "mentions": 75
     },
     {
-      "theme_en": "Criticism of bent cards",
-      "theme_ja": "カードが折れ曲がっていることへの批判",
-      "mentions": 65
+      "theme_en": "Criticism for not playing Endrick",
+      "theme_ja": "エンドリックを起用しないことへの批判",
+      "mentions": 70
+    },
+    {
+      "theme_en": "Cards are bent/cheating",
+      "theme_ja": "カードが曲がっていてズルい",
+      "mentions": 70
     },
     {
       "theme_en": "Dissatisfaction with referee decisions",
       "theme_ja": "審判の判定への不満",
-      "mentions": 60
+      "mentions": 70
     },
     {
-      "theme_en": "Disappointing performance by Spain",
-      "theme_ja": "スペイン代表の不甲斐ない戦いぶり",
-      "mentions": 58
+      "theme_en": "Sleep deprivation and difficulty watching due to time zones",
+      "theme_ja": "時差による睡眠不足と観戦の困難さ",
+      "mentions": 65
     },
     {
-      "theme_en": "Disappointment with match results",
-      "theme_ja": "試合結果への落胆",
-      "mentions": 55
+      "theme_en": "Host's bias and unfair behavior",
+      "theme_ja": "司会者の偏った態度と不公平さ",
+      "mentions": 65
     },
     {
-      "theme_en": "Player simulation/diving",
-      "theme_ja": "選手の過剰な演技（ダイブ）",
-      "mentions": 55
-    },
-    {
-      "theme_en": "Frustration with Ancelotti's selection policy",
-      "theme_ja": "アンチェロッティ監督の起用方針への不満",
-      "mentions": 55
+      "theme_en": "Running without results",
+      "theme_ja": "走るだけで結果が出ない",
+      "mentions": 65
     }
   ]
 }
