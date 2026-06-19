@@ -1,28 +1,28 @@
 {
   "generated": "2026-06-19",
-  "videos_analyzed": 324,
+  "videos_analyzed": 299,
   "countries": 47,
   "totals": {
-    "views": 348835884,
-    "likes": 3691497,
-    "comments": 112648
+    "views": 297807111,
+    "likes": 3350171,
+    "comments": 109679
   },
   "country_attribution": "multi (b): a video is counted in every country whose search surfaced it; no per-country ranking (unreliable)",
   "top_teams": [
     {
       "team": "Argentina",
-      "mentions": 1138,
+      "mentions": 1120,
       "lean": "positive",
-      "positive": 973,
+      "positive": 955,
       "neutral": 108,
       "negative": 57
     },
     {
       "team": "Portugal",
-      "mentions": 1011,
+      "mentions": 1003,
       "lean": "negative",
       "positive": 167,
-      "neutral": 134,
+      "neutral": 126,
       "negative": 710
     },
     {
@@ -75,10 +75,10 @@
     },
     {
       "team": "France",
-      "mentions": 290,
+      "mentions": 289,
       "lean": "positive",
       "positive": 185,
-      "neutral": 105,
+      "neutral": 104,
       "negative": 0
     },
     {
@@ -107,8 +107,8 @@
         "ZA"
       ],
       "reach": 11,
-      "narration_en": "This viral video sparks debate over Cristiano Ronaldo's skills, with fans and critics discussing Messi, Neymar, and the authenticity of the content. It trended across eleven countries, drawing strong engagement from English and French-speaking audiences.",
-      "narration_ja": "クリスティアーノ・ロナウドのスキルを巡り、メッシやネイマールへの言及や動画の真偽を問う声まで様々な意見が交わされています。11カ国でトレンド入りし、英語とフランス語圏の視聴者から高い関心を集めました。",
+      "narration_en": "This video featuring Cristiano Ronaldo has trended across 11 countries, drawing praise for Ronaldo alongside mentions of Messi and Neymar. While many viewers enjoyed the content, some comments questioned the video's authenticity.",
+      "narration_ja": "クリスティアーノ・ロナウドを取り上げたこの動画は11カ国で急上昇し、ロナウドへの称賛のほか、メッシやネイマールへの言及が見られました。多くの視聴者が内容を楽しんだ一方、動画の真実性を疑う声もあがっています。",
       "views": 19302014,
       "url": "https://www.youtube.com/watch?v=qOVL2KCvHJM"
     },
@@ -132,8 +132,8 @@
         "ZA"
       ],
       "reach": 15,
-      "narration_en": "Viewers are reacting to this surreal Haaland parody, praising the humor while debating the creative use of AI in sports content. The video found a broad audience across fifteen countries throughout the Americas, Europe, and beyond.",
-      "narration_ja": "ハーランドを題材にしたシュールなパロディ動画に対し、ユーモアを評価する声や、スポーツコンテンツにおけるAI活用の是非を問う議論が活発です。南北アメリカや欧州など15カ国で広く視聴されました。",
+      "narration_en": "This Haaland parody video has reached audiences in 15 countries, receiving high engagement for its humor. Feedback is largely positive, though some viewers expressed skepticism regarding the use of AI.",
+      "narration_ja": "ハーランドのパロディ動画は15カ国で視聴され、そのユーモアが高く評価されています。全体的に好意的な反応が多いものの、一部の視聴者からはAIの使用に対する懐疑的な意見も寄せられました。",
       "views": 17956157,
       "url": "https://www.youtube.com/watch?v=UdS02lz0BRw"
     },
@@ -156,8 +156,8 @@
         "ZA"
       ],
       "reach": 14,
-      "narration_en": "This Mbappé parody features surreal CGI, drawing mixed reviews regarding its AI-generated aesthetics and production quality. Trending in 13 countries, it sparked conversations about the creator's technical choices.",
-      "narration_ja": "エムバペのパロディ動画では、AIによるCG表現の品質を巡って評価が分かれています。13カ国でトレンド入りし、制作技術や演出に関する議論が巻き起こりました。",
+      "narration_en": "Viewers from 14 countries commented on this Mbappé parody, often praising the production quality. Reactions are mixed, with discussions surrounding the unnatural AI generation and content inconsistencies.",
+      "narration_ja": "エムバペのパロディ動画は14カ国でトレンド入りし、その制作クオリティが称賛されました。一方で、不自然なAI生成や内容の矛盾に関する議論もなされており、反応は分かれています。",
       "views": 16095741,
       "url": "https://www.youtube.com/watch?v=h7T5OSJiHsU"
     },
@@ -174,8 +174,8 @@
         "TN"
       ],
       "reach": 8,
-      "narration_en": "Messi's hat-trick in Argentina's win over Algeria dominated Arab-language sports discourse, triggering debates on match results and the intersection of football with religious life. The video trended widely across North Africa and the Middle East.",
-      "narration_ja": "アルゼンチン対アルジェリア戦でのメッシのハットトリックは、アラブ圏のスポーツファンの注目を独占しました。試合結果や信仰生活との両立に関する議論が、中東・北アフリカ地域を中心に広まりました。",
+      "narration_en": "This match summary of Argentina vs. Algeria drew significant attention in the Arab world, highlighting Messi's hat-trick. Comments reflect a mix of team support, religious discussion, and concerns regarding fan conduct.",
+      "narration_ja": "アルゼンチン対アルジェリア戦のハイライトはアラブ諸国で大きな注目を集め、メッシのハットトリックが話題となりました。コメント欄にはチームへの応援のほか、宗教的な話題やファン同士の衝突への懸念が混在しています。",
       "views": 9670774,
       "url": "https://www.youtube.com/watch?v=dBvbm65tYRk"
     },
@@ -194,84 +194,10 @@
         "UY"
       ],
       "reach": 10,
-      "narration_en": "This analysis of Ronaldo's penalty technique is met with high skepticism, featuring debates over the legitimacy of the claims and the repetitive nature of such content. The video trended primarily in European and Latin American markets.",
-      "narration_ja": "ロナウドのPK技術を分析した動画ですが、内容の信憑性や誇大広告を疑う声が多く、辛辣な意見が目立ちます。主に欧州や中南米の市場でトレンド入りしました。",
+      "narration_en": "Analyzing Ronaldo's penalty technique, this video saw negative sentiment in 10 countries. Viewers frequently criticized the analysis as excessive or doubted the credibility of the content.",
+      "narration_ja": "ロナウドのPK技術を分析したこの動画は10カ国で低評価が目立ちました。視聴者の多くは、分析が過剰であると批判したり、コンテンツの信頼性を疑ったりしています。",
       "views": 9531859,
       "url": "https://www.youtube.com/watch?v=QRonUKdknho"
-    },
-    {
-      "title": "The Drink Battle Had a Sweet Ending 🥤💞  #kpop #parody #football #meme",
-      "countries": [
-        "CA",
-        "GB",
-        "ZA",
-        "CD",
-        "CI",
-        "FR",
-        "HT",
-        "SN",
-        "US",
-        "NZ",
-        "AU",
-        "GH"
-      ],
-      "reach": 12,
-      "narration_en": "Blending K-pop, memes, and football, this highly positive parody has charmed viewers across diverse global regions. Audiences praised the cute aesthetic, contributing to a very strong 85% sentiment score.",
-      "narration_ja": "K-popとミーム、サッカーを融合させたこのパロディ動画は、多くの視聴者から非常に好評です。可愛らしい世界観が支持され、ポジティブな意見が85%に達しています。",
-      "views": 8472903,
-      "url": "https://www.youtube.com/watch?v=EY1d0byD87U"
-    },
-    {
-      "title": "Cricket icc womens t20 world cup 2026 Dekhne Ki Tyari 🤩 #shorts #ytshorts",
-      "countries": [
-        "BA",
-        "CW"
-      ],
-      "reach": 2,
-      "narration_en": "This highlight focused on the Women's T20 World Cup drew significant engagement, sparking comments on both the content quality and the appearance of the figures involved. It trended in niche markets like Bosnia and Herzegovina.",
-      "narration_ja": "女子T20ワールドカップに焦点を当てたこの動画は、映像品質や出演者へのコメントを通じて大きな反響を呼びました。ボスニア・ヘルツェゴビナなどでトレンド入りしています。",
-      "views": 7472098,
-      "url": "https://www.youtube.com/watch?v=X6PE5h7RRRk"
-    },
-    {
-      "title": "Cricket icc womens t20 world cup 2026 Dekhne Ki Tyari 🤩 #shorts #ytshorts",
-      "countries": [
-        "IR",
-        "BE",
-        "CZ",
-        "HR",
-        "NL",
-        "NO",
-        "SE",
-        "BA"
-      ],
-      "reach": 8,
-      "narration_en": "Viewers across Europe and the Middle East engaged with this T20 World Cup footage, leading to comparisons between cricket and football interests. The sentiment is largely positive, despite varying levels of interest in the women's sport.",
-      "narration_ja": "欧州や中東の視聴者がクリケットのワールドカップ映像に反応し、サッカーとの比較など活発な議論が交わされました。女子スポーツへの関心の差は見られるものの、全体的な反応は良好です。",
-      "views": 7307693,
-      "url": "https://www.youtube.com/watch?v=-VgmVDbddWk"
-    },
-    {
-      "title": "The Matcha Disappeared During the Rescue 🍵👜  #kpop #parody #football #meme",
-      "countries": [
-        "CD",
-        "CI",
-        "FR",
-        "HT",
-        "SN",
-        "US",
-        "NZ",
-        "AU",
-        "CA",
-        "GB",
-        "GH",
-        "ZA"
-      ],
-      "reach": 12,
-      "narration_en": "With an overwhelmingly positive reception, this surreal parody has captivated viewers with its charisma and aesthetic charm. It trended internationally across regions including North America, Europe, and Africa.",
-      "narration_ja": "その魅力的な映像と雰囲気で圧倒的な支持を集めているパロディ動画です。北米、欧州、アフリカなど世界各地でトレンド入りを果たしました。",
-      "views": 6974546,
-      "url": "https://www.youtube.com/watch?v=qUfruael1_Y"
     },
     {
       "title": "Haaland scores a brace on his #FIFAWorldCup debut. #FIFAWorldCupOnYT",
@@ -286,18 +212,92 @@
         "GH"
       ],
       "reach": 8,
-      "narration_en": "Haaland's brace in Norway's victory over Iraq triggered a mix of celebration and player performance debate. The video saw significant traction across French and English-speaking audiences globally.",
-      "narration_ja": "ノルウェー対イラク戦でのハーランドの2得点は、称賛とパフォーマンスへの議論の両方を引き起こしました。フランス語圏および英語圏の視聴者を中心に広く拡散されています。",
+      "narration_en": "Haaland's brace against Iraq sparked active debate across 8 countries, with many viewers praising Norway's performance. The conversation also included comparisons between Haaland, Messi, and Ronaldo.",
+      "narration_ja": "イラク戦でのハーランドの2得点は8カ国で活発な議論を呼び、ノルウェーのパフォーマンスを称賛する声が多く寄せられました。また、ハーランドとメッシ、ロナウドを比較する議論も見られます。",
       "views": 6035528,
       "url": "https://www.youtube.com/watch?v=0C3OTTMjLeA"
+    },
+    {
+      "title": "ARGENTINA vs ALGERIA - FIFA World Cup 2026 group stage | Match Today | Simulation PES",
+      "countries": [
+        "AT",
+        "BA",
+        "BE",
+        "CH",
+        "CW",
+        "CZ",
+        "HR",
+        "IR",
+        "JP",
+        "KR",
+        "NL",
+        "NO",
+        "SE",
+        "AR",
+        "CO",
+        "EC",
+        "ES",
+        "MX",
+        "PA",
+        "PY",
+        "UY"
+      ],
+      "reach": 21,
+      "narration_en": "This PES simulation of Argentina vs. Algeria trended globally in 20 countries. Comments mostly favor Argentina and Messi, with some users noting the video is a game simulation.",
+      "narration_ja": "アルゼンチン対アルジェリアのPESシミュレーション動画は世界20カ国で急上昇しました。アルゼンチンとメッシを支持するコメントが中心ですが、ゲームのシミュレーションであることを指摘する声もあります。",
+      "views": 4238793,
+      "url": "https://www.youtube.com/watch?v=kCmFivCFnQg"
+    },
+    {
+      "title": "PORTUGAL 🇵🇹 vs BRAZIL 🇧🇷 World Cup 2026 FINAL 🏆 INSANE Penalty Shootout 😱",
+      "countries": [
+        "CW"
+      ],
+      "reach": 1,
+      "narration_en": "This edited fantasy match between Portugal and Brazil received negative feedback in Curaçao. Viewers criticized the video for being fake and pointed out inconsistent editing.",
+      "narration_ja": "ポルトガル対ブラジルの空想上の試合を編集した動画は、キュラソーで否定的な反応を集めました。視聴者は動画がフェイクであると批判し、編集の不自然さを指摘しています。",
+      "views": 4032397,
+      "url": "https://www.youtube.com/watch?v=izHwpKFLyV8"
+    },
+    {
+      "title": "Haaland Finally Found a Way to Stop Mbappé🧠⚡ #parody #football #haaland #worldcup",
+      "countries": [
+        "AR",
+        "CA",
+        "GB",
+        "ZA"
+      ],
+      "reach": 4,
+      "narration_en": "This parody video trended in 4 countries, with viewers split between enjoying the entertainment and criticizing the use of AI. Many comments explicitly identify the footage as fake.",
+      "narration_ja": "このパロディ動画は4カ国でトレンド入りしましたが、エンターテインメントとして楽しむ層とAIの使用を批判する層に分かれました。映像がフェイクであると指摘するコメントも多く見られます。",
+      "views": 3943987,
+      "url": "https://www.youtube.com/watch?v=FloG95gBUoc"
+    },
+    {
+      "title": "ملخص مباراة إنجلترا وكرواتيا | دور المجموعات - كأس العالم FIFA 2026™",
+      "countries": [
+        "DZ",
+        "EG",
+        "IQ",
+        "JO",
+        "MA",
+        "QA",
+        "SA",
+        "TN"
+      ],
+      "reach": 8,
+      "narration_en": "England's win over Croatia was widely discussed across 8 countries. The high-quality match and Harry Kane's performance were major highlights, alongside concerns about prayer times.",
+      "narration_ja": "イングランド対クロアチア戦の模様は8カ国で広く話題となりました。試合の質の高さやハリー・ケインの活躍が大きく注目される一方、礼拝時間に関する懸念も示されました。",
+      "views": 3688055,
+      "url": "https://www.youtube.com/watch?v=6n3vkngYq9g"
     }
   ],
   "sentiment_avg": {
-    "positive": 49.97196261682243,
-    "negative": 21.370716510903428,
-    "neutral": 28.657320872274145
+    "positive": 50.45945945945946,
+    "negative": 21.16554054054054,
+    "neutral": 28.375
   },
-  "comments_analyzed": 17096,
+  "comments_analyzed": 16251,
   "top_positive_themes": [
     {
       "theme_en": "Support for Uzbekistan national team",
@@ -320,11 +320,6 @@
       "mentions": 130
     },
     {
-      "theme_en": "Praise for Messi",
-      "theme_ja": "メッシへの称賛",
-      "mentions": 115
-    },
-    {
       "theme_en": "Greatness of Messi",
       "theme_ja": "メッシの偉大さ",
       "mentions": 112
@@ -338,6 +333,11 @@
       "theme_en": "Support for Cristiano Ronaldo",
       "theme_ja": "クリスティアーノ・ロナウドへの支持",
       "mentions": 90
+    },
+    {
+      "theme_en": "Messi's greatness (GOAT)",
+      "theme_ja": "メッシの偉大さ（GOAT）",
+      "mentions": 85
     }
   ],
   "top_negative_themes": [
@@ -345,11 +345,6 @@
       "theme_en": "Criticism of Ronaldo's performance",
       "theme_ja": "ロナウドのパフォーマンスへの批判",
       "mentions": 105
-    },
-    {
-      "theme_en": "Rejection of father",
-      "theme_ja": "父親に対する拒絶",
-      "mentions": 70
     },
     {
       "theme_en": "Criticism of journalists (inappropriate behavior)",
@@ -380,6 +375,11 @@
       "theme_en": "Criticism of media and reporters",
       "theme_ja": "メディア・記者の質への批判",
       "mentions": 60
+    },
+    {
+      "theme_en": "Criticism of Ronaldo's decline and starting role",
+      "theme_ja": "ロナウドの衰えとスタメン起用への批判",
+      "mentions": 55
     }
   ]
 }

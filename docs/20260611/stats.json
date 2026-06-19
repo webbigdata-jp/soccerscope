@@ -1,11 +1,11 @@
 {
   "generated": "2026-06-11",
-  "videos_analyzed": 260,
+  "videos_analyzed": 238,
   "countries": 47,
   "totals": {
-    "views": 1074643445,
-    "likes": 13297536,
-    "comments": 219940
+    "views": 992965507,
+    "likes": 12008481,
+    "comments": 204159
   },
   "country_attribution": "multi (b): a video is counted in every country whose search surfaced it; no per-country ranking (unreliable)",
   "top_teams": [
@@ -19,10 +19,10 @@
     },
     {
       "team": "Brazil",
-      "mentions": 965,
+      "mentions": 964,
       "lean": "positive",
       "positive": 619,
-      "neutral": 220,
+      "neutral": 219,
       "negative": 126
     },
     {
@@ -66,18 +66,10 @@
       "negative": 0
     },
     {
-      "team": "India",
-      "mentions": 238,
-      "lean": "positive",
-      "positive": 74,
-      "neutral": 102,
-      "negative": 62
-    },
-    {
       "team": "England",
-      "mentions": 202,
+      "mentions": 187,
       "lean": "positive",
-      "positive": 85,
+      "positive": 70,
       "neutral": 72,
       "negative": 45
     },
@@ -88,6 +80,14 @@
       "positive": 59,
       "neutral": 120,
       "negative": 2
+    },
+    {
+      "team": "Morocco",
+      "mentions": 180,
+      "lean": "positive",
+      "positive": 152,
+      "neutral": 28,
+      "negative": 0
     }
   ],
   "top_videos_by_views": [
@@ -108,8 +108,8 @@
         "ZA"
       ],
       "reach": 12,
-      "narration_en": "This video highlights the aura and technical skills of famous managers, though some viewers criticized the music and spam comments. It trended across several countries including the UK, France, and the US.",
-      "narration_ja": "有名監督のオーラや技術を特集した動画で、英米仏など各国で急上昇しました。音楽の選曲やスパムコメントに関する否定的な意見も一部で見られます。",
+      "narration_en": "This video showcases managers' technical skills and auras, trending across several nations with strong positive sentiment. Viewers are discussing the editing style and music choices while teams like Brazil and Portugal are mentioned.",
+      "narration_ja": "監督たちのスキルとオーラに焦点を当てたこの動画は、多くの国でトレンド入りし、好意的な反応を集めています。視聴者は編集や音楽について議論しており、ブラジルやポルトガルといったチーム名も挙げられています。",
       "views": 65753104,
       "url": "https://www.youtube.com/watch?v=L9mPlefd2gk"
     },
@@ -155,8 +155,8 @@
         "ZA"
       ],
       "reach": 37,
-      "narration_en": "Featuring World Cup preparation, this video saw global engagement but faced criticism regarding the creator's changes and influencer behavior. Viewers noted the soccer ball animation on the like button.",
-      "narration_ja": "ワールドカップに向けた準備動画で世界的に注目されましたが、投稿者の変化やインフルエンサーへの批判も寄せられました。いいねボタンのサッカーボール演出も話題です。",
+      "narration_en": "A World Cup-themed 'Get Ready With Me' video that has sparked diverse opinions globally. While many are excited for the tournament, others have criticized the creator's lack of football knowledge and influencer marketing.",
+      "narration_ja": "ワールドカップをテーマにした「GRWM」動画は、世界中で賛否両論を巻き起こしています。大会への期待が高まる一方で、投稿者のサッカー知識の不足やインフルエンサーによる宣伝手法を批判する声も上がっています。",
       "views": 34299715,
       "url": "https://www.youtube.com/watch?v=iH9U6fe09ZA"
     },
@@ -173,8 +173,8 @@
         "UY"
       ],
       "reach": 8,
-      "narration_en": "This Netflix promotional video for the World Cup received high praise in Mexico and other Spanish-speaking countries. Fans enjoyed the cast's personality and the humorous anime character appearances.",
-      "narration_ja": "ワールドカップに向けたNetflixの広告動画で、メキシコを中心に高い評価を得ました。出演者の魅力や、アニメキャラクターの登場がファンを楽しませています。",
+      "narration_en": "Netflix's promotional campaign for the World Cup is trending in Spanish-speaking countries, receiving high praise from viewers. The content focuses on Mexican football expectations and features popular cast members.",
+      "narration_ja": "スペイン語圏でトレンド入りしたNetflixのワールドカップ広告キャンペーンは、視聴者から高く評価されています。メキシコにおけるサッカーへの期待感や、人気キャストの出演が話題です。",
       "views": 29768498,
       "url": "https://www.youtube.com/watch?v=ZyEaX_7f2z0"
     },
@@ -184,8 +184,8 @@
         "CZ"
       ],
       "reach": 1,
-      "narration_en": "Focused on Neymar's skills and Brazil's World Cup run, this video resonated with Czech viewers. Comments reflect a mix of admiration for the team's magic and sadness over their tournament exit.",
-      "narration_ja": "ネイマールのスキルとブラジル代表を特集し、チェコでトレンド入りしました。プレーへの称賛と、大会敗退に対する悲しみの声が混在しています。",
+      "narration_en": "This short featuring Neymar's skills has seen significant engagement in the Czech Republic. It balances admiration for Brazilian teamwork with reflections on the frustration of past World Cup exits.",
+      "narration_ja": "ネイマールのスキルを紹介するこのショート動画は、チェコで大きな注目を集めています。ブラジル代表の連携への称賛とともに、過去のワールドカップ敗退に対する悔しさが語られています。",
       "views": 25928825,
       "url": "https://www.youtube.com/watch?v=vmidUsJ5e8Y"
     },
@@ -204,8 +204,8 @@
         "UY"
       ],
       "reach": 10,
-      "narration_en": "This video captures the comedic dynamic between Fer and Pato as they discuss Cristiano Ronaldo. It trended in Turkey, Latin America, and Spain, drawing interest for their entertaining reactions.",
-      "narration_ja": "クリスティアーノ・ロナウドを巡るFerとPatoの掛け合いが面白い動画で、トルコや中南米、スペインでトレンド入りしました。",
+      "narration_en": "Focused on the chemistry between Fer and Pato, this video trends in multiple regions including Turkey and Latin America. Viewers are actively discussing Cristiano Ronaldo and questioning the participants' football knowledge.",
+      "narration_ja": "FerとPatoのやり取りに注目したこの動画は、トルコや中南米など幅広い地域でトレンド入りしています。視聴者はクリスティアーノ・ロナウドについて言及しつつ、出演者のサッカー知識を試すようなコメントを寄せています。",
       "views": 23393478,
       "url": "https://www.youtube.com/watch?v=PEpaIzvFf8I"
     },
@@ -226,8 +226,8 @@
         "ZA"
       ],
       "reach": 12,
-      "narration_en": "This video features Cristiano Ronaldo, Portugal, and Brazil, sparking debates about video editing accuracy. It trended widely in Western countries and parts of Africa.",
-      "narration_ja": "C・ロナウドやポルトガル、ブラジルを取り上げた動画で、編集の真実性について視聴者間で議論が起きています。欧米やアフリカ諸国で広く視聴されました。",
+      "narration_en": "A viral edit testing viewer perception on the 'ultimate winner' has generated substantial debate about Ronaldo and Brazil. Fans are engaged in verifying the video's authenticity and discussing the featured stars.",
+      "narration_ja": "「究極の勝者は誰か」を問うこのバイラル動画は、ロナウドやブラジル代表を巡って活発な議論を呼んでいます。視聴者は映像の信憑性を疑ったり、登場するスター選手について語り合ったりしています。",
       "views": 22052826,
       "url": "https://www.youtube.com/watch?v=DEcUCdpsPPk"
     },
@@ -248,8 +248,8 @@
         "ZA"
       ],
       "reach": 12,
-      "narration_en": "A highly positive response followed this football guessing challenge, which highlights Ronaldo's 'Siuuu' celebration. The video trended in numerous countries across Europe, North America, and Africa.",
-      "narration_ja": "サッカー選手を当てるクイズ動画で、ロナウドの「Siuuu」セレブレーションが人気を集めました。欧米やアフリカの多くの国でトレンド入りし、好意的なコメントが多く寄せられています。",
+      "narration_en": "This football player guessing challenge has received overwhelmingly positive feedback. Fans are enjoying the lighthearted content, frequently referencing Cristiano Ronaldo’s iconic celebration and the creative gameplay.",
+      "narration_ja": "サッカー選手を当てるこのクイズ動画は、非常に好意的な反響を得ています。ファンはクリスティアーノ・ロナウドの代名詞的なゴールパフォーマンスに言及するなど、エンターテインメント性の高い内容を楽しんでいます。",
       "views": 21411827,
       "url": "https://www.youtube.com/watch?v=iaGdpDD7ZCo"
     },
@@ -285,48 +285,10 @@
         "UY"
       ],
       "reach": 27,
-      "narration_en": "Viewers expressed mixed feelings about this AI-generated video featuring Messi and Ronaldo. While some enjoyed the concept, others were confused by the appearance of cricket gear in a football context.",
-      "narration_ja": "メッシとロナウドをAIで合成した動画で、反応は賛否両論です。共演を喜ぶ声がある一方、なぜかクリケットの用具が登場することに困惑する視聴者もいました。",
+      "narration_en": "This video featuring an AI-generated meeting between Messi and Ronaldo has seen global reach. Reactions are mixed, with many viewers praising the technology while others critique the unnatural synthesis.",
+      "narration_ja": "AIで生成されたメッシとロナウドの共演動画は、世界規模で視聴されています。AI技術への称賛がある一方で、合成の不自然さを指摘する声もあり、反応は分かれています。",
       "views": 20711330,
       "url": "https://www.youtube.com/watch?v=4Fy5Vloao0g"
-    },
-    {
-      "title": "⚽ FIFA World Cup Messi-Ronaldo 😍 Women’s T20 World Cup Bhi #ronaldo  #messi #fifa #t20worldcup",
-      "countries": [
-        "AT",
-        "BA",
-        "BE",
-        "CH",
-        "CW",
-        "CZ",
-        "DE",
-        "HR",
-        "IR",
-        "JP",
-        "NL",
-        "NO",
-        "SE",
-        "AU",
-        "CA",
-        "GB",
-        "GH",
-        "NZ",
-        "US",
-        "ZA",
-        "AR",
-        "CO",
-        "EC",
-        "ES",
-        "MX",
-        "PA",
-        "PY",
-        "UY"
-      ],
-      "reach": 28,
-      "narration_en": "This video, trending in many global regions, faced skepticism regarding AI deepfakes and the odd inclusion of cricket elements. Engagement remained largely neutral or critical.",
-      "narration_ja": "AIによるディープフェイクへの懸念や、場違いなクリケット要素への疑問から、視聴者の反応は懐疑的で中立的なものが目立ちました。",
-      "views": 18355044,
-      "url": "https://www.youtube.com/watch?v=ixD98OeMkIA"
     },
     {
       "title": "🤝 أجمل لحظات الاحترام في عالم كرة القدم ❤️✨😯⚽️#بث_مباشر_مباريات_اليوم#shrots",
@@ -341,18 +303,40 @@
         "TN"
       ],
       "reach": 8,
-      "narration_en": "Highlighting Ronaldo's sportsmanship, this video garnered strong positive sentiment in the Middle East and North Africa. It focuses on his character and legendary status in football.",
-      "narration_ja": "ロナウドのスポーツマンシップを称える動画で、中東や北アフリカで非常に高い評価を得ました。彼のキャラクターと伝説的な選手としての側面が強調されています。",
+      "narration_en": "A compilation of respectful moments in football featuring Ronaldo has resonated deeply with audiences in the Middle East and North Africa. It focuses on sportsmanship and admiration for the player's character.",
+      "narration_ja": "ロナウドのスポーツマンシップあふれる瞬間をまとめたこの動画は、中東・北アフリカ地域の視聴者に強く支持されています。選手としての技術だけでなく、その人柄への敬意と称賛が集まっています。",
       "views": 16770211,
       "url": "https://www.youtube.com/watch?v=8DNmdZv_RLY"
+    },
+    {
+      "title": "Best Performance in Football 😍",
+      "countries": [
+        "CD",
+        "CI",
+        "FR",
+        "HT",
+        "SN",
+        "US",
+        "GB",
+        "AU",
+        "CA",
+        "GH",
+        "NZ",
+        "ZA"
+      ],
+      "reach": 12,
+      "narration_en": "This tribute to Johan Cruyff's performance has gained attention across several countries. While generally positive, some viewers have commented on the quality of the stadium and their viewing experience.",
+      "narration_ja": "ヨハン・クライフのプレーを称えるこの動画は、多くの国で注目されています。概ね好評ですが、一部の視聴者からはスタジアムの設備や観戦環境についての指摘も寄せられています。",
+      "views": 15242115,
+      "url": "https://www.youtube.com/watch?v=UhrsbdC5dHY"
     }
   ],
   "sentiment_avg": {
-    "positive": 54.785714285714285,
-    "negative": 21.055555555555557,
-    "neutral": 24.158730158730158
+    "positive": 55.504347826086956,
+    "negative": 21.204347826086956,
+    "neutral": 23.291304347826088
   },
-  "comments_analyzed": 21371,
+  "comments_analyzed": 19631,
   "top_positive_themes": [
     {
       "theme_en": "Excitement for the World Cup",
@@ -412,11 +396,6 @@
       "mentions": 65
     },
     {
-      "theme_en": "Inappropriate sexual jokes",
-      "theme_ja": "不適切な性的ジョーク",
-      "mentions": 60
-    },
-    {
       "theme_en": "Immaturity and mental issues",
       "theme_ja": "精神面・メンタルの未熟さ",
       "mentions": 60
@@ -435,6 +414,11 @@
       "theme_en": "Poor performance of teammates",
       "theme_ja": "チームメイトのプレーの質の低さ",
       "mentions": 50
+    },
+    {
+      "theme_en": "Threats and fear under dictatorship",
+      "theme_ja": "独裁政権による脅迫と恐怖",
+      "mentions": 45
     }
   ]
 }

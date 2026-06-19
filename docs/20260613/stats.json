@@ -1,11 +1,11 @@
 {
   "generated": "2026-06-13",
-  "videos_analyzed": 353,
+  "videos_analyzed": 338,
   "countries": 47,
   "totals": {
-    "views": 1137184301,
-    "likes": 13493290,
-    "comments": 283120
+    "views": 1103531582,
+    "likes": 12827832,
+    "comments": 277146
   },
   "country_attribution": "multi (b): a video is counted in every country whose search surfaced it; no per-country ranking (unreliable)",
   "top_teams": [
@@ -19,17 +19,17 @@
     },
     {
       "team": "Mexico",
-      "mentions": 1388,
+      "mentions": 1376,
       "lean": "positive",
-      "positive": 1157,
+      "positive": 1145,
       "neutral": 120,
       "negative": 111
     },
     {
       "team": "Brazil",
-      "mentions": 1200,
+      "mentions": 1196,
       "lean": "positive",
-      "positive": 756,
+      "positive": 752,
       "neutral": 338,
       "negative": 106
     },
@@ -43,10 +43,10 @@
     },
     {
       "team": "Argentina",
-      "mentions": 585,
+      "mentions": 584,
       "lean": "positive",
       "positive": 383,
-      "neutral": 130,
+      "neutral": 129,
       "negative": 72
     },
     {
@@ -67,10 +67,10 @@
     },
     {
       "team": "Portugal",
-      "mentions": 333,
+      "mentions": 332,
       "lean": "positive",
       "positive": 248,
-      "neutral": 70,
+      "neutral": 69,
       "negative": 15
     },
     {
@@ -99,8 +99,8 @@
         "ZA"
       ],
       "reach": 3,
-      "narration_en": "This heartwarming video captures Neymar's daughter Mavie supporting him after an injury. The content resonated globally, sparking overwhelmingly positive sentiment and pride for the Brazilian national team.",
-      "narration_ja": "怪我をしたネイマールを支える娘マヴィの心温まる動画です。世界中で共感を呼び、ブラジル代表への誇りと共に圧倒的にポジティブな反響が寄せられています。",
+      "narration_en": "This heartwarming video captures Neymar's daughter Mavie supporting her father, trending across Canada, England, and South Africa. Fans praised the father-daughter bond and Neymar's role as a dad, despite some doubts about the video's authenticity.",
+      "narration_ja": "",
       "views": 73469585,
       "url": "https://www.youtube.com/watch?v=sqyMCjrTA3s"
     },
@@ -123,8 +123,8 @@
         "ZA"
       ],
       "reach": 14,
-      "narration_en": "This AI-generated parody featuring Haaland and Mbappé sparked diverse reactions, ranging from amazement at the technology to criticism of its synthetic quality. The video trended across many nations with a mostly neutral reception.",
-      "narration_ja": "ハーランドとエムバペを題材にしたAI生成のパロディ動画です。技術への驚きとAI特有の質感への批判が混在し、中立的な評価を中心に多くの国でトレンド入りしました。",
+      "narration_en": "This AI-generated parody featuring Haaland and Mbappé has gained traction globally. Viewers are split between amazement at the AI technology and criticism regarding the uncanny valley and fake content.",
+      "narration_ja": "",
       "views": 42037588,
       "url": "https://www.youtube.com/watch?v=IqnQ6pcOxY4"
     },
@@ -134,8 +134,8 @@
         "IR"
       ],
       "reach": 1,
-      "narration_en": "This video featuring a rare FIFA 2026 World Cup ticket received enthusiastic support from Iranian viewers. While many celebrated the content, some expressed suspicion regarding its authenticity.",
-      "narration_ja": "FIFAワールドカップ2026の希少なチケットを紹介する動画で、イランの視聴者から熱烈な反応を得ました。祝福の声がある一方で、情報の信憑性を疑うコメントも見られます。",
+      "narration_en": "Trending in Iran, this video showcases a rare 2026 World Cup ticket, sparking excitement for the tournament. Comments reflect a mix of congratulations, shared enthusiasm, and suspicion that the ticket might be fake.",
+      "narration_ja": "",
       "views": 38871639,
       "url": "https://www.youtube.com/watch?v=NoJF344NY3M"
     },
@@ -183,8 +183,8 @@
         "ZA"
       ],
       "reach": 39,
-      "narration_en": "Shakira and Burna Boy's opening performance at the 2026 World Cup received widespread acclaim across numerous countries. Viewers largely praised the energy and iconic status of the collaboration despite minor critiques regarding live performance details.",
-      "narration_ja": "2026年W杯開会式でのシャキーラとバーナ・ボーイによるパフォーマンスは、多くの国で広く称賛されました。一部の細部への指摘はありつつも、コラボレーションのエネルギーと象徴性が高く評価されています。",
+      "narration_en": "Shakira and Burna Boy's World Cup opening performance trended widely across many countries. Most fans praised the iconic collaboration, though some noted issues with lip-syncing and rehearsals.",
+      "narration_ja": "",
       "views": 36636840,
       "url": "https://www.youtube.com/watch?v=Sc0EBlXORQM"
     },
@@ -213,8 +213,8 @@
         "ZA"
       ],
       "reach": 20,
-      "narration_en": "This AI-driven parody showing Yamal and Haaland trended internationally, with audiences focusing on the humor of the animation. The reception remained largely neutral, featuring mixed opinions on the quality of AI content.",
-      "narration_ja": "ヤマルとハーランドを描いたAIパロディ動画が国際的にトレンド入りしました。アニメーションのユーモアに注目が集まる一方、AI品質に対する評価は賛否が分かれ中立的な反応となっています。",
+      "narration_en": "This surreal AI parody involving Yamal and Haaland trended in numerous countries including Spain and Japan. Audiences largely focused on the humor of the animation while expressing concerns about the quality of AI-generated content.",
+      "narration_ja": "",
       "views": 30424605,
       "url": "https://www.youtube.com/watch?v=qnkSZVPOC-U"
     },
@@ -234,8 +234,8 @@
         "ZA"
       ],
       "reach": 11,
-      "narration_en": "This POV-style video recreating iconic World Cup moments used AI to engage audiences in Canada, England, and beyond. It received positive feedback for its creativity, though some viewers criticized specific historical portrayals.",
-      "narration_ja": "W杯の名場面をAIで再現したPOV動画は、カナダやイギリスなどで注目を集めました。その創造性は高く評価されましたが、特定の歴史的シーンの描写については批判的な声も上がりました。",
+      "narration_en": "This video recreating iconic World Cup moments via AI trended in several Western and African nations. Viewers praised the technology used to visualize history, while some debated the intensity of certain player actions.",
+      "narration_ja": "",
       "views": 28780321,
       "url": "https://www.youtube.com/watch?v=SOAv_BkevD0"
     },
@@ -245,8 +245,8 @@
         "PY"
       ],
       "reach": 1,
-      "narration_en": "This translation-focused video for the 2026 World Cup anthem 'Dai Dai' resonated with Spanish-speaking audiences in Paraguay. Fans praised the song's catchiness and discussed the meaning behind the lyrics.",
-      "narration_ja": "2026年W杯公式ソング『Dai Dai』の翻訳動画は、パラグアイのスペイン語圏視聴者から好評を博しました。楽曲のキャッチーさが評価され、歌詞の意味についての活発な議論が行われました。",
+      "narration_en": "This lyrical breakdown of the 2026 World Cup anthem trended in Paraguay. Fans expressed excitement for the tournament and appreciation for Shakira, while also discussing the multilingual lyrics and checking for inaccuracies.",
+      "narration_ja": "",
       "views": 21984147,
       "url": "https://www.youtube.com/watch?v=fC7TfYGui8g"
     },
@@ -266,8 +266,8 @@
         "ZA"
       ],
       "reach": 11,
-      "narration_en": "An emotional edit depicting Ronaldo and Messi during a 2026 World Cup penalty shootout drew significant attention. The video triggered a mix of empathy for the players and skepticism regarding the authenticity of the footage.",
-      "narration_ja": "2026年W杯のPK戦におけるロナウドとメッシを映した感情的な編集動画が注目を集めました。選手への共感の声が上がる一方で、映像の真偽を疑う反応も多く見られます。",
+      "narration_en": "An emotional edit of Ronaldo and Messi during a 2026 World Cup shootout trended globally. While viewers empathized with the players, many pointed out that the footage was fake or heavily edited.",
+      "narration_ja": "",
       "views": 17637610,
       "url": "https://www.youtube.com/watch?v=MNodUUgdvyc"
     },
@@ -279,8 +279,8 @@
         "CI"
       ],
       "reach": 3,
-      "narration_en": "The live performance of 'Siir Siir' featuring Nora Fatehi, Vegedream, and Sanjoy was highly celebrated for its cultural diversity. Audiences expressed strong pride in the artists and the festive World Cup atmosphere.",
-      "narration_ja": "ノラ・ファテヒらによる『Siir Siir』のライブパフォーマンスは、多様な文化の融合として大いに称賛されました。アーティストへの誇りと、W杯の祝祭的な雰囲気を楽しむ声が溢れています。",
+      "narration_en": "The World Cup opening performance by Nora Fatehi, Vegedream, and Sanjoy received overwhelmingly positive feedback. Fans highlighted the cultural diversity of the act and the pride taken in their national artists.",
+      "narration_ja": "",
       "views": 16676331,
       "url": "https://www.youtube.com/watch?v=9CpVYJQOsOc"
     },
@@ -301,18 +301,18 @@
         "ZA"
       ],
       "reach": 12,
-      "narration_en": "This POV animation depicting a rivalry between Brazil and Argentina captivated viewers worldwide. Comments reflected on legendary football icons, though the content drew mixed reactions regarding its humorous portrayal of player rivalries.",
-      "narration_ja": "ブラジル対アルゼンチンのライバル関係を描いたPOVアニメーションは世界中の視聴者を魅了しました。サッカー界のレジェンドを回顧する声の一方で、選手間の争いを描くユーモア表現については様々な反応がありました。",
+      "narration_en": "This POV animation of the Brazil-Argentina rivalry trended in many regions. Comments centered on the intense historical rivalry and shared respect for legends, with some humor regarding modern players.",
+      "narration_ja": "",
       "views": 16588148,
       "url": "https://www.youtube.com/watch?v=A2mYP0KgM-Y"
     }
   ],
   "sentiment_avg": {
-    "positive": 53.821325648414984,
-    "negative": 23.285302593659942,
-    "neutral": 22.89337175792507
+    "positive": 53.602409638554214,
+    "negative": 23.629518072289155,
+    "neutral": 22.768072289156628
   },
-  "comments_analyzed": 27861,
+  "comments_analyzed": 26638,
   "top_positive_themes": [
     {
       "theme_en": "Praise for Cristiano Ronaldo",

@@ -1,11 +1,11 @@
 {
   "generated": "2026-06-14",
-  "videos_analyzed": 282,
+  "videos_analyzed": 272,
   "countries": 47,
   "totals": {
-    "views": 888020759,
-    "likes": 10299820,
-    "comments": 247862
+    "views": 841073809,
+    "likes": 9745944,
+    "comments": 241660
   },
   "country_attribution": "multi (b): a video is counted in every country whose search surfaced it; no per-country ranking (unreliable)",
   "top_teams": [
@@ -27,9 +27,9 @@
     },
     {
       "team": "Brazil",
-      "mentions": 856,
+      "mentions": 855,
       "lean": "positive",
-      "positive": 486,
+      "positive": 485,
       "neutral": 289,
       "negative": 81
     },
@@ -104,8 +104,8 @@
         "UY"
       ],
       "reach": 8,
-      "narration_en": "This video, trending across Latin America and Spain, features a humorous interaction between Roberto Carlos and Messi's bodyguard. Viewers largely admire Roberto Carlos's legendary status and aura, though some express concern over the video's focus on violent scenarios.",
-      "narration_ja": "ラテンアメリカやスペインで急上昇したこの動画は、ロベルト・カルロスとメッシのボディーガードのコミカルなやり取りに注目しています。視聴者はロベルト・カルロスの伝説的な存在感に敬意を払う一方、暴力を連想させる演出への懸念も寄せられています。",
+      "narration_en": "This video features a tense interaction between Messi's bodyguard and Roberto Carlos, drawing praise for the legendary defender's aura and the humorous edit. Trending across Latin America and Spain, it sparked debate over the bodyguard's behavior and the risks of violent jokes.",
+      "narration_ja": "メッシの警備員とロベルト・カルロスが対峙する様子を収めた動画で、カルロスの伝説的なオーラと編集の面白さが話題です。中南米やスペインで急上昇し、警備員の振る舞いや暴力的なジョークに対する議論が巻き起こりました。",
       "views": 32789303,
       "url": "https://www.youtube.com/watch?v=OukZI3-Iz68"
     },
@@ -125,8 +125,8 @@
         "ZA"
       ],
       "reach": 11,
-      "narration_en": "A compilation of iconic World Cup moments trending in multiple Western nations and Africa. While viewers praise the AI-generated editing, there is notable criticism regarding sportsmanship, including comments on Maradona's handball and rough play.",
-      "narration_ja": "欧米やアフリカ諸国で話題の、W杯の名シーンをまとめた動画です。AI技術を駆使した編集は評価されていますが、マラドーナのハンドやラフプレーを巡り、スポーツマンシップに関する批判的な意見も見られます。",
+      "narration_en": "Viewers are reacting to AI-generated iconic World Cup moments, balancing excitement for the technology with criticism of specific historical events like Maradona's handball. The video, which features Argentina, France, and the Netherlands, has trended globally in English and French-speaking nations.",
+      "narration_ja": "AIで再現されたワールドカップの名場面集に対し、技術への称賛とマラドーナのハンドのような歴史的出来事への批判が入り混じっています。アルゼンチン、フランス、オランダに言及したこの動画は、英語圏やフランス語圏で広く注目を集めています。",
       "views": 28614779,
       "url": "https://www.youtube.com/watch?v=SOAv_BkevD0"
     },
@@ -173,8 +173,8 @@
         "NZ"
       ],
       "reach": 38,
-      "narration_en": "This multilingual music video for the FIFA World Cup 2026 has gained massive positive sentiment across various global regions. Fans are celebrating the artistic collaboration and the inclusion of diverse lyrics representing many nations.",
-      "narration_ja": "2026年FIFAワールドカップの公式曲を多言語で楽しむこの動画は、世界中で高い評価を得ています。多くの国を象徴する歌詞とアーティストのコラボレーションに対し、称賛の声が多く寄せられています。",
+      "narration_en": "Shakira and Burna Boy's official 2026 World Cup anthem has garnered positive sentiment for its multilingual lyrics and global reach. Fans from many countries are praising the creative tribute, despite minor concerns regarding spam activity in the comments.",
+      "narration_ja": "シャキーラとバーナ・ボーイによる2026年W杯公式ソングは、多言語の歌詞と世界的な広がりが好評です。多くの国でトレンド入りし、スパムへの懸念はあるものの、大会に向けた期待と創造性への称賛が寄せられています。",
       "views": 20818360,
       "url": "https://www.youtube.com/watch?v=fC7TfYGui8g"
     },
@@ -189,38 +189,10 @@
         "TN"
       ],
       "reach": 6,
-      "narration_en": "Gio Reyna’s impressive trivela goal is the highlight of this video trending in North African regions. The discussion focuses on his technical skill, the beauty of the strike, and the growth of the USMNT.",
-      "narration_ja": "北アフリカでトレンド入りした、ジオ・レイナの鮮やかなトリベラ弾を収めた動画です。彼の卓越した技術やゴールの美しさ、そしてアメリカ代表チームの成長について議論が盛り上がっています。",
+      "narration_en": "Gio Reyna's trivela goal highlights this video, with viewers focusing on his technical skill and the USMNT's growth. The content trended in various Arab-speaking countries, sparking debates on terminology and defensive play.",
+      "narration_ja": "ジオ・レイナのトリヴェラ・ゴールに焦点を当てたこの動画は、彼の卓越したスキルとアメリカ代表の成長を称賛しています。アラブ圏を中心にトレンド入りし、専門用語や守備の質に関する議論が活発に行われています。",
       "views": 19857231,
       "url": "https://www.youtube.com/watch?v=pegqoZswVT0"
-    },
-    {
-      "title": "Kane Williamson RETIRE 🛑 Dhoni ke Sath Women's T20 World Cup 2026  #kenwilliamson #msdhoni #cricket",
-      "countries": [
-        "NL",
-        "AT",
-        "BA",
-        "BE",
-        "CH",
-        "CW",
-        "CZ",
-        "DE",
-        "HR",
-        "NO",
-        "SE",
-        "AR",
-        "CO",
-        "EC",
-        "ES",
-        "MX",
-        "PA",
-        "UY"
-      ],
-      "reach": 18,
-      "narration_en": "Featuring Kane Williamson and MS Dhoni, this video sparked mixed reactions in Europe and Argentina. Comments reveal frustration with the rise of cricket content and deepfake-style AI editing in a football-focused space.",
-      "narration_ja": "ケイン・ウィリアムソンとMSドーニが登場するこの動画は、欧州やアルゼンチンで賛否両論を呼んでいます。サッカー関連の場でのクリケット動画や、AIによるディープフェイク風の編集に対する不満の声が目立ちます。",
-      "views": 19673419,
-      "url": "https://www.youtube.com/watch?v=58uUXs5J5OI"
     },
     {
       "title": "France Time Wasting 💀",
@@ -228,8 +200,8 @@
         "NZ"
       ],
       "reach": 1,
-      "narration_en": "Trending in New Zealand, this short highlights gameplay footage criticized for time-wasting and a lack of fair play. Viewers are split between admiring the high-quality editing and condemning the match tactics shown.",
-      "narration_ja": "ニュージーランドで急上昇中のこの動画は、時間稼ぎやフェアプレーの欠如が批判されるゲームプレイを収録しています。質の高い編集への感心と、映像内の戦術に対する批判が交錯しています。",
+      "narration_en": "This video covering France's time-wasting tactics drew mixed reactions, with viewers split between appreciating the editing quality and criticizing the lack of fair play. It mentions various teams like Portugal and Morocco while trending in New Zealand.",
+      "narration_ja": "フランスの遅延行為を取り上げたこの動画は、編集の質を評価する声とフェアプレーの欠如を批判する声で評価が割れています。ニュージーランドでトレンド入りし、ポルトガルやモロッコなど複数のチームが言及されました。",
       "views": 19394608,
       "url": "https://www.youtube.com/watch?v=xz8IJ9xtw-k"
     },
@@ -249,8 +221,8 @@
         "NZ"
       ],
       "reach": 11,
-      "narration_en": "This video featuring Ronaldo trends in English and French-speaking regions with mixed sentiment. Viewers are largely frustrated by misleading editing that suggests a goal where there is none.",
-      "narration_ja": "ロナウドを取り上げたこの動画は、英語圏やフランス語圏で話題ですが、反応は割れています。ゴールを決めたかのように見せる誤解を招く編集に対し、視聴者からは不満の声が上がっています。",
+      "narration_en": "Controversy surrounds this video featuring Ronaldo, as many viewers point out that the featured play was not actually a goal. The content faced criticism for over-dramatization and misleading editing across English and French-speaking regions.",
+      "narration_ja": "ロナウドを取り上げたこの動画に対し、実際にゴールシーンではないことを指摘する声が相次いでいます。演出過剰や誤解を招く編集内容により、英語圏およびフランス語圏の視聴者から厳しい批判を集めています。",
       "views": 17623185,
       "url": "https://www.youtube.com/watch?v=LwEmbve3imE"
     },
@@ -298,8 +270,8 @@
         "UY"
       ],
       "reach": 39,
-      "narration_en": "A widely popular video documenting performances at the FIFA World Cup 2026 opening in Canada. The sentiment is overwhelmingly positive, with fans expressing pride in the cultural representation and musical talent shown.",
-      "narration_ja": "カナダで開催された2026年W杯開会式のパフォーマンスを記録した動画です。多文化な演出や出演者の音楽的才能が絶賛されており、非常にポジティブな反応が寄せられています。",
+      "narration_en": "The live performance at the 2026 World Cup opening match in Canada was met with near-unanimous praise for its cultural fusion and artistic quality. Nora Fatehi's performance and the celebratory atmosphere generated high positive engagement globally.",
+      "narration_ja": "カナダで開催された2026年W杯開幕戦でのライブパフォーマンスは、文化の融合と芸術性の高さから圧倒的な称賛を受けています。ノラ・ファテヒらの出演と祝祭的な雰囲気が世界中で高い評価を得ました。",
       "views": 16078193,
       "url": "https://www.youtube.com/watch?v=9CpVYJQOsOc"
     },
@@ -320,8 +292,8 @@
         "NZ"
       ],
       "reach": 12,
-      "narration_en": "This video highlights the Argentina vs. Brazil rivalry and trends across several English and French-speaking nations. The conversation is a mix of respect for legends and discord regarding player behavior like Vinicius.",
-      "narration_ja": "アルゼンチン対ブラジルのライバル関係を描いたこの動画は、英語圏やフランス語圏でトレンド入りしました。伝説的な選手への敬意と、ヴィニシウスのような選手の行動を巡る対立した意見が混在しています。",
+      "narration_en": "This POV video captures the intensity of the Brazil-Argentina rivalry, sparking discussion about legendary players and recent match emotions. While some viewers appreciated the tribute to stars, others engaged in heated debates between rival fanbases.",
+      "narration_ja": "ブラジル対アルゼンチンのライバル関係を描いたPOV動画は、伝説的な選手への敬意と試合の熱量を伝えています。称賛の声が上がる一方で、ライバルファン同士の激しい論争もコメント欄で見られました。",
       "views": 15138744,
       "url": "https://www.youtube.com/watch?v=A2mYP0KgM-Y"
     },
@@ -368,28 +340,45 @@
         "NZ"
       ],
       "reach": 38,
-      "narration_en": "This influencer-focused collaboration video for the World Cup has received mixed feedback globally. While the tech and creativity are praised, many viewers are critical of non-football influencers appearing at high-profile matches.",
-      "narration_ja": "W杯に関連したインフルエンサーとのコラボ動画は、世界中で賛否が分かれています。技術や創造性は評価される一方で、サッカーに詳しくないインフルエンサーが主要試合に登場することへの批判も多く見られます。",
+      "narration_en": "Focusing on influencer-led content at the World Cup, this video received mixed feedback ranging from excitement over collaborations to frustration over ticket access. Viewers debated the role of non-football influencers in sport-focused events.",
+      "narration_ja": "W杯におけるインフルエンサー主導のコンテンツを取り上げたこの動画は、コラボレーションへの期待と、チケット購入の難しさへの不満が入り混じっています。サッカー関連イベントにおけるインフルエンサーの立ち位置について議論が交わされました。",
       "views": 14888268,
       "url": "https://www.youtube.com/watch?v=wXlrdF8L0kg"
+    },
+    {
+      "title": "Mbappé Witnessed Haaland’s Sleep Chaos 😳🛏️ #football #haaland #parody",
+      "countries": [
+        "AU",
+        "US",
+        "CA",
+        "CD",
+        "CI",
+        "FR",
+        "GB",
+        "GH",
+        "HT",
+        "SN",
+        "ZA",
+        "NZ"
+      ],
+      "reach": 12,
+      "narration_en": "Using 3D CGI and AI, this parody featuring Mbappé and Haaland has been highly praised for its humor and technical execution. Despite some confusion regarding the surreal nature of the scenes, the sentiment remains overwhelmingly positive.",
+      "narration_ja": "3D CGIとAIを駆使したエムバペとハーランドのパロディ動画は、そのユーモアと技術的な完成度で高く評価されています。シュールな映像展開に戸惑う声もありつつ、全体としては非常にポジティブな反応です。",
+      "views": 14160216,
+      "url": "https://www.youtube.com/watch?v=T6a7Anx63dg"
     }
   ],
   "sentiment_avg": {
-    "positive": 56.482142857142854,
-    "negative": 20.564285714285713,
-    "neutral": 22.95357142857143
+    "positive": 57.148148148148145,
+    "negative": 20.344444444444445,
+    "neutral": 22.507407407407406
   },
-  "comments_analyzed": 21550,
+  "comments_analyzed": 20857,
   "top_positive_themes": [
     {
       "theme_en": "Support for Morocco national team",
       "theme_ja": "モロッコ代表への応援",
       "mentions": 294
-    },
-    {
-      "theme_en": "Praise for Cristiano Ronaldo",
-      "theme_ja": "クリスティアーノ・ロナウドへの称賛",
-      "mentions": 155
     },
     {
       "theme_en": "Praise for Shakira's performance",
@@ -404,6 +393,11 @@
     {
       "theme_en": "Excellent performance by South Korea",
       "theme_ja": "韓国代表の素晴らしいパフォーマンス",
+      "mentions": 135
+    },
+    {
+      "theme_en": "Praise for Cristiano Ronaldo",
+      "theme_ja": "クリスティアーノ・ロナウドへの称賛",
       "mentions": 135
     },
     {
@@ -427,11 +421,6 @@
       "theme_en": "Anger and criticism towards the reporter",
       "theme_ja": "記者に対する怒りと批判",
       "mentions": 85
-    },
-    {
-      "theme_en": "Rude behavior and lack of manners",
-      "theme_ja": "男性の無礼な行動とマナーの欠如",
-      "mentions": 75
     },
     {
       "theme_en": "Frustration over missing highlights",
@@ -461,6 +450,11 @@
     {
       "theme_en": "Criticism of clickbait and fake match highlights",
       "theme_ja": "偽動画・誤解を招くタイトルへの批判",
+      "mentions": 55
+    },
+    {
+      "theme_en": "Physical size disadvantage",
+      "theme_ja": "身体的な体格差",
       "mentions": 55
     }
   ]

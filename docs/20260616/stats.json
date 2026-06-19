@@ -1,19 +1,19 @@
 {
   "generated": "2026-06-16",
-  "videos_analyzed": 308,
+  "videos_analyzed": 293,
   "countries": 47,
   "totals": {
-    "views": 648776468,
-    "likes": 7674266,
-    "comments": 208201
+    "views": 614629583,
+    "likes": 7380157,
+    "comments": 202206
   },
   "country_attribution": "multi (b): a video is counted in every country whose search surfaced it; no per-country ranking (unreliable)",
   "top_teams": [
     {
       "team": "Brazil",
-      "mentions": 2370,
+      "mentions": 2368,
       "lean": "negative",
-      "positive": 418,
+      "positive": 416,
       "neutral": 740,
       "negative": 1212
     },
@@ -35,10 +35,10 @@
     },
     {
       "team": "Germany",
-      "mentions": 682,
+      "mentions": 681,
       "lean": "positive",
       "positive": 538,
-      "neutral": 140,
+      "neutral": 139,
       "negative": 4
     },
     {
@@ -67,18 +67,18 @@
     },
     {
       "team": "Turkey",
-      "mentions": 499,
+      "mentions": 498,
       "lean": "negative",
       "positive": 69,
-      "neutral": 99,
+      "neutral": 98,
       "negative": 331
     },
     {
       "team": "Argentina",
-      "mentions": 486,
+      "mentions": 484,
       "lean": "positive",
-      "positive": 268,
-      "neutral": 161,
+      "positive": 267,
+      "neutral": 160,
       "negative": 57
     },
     {
@@ -106,8 +106,8 @@
         "ZA"
       ],
       "reach": 10,
-      "narration_en": "This video features viewers discussing the costs and risks of using World Cup stickers for car decoration. Trending across multiple English and French-speaking regions, the sentiment is mixed with humor and financial concern.",
-      "narration_ja": "ワールドカップのステッカーで車をデコレーションするコストやリスクについて議論されています。英語とフランス語圏でトレンド入りしており、ユーモアと懸念が混ざった反応です。",
+      "narration_en": "This entertaining video features a creative attempt to cover a car with World Cup stickers. Viewers are discussing sticker collecting, the potential for rain damage, and the financial cost involved.",
+      "narration_ja": "ワールドカップのステッカーで車を覆うというユニークで面白い動画です。視聴者はステッカー収集の情熱や、雨によるダメージへの懸念、そして費用について議論しています。",
       "views": 17315090,
       "url": "https://www.youtube.com/watch?v=-ltr2MaAtn0"
     },
@@ -119,8 +119,8 @@
         "SN"
       ],
       "reach": 3,
-      "narration_en": "Featuring Thierry Henry and Zlatan Ibrahimovic, this edit draws strong positive sentiment from French-speaking audiences. Viewers expressed surprise at the legends' presence while critiquing IShowSpeed's reckless challenge.",
-      "narration_ja": "ティエリ・アンリとズラタン・イブラヒモビッチが登場するこの動画は、フランス語圏で非常に高く評価されています。レジェンドとの共演に驚きの声が上がる一方、IShowSpeedの無謀な挑戦には批判も寄せられました。",
+      "narration_en": "This edit highlights Thierry Henry's legendary speed and his interaction with IShowSpeed. The audience is largely positive, focusing on Zlatan Ibrahimovic’s presence and Henry’s cool reaction to a reckless challenge.",
+      "narration_ja": "ティエリ・アンリの伝説的なスピードとIShowSpeedとの交流を収めた編集動画です。ズラタン・イブラヒモビッチの存在感や、無謀な挑戦に対するアンリの冷静な対応がポジティブに評価されています。",
       "views": 15603990,
       "url": "https://www.youtube.com/watch?v=y6HsR-owBiQ"
     },
@@ -135,8 +135,8 @@
         "ZA"
       ],
       "reach": 6,
-      "narration_en": "Spain's 0-0 draw against Cape Verde sparked intense debate over tactical play and finishing. English and French-speaking fans focused on the incredible performance of the goalkeepers.",
-      "narration_ja": "スペイン対カーボベルデの0-0の引き分けは、戦術や決定力不足を巡る激しい議論を呼びました。英語とフランス語圏のファンは、両チームのGKの素晴らしいパフォーマンスに注目しています。",
+      "narration_en": "Highlights from Spain versus Cape Verde show a stalemate defined by strong defense and goalkeeping. Comments express frustration with Spain's finishing and the team's coaching.",
+      "narration_ja": "スペイン対カーボベルデ戦のハイライトは、堅い守備とゴールキーパーの活躍による引き分けとなりました。コメント欄では、スペインの決定力不足や監督に対する不満が語られています。",
       "views": 10804725,
       "url": "https://www.youtube.com/watch?v=dc0Pdinz8IM"
     },
@@ -157,8 +157,8 @@
         "SN"
       ],
       "reach": 12,
-      "narration_en": "This clip of IShowSpeed reacting to a stadium wave generated mixed feelings among global viewers. The interaction is perceived as both funny and an annoying distraction from the match.",
-      "narration_ja": "スタジアムでのウェーブに対するIShowSpeedの反応は、世界中の視聴者の間で評価が分かれています。面白いという声と、試合の邪魔だという批判の両方が見られます。",
+      "narration_en": "This clip features an IShowSpeed stream interaction regarding the stadium wave. The audience is divided on whether the behavior is funny or simply a distraction from the match.",
+      "narration_ja": "スタジアムでのウェーブに関するIShowSpeedの配信切り抜きです。その行動が面白いと感じる層と、試合の邪魔だと感じる層で視聴者の意見が分かれています。",
       "views": 10664271,
       "url": "https://www.youtube.com/watch?v=LfLiJGEW6y4"
     },
@@ -178,8 +178,8 @@
         "CA"
       ],
       "reach": 11,
-      "narration_en": "The classic GOAT debate featuring Messi, Ronaldo, and Neymar dominates this video's comments. It trended globally in English and French, reflecting diverse fan loyalties.",
-      "narration_ja": "メッシ、ロナウド、ネイマールを巡る恒例のGOAT（史上最高）論争がコメント欄を席巻しています。英語とフランス語圏を中心に世界中でトレンド入りし、ファンの多様な支持が反映されています。",
+      "narration_en": "A video centered on the 2026 FIFA World Cup has sparked intense GOAT debates. Commenters are actively sharing support for Messi, Ronaldo, Neymar, and Morocco.",
+      "narration_ja": "2026 FIFAワールドカップに焦点を当てたこの動画は、熱いGOAT論争を巻き起こしています。メッシ、ロナウド、ネイマール、モロッコへの応援メッセージが多数寄せられています。",
       "views": 9759892,
       "url": "https://www.youtube.com/watch?v=ywgRPbOfLog"
     },
@@ -198,8 +198,8 @@
         "SE"
       ],
       "reach": 10,
-      "narration_en": "High praise for Japan's performance against the Netherlands has made this a top trending video. Fans across several languages celebrated the rise of Asian football, despite some frustration over officiating.",
-      "narration_ja": "オランダ戦での日本代表の活躍が大きな称賛を集め、トレンド上位に入りました。審判への不満はありつつも、多言語のファンがアジアサッカーの躍進を祝う内容となっています。",
+      "narration_en": "The Netherlands versus Japan match highlights celebrate the rise of Asian football and Japan's fighting spirit. Fans are highly positive, though some voiced dissatisfaction with the refereeing and commentary.",
+      "narration_ja": "オランダ対日本戦のハイライトは、アジアサッカーの台頭と日本の闘志に注目が集まっています。高い評価を得ている一方で、審判の判定や実況に対しては不満の声も挙がっています。",
       "views": 9570466,
       "url": "https://www.youtube.com/watch?v=njA-jfmz_gc"
     },
@@ -220,8 +220,8 @@
         "SN"
       ],
       "reach": 12,
-      "narration_en": "This humor-focused video about Toni Kroos has a largely neutral sentiment across English and French regions. Viewers primarily comment on the high editing quality and confusion regarding a non-contact tackle.",
-      "narration_ja": "トニ・クロースを題材にしたユーモア動画で、英語とフランス語圏で中立的な反応が主流です。高い編集技術や、接触のないタックルに関する困惑の声が中心です。",
+      "narration_en": "This humorous video pokes fun at a non-contact tackle involving Toni Kroos. The audience is mostly engaged with the high-quality editing and the sarcastic take on the referee's decision.",
+      "narration_ja": "トニ・クロースが関与した接触のないタックルを面白おかしく編集した動画です。高い編集技術と審判の判定に対する皮肉な視点が、視聴者の関心を集めています。",
       "views": 9523852,
       "url": "https://www.youtube.com/watch?v=0CJv6tr9ppw"
     },
@@ -255,8 +255,8 @@
         "CA"
       ],
       "reach": 25,
-      "narration_en": "Australia's victory over Turkey was met with great excitement and praise for their speed. The video trended in many countries across multiple languages, highlighting both appreciation and frustration.",
-      "narration_ja": "トルコに対するオーストラリアの勝利は、そのスピードと鮮やかなゴールで大きな興奮と称賛を呼びました。多言語圏で広くトレンド入りし、勝利への喜びと敗戦への悔しさが混ざっています。",
+      "narration_en": "Fans are praising Australia's impressive goal against Turkey in this 2026 World Cup highlight. Sentiment is generally positive, focused on the skill of the players and disappointment regarding the Turkish defense.",
+      "narration_ja": "2026年ワールドカップのオランダ対トルコ戦におけるオーストラリアの素晴らしいゴールが称賛されています。選手のスキルへの称賛を中心に、トルコの守備への不満も含めポジティブな反応が主流です。",
       "views": 9126873,
       "url": "https://www.youtube.com/watch?v=eRQsqOCMyXo"
     },
@@ -277,8 +277,8 @@
         "CA"
       ],
       "reach": 12,
-      "narration_en": "This prediction challenge between Brazil and Morocco saw mixed reactions due to scoring disagreements. Viewers in various regions engaged in heated discussions about refereeing and accuracy.",
-      "narration_ja": "ブラジル対モロッコの予想チャレンジ動画は、スコアの不一致から様々な反応を呼んでいます。各地の視聴者が審判の判定や結果の正確性を巡って活発な議論を繰り広げました。",
+      "narration_en": "A challenge video predicting a Brazil vs. Morocco score has generated mixed reactions. Viewers are debating the accuracy of the prediction and critiquing the refereeing.",
+      "narration_ja": "ブラジル対モロッコ戦のスコア予想チャレンジ動画で、反応が分かれています。視聴者は予想の正確さや、審判の判定について議論を交わしています。",
       "views": 8935685,
       "url": "https://www.youtube.com/watch?v=Q0v-3tvGhLA"
     },
@@ -308,18 +308,18 @@
         "CA"
       ],
       "reach": 21,
-      "narration_en": "Vinicius Junior's goal against Morocco received wide acclaim, though Brazil's defensive performance faced scrutiny. The video saw strong positive sentiment across a vast international audience.",
-      "narration_ja": "ヴィニシウス・ジュニオールのゴールは広く称賛されましたが、一方でブラジル代表の守備面には厳しい目が向けられました。国際的な幅広い視聴者層から、非常にポジティブな反応を得ています。",
+      "narration_en": "Vinicius Junior's goal against Morocco is the highlight here, drawing widespread praise for his skill. However, many viewers are frustrated with Brazil's team performance and defensive lapses.",
+      "narration_ja": "モロッコ戦でのヴィニシウス・ジュニオールのゴールがハイライトとなっており、彼の技術には称賛が寄せられています。一方で、ブラジル代表チームのパフォーマンスや守備の脆さには不満の声が多く聞かれます。",
       "views": 8745157,
       "url": "https://www.youtube.com/watch?v=UtVyBIOWvwQ"
     }
   ],
   "sentiment_avg": {
-    "positive": 54.60064935064935,
-    "negative": 21.75,
-    "neutral": 23.649350649350648
+    "positive": 55.689419795221845,
+    "negative": 21.344709897610922,
+    "neutral": 22.965870307167236
   },
-  "comments_analyzed": 23039,
+  "comments_analyzed": 21841,
   "top_positive_themes": [
     {
       "theme_en": "Keisuke Honda's commentary is entertaining",

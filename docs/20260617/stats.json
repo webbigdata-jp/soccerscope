@@ -1,11 +1,11 @@
 {
   "generated": "2026-06-17",
-  "videos_analyzed": 265,
+  "videos_analyzed": 257,
   "countries": 47,
   "totals": {
-    "views": 481126959,
-    "likes": 5579585,
-    "comments": 156371
+    "views": 460897030,
+    "likes": 5393463,
+    "comments": 154306
   },
   "country_attribution": "multi (b): a video is counted in every country whose search surfaced it; no per-country ranking (unreliable)",
   "top_teams": [
@@ -19,9 +19,9 @@
     },
     {
       "team": "Brazil",
-      "mentions": 1027,
+      "mentions": 1025,
       "lean": "negative",
-      "positive": 222,
+      "positive": 220,
       "neutral": 170,
       "negative": 635
     },
@@ -59,9 +59,9 @@
     },
     {
       "team": "Argentina",
-      "mentions": 580,
+      "mentions": 579,
       "lean": "positive",
-      "positive": 338,
+      "positive": 337,
       "neutral": 179,
       "negative": 63
     },
@@ -108,8 +108,8 @@
         "ZA"
       ],
       "reach": 12,
-      "narration_en": "This video highlights Thierry Henry’s legendary speed and skills, drawing reactions to a reckless challenge by IShowSpeed. It has trended across 12 countries with a highly positive audience sentiment.",
-      "narration_ja": "ティエリ・アンリの伝説的なスピードと技術に焦点を当て、IShowSpeedの無謀な挑戦に対する反応をまとめた動画です。12カ国で急上昇し、視聴者から非常に肯定的な評価を得ています。",
+      "narration_en": "This video highlights Thierry Henry's legendary speed and skill, earning high praise for his charisma and Zlatan Ibrahimović's endorsement. It trended across multiple continents, with viewers reacting strongly to the edit featuring IShowSpeed.",
+      "narration_ja": "ティエリ・アンリの伝説的なスピードと技術に焦点を当てた動画です。アンリのカリスマ性とズラタン・イブラヒモビッチによる称賛が話題となり、多くの国で視聴されました。",
       "views": 15781004,
       "url": "https://www.youtube.com/watch?v=y6HsR-owBiQ"
     },
@@ -124,8 +124,8 @@
         "ZA"
       ],
       "reach": 6,
-      "narration_en": "Fans are debating the GOAT status of Messi and Ronaldo while enjoying this creative football car crash challenge. The video features high-quality editing and maintains a positive reception in English-speaking regions.",
-      "narration_ja": "メッシとロナウドのGOAT論争を交えつつ、クリエイティブなサッカーカークラッシュに注目が集まっています。編集の質の高さが評価され、英語圏で好評を博しています。",
+      "narration_en": "This football car crash challenge featuring stars like Messi and Ronaldo trended in English-speaking regions. Fans focused on debating the GOAT and praising the high quality of the video editing.",
+      "narration_ja": "メッシやロナウドなどのスターが登場するサッカー・カークラッシュ・チャレンジ動画で、英語圏でトレンド入りしました。ファンは「誰がGOATか」という議論や動画編集の質の高さに注目しています。",
       "views": 12463183,
       "url": "https://www.youtube.com/watch?v=1LNfCWF3YWE"
     },
@@ -146,36 +146,10 @@
         "ZA"
       ],
       "reach": 12,
-      "narration_en": "This Spain vs. Cape Verde highlight showcases a defensive masterclass and incredible goalkeeping despite Spain's struggles to finish. The content has sparked mixed discussions on tactics across multiple global regions.",
-      "narration_ja": "スペイン対カーボベルデのハイライトでは、スペインの決定力不足に対し、見事な守備戦術とゴールキーピングが際立ちました。世界中で戦術を巡る議論を呼んでいます。",
+      "narration_en": "This highlight reel of Spain versus Cape Verde captured a tactical defensive battle, sparking discussions about Spain’s finishing and the incredible performance of the goalkeepers. It trended widely across both English and French-speaking regions.",
+      "narration_ja": "スペイン対カーボベルデ戦のハイライト動画で、両チームの守備的戦術やゴールキーパーの活躍が話題となりました。英語圏およびフランス語圏の多くの国で視聴されています。",
       "views": 10965939,
       "url": "https://www.youtube.com/watch?v=dc0Pdinz8IM"
-    },
-    {
-      "title": "Cricket icc womens t20 world cup 2026 Dekhne Ki Tyari 🤩 #shorts #preetigirdhar #ytshorts",
-      "countries": [
-        "AR",
-        "BA",
-        "BE",
-        "CO",
-        "CW",
-        "CZ",
-        "EC",
-        "ES",
-        "HR",
-        "IR",
-        "MX",
-        "NL",
-        "NO",
-        "PY",
-        "SE",
-        "UY"
-      ],
-      "reach": 16,
-      "narration_en": "Featuring themes of birthday celebrations and creator support, this video about the Cricket ICC Women's T20 World Cup 2026 has gained traction in 16 countries. Audience sentiment remains generally positive despite some confusion regarding the content.",
-      "narration_ja": "2026年女子クリケットT20ワールドカップを題材にしたこの動画は、誕生日のお祝いやクリエイターへの応援をテーマに16カ国で注目されました。内容への戸惑いはあるものの、全体的な反応は肯定的です。",
-      "views": 10209809,
-      "url": "https://www.youtube.com/watch?v=XY1X3-tHwWE"
     },
     {
       "title": "Who will win the World Cup 2026🏆👀 #worldcup #worldcup2026",
@@ -205,8 +179,8 @@
         "UY"
       ],
       "reach": 23,
-      "narration_en": "This World Cup 2026 prediction video discusses national teams including Japan, Mexico, and Germany, while sparking debate over flag placement and dance moves. It has trended in 18 countries with a largely positive sentiment.",
-      "narration_ja": "2026年ワールドカップを予想するこの動画は、日本やメキシコなど各国の代表チームに触れつつ、演出方法を巡り議論を呼びました。18カ国で急上昇し、概ね肯定的な評価を得ています。",
+      "narration_en": "This World Cup 2026 prediction video trended in over 20 countries, featuring diverse languages. Viewers discussed their national teams and debated the appropriateness of dance moves and flag placement.",
+      "narration_ja": "ワールドカップ2026の予想動画が20カ国以上でトレンド入りしました。各国の視聴者が自国の代表チームへの支持や、動画内の演出に対する意見を交わしています。",
       "views": 9727711,
       "url": "https://www.youtube.com/watch?v=wcd5EgSq6Sg"
     },
@@ -231,8 +205,8 @@
         "UY"
       ],
       "reach": 16,
-      "narration_en": "Viewers are celebrating Japan's sensational performance against the Netherlands, often referencing the 'Blue Lock' anime influence. The video is widely respected for its thrilling match display across multiple nations.",
-      "narration_ja": "日本対オランダ戦における日本の驚異的なパフォーマンスにファンが沸いており、アニメ『ブルーロック』の影響も話題です。スリリングな試合展開が高く評価されています。",
+      "narration_en": "This thrilling Netherlands versus Japan match video garnered high praise, with many noting Japan's sensational performance and referencing the 'Blue Lock' anime influence. It trended in several European and Latin American countries.",
+      "narration_ja": "オランダ対日本の激戦を収めたこの動画は、日本の躍進と『ブルーロック』の影響を指摘する声が多く、高い評価を得ています。欧州や中南米を中心に視聴されました。",
       "views": 9583626,
       "url": "https://www.youtube.com/watch?v=njA-jfmz_gc"
     },
@@ -248,8 +222,8 @@
         "ZA"
       ],
       "reach": 7,
-      "narration_en": "Focusing on Germany's historical dominance and past World Cup scores, this edit has resonated with fans in English-speaking countries. Comments show a mix of nostalgia and respect for the teams mentioned.",
-      "narration_ja": "ドイツの歴史的な圧倒劇と過去のワールドカップのスコアに焦点を当てたこの動画は、英語圏のファンから共感を得ています。ノスタルジーと各チームへの敬意がコメントに混在しています。",
+      "narration_en": "Focusing on Germany's repeat 7-1 victory, this video stirred memories of historic World Cup matches and Brazilian football trauma. It trended in English-speaking markets with a mostly positive reception.",
+      "narration_ja": "ドイツの再びの7-1勝利に焦点を当てた動画で、過去のワールドカップの記憶やブラジル戦を巡る話題で盛り上がりました。英語圏を中心にポジティブな反応が多く見られます。",
       "views": 8782221,
       "url": "https://www.youtube.com/watch?v=_siwBBR-d5c"
     },
@@ -265,8 +239,8 @@
         "US"
       ],
       "reach": 7,
-      "narration_en": "This compilation of funny football skills is popular in English-speaking markets, with viewers praising its quality and recommending it as a useful tutorial. Sentiment is largely positive regarding the content's entertainment value.",
-      "narration_ja": "サッカーの面白いスキルをまとめたこの動画は、英語圏で人気を集めています。視聴者からは質の高さやチュートリアルとしての有用性が評価されており、肯定的な反応が中心です。",
+      "narration_en": "This video showcasing funny football skills trended in English-speaking countries, receiving praise for its content quality and tutorial value. Some viewers raised questions regarding the authenticity of the featured clips.",
+      "narration_ja": "サッカーの面白いスキルを披露する動画で、英語圏でトレンド入りしました。コンテンツの質やチュートリアルとしての有用性が称賛される一方、一部の視聴者からは内容の真実性について疑問も出ています。",
       "views": 8665349,
       "url": "https://www.youtube.com/watch?v=uHGv7hchRgA"
     },
@@ -287,8 +261,8 @@
         "ZA"
       ],
       "reach": 12,
-      "narration_en": "Viewers are divided on this AI-generated parody of Haaland and Mbappé, with some praising its realism and humor while others remain critical. The video has trended globally across diverse linguistic regions.",
-      "narration_ja": "ハーランドとエムバペを題材にしたAI生成パロディに対し、リアルさとユーモアを称賛する声と批判的な意見が分かれています。多言語圏で幅広く視聴されています。",
+      "narration_en": "Blending Haaland and Mbappé through AI parody, this video trended in English and French-speaking territories. Reactions are mixed, ranging from amazement at the AI realism to criticism of the format.",
+      "narration_ja": "ハーランドとエムバペをAIパロディで融合させた動画で、英語圏およびフランス語圏で視聴されました。AIによるリアリティへの驚きと、演出に対する批判の両方が見られます。",
       "views": 8535933,
       "url": "https://www.youtube.com/watch?v=7yDie41YNlE"
     },
@@ -299,18 +273,29 @@
         "UZ"
       ],
       "reach": 2,
-      "narration_en": "This video features football feints and humor, trending in Turkey and Uzbekistan. Audience feedback is mixed, highlighting a lack of context and varying opinions on the performance quality.",
-      "narration_ja": "サッカーのフェイントとユーモアを扱ったこの動画は、トルコやウズベキスタンで急上昇しました。パフォーマンスの質や文脈の欠如を巡り、多様な意見が寄せられています。",
+      "narration_en": "Trending in Turkey and Uzbekistan, this video features football-themed humor and feints. Comments highlight a mix of amusement at the funny reactions and criticism regarding the lack of context and performance quality.",
+      "narration_ja": "トルコやウズベキスタンでトレンド入りした、サッカーのフェイントやユーモアを扱った動画です。面白い反応を楽しむ声がある一方、文脈の欠如やパフォーマンスへの厳しい意見も寄せられています。",
       "views": 6519725,
       "url": "https://www.youtube.com/watch?v=WjxJnxvTHIg"
+    },
+    {
+      "title": "オランダ戦の本田圭佑名言ランキング #サッカー #オランダ戦 #サッカー日本代表 #本田圭佑解説 #本田圭佑",
+      "countries": [
+        "JP"
+      ],
+      "reach": 1,
+      "narration_en": "This Japanese-language video captures Keisuke Honda's highly entertaining commentary during the Japan vs. Netherlands match. It holds a very high positive sentiment, with fans praising his football passion and wit.",
+      "narration_ja": "オランダ戦における本田圭佑の解説をまとめた動画で、日本国内で高い支持を得ています。本田の鋭い考察やユニークな名言、サッカーへの情熱がファンから絶賛されています。",
+      "views": 5631471,
+      "url": "https://www.youtube.com/watch?v=C4BjNuGJthA"
     }
   ],
   "sentiment_avg": {
-    "positive": 56.886792452830186,
-    "negative": 18.0,
-    "neutral": 25.452830188679247
+    "positive": 57.27626459143969,
+    "negative": 17.91828793774319,
+    "neutral": 25.155642023346303
   },
-  "comments_analyzed": 18219,
+  "comments_analyzed": 17653,
   "top_positive_themes": [
     {
       "theme_en": "Support for Algeria national team",

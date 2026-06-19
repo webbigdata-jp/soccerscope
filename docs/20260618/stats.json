@@ -1,11 +1,11 @@
 {
   "generated": "2026-06-18",
-  "videos_analyzed": 257,
+  "videos_analyzed": 243,
   "countries": 47,
   "totals": {
-    "views": 402858185,
-    "likes": 4564307,
-    "comments": 152760
+    "views": 367855463,
+    "likes": 4269592,
+    "comments": 149920
   },
   "country_attribution": "multi (b): a video is counted in every country whose search surfaced it; no per-country ranking (unreliable)",
   "top_teams": [
@@ -42,14 +42,6 @@
       "negative": 6
     },
     {
-      "team": "Brazil",
-      "mentions": 466,
-      "lean": "negative",
-      "positive": 75,
-      "neutral": 126,
-      "negative": 265
-    },
-    {
       "team": "Saudi Arabia",
       "mentions": 461,
       "lean": "positive",
@@ -58,10 +50,18 @@
       "negative": 1
     },
     {
+      "team": "Brazil",
+      "mentions": 456,
+      "lean": "negative",
+      "positive": 65,
+      "neutral": 126,
+      "negative": 265
+    },
+    {
       "team": "France",
-      "mentions": 386,
+      "mentions": 383,
       "lean": "positive",
-      "positive": 323,
+      "positive": 320,
       "neutral": 63,
       "negative": 0
     },
@@ -104,8 +104,8 @@
         "UY"
       ],
       "reach": 8,
-      "narration_en": "This surreal Haaland parody features unique CGI and AI-generated imagery, sparking discussions about AI and the character's strange eating habits. It trended across several Spanish-speaking countries.",
-      "narration_ja": "このハーランドのシュールなパロディ動画は、CGIとAI技術を活用し、AIへの関心やキャラクターの奇妙な食事シーンで話題を呼びました。スペイン語圏の国々でトレンド入りしています。",
+      "narration_en": "This surreal 3D parody of Erling Haaland trended across Spanish-speaking countries. Viewers largely praised the creative AI-driven animation despite the unusual content.",
+      "narration_ja": "アーリング・ハーランドを題材にしたシュールな3Dパロディ動画で、スペイン語圏でトレンド入りしました。AIを活用したユニークなアニメーション表現が高く評価されています。",
       "views": 14747246,
       "url": "https://www.youtube.com/watch?v=UdS02lz0BRw"
     },
@@ -121,8 +121,8 @@
         "NZ"
       ],
       "reach": 7,
-      "narration_en": "Featuring Cristiano Ronaldo, this video sparked intense debates about player comparisons with Lionel Messi and comments on fake audio. It received high praise for its focus on fandom and Ronaldo's skills.",
-      "narration_ja": "クリスティアーノ・ロナウドを特集したこの動画は、リオネル・メッシとの比較論争や音声の真偽を巡るコメントが寄せられました。ファンからの熱い支持とロナウドのスキルへの称賛が集まっています。",
+      "narration_en": "A short video highlighting Cristiano Ronaldo and Lionel Messi sparked fan debates and praise. The audience appreciated the stars but noted issues with fake audio and animations.",
+      "narration_ja": "クリスティアーノ・ロナウドとリオネル・メッシを取り上げたショート動画で、ファンによる熱い議論が巻き起こりました。両選手の人気は高い一方、音声やアニメーションに対する指摘も見られました。",
       "views": 14377150,
       "url": "https://www.youtube.com/watch?v=qOVL2KCvHJM"
     },
@@ -146,37 +146,10 @@
         "UY"
       ],
       "reach": 15,
-      "narration_en": "This Mbappe-focused parody generated diverse reactions, with viewers admiring the production quality while criticizing its AI generation and counting errors. It reached an international audience across multiple regions.",
-      "narration_ja": "エムバペを題材にしたパロディ動画で、制作クオリティへの賞賛と同時に、AI生成やカウントミスへの批判など様々な反応が寄せられました。複数の地域で幅広く視聴されています。",
+      "narration_en": "This surreal parody featuring Kylian Mbappé trended globally. While viewers enjoyed the humor, some expressed confusion over the AI production and perceived counting errors.",
+      "narration_ja": "キリアン・エムバペをフィーチャーしたシュールなパロディ動画が世界中でトレンド入りしました。ユーモアが人気の一方、AI生成による演出や計算ミスへの戸惑いの声も上がっています。",
       "views": 12307172,
       "url": "https://www.youtube.com/watch?v=h7T5OSJiHsU"
-    },
-    {
-      "title": "Cricket icc womens t20 world cup 2026 Dekhne Ki Tyari 🤩 #shorts #preetigirdhar #ytshorts",
-      "countries": [
-        "AR",
-        "BA",
-        "BE",
-        "CO",
-        "CW",
-        "CZ",
-        "EC",
-        "ES",
-        "HR",
-        "IR",
-        "MX",
-        "NL",
-        "NO",
-        "PA",
-        "PY",
-        "SE",
-        "UY"
-      ],
-      "reach": 17,
-      "narration_en": "Despite being titled for cricket, this video trended widely and prompted comments about fashion and birthday celebrations. Viewers noted a mismatch between the title and the actual content.",
-      "narration_ja": "クリケットに関連したタイトルですが、動画の内容とタイトルの不一致が指摘される一方で、ファッションや誕生日祝いに関するコメントが寄せられ、広く拡散されました。",
-      "views": 10399245,
-      "url": "https://www.youtube.com/watch?v=XY1X3-tHwWE"
     },
     {
       "title": "Who will win the World Cup 2026🏆👀 #worldcup #worldcup2026",
@@ -206,8 +179,8 @@
         "UY"
       ],
       "reach": 23,
-      "narration_en": "This World Cup 2026 discussion video drew reactions to flag placement and dance moves, alongside general support for national teams. It trended globally across diverse linguistic regions.",
-      "narration_ja": "2026年ワールドカップを扱ったこの動画は、各国代表チームへの応援だけでなく、国旗の扱い方やダンスへの指摘などで反響を呼びました。世界各地でトレンド入りしています。",
+      "narration_en": "This video about the 2026 World Cup saw diverse engagement across many nations. Comments range from support for national teams to criticisms regarding flag placement and dance moves.",
+      "narration_ja": "2026年ワールドカップに関するこの動画は、多くの国で関心を集めました。代表チームへの応援メッセージから、国旗の扱い方やダンスへの批判的な意見まで、多様なコメントが寄せられています。",
       "views": 9735352,
       "url": "https://www.youtube.com/watch?v=wcd5EgSq6Sg"
     },
@@ -224,8 +197,8 @@
         "TN"
       ],
       "reach": 8,
-      "narration_en": "This match summary highlights Lionel Messi's hat-trick against Algeria, sparking intense discussions about faith, national support, and warnings regarding fan behavior. It trended primarily in the Arab world.",
-      "narration_ja": "アルジェリア戦でのメッシのハットトリックを伝えるこの動画は、アラブ諸国を中心に、試合結果への反応や信仰、ファン同士の衝突に対する注意喚起などの議論を呼び起こしました。",
+      "narration_en": "Highlights of Argentina versus Algeria sparked intense discussion among Arab-speaking viewers. The content was marked by admiration for Messi's performance, religious reflection, and pleas for sportsmanship.",
+      "narration_ja": "アルゼンチン対アルジェリア戦のハイライトは、アラビア語圏の視聴者から注目されました。メッシの活躍を称える声とともに、信仰やファン同士の衝突回避を呼びかけるコメントが目立ちました。",
       "views": 9381245,
       "url": "https://www.youtube.com/watch?v=dBvbm65tYRk"
     },
@@ -245,39 +218,10 @@
         "AR"
       ],
       "reach": 11,
-      "narration_en": "This analytical video regarding Ronaldo's penalties met with significant skepticism, with viewers criticizing the commentary style and making frequent comparisons to Messi. Sentiment is predominantly negative.",
-      "narration_ja": "ロナウドのPKを分析するこの動画は、解説スタイルへの批判やメッシとの比較が多く、懐疑的なコメントが目立ちます。全体として否定的な評価が多くなっています。",
+      "narration_en": "An analysis of Ronaldo's penalty technique faced significant skepticism from viewers. Many questioned the credibility of the analysis and criticized the content as excessive 'glazing'.",
+      "narration_ja": "ロナウドのPK技術を分析したこの動画には、多くの視聴者から懐疑的な声が寄せられました。分析の信憑性を疑う声や、過度な称賛に対する批判が目立っています。",
       "views": 7152789,
       "url": "https://www.youtube.com/watch?v=QRonUKdknho"
-    },
-    {
-      "title": "The Drink Battle Had a Sweet Ending 🥤💞  #kpop #parody #football #meme",
-      "countries": [
-        "CD",
-        "CI",
-        "FR",
-        "HT",
-        "SN"
-      ],
-      "reach": 5,
-      "narration_en": "A highly positive response characterized this surreal drink-themed parody, with viewers praising the characters' cuteness and the production quality. It was popular among French-speaking audiences.",
-      "narration_ja": "飲み物をテーマにしたシュールなパロディ動画で、キャラクターの愛らしさや制作技術が高く評価されました。フランス語圏の視聴者から非常に好意的に受け入れられています。",
-      "views": 6478676,
-      "url": "https://www.youtube.com/watch?v=EY1d0byD87U"
-    },
-    {
-      "title": "Cricket icc womens t20 world cup 2026 Dekhne Ki Tyari 🤩 #shorts #ytshorts",
-      "countries": [
-        "BA",
-        "CZ",
-        "HR",
-        "SE"
-      ],
-      "reach": 4,
-      "narration_en": "This video about the women's cricket world cup saw mixed reactions ranging from strong interest to indifference and criticism of video quality. It trended specifically in European regions.",
-      "narration_ja": "女子クリケットワールドカップに関するこの動画は、関心を示す声から無関心や画質への不満まで、様々な反応が見られました。主に欧州地域でトレンド入りしています。",
-      "views": 6067862,
-      "url": "https://www.youtube.com/watch?v=-VgmVDbddWk"
     },
     {
       "title": "Argentina Vs Algeria 3-0 FIFA World Cup Goals Full highlights 2026 | Messi Epic Goals | Messi Hatric",
@@ -308,18 +252,69 @@
         "UY"
       ],
       "reach": 24,
-      "narration_en": "Highlighting Messi's hat-trick against Algeria, this video earned overwhelming praise for his performance and the Argentina team. Viewers frequently recognized Messi as the GOAT.",
-      "narration_ja": "アルジェリア戦でのメッシのハットトリックを取り上げたこの動画は、メッシの偉大なパフォーマンスとアルゼンチン代表への熱い賞賛が集まり、「史上最高（GOAT）」と称えられています。",
+      "narration_en": "Full highlights of Messi's hat-trick against Algeria drew massive global praise. Fans widely celebrated his legendary status, though some noted concerns over editing quality and copyright.",
+      "narration_ja": "アルジェリア戦でのメッシのハットトリックを収めたハイライト動画は、世界中で大絶賛されました。メッシのレジェンドとしての評価が定着する一方、編集品質や著作権に関する指摘もなされました。",
       "views": 5512546,
       "url": "https://www.youtube.com/watch?v=fkuQQTnxP1o"
+    },
+    {
+      "title": "\"I Don't like Football...\"😭🥀 - Ronaldo, Messi, Neymar Edit | #edit #worldcup #football",
+      "countries": [
+        "AU",
+        "CA",
+        "GB",
+        "US",
+        "GH",
+        "ZA",
+        "NZ"
+      ],
+      "reach": 7,
+      "narration_en": "This high-quality edit featuring football legends resonated strongly with English-speaking fans. Viewers praised the editing skill while sharing feelings of nostalgia regarding the legends' eventual retirement.",
+      "narration_ja": "サッカー界のレジェンドをまとめた高品質な編集動画が、英語圏のファンの心を掴みました。編集スキルの高さが称賛されると同時に、レジェンドたちの引退を惜しむ声が多く寄せられています。",
+      "views": 5502672,
+      "url": "https://www.youtube.com/watch?v=hjV03L90lRI"
+    },
+    {
+      "title": "Women vs Man Throw in Skills in Football 🤣",
+      "countries": [
+        "CD",
+        "CI",
+        "FR",
+        "HT",
+        "SN",
+        "GB",
+        "US",
+        "AU",
+        "CA",
+        "GH",
+        "NZ",
+        "ZA"
+      ],
+      "reach": 12,
+      "narration_en": "A humorous football fail video trended across multiple regions. The lighthearted content prompted mixed reactions, including doubts about the authenticity of the featured skills.",
+      "narration_ja": "サッカーの失敗シーンを集めたコミカルな動画が、複数の地域でトレンド入りしました。気軽な娯楽として親しまれる一方、映像の真偽を疑う声も上がっています。",
+      "views": 5221208,
+      "url": "https://www.youtube.com/watch?v=j46OdFPUGgY"
+    },
+    {
+      "title": "Messi & Ishowspeed & Ronaldo VS Camera.. 🤣🔥",
+      "countries": [
+        "NZ",
+        "ZA"
+      ],
+      "reach": 2,
+      "narration_en": "An entertaining edit featuring Messi and Ronaldo captured significant interest in New Zealand and South Africa. Comments centered on fandom, though some viewers criticized the portrayal of Ronaldo's attitude.",
+      "narration_ja": "メッシとロナウドを取り上げたこの動画は、ニュージーランドと南アフリカで注目を集めました。両選手へのファン心を示す一方で、ロナウドの態度に対する批判的なコメントも見受けられます。",
+      "views": 5139241,
+      "url": "https://www.youtube.com/watch?v=UeV31ifg2jg"
     }
   ],
   "sentiment_avg": {
-    "positive": 53.55882352941177,
-    "negative": 19.58627450980392,
-    "neutral": 26.854901960784314
+    "positive": 53.89004149377593,
+    "negative": 19.41701244813278,
+    "neutral": 26.692946058091287
   },
-  "comments_analyzed": 16058,
+  "comments_analyzed": 15267,
   "top_positive_themes": [
     {
       "theme_en": "Messi's greatness and GOAT status",
@@ -379,18 +374,8 @@
       "mentions": 65
     },
     {
-      "theme_en": "Score inconsistency/editing error",
-      "theme_ja": "スコアの不整合（編集ミス）",
-      "mentions": 65
-    },
-    {
       "theme_en": "Frustration with referee decisions",
       "theme_ja": "審判の判定への不満",
-      "mentions": 60
-    },
-    {
-      "theme_en": "Rejection of father",
-      "theme_ja": "父親への拒絶",
       "mentions": 60
     },
     {
@@ -402,6 +387,16 @@
       "theme_en": "Criticism of Cristiano Ronaldo's performance",
       "theme_ja": "クリスティアーノ・ロナウドのパフォーマンス批判",
       "mentions": 55
+    },
+    {
+      "theme_en": "Ugly design",
+      "theme_ja": "デザインの醜さ",
+      "mentions": 45
+    },
+    {
+      "theme_en": "Lack of football knowledge",
+      "theme_ja": "知識不足への批判",
+      "mentions": 45
     }
   ]
 }

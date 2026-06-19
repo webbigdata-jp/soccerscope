@@ -1,11 +1,11 @@
 {
   "generated": "2026-06-12",
-  "videos_analyzed": 266,
+  "videos_analyzed": 248,
   "countries": 47,
   "totals": {
-    "views": 1129605042,
-    "likes": 13331760,
-    "comments": 246722
+    "views": 1044167891,
+    "likes": 12455721,
+    "comments": 235976
   },
   "country_attribution": "multi (b): a video is counted in every country whose search surfaced it; no per-country ranking (unreliable)",
   "top_teams": [
@@ -59,19 +59,11 @@
     },
     {
       "team": "South Africa",
-      "mentions": 401,
+      "mentions": 398,
       "lean": "negative",
       "positive": 118,
-      "neutral": 62,
+      "neutral": 59,
       "negative": 221
-    },
-    {
-      "team": "India",
-      "mentions": 372,
-      "lean": "positive",
-      "positive": 173,
-      "neutral": 87,
-      "negative": 112
     },
     {
       "team": "Japan",
@@ -87,6 +79,14 @@
       "lean": "positive",
       "positive": 192,
       "neutral": 14,
+      "negative": 0
+    },
+    {
+      "team": "Spain",
+      "mentions": 161,
+      "lean": "positive",
+      "positive": 90,
+      "neutral": 71,
       "negative": 0
     }
   ],
@@ -108,8 +108,8 @@
         "ZA"
       ],
       "reach": 12,
-      "narration_en": "This video highlights the legendary playing days and aura of iconic football managers like Fatih Terim and Xabi Alonso. While many admire their skill, some viewers expressed frustration regarding the editing and choice of background music.",
-      "narration_ja": "ファティ・テリムやシャビ・アロンソといった名将たちの現役時代のプレーやオーラに注目した動画です。その技術には称賛が集まる一方、編集やBGMの選曲に対する批判的な声も一部で見られました。",
+      "narration_en": "This video highlighting managers' legendary playing skills trended across multiple continents. While many fans enjoyed the nostalgic aura, some viewers expressed frustration over the music and editing.",
+      "narration_ja": "監督たちの現役時代の華麗なプレーに焦点を当てたこの動画は、世界中で反響を呼びました。オーラの凄さを称賛する声がある一方、BGMや編集に対する不満も一部で見られました。",
       "views": 65863280,
       "url": "https://www.youtube.com/watch?v=L9mPlefd2gk"
     },
@@ -157,8 +157,8 @@
         "ZA"
       ],
       "reach": 39,
-      "narration_en": "Global fans shared their excitement and frustration regarding the FIFA World Cup lineups in this trending video. Comments reflect a mix of national pride and confusion over the video's intended target audience.",
-      "narration_ja": "FIFAワールドカップの出場国をめぐり、世界中のファンが期待や不満を寄せている動画です。各国の誇りと共に、動画のターゲット層に対する戸惑いの声も混在しています。",
+      "narration_en": "Global audiences expressed excitement and team loyalty regarding the World Cup in this video. However, discussions also surfaced regarding missing national teams and confusion over the target audience.",
+      "narration_ja": "ワールドカップに向けた期待と母国への熱い想いが寄せられる一方で、出場チームの不在に対する不満や、動画のターゲット層に対する疑問の声も上がりました。",
       "views": 59081782,
       "url": "https://www.youtube.com/watch?v=KprTbagX5XY"
     },
@@ -179,8 +179,8 @@
         "ZA"
       ],
       "reach": 12,
-      "narration_en": "This surreal parody featuring Haaland and Mbappé has sparked mixed reactions for its AI-generated visuals. While some enjoy the entertainment value, others are unsettled by the uncanny imagery and fake depictions.",
-      "narration_ja": "ハーランドとエムバペが登場するシュールなパロディ動画で、AI生成された映像が話題です。エンターテインメントとして楽しむ声がある一方、不気味な描写や映像の偽物感に対する困惑も見られます。",
+      "narration_en": "This surreal parody video featuring Haaland and Mbappé received mixed reactions for its AI-generated visuals. Viewers noted the uncanny depiction of the players while confirming the footage is fake.",
+      "narration_ja": "ハーランドとエムバペを題材にしたこのAI生成パロディ動画は、その奇妙な映像表現で注目を集めました。視聴者はこの動画がフェイクであることを指摘しつつ、独特な演出に反応しています。",
       "views": 39666652,
       "url": "https://www.youtube.com/watch?v=IqnQ6pcOxY4"
     },
@@ -190,8 +190,8 @@
         "CZ"
       ],
       "reach": 1,
-      "narration_en": "This video covering a rare 2026 World Cup ticket has generated excitement alongside skepticism. Viewers are questioning the authenticity of the ticket and the fairness of its distribution.",
-      "narration_ja": "2026年ワールドカップの貴重なチケットを紹介する動画に対し、期待が高まる一方で疑念の声も上がっています。視聴者はチケットの真偽や配布の公平性について議論しています。",
+      "narration_en": "Viewers were highly engaged with a YouTuber's exclusive 2026 World Cup ticket reveal. The discourse centered on excitement for the event alongside debates regarding the ticket's authenticity and distribution fairness.",
+      "narration_ja": "ワールドカップの貴重なチケットを公開した動画に対し、視聴者は大きな関心を寄せました。イベントへの期待が高まる一方で、チケットの真偽や配布の公平性を巡る議論も起きています。",
       "views": 36899432,
       "url": "https://www.youtube.com/watch?v=NoJF344NY3M"
     },
@@ -239,8 +239,8 @@
         "ZA"
       ],
       "reach": 39,
-      "narration_en": "Shakira and Burna Boy's opening performance for the 2026 World Cup is a massive hit, drawing widespread praise for their iconic collaboration. Fans celebrated the performance as a highlight of the tournament's beginning.",
-      "narration_ja": "2026年ワールドカップ開会式でのシャキーラとバーナ・ボーイによるパフォーマンスが大きな反響を呼んでいます。象徴的なコラボレーションは、大会の幕開けを飾る素晴らしい出来事として多くのファンから称賛されました。",
+      "narration_en": "Shakira and Burna Boy's World Cup opening performance received overwhelmingly positive sentiment. Fans praised the collaboration and the iconic spectacle, despite minor comments on lip-syncing.",
+      "narration_ja": "シャキーラとバーナ・ボーイによるワールドカップ開会式でのパフォーマンスは、圧倒的な高評価を獲得しました。口パクに関する指摘は一部あるものの、豪華な共演と演出が称賛されています。",
       "views": 35469998,
       "url": "https://www.youtube.com/watch?v=Sc0EBlXORQM"
     },
@@ -283,8 +283,8 @@
         "ZA"
       ],
       "reach": 34,
-      "narration_en": "This World Cup-themed 'get ready with me' video has drawn a polarized response from fans. While some appreciate the creator's excitement, others voiced skepticism toward influencer-led sports content.",
-      "narration_ja": "ワールドカップをテーマにした「準備動画」に対し、ファンから様々な反応が寄せられています。制作者の熱意を評価する声の一方で、インフルエンサーによるスポーツ関連コンテンツへの懐疑的な意見も目立ちました。",
+      "narration_en": "This 'Get Ready With Me' style World Cup video saw high engagement but polarized opinion. Fans reacted to the creator's content and style, with some expressing skepticism toward influencer-led World Cup branding.",
+      "narration_ja": "ワールドカップをテーマにしたGRWM形式のこの動画は、ファンの間で意見が分かれました。投稿者のコンテンツやスタイルへの反応に加え、インフルエンサーによる宣伝活動への懐疑的な声も含まれています。",
       "views": 34344069,
       "url": "https://www.youtube.com/watch?v=iH9U6fe09ZA"
     },
@@ -314,39 +314,10 @@
         "ZA"
       ],
       "reach": 21,
-      "narration_en": "This AI-powered parody showing Yamal and Haaland has amazed viewers with its technical execution. The community remains focused on the entertainment value while discussing the implications of such technology.",
-      "narration_ja": "ヤマルとハーランドを描いたAIパロディ動画は、その技術的な完成度で視聴者を驚かせました。コミュニティでは、エンターテインメントとしての面白さと共に、技術のあり方についても議論が交わされています。",
+      "narration_en": "Viewers reacted to this surreal AI-parody featuring Yamal and Haaland with neutral curiosity. Discussions focused on the amusement factor of the technology and concerns about potential misuse.",
+      "narration_ja": "ヤマルとハーランドを起用したこのAIパロディ動画は、技術への驚きと好奇心を集めました。エンターテインメントとして楽しむ声がある一方で、AI技術の悪用に対する懸念も共有されています。",
       "views": 28957325,
       "url": "https://www.youtube.com/watch?v=qnkSZVPOC-U"
-    },
-    {
-      "title": "India Women Ready For World Cup 2026 🏆 🇮🇳🔥 Smriti Mandhana & Harmanpreet Kaur #T20WorldCup #cricket",
-      "countries": [
-        "AT",
-        "BA",
-        "BE",
-        "CH",
-        "CW",
-        "DE",
-        "HR",
-        "NL",
-        "NO",
-        "SE",
-        "AR",
-        "CO",
-        "CZ",
-        "EC",
-        "ES",
-        "MX",
-        "PA",
-        "PY",
-        "UY"
-      ],
-      "reach": 19,
-      "narration_en": "The Indian women's cricket team is receiving immense support and patriotic pride ahead of the 2026 T20 World Cup. Fans are celebrating the players' achievements and expressing strong hopes for a championship win.",
-      "narration_ja": "2026年T20ワールドカップに向け、インド女子クリケット代表チームに熱い声援と愛国的な誇りが寄せられています。選手たちの成功を祝い、優勝への期待が高まっています。",
-      "views": 26854499,
-      "url": "https://www.youtube.com/watch?v=Dj93MYwi4XE"
     },
     {
       "title": "Who Is the Ultimate Winner? 🤔⚽️💔#football #nice #skills #viralvideo #edit #yt #ftypシ #gaming",
@@ -365,8 +336,8 @@
         "ZA"
       ],
       "reach": 12,
-      "narration_en": "This video comparing football stars like Ronaldo and Brazilian icons has sparked debate among fans. Viewers are split between admiring the skills shown and questioning the legitimacy of the edited footage.",
-      "narration_ja": "ロナウドやブラジルのスター選手たちを比較するこの動画は、ファンの間で議論を呼んでいます。プレーの技術を称える声と、編集された映像の信憑性を疑う声が分かれています。",
+      "narration_en": "Support for Brazil and Portugal took center stage in this highlight edit. Some viewers questioned the authenticity of the footage while sharing their admiration for stars like Cristiano Ronaldo.",
+      "narration_ja": "ブラジルやポルトガルのファンから熱い反応が寄せられたハイライト動画です。クリスティアーノ・ロナウドへの称賛が集まる一方、映像の編集や真偽を疑うコメントも見受けられました。",
       "views": 22054362,
       "url": "https://www.youtube.com/watch?v=DEcUCdpsPPk"
     },
@@ -387,18 +358,67 @@
         "ZA"
       ],
       "reach": 12,
-      "narration_en": "This edit depicting a 2026 World Cup penalty shootout between Ronaldo and Messi triggered an emotional response. While many fans expressed passion for the players, others pointed out that the footage is staged.",
-      "narration_ja": "2026年ワールドカップでのロナウド対メッシのPK戦を描いた動画は、ファンの感情を揺さぶりました。選手への熱い支持が寄せられる一方、映像が偽物であると指摘する声も多く上がりました。",
+      "narration_en": "This video featuring emotional penalty shootout moments generated intense debate among fans. While many expressed passion for Ronaldo, others criticized the video's authenticity and the nature of the rivalry discourse.",
+      "narration_ja": "PK戦のドラマチックな瞬間を捉えたこの動画は、ファンの間で議論を呼びました。ロナウドを熱烈に応援する声がある一方で、動画の信憑性やライバル関係をめぐる議論に否定的な意見も出ています。",
       "views": 16547656,
       "url": "https://www.youtube.com/watch?v=MNodUUgdvyc"
+    },
+    {
+      "title": "Andrea Bocelli, David Guetta and EJAE perform Official FIFA World Cup 2026 Anthem 'DNA'",
+      "countries": [
+        "BR",
+        "CV",
+        "PT",
+        "TR",
+        "UZ",
+        "AR",
+        "AT",
+        "BA",
+        "BE",
+        "CH",
+        "CO",
+        "CW",
+        "CZ",
+        "DE",
+        "EC",
+        "ES",
+        "HR",
+        "IR",
+        "JP",
+        "KR",
+        "MX",
+        "NL",
+        "NO",
+        "PA",
+        "PY",
+        "SE",
+        "UY",
+        "AU",
+        "CA",
+        "CD",
+        "CI",
+        "FR",
+        "GB",
+        "GH",
+        "HT",
+        "NZ",
+        "SN",
+        "US",
+        "ZA"
+      ],
+      "reach": 39,
+      "narration_en": "The official 2026 World Cup anthem performance was met with high praise. Fans highlighted EJAE’s vocal talent and expressed enthusiasm for the collaboration, often favoring it over past tournament songs.",
+      "narration_ja": "ワールドカップの公式アンサンブル・パフォーマンスは、非常に高い評価を得ました。EJAEの歌唱力や豪華なコラボレーションが称賛され、過去の大会の楽曲と比較しても傑作だという声が多く上がっています。",
+      "views": 15950883,
+      "url": "https://www.youtube.com/watch?v=_Ujey4s2aOQ"
     }
   ],
   "sentiment_avg": {
-    "positive": 55.16412213740458,
-    "negative": 21.35496183206107,
-    "neutral": 23.480916030534353
+    "positive": 55.442622950819676,
+    "negative": 21.44672131147541,
+    "neutral": 23.110655737704917
   },
-  "comments_analyzed": 22263,
+  "comments_analyzed": 20745,
   "top_positive_themes": [
     {
       "theme_en": "Praise for Cristiano Ronaldo",
@@ -468,19 +488,19 @@
       "mentions": 60
     },
     {
-      "theme_en": "Anxiety about school absence and failing",
-      "theme_ja": "学校の欠席・留年への不安",
-      "mentions": 60
-    },
-    {
-      "theme_en": "Inappropriate sexual jokes",
-      "theme_ja": "不適切な性的ジョーク",
-      "mentions": 60
-    },
-    {
       "theme_en": "Sadness over player injuries",
       "theme_ja": "選手の負傷に対する悲しみ",
       "mentions": 55
+    },
+    {
+      "theme_en": "Sadness over Italy missing the World Cup",
+      "theme_ja": "イタリアのワールドカップ不参加に対する悲しみ",
+      "mentions": 45
+    },
+    {
+      "theme_en": "Sadness over the retirement of legendary players",
+      "theme_ja": "伝説的選手の引退に対する悲しみ",
+      "mentions": 45
     }
   ]
 }

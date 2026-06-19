@@ -1,11 +1,11 @@
 {
   "generated": "2026-06-15",
-  "videos_analyzed": 262,
+  "videos_analyzed": 248,
   "countries": 47,
   "totals": {
-    "views": 800907953,
-    "likes": 9633689,
-    "comments": 258258
+    "views": 744602965,
+    "likes": 9180177,
+    "comments": 253209
   },
   "country_attribution": "multi (b): a video is counted in every country whose search surfaced it; no per-country ranking (unreliable)",
   "top_teams": [
@@ -67,10 +67,10 @@
     },
     {
       "team": "Argentina",
-      "mentions": 359,
+      "mentions": 358,
       "lean": "positive",
       "positive": 229,
-      "neutral": 103,
+      "neutral": 102,
       "negative": 27
     },
     {
@@ -83,10 +83,10 @@
     },
     {
       "team": "Turkey",
-      "mentions": 314,
+      "mentions": 313,
       "lean": "positive",
       "positive": 145,
-      "neutral": 52,
+      "neutral": 51,
       "negative": 117
     }
   ],
@@ -102,38 +102,10 @@
         "TN"
       ],
       "reach": 6,
-      "narration_en": "Gio Reyna's trivela goal brilliance shines in this trending video across the Middle East and North Africa. Comments express excitement for the World Cup while debating USA's performance and the term soccer.",
-      "narration_ja": "ジオ・レイナのトリヴェラ・ゴールの輝きが、中東・北アフリカ地域で話題です。ワールドカップへの期待が高まる一方で、アメリカ代表のパフォーマンスや「サッカー」という呼称を巡る議論も寄せられています。",
+      "narration_en": "This video highlights Gio Reyna's trivela technique and USA team improvements, trending in Middle Eastern and North African countries. While the goal's brilliance is praised, some viewers debated the term 'soccer' and criticized the opposing defense.",
+      "narration_ja": "ジオ・レイナのトリベラ技術とアメリカ代表の成長に注目が集まり、中東や北アフリカでトレンド入りしました。ゴールの華麗さが称賛される一方で、サッカーという呼称や対戦相手の守備に対する議論も見られました。",
       "views": 19864822,
       "url": "https://www.youtube.com/watch?v=pegqoZswVT0"
-    },
-    {
-      "title": "Kane Williamson RETIRE 🛑 Dhoni ke Sath Women's T20 World Cup 2026  #kenwilliamson #msdhoni #cricket",
-      "countries": [
-        "AR",
-        "CW",
-        "CZ",
-        "AT",
-        "BA",
-        "BE",
-        "CH",
-        "CO",
-        "DE",
-        "EC",
-        "ES",
-        "HR",
-        "MX",
-        "NL",
-        "PA",
-        "PY",
-        "SE",
-        "UY"
-      ],
-      "reach": 18,
-      "narration_en": "This video featuring Kane Williamson and MS Dhoni trended widely across Europe and Latin America. Viewers are discussing AI technology and the intersection of football and cricket themes.",
-      "narration_ja": "ケイン・ウィリアムソンとMSドーニが登場するこの動画は、欧州や中南米でトレンド入りしました。視聴者はAI技術の活用や、サッカーとクリケットのテーマが交差する内容について議論しています。",
-      "views": 19692048,
-      "url": "https://www.youtube.com/watch?v=58uUXs5J5OI"
     },
     {
       "title": "France Time Wasting 💀",
@@ -146,8 +118,8 @@
         "SN"
       ],
       "reach": 6,
-      "narration_en": "This video analyzing France's time-wasting tactics sparked debate across several English and French-speaking nations. Comments focus on tactical understanding and concerns over fair play.",
-      "narration_ja": "フランスの遅延行為を分析したこの動画は、英語圏・フランス語圏の複数国で議論を呼びました。戦術的な理解やフェアプレーの欠如に対する懸念の声が多く集まっています。",
+      "narration_en": "This edit analyzing time-wasting tactics in football received mixed reviews across English and French-speaking regions. Viewers praised the editing quality but criticized the lack of fair play and noted misidentified matches.",
+      "narration_ja": "フランス代表の時間稼ぎを分析したこの動画は、英語圏やフランス語圏で賛否両論を呼びました。編集の質は高く評価されたものの、フェアプレー精神の欠如や対戦相手の取り違えに対する批判的な意見も寄せられています。",
       "views": 19403289,
       "url": "https://www.youtube.com/watch?v=xz8IJ9xtw-k"
     },
@@ -165,8 +137,8 @@
         "SN"
       ],
       "reach": 9,
-      "narration_en": "Featuring Cristiano Ronaldo, this video trended in parts of the Americas and Africa. Viewers expressed frustration over exaggerated editing and clarified that the featured clip was not a goal.",
-      "narration_ja": "クリスティアーノ・ロナウドを扱ったこの動画は、米州とアフリカの一部でトレンド入りしました。視聴者からは編集の誇張に対する不満の声や、映像が実際にはゴールではないという指摘が上がっています。",
+      "narration_en": "Viewers expressed frustration over this edited clip featuring Ronaldo, pointing out that the sequence was not a real goal. The video trended globally, sparking debate over player skills and content exaggeration.",
+      "narration_ja": "ロナウドをフィーチャーしたこの編集動画に対し、実際にはゴールシーンではないとの指摘が相次ぎ、視聴者から不満の声が上がりました。世界中でトレンド入りし、選手の実力や誇張されたコンテンツ表現について議論を呼んでいます。",
       "views": 17700675,
       "url": "https://www.youtube.com/watch?v=LwEmbve3imE"
     },
@@ -180,8 +152,8 @@
         "SN"
       ],
       "reach": 5,
-      "narration_en": "A creative look at covering a car with World Cup stickers captivated French-speaking audiences. While many praised the unique idea, others raised concerns about costs and weather durability.",
-      "narration_ja": "ワールドカップのステッカーで車を覆うという独創的な企画が、フランス語圏の視聴者の注目を集めました。ユニークなアイデアへの称賛がある一方で、コストや雨天時の耐久性を懸念する声も出ています。",
+      "narration_en": "This unique short about covering a car in World Cup stickers sparked fun debates in French-speaking countries. Discussion ranged from creative appreciation to concerns over cost and the stickers' durability in rain.",
+      "narration_ja": "ワールドカップのステッカーで車を埋め尽くすというユニークな企画は、フランス語圏で大きな反響を呼びました。独創性を楽しむ声がある一方で、コストや雨への懸念など、実用面での議論も交わされています。",
       "views": 17205565,
       "url": "https://www.youtube.com/watch?v=-ltr2MaAtn0"
     },
@@ -217,8 +189,8 @@
         "UY"
       ],
       "reach": 27,
-      "narration_en": "This World Cup-themed video saw global engagement, trending from Japan to South America. Comments vary from influencer support to criticism regarding high ticket prices and FIFA policies.",
-      "narration_ja": "日本から南米まで世界中でトレンド入りしたこのワールドカップ関連動画は、インフルエンサーへの支持から、高額なチケット代やFIFAの運営に対する批判まで、多様なコメントが寄せられています。",
+      "narration_en": "Trending across 20 countries, this video features World Cup-themed nail art and influencer collaborations. Commentary is divided between excitement for the event and frustration over high ticket prices and FIFA’s invite policies.",
+      "narration_ja": "20カ国でトレンド入りしたこの動画は、ワールドカップ仕様のネイルアートやインフルエンサーとのコラボを紹介しています。イベントへの期待が高まる一方、高額なチケット代やFIFAの招待方針に対する不満の声も目立ちます。",
       "views": 15060768,
       "url": "https://www.youtube.com/watch?v=wXlrdF8L0kg"
     },
@@ -239,8 +211,8 @@
         "SN"
       ],
       "reach": 12,
-      "narration_en": "Surreal parody visuals of Mbappe and Haaland proved popular across multiple continents. The majority of viewers praised the quality of the CGI work and the humor of the video.",
-      "narration_ja": "エムバペとハーランドを起用したシュールなパロディ動画が、複数の大陸で人気を博しました。視聴者の多くが、CGのクオリティの高さや動画のユーモアを高く評価しています。",
+      "narration_en": "This surreal parody featuring Mbappé and Haaland gained widespread popularity for its humor and technical quality. Most viewers enjoyed the high-end CGI, though some found the visual style slightly unsettling.",
+      "narration_ja": "エムバペとハーランドを起用したこのシュールなパロディ動画は、そのユーモアと技術的完成度の高さで人気を集めました。多くの視聴者が高度なCGIを楽しんだ一方で、独特の視覚スタイルに不気味さを感じたという声もありました。",
       "views": 14228347,
       "url": "https://www.youtube.com/watch?v=T6a7Anx63dg"
     },
@@ -283,8 +255,8 @@
         "UZ"
       ],
       "reach": 34,
-      "narration_en": "The FIFA World Cup 2026 opening ceremony performance by LISA, Anitta, and Rema received overwhelmingly positive feedback globally. Fans celebrated the historic collaboration and stage presence.",
-      "narration_ja": "2026年FIFAワールドカップ開会式でのLISA、アニッタ、レマによるパフォーマンスは、世界中から圧倒的な高評価を得ました。ファンは歴史的なコラボレーションと彼らのステージングを称賛しています。",
+      "narration_en": "The Opening Ceremony performance in Los Angeles, featuring LISA, Anitta, and Rema, was overwhelmingly well-received. Fans celebrated the historic moment and the artists' stage presence, actively countering minor criticisms regarding the song's lyrics.",
+      "narration_ja": "LISA、アニッタ、レマが出演したロサンゼルスの開会式パフォーマンスは、圧倒的な高評価を獲得しました。ファンはこの歴史的な瞬間とアーティストのステージングを称賛し、歌詞に対する一部の批判的な意見にも積極的に反論しています。",
       "views": 13615557,
       "url": "https://www.youtube.com/watch?v=mSgfvdBlysI"
     },
@@ -305,8 +277,8 @@
         "SN"
       ],
       "reach": 12,
-      "narration_en": "Focusing on a stadium interaction during a match, this edit trended across several English and French-speaking regions. The audience debated the appropriateness of disruptive fan behavior.",
-      "narration_ja": "試合中のスタジアムでの交流に焦点を当てたこの編集動画は、英語圏・フランス語圏の複数地域でトレンド入りしました。視聴者の間では、ファンの迷惑行為の是非について議論が交わされました。",
+      "narration_en": "This clip of a fan interaction at a stadium triggered debate between those enjoying the humor and those criticizing disruptive behavior during the match. It resonated with an international audience across English and French regions.",
+      "narration_ja": "スタジアムでのファンとのやり取りを捉えたこのクリップは、ユーモアを楽しむ層と、試合中の迷惑行為を批判する層の間で議論を呼びました。英語圏やフランス語圏を含む国際的な視聴者の関心を集めています。",
       "views": 10631878,
       "url": "https://www.youtube.com/watch?v=LfLiJGEW6y4"
     },
@@ -327,23 +299,45 @@
         "SN"
       ],
       "reach": 12,
-      "narration_en": "This general FIFA World Cup 2026 update attracted viewers from Africa to the Americas. The commentary features a mix of team support, player comparisons, and general excitement for the upcoming tournament.",
-      "narration_ja": "2026年FIFAワールドカップに関するこの動画は、アフリカからアメリカ大陸にかけて幅広い視聴者を獲得しました。コメント欄には、代表チームへの声援や選手比較、大会への期待の声が混在しています。",
+      "narration_en": "This World Cup 2026-themed video trended globally, with fans praising their national teams and debating player superiority. The commentary is largely supportive, though critical voices remain active.",
+      "narration_ja": "2026年ワールドカップをテーマにしたこの動画は世界的にトレンド入りし、各国のファンが自国代表への応援や選手の優劣について語り合っています。概ね好意的な反応ですが、批判的な意見も一定数存在します。",
       "views": 9704089,
       "url": "https://www.youtube.com/watch?v=ywgRPbOfLog"
+    },
+    {
+      "title": "Toni Kroos should chill😂😂😂#football #soccer",
+      "countries": [
+        "ZA",
+        "US",
+        "CA",
+        "GB",
+        "GH",
+        "AU",
+        "CD",
+        "FR",
+        "HT",
+        "NZ",
+        "CI",
+        "SN"
+      ],
+      "reach": 12,
+      "narration_en": "Featuring humorous editing, this clip of Toni Kroos garnered neutral to positive engagement. Fans focused on the joke about his 'supernatural' abilities while also airing frustrations regarding refereeing and fouls in football.",
+      "narration_ja": "トニ・クロースの姿をユーモラスに編集したこの動画は、中立から好意的な反応を得ました。視聴者は彼の「超常的な」能力というジョークを楽しむ一方で、試合における審判の判定やファウルに対する不満についても言及しています。",
+      "views": 9475638,
+      "url": "https://www.youtube.com/watch?v=0CJv6tr9ppw"
     }
   ],
   "sentiment_avg": {
-    "positive": 55.4367816091954,
-    "negative": 21.272030651340994,
-    "neutral": 23.291187739463602
+    "positive": 56.522267206477736,
+    "negative": 21.271255060728745,
+    "neutral": 22.206477732793523
   },
-  "comments_analyzed": 21053,
+  "comments_analyzed": 19882,
   "top_positive_themes": [
     {
       "theme_en": "Praise for Cristiano Ronaldo",
       "theme_ja": "クリスティアーノ・ロナウドへの称賛",
-      "mentions": 248
+      "mentions": 223
     },
     {
       "theme_en": "Support for Morocco national team",
@@ -371,14 +365,14 @@
       "mentions": 130
     },
     {
-      "theme_en": "Funny/Humorous",
-      "theme_ja": "面白い・笑える",
-      "mentions": 112
-    },
-    {
       "theme_en": "Praise for Ayoub Bouaddi's talent",
       "theme_ja": "アイユーブ・ブーアディの才能への称賛",
       "mentions": 110
+    },
+    {
+      "theme_en": "Solidarity and support from Arab nations",
+      "theme_ja": "アラブ諸国からの連帯と応援",
+      "mentions": 100
     }
   ],
   "top_negative_themes": [
@@ -403,11 +397,6 @@
       "mentions": 70
     },
     {
-      "theme_en": "Wasting paper towels",
-      "theme_ja": "ティッシュの無駄遣い",
-      "mentions": 65
-    },
-    {
       "theme_en": "Hostility or indifference toward Taiwan",
       "theme_ja": "台湾に対する嫌悪感・無関心",
       "mentions": 65
@@ -420,6 +409,11 @@
     {
       "theme_en": "2014 Brazil World Cup trauma",
       "theme_ja": "2014年ブラジル大会のトラウマ",
+      "mentions": 65
+    },
+    {
+      "theme_en": "Dissatisfaction with coach's tactics and squad selection",
+      "theme_ja": "監督の戦術と選手選考への不満",
       "mentions": 65
     }
   ]
