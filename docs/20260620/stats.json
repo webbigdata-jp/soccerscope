@@ -1,37 +1,96 @@
 {
   "generated": "2026-06-20",
-  "videos_analyzed": 400,
+  "videos_analyzed": 387,
   "countries": 47,
   "totals": {
-    "views": 316833322,
-    "likes": 4098917,
-    "comments": 125170
+    "views": 269135346,
+    "likes": 3901767,
+    "comments": 121067
   },
   "country_attribution": "multi (b): a video is counted in every country whose search surfaced it; no per-country ranking (unreliable)",
-  "top_teams": [],
-  "top_videos_by_views": [
+  "top_teams": [
     {
-      "title": "She Can’t Escape Her Friend 😭👀  #kpop #parody #football #meme",
-      "countries": [
-        "AU",
-        "CD",
-        "GB",
-        "GH",
-        "NZ",
-        "US",
-        "ZA",
-        "CA",
-        "CI",
-        "FR",
-        "HT",
-        "SN"
-      ],
-      "reach": 12,
-      "narration_en": "This surreal football meme video has gained significant traction across English and French-speaking regions, including the US, France, and Australia.",
-      "narration_ja": "このシュールなサッカーミーム動画は、アメリカ、フランス、オーストラリアなど、英語圏およびフランス語圏で広く注目を集めています。",
-      "views": 20409871,
-      "url": "https://www.youtube.com/watch?v=RhHwSkY4sCg"
+      "team": "Brazil",
+      "mentions": 1131,
+      "lean": "positive",
+      "positive": 703,
+      "neutral": 131,
+      "negative": 297
     },
+    {
+      "team": "South Korea",
+      "mentions": 1017,
+      "lean": "negative",
+      "positive": 380,
+      "neutral": 249,
+      "negative": 388
+    },
+    {
+      "team": "Portugal",
+      "mentions": 854,
+      "lean": "negative",
+      "positive": 194,
+      "neutral": 147,
+      "negative": 513
+    },
+    {
+      "team": "Argentina",
+      "mentions": 810,
+      "lean": "positive",
+      "positive": 590,
+      "neutral": 151,
+      "negative": 69
+    },
+    {
+      "team": "Mexico",
+      "mentions": 805,
+      "lean": "positive",
+      "positive": 401,
+      "neutral": 348,
+      "negative": 56
+    },
+    {
+      "team": "Uzbekistan",
+      "mentions": 550,
+      "lean": "positive",
+      "positive": 507,
+      "neutral": 37,
+      "negative": 6
+    },
+    {
+      "team": "Canada",
+      "mentions": 407,
+      "lean": "positive",
+      "positive": 384,
+      "neutral": 19,
+      "negative": 4
+    },
+    {
+      "team": "Iran",
+      "mentions": 405,
+      "lean": "negative",
+      "positive": 62,
+      "neutral": 15,
+      "negative": 328
+    },
+    {
+      "team": "Colombia",
+      "mentions": 400,
+      "lean": "positive",
+      "positive": 315,
+      "neutral": 78,
+      "negative": 7
+    },
+    {
+      "team": "Qatar",
+      "mentions": 392,
+      "lean": "negative",
+      "positive": 6,
+      "neutral": 10,
+      "negative": 376
+    }
+  ],
+  "top_videos_by_views": [
     {
       "title": "Footballers Epic Jumps VS Ronaldo",
       "countries": [
@@ -43,8 +102,8 @@
         "CD"
       ],
       "reach": 6,
-      "narration_en": "Featuring football stars like Ronaldo and Messi, this video is trending among English and French-speaking audiences in countries like Canada and Senegal.",
-      "narration_ja": "ロナウドやメッシといったサッカー界のスターが登場するこの動画は、カナダやセネガルなど、英語圏およびフランス語圏の視聴者の間でトレンド入りしています。",
+      "narration_en": "This video features discussions surrounding Ronaldo, Messi, Neymar, and Icardi, though some viewers express dissatisfaction and note the footage is staged. It trended across several countries, including Canada and France, with a largely positive sentiment.",
+      "narration_ja": "ロナウド、メッシ、ネイマール、イカルディを巡る議論が交わされる一方、動画がやらせであるとの指摘も見られます。フランスやカナダなどでトレンド入りし、全体的な反応は肯定的です。",
       "views": 15089630,
       "url": "https://www.youtube.com/watch?v=uQs_ph4vdzE"
     },
@@ -57,53 +116,10 @@
         "SE"
       ],
       "reach": 4,
-      "narration_en": "This Kia-produced FIFA World Cup 2026 promotional video is trending in Norway, Sweden, Croatia, and Bosnia and Herzegovina.",
-      "narration_ja": "FIFAワールドカップ2026に向けたKiaのプロモーション動画で、ノルウェー、スウェーデン、クロアチア、ボスニア・ヘルツェゴビナでトレンド入りしています。",
+      "narration_en": "This inspirational FIFA World Cup 2026 partner film by Kia received universal praise from viewers. It trended in Nordic and Balkan nations, maintaining an entirely positive reception.",
+      "narration_ja": "FIFAワールドカップ2026に向けたKiaのインスピレーション動画は、視聴者から満場一致の称賛を得ました。北欧やバルカン諸国でトレンド入りし、非常に好意的に受け止められています。",
       "views": 13984664,
       "url": "https://www.youtube.com/watch?v=n9vfw9caCYo"
-    },
-    {
-      "title": "Her Face Says It All 🥛😖  #kpop #parody #football #meme",
-      "countries": [
-        "AU",
-        "GB",
-        "GH",
-        "NZ",
-        "US",
-        "ZA",
-        "CD",
-        "CI",
-        "FR",
-        "HT",
-        "SN"
-      ],
-      "reach": 11,
-      "narration_en": "A surreal football parody reaching a wide audience across multiple continents, including France, Ghana, and the United States.",
-      "narration_ja": "フランス、ガーナ、アメリカなど、複数の大陸で幅広い視聴者に届いているシュールなサッカーパロディ動画です。",
-      "views": 13188514,
-      "url": "https://www.youtube.com/watch?v=wEqJupB433Q"
-    },
-    {
-      "title": "The Matcha Disappeared During the Rescue 🍵👜  #kpop #parody #football #meme",
-      "countries": [
-        "AU",
-        "GB",
-        "GH",
-        "NZ",
-        "US",
-        "ZA",
-        "CA",
-        "CD",
-        "CI",
-        "FR",
-        "HT",
-        "SN"
-      ],
-      "reach": 12,
-      "narration_en": "This high-end CGI football meme is popular among English and French-speaking viewers in countries ranging from Haiti to Australia.",
-      "narration_ja": "ハイエンドなCGIを用いたこのサッカーミーム動画は、ハイチからオーストラリアまで、英語およびフランス語を話す視聴者の間で人気です。",
-      "views": 10015286,
-      "url": "https://www.youtube.com/watch?v=qUfruael1_Y"
     },
     {
       "title": "Haaland Finally Found a Way to Stop Mbappé🧠⚡ #parody #football #haaland #worldcup",
@@ -128,8 +144,8 @@
         "ZA"
       ],
       "reach": 18,
-      "narration_en": "Focusing on Haaland and Mbappé, this parody has trended globally in countries including Japan, Spain, Mexico, and Australia.",
-      "narration_ja": "ハーランドとエムバペに焦点を当てたこのパロディは、日本、スペイン、メキシコ、オーストラリアなど、世界各国でトレンド入りしました。",
+      "narration_en": "Featuring a surreal parody of Haaland and Mbappé, this video sparked interest in its AI technology despite some viewers pointing out it is fake. It trended globally across many regions, including Japan and Argentina, with a mixed neutral-to-positive sentiment.",
+      "narration_ja": "ハーランドとエムバペのシュールなパロディ動画は、AI技術への関心を集めた一方で、合成映像であるとの指摘も目立ちました。日本やアルゼンチンなど世界各地でトレンド入りし、反応は中立的から肯定的です。",
       "views": 5251691,
       "url": "https://www.youtube.com/watch?v=FloG95gBUoc"
     },
@@ -153,8 +169,8 @@
         "ZA"
       ],
       "reach": 15,
-      "narration_en": "A viral parody featuring Haaland and Mbappé that has captured attention across English and Spanish-speaking regions.",
-      "narration_ja": "ハーランドとエムバペをフィーチャーしたこのバイラルパロディは、英語圏およびスペイン語圏全体で注目を集めています。",
+      "narration_en": "Viewers are torn between admiration for the AI-generated realism in this parody and concern over advanced technology. The video trended across multiple continents, generating a mix of humor and confusion regarding the content's authenticity.",
+      "narration_ja": "AIによるパロディの写実性への称賛と、進歩する技術への懸念が入り混じっています。複数の大陸でトレンド入りし、ユーモアを感じつつも内容の真偽に戸惑う視聴者も見られました。",
       "views": 5171476,
       "url": "https://www.youtube.com/watch?v=8iq7Ba-Yoj4"
     },
@@ -179,8 +195,8 @@
         "GB"
       ],
       "reach": 16,
-      "narration_en": "This parody video involving Haaland trends across diverse markets, including Japan, Argentina, and the United Kingdom.",
-      "narration_ja": "ハーランドが登場するこのパロディ動画は、日本、アルゼンチン、イギリスを含む多様な市場でトレンド入りしています。",
+      "narration_en": "This AI-generated parody of Haaland triggered a range of reactions from fan support to hygiene-related jokes and criticism of the format. It trended in diverse markets including Japan, England, and the United States, with a largely neutral sentiment.",
+      "narration_ja": "AIによるハーランドのパロディ動画は、ファンの応援から衛生面へのツッコミ、形式に対する批判まで多様な反応を呼びました。日本、英国、米国など広い市場でトレンド入りし、反応は中立的です。",
       "views": 4519796,
       "url": "https://www.youtube.com/watch?v=68M2g_Ji4mA"
     },
@@ -197,8 +213,8 @@
         "TN"
       ],
       "reach": 8,
-      "narration_en": "A match highlight video showing Canada's victory over Qatar in the 2026 FIFA World Cup, popular throughout the Arabic-speaking world.",
-      "narration_ja": "2026 FIFAワールドカップでのカナダ対カタール戦のハイライト動画で、アラビア語圏全体で人気を集めています。",
+      "narration_en": "Following Qatar's heavy defeat to Canada, viewers from across the Arab world expressed mockery and tactical criticism. The sentiment is predominantly negative, with comments also touching on religious themes and tournament management.",
+      "narration_ja": "カナダに大敗したカタールに対する冷ややかな反応や戦術への批判が、アラブ諸国から多く寄せられました。全体的に否定的なトーンが強く、運営への不信感や宗教的な話題も含まれています。",
       "views": 4466624,
       "url": "https://www.youtube.com/watch?v=snp3Y2UEZ3A"
     },
@@ -214,10 +230,54 @@
         "ZA"
       ],
       "reach": 7,
-      "narration_en": "A lighthearted clip related to FIFA 2026 that is trending among English-speaking audiences in countries like Canada, England, and South Africa.",
-      "narration_ja": "FIFA 2026に関連するこの軽快な動画は、カナダ、イギリス、南アフリカなどの英語圏の視聴者の間でトレンドとなっています。",
+      "narration_en": "This humorous video featuring a referee trended in several English-speaking countries. Viewers largely shared relatable and sympathetic comments, resulting in a mostly neutral but lighthearted reception.",
+      "narration_ja": "審判に焦点を当てたこのユーモラスな動画は、英語圏の各国でトレンド入りしました。共感や同情の声が多く寄せられ、全体的に中立的かつ和やかな反応となっています。",
       "views": 4407115,
       "url": "https://www.youtube.com/watch?v=6MXqczCJ6Ts"
+    },
+    {
+      "title": "Highlights | Argentina 3-0 Algeria | FIFA World Cup 2026™",
+      "countries": [
+        "CD"
+      ],
+      "reach": 1,
+      "narration_en": "Lionel Messi’s hat-trick in Argentina's win over Algeria was met with overwhelming praise for his performance at age 38. The video, trending in DR Congo, is filled with acclaim for his GOAT status.",
+      "narration_ja": "アルゼンチン対アルジェリア戦でのメッシのハットトリックに対し、38歳での驚異的なパフォーマンスに称賛が殺到しました。コンゴ民主共和国でトレンド入りし、彼の偉大さを称える声で溢れています。",
+      "views": 3730602,
+      "url": "https://www.youtube.com/watch?v=JH_WRKTCPK4"
+    },
+    {
+      "title": "Deliver to Inspire | FIFA World Cup 2026™ | Kia",
+      "countries": [
+        "BE",
+        "CW",
+        "CZ",
+        "NL",
+        "BA",
+        "HR",
+        "NO",
+        "SE"
+      ],
+      "reach": 8,
+      "narration_en": "This FIFA World Cup 2026 Kia partnership content trended across various European and Balkan nations. The audience response was entirely neutral, with no specific themes mentioned in the comments.",
+      "narration_ja": "FIFAワールドカップ2026とKiaによるこの提携動画は、欧州やバルカン半島の各国でトレンド入りしました。視聴者の反応は完全に中立的で、特定のトピックへの言及は見られません。",
+      "views": 3634824,
+      "url": "https://www.youtube.com/watch?v=xHqRwg_iVYE"
+    },
+    {
+      "title": "Vini VS Lehmann VS Nunez VS Messi VS Ronaldo",
+      "countries": [
+        "FR",
+        "HT",
+        "CD",
+        "CI",
+        "SN"
+      ],
+      "reach": 5,
+      "narration_en": "This comparison video of football stars trended in French-speaking territories. Fans showed strong support for Ronaldo and Messi, with the overall sentiment being highly positive.",
+      "narration_ja": "サッカー選手を比較するこの動画は、フランス語圏の地域でトレンド入りしました。ロナウドやメッシへの熱烈な支持が示され、全体的な評価は非常に高いものとなっています。",
+      "views": 3036141,
+      "url": "https://www.youtube.com/watch?v=i_7L11m3UXw"
     }
   ],
   "top_videos_by_reach": [
@@ -644,8 +704,94 @@
       "url": "https://www.youtube.com/watch?v=FDZgZez3THA"
     }
   ],
-  "sentiment_avg": null,
-  "comments_analyzed": 0,
-  "top_positive_themes": [],
-  "top_negative_themes": []
+  "sentiment_avg": {
+    "positive": 48.723514211886304,
+    "negative": 24.001291989664082,
+    "neutral": 27.275193798449614
+  },
+  "comments_analyzed": 19863,
+  "top_positive_themes": [
+    {
+      "theme_en": "Support for Brazil national team",
+      "theme_ja": "ブラジル代表への応援",
+      "mentions": 333
+    },
+    {
+      "theme_en": "Praise for Cristiano Ronaldo",
+      "theme_ja": "クリスティアーノ・ロナウドへの称賛",
+      "mentions": 296
+    },
+    {
+      "theme_en": "Support for Morocco national team",
+      "theme_ja": "モロッコ代表への応援",
+      "mentions": 156
+    },
+    {
+      "theme_en": "Support for Cristiano Ronaldo",
+      "theme_ja": "クリスティアーノ・ロナウドへの支持",
+      "mentions": 103
+    },
+    {
+      "theme_en": "Entertainment value of the video",
+      "theme_ja": "動画のエンターテインメント性",
+      "mentions": 88
+    },
+    {
+      "theme_en": "Messi's greatness and GOAT status",
+      "theme_ja": "メッシの偉大さ・GOAT",
+      "mentions": 85
+    },
+    {
+      "theme_en": "Passionate requests to draw specific national teams",
+      "theme_ja": "自国の代表チームを描いてほしいという熱烈な要望",
+      "mentions": 85
+    },
+    {
+      "theme_en": "Respect and gratitude towards Khabib",
+      "theme_ja": "ハビブへの感謝と尊敬",
+      "mentions": 85
+    }
+  ],
+  "top_negative_themes": [
+    {
+      "theme_en": "Mockery of Qatar's heavy defeat",
+      "theme_ja": "カタール代表の惨敗への揶揄",
+      "mentions": 90
+    },
+    {
+      "theme_en": "Dissatisfaction with the commentator",
+      "theme_ja": "実況アナウンサーへの不満",
+      "mentions": 85
+    },
+    {
+      "theme_en": "Goalkeeper's error in judgment",
+      "theme_ja": "ゴールキーパーの判断ミス",
+      "mentions": 70
+    },
+    {
+      "theme_en": "Sadness over retirement",
+      "theme_ja": "引退に対する悲しみ",
+      "mentions": 70
+    },
+    {
+      "theme_en": "Ronaldo's poor performance",
+      "theme_ja": "ロナウドの不調",
+      "mentions": 65
+    },
+    {
+      "theme_en": "Exorbitant jersey prices",
+      "theme_ja": "ユニフォーム価格の異常な高騰",
+      "mentions": 65
+    },
+    {
+      "theme_en": "Criticism of Kim Seung-gyu's error and goal conceded",
+      "theme_ja": "キム・スンギュの判断ミスと失点への批判",
+      "mentions": 65
+    },
+    {
+      "theme_en": "Economic hardship and indifference to football",
+      "theme_ja": "経済的困窮とサッカーへの無関心",
+      "mentions": 65
+    }
+  ]
 }
