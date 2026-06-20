@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+# AI/user-request crawlers are allowed to read the public World Cup 2026 data pages.
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: Claude-User
+Allow: /
+
+Sitemap: https://webbigdata-jp.github.io/soccerscope/sitemap.xml

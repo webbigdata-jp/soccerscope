@@ -3,7 +3,60 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SoccerScope</title>
+<title>SoccerScope — FIFA World Cup 2026 YouTube Video Trends & Fan Reactions</title>
+<meta name="description" content="SoccerScope is a World Cup 2026 football video trend agent. Search viral YouTube soccer videos across countries, analyze fan comments, and generate reports, SNS posts, and shareable pages.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://soccer.tubesaku.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SoccerScope">
+<meta property="og:title" content="SoccerScope — FIFA World Cup 2026 YouTube Video Trends">
+<meta property="og:description" content="Find World Cup 2026 football videos going viral across countries and turn fan reactions into reports, SNS posts, and web pages.">
+<meta property="og:url" content="https://soccer.tubesaku.com/">
+<meta property="og:image" content="https://webbigdata-jp.github.io/soccerscope/images/soccerscope-ogp.png">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SoccerScope — FIFA World Cup 2026 YouTube Video Trends">
+<meta name="twitter:description" content="Search viral World Cup 2026 soccer videos, fan comments, and YouTube trends across countries.">
+<meta name="twitter:image" content="https://webbigdata-jp.github.io/soccerscope/images/soccerscope-ogp.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "SoccerScope",
+      "url": "https://soccer.tubesaku.com/",
+      "applicationCategory": "SportsApplication",
+      "operatingSystem": "Web",
+      "description": "AI agent for discovering FIFA World Cup 2026 football videos trending on YouTube across countries and summarizing fan reactions.",
+      "inLanguage": ["en", "ja"],
+      "isAccessibleForFree": true,
+      "about": [
+        {"@type": "SportsEvent", "name": "FIFA World Cup 2026"},
+        {"@type": "Thing", "name": "YouTube football video trends"},
+        {"@type": "Thing", "name": "fan comment sentiment analysis"}
+      ],
+      "creator": {"@type": "Organization", "name": "TubeSaku", "url": "https://tubesaku.com/"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is SoccerScope?",
+          "acceptedAnswer": {"@type": "Answer", "text": "SoccerScope is an AI-powered World Cup 2026 football video trend agent that searches pre-analyzed YouTube videos across countries and summarizes fan reactions."}
+        },
+        {
+          "@type": "Question",
+          "name": "What data does SoccerScope use?",
+          "acceptedAnswer": {"@type": "Answer", "text": "SoccerScope uses TubeSaku's pre-analyzed YouTube football video data, including cross-country trend signals, video metadata, and fan-comment analysis."}
+        }
+      ]
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -126,6 +179,15 @@
   .err{display:none;color:var(--neg);background:rgba(255,107,94,.07);border:1px solid rgba(255,107,94,.3);border-radius:12px;padding:14px 18px;font-size:14px;margin-top:24px}
   .err.show{display:block}
 
+  .seo-copy{margin:24px 0 8px;background:linear-gradient(180deg,var(--surface),var(--ink-2));border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 24px 60px -50px rgba(0,0,0,.8)}
+  .seo-copy h2{font-weight:900;font-size:clamp(20px,2.6vw,28px);line-height:1.15;margin-bottom:10px}
+  .seo-copy p{color:var(--muted);font-size:14.5px;max-width:76ch;margin:10px 0}
+  .tag-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}
+  .tag-list span{font-size:11.5px;color:var(--text);border:1px solid var(--line);border-radius:999px;padding:6px 10px;background:var(--ink-2)}
+  .seo-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+  .seo-links a{font-size:13px;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:8px 12px;color:var(--pitch)}
+  .seo-links a:hover{border-color:var(--pitch)}
+
   footer{border-top:1px solid var(--line);margin-top:54px;padding:28px 0 56px;font-size:12px;color:var(--muted-2);letter-spacing:.04em;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   footer b{color:var(--muted)}
   .powered-by{display:inline-flex;align-items:center;gap:5px}
@@ -171,8 +233,8 @@
 
   <section class="intro">
     <div class="kicker"><span class="pulse"></span><span data-i18n="kicker">Live football-buzz agent</span></div>
-    <h1 data-i18n="h1"></h1>
-    <p class="lead" data-i18n="lead"></p>
+    <h1 data-i18n="h1">FIFA World Cup 2026 <em>YouTube football trends</em><br>from every country, in <span class="gold">your</span> story.</h1>
+    <p class="lead" data-i18n="lead">Search viral football videos and fan comments around the FIFA World Cup 2026. SoccerScope helps creators, marketers, analysts, and football fans discover YouTube soccer trends by country and turn them into reports, SNS posts, or shareable web pages.</p>
   </section>
 
   <section class="panel">
@@ -200,6 +262,19 @@
       <button class="go" id="go" data-i18n="go">Generate</button>
     </div>
     <div class="hint" data-i18n="hint">⌘/Ctrl + Enter で実行。データは事前解析済みの動画（公式MongoDB MCP経由）から取得します。</div>
+  </section>
+
+  <section class="seo-copy" aria-labelledby="seo-title">
+    <h2 id="seo-title" data-i18n="seoH2">FIFA World Cup 2026 YouTube trends, fan reactions, and viral football videos</h2>
+    <p data-i18n="seoP1">SoccerScope is built for World Cup 2026 research: discover soccer videos going viral across countries, compare which teams and players fans are talking about, and convert YouTube trend data into reports, social posts, or a shareable page.</p>
+    <p data-i18n="seoP2">Use it for football marketing, creator discovery, fan-comment sentiment analysis, and daily World Cup content planning powered by TubeSaku video data.</p>
+    <div class="tag-list" aria-label="SoccerScope keywords">
+      <span>FIFA World Cup 2026</span><span>World Cup 2026</span><span>ワールドカップ2026</span><span>YouTube football trends</span><span>soccer video analysis</span><span>fan reaction sentiment</span><span>サッカー動画分析</span><span>海外サッカー動画</span>
+    </div>
+    <div class="seo-links">
+      <a href="https://webbigdata-jp.github.io/soccerscope/" target="_blank" rel="noopener" data-i18n="seoStatsLink">Open World Cup 2026 video statistics</a>
+      <a href="https://tubesaku.com/" target="_blank" rel="noopener" data-i18n="seoTubeSakuLink">TubeSaku YouTube analysis</a>
+    </div>
   </section>
 
   <section class="loading" id="loading">
@@ -234,13 +309,13 @@
 const I18N = {
   ja:{
     toggleLabel:"日本語 / ", langTarget:"EN",
-    kicker:"ライブ・サッカーバズ・エージェント",
-    h1:'世界中の<em>熱狂</em>を、<br>あなたの<span class="gold">視点</span>でまとめる。',
-    lead:"知りたいことを自由に書いてください。各国で今バズっているサッカー動画を意味検索で横断的に集め、記事・SNS投稿・Webページとして即座に書き出します。",
+    kicker:"FIFAワールドカップ2026・サッカー動画トレンドAI",
+    h1:'FIFAワールドカップ2026の<em>YouTubeサッカー動画</em>を、<br>あなたの<span class="gold">視点</span>でまとめる。',
+    lead:"ワールドカップ2026に向けて世界各国でバズっているサッカー動画、YouTubeトレンド、ファンコメントを横断検索し、レポート・SNS投稿・Webページとして即座に書き出します。",
     inputLabel:"リクエスト（自由入力）",
     placeholder:"例：W杯2026に向けて世界でバズっているサッカー動画を集めて、日本のファン視点で総合コメントして",
     formatLabel:"出力形式",
-    fmtReportNm:"レポート", fmtReportDs:"国別＋総合コメントの記事",
+    fmtReportNm:"レポート", fmtReportDs:"W杯/国別＋総合コメントの記事",
     fmtSnsNm:"SNS投稿",   fmtSnsDs:"X投稿ドラフト 2〜3本",
     fmtWebNm:"Webページ", fmtWebDs:"共有用のページ表示",
     go:"生成する",
@@ -248,21 +323,26 @@ const I18N = {
     loading:"世界のバズをスカウト中…（初回はMCP起動で少し時間がかかります）",
     copyAll:"Markdownをコピー", copied:"コピーしました", copyPost:"投稿をコピー",
     footL:"© 2026 SoccerScope",
-    linkStats:"ワールドカップ動画の統計情報サイト →",
+    linkStats:"FIFAワールドカップ2026動画統計サイト →",
     linkTubesaku:"YouTube動画分析サイト TubeSaku →",
     errEmpty:"リクエストを入力してください。",
     errGeneric:"生成に失敗しました：",
+    seoH2:"FIFAワールドカップ2026のYouTubeトレンド、ファン反応、バズ動画を分析",
+    seoP1:"SoccerScopeは、ワールドカップ2026の調査に使えるサッカー動画トレンドAIです。各国でバズっているYouTube動画、代表チームや選手へのファン反応、コメントの感情を横断的に把握できます。",
+    seoP2:"サッカーマーケティング、クリエイター発掘、ファンコメント分析、毎日のW杯コンテンツ企画に活用できます。",
+    seoStatsLink:"ワールドカップ2026動画統計を見る",
+    seoTubeSakuLink:"TubeSakuのYouTube分析を見る",
     badge:{report:"レポート",sns:"SNS投稿",webpage:"Webページ"}
   },
   en:{
     toggleLabel:"English / ", langTarget:"日本語",
-    kicker:"Live football-buzz agent",
-    h1:'Turn the world’s <em>frenzy</em><br>into <span class="gold">your</span> story.',
-    lead:"Just describe what you want. The agent runs a semantic search across football videos buzzing in many countries and writes it up instantly as a report, social posts, or a web page.",
+    kicker:"FIFA World Cup 2026 football video trend agent",
+    h1:'FIFA World Cup 2026 <em>YouTube football trends</em><br>from every country, in <span class="gold">your</span> story.',
+    lead:"Search viral football videos and fan comments around the FIFA World Cup 2026. SoccerScope discovers YouTube soccer trends across countries and writes them up as reports, SNS posts, or shareable pages.",
     inputLabel:"Your request",
     placeholder:"e.g. Gather the football videos buzzing worldwide ahead of World Cup 2026 and summarize them from a Japanese fan's perspective",
     formatLabel:"Output format",
-    fmtReportNm:"Report",   fmtReportDs:"Article: per-country + synthesis",
+    fmtReportNm:"Report",   fmtReportDs:"World Cup / country synthesis",
     fmtSnsNm:"SNS posts",   fmtSnsDs:"2–3 ready X post drafts",
     fmtWebNm:"Web page",    fmtWebDs:"Shareable page view",
     go:"Generate",
@@ -270,10 +350,15 @@ const I18N = {
     loading:"Scouting the world's buzz… (the first call spins up MCP, so it may take a moment)",
     copyAll:"Copy Markdown", copied:"Copied", copyPost:"Copy post",
     footL:"© 2026 SoccerScope",
-    linkStats:"World Cup video stats site →",
+    linkStats:"FIFA World Cup 2026 video stats site →",
     linkTubesaku:"TubeSaku — YouTube video analysis →",
     errEmpty:"Please enter a request.",
     errGeneric:"Generation failed: ",
+    seoH2:"FIFA World Cup 2026 YouTube trends, fan reactions, and viral football videos",
+    seoP1:"SoccerScope is built for World Cup 2026 research: discover soccer videos going viral across countries, compare which teams and players fans are talking about, and convert YouTube trend data into reports, social posts, or a shareable page.",
+    seoP2:"Use it for football marketing, creator discovery, fan-comment sentiment analysis, and daily World Cup content planning powered by TubeSaku video data.",
+    seoStatsLink:"Open World Cup 2026 video statistics",
+    seoTubeSakuLink:"TubeSaku YouTube analysis",
     badge:{report:"REPORT",sns:"SNS POSTS",webpage:"WEB PAGE"}
   }
 };
@@ -284,6 +369,15 @@ let FORMAT = "report";
 function applyI18n(){
   const t = I18N[LANG];
   document.documentElement.lang = LANG;
+  document.title = (LANG === "ja")
+    ? "SoccerScope — FIFAワールドカップ2026 YouTube動画トレンド分析"
+    : "SoccerScope — FIFA World Cup 2026 YouTube Video Trends & Fan Reactions";
+  const metaDesc = document.querySelector('meta[name="description"]');
+  if(metaDesc){
+    metaDesc.setAttribute("content", (LANG === "ja")
+      ? "SoccerScopeは、ワールドカップ2026で世界各国のYouTubeサッカー動画トレンドとファンコメントを検索し、レポートやSNS投稿を生成するAIエージェントです。"
+      : "SoccerScope is a World Cup 2026 football video trend agent. Search viral YouTube soccer videos across countries, analyze fan comments, and generate reports, SNS posts, and shareable pages.");
+  }
   document.querySelectorAll("[data-i18n]").forEach(el=>{
     const key = el.getAttribute("data-i18n");
     if(t[key] != null) el.innerHTML = t[key];

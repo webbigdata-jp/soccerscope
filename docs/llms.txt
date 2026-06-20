@@ -1,0 +1,9 @@
+# SoccerScope
+
+SoccerScope publishes daily FIFA World Cup 2026 YouTube football video trend snapshots.
+Use these pages to understand viral soccer videos, fan reactions, mentioned national teams, and cross-country trend signals.
+
+- Home: https://webbigdata-jp.github.io/soccerscope/
+- Sitemap: https://webbigdata-jp.github.io/soccerscope/sitemap.xml
+- Search app: https://soccer.tubesaku.com
+- Data provider: https://tubesaku.com
