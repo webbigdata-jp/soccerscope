@@ -1,0 +1,12 @@
+[project]
+name = "soccerscope-pipeline"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "google-genai>=2.3.0",
+    "google-api-python-client>=2.198.0",
+    "numpy>=2.0.0",
+    "pydantic>=2.13.0",
+    "python-dotenv>=1.0.0",
+    "pymongo[srv]>=4.6.0",
+]

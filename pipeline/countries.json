@@ -1,0 +1,421 @@
+{
+  "_comment": "FIFA World Cup 2026 出場48カ国マスタ。is_priority=true は重要11カ国（A/B/Cグループ初戦出場10カ国 + 日本）で動画20本収集、それ以外は5本収集。soccer_wordsは言語別の検索ワード辞書。",
+  "soccer_words": {
+    "en": "football OR soccer",
+    "ja": "サッカー",
+    "es": "fútbol",
+    "pt": "futebol",
+    "fr": "football",
+    "de": "Fußball",
+    "it": "calcio",
+    "nl": "voetbal",
+    "ar": "كرة القدم",
+    "fa": "فوتبال",
+    "ko": "축구",
+    "tr": "futbol",
+    "sv": "fotboll",
+    "no": "fotball",
+    "hr": "nogomet",
+    "bs": "nogomet",
+    "cs": "fotbal",
+    "uz": "futbol"
+  },
+  "countries": [
+    {
+      "code": "MX",
+      "name_ja": "メキシコ",
+      "name_en": "Mexico",
+      "primary_lang": "es",
+      "is_priority": true,
+      "group": "A",
+      "note": "開催国・6/12初戦"
+    },
+    {
+      "code": "ZA",
+      "name_ja": "南アフリカ",
+      "name_en": "South Africa",
+      "primary_lang": "en",
+      "is_priority": true,
+      "group": "A",
+      "note": "6/12初戦"
+    },
+    {
+      "code": "KR",
+      "name_ja": "韓国",
+      "name_en": "South Korea",
+      "primary_lang": "ko",
+      "is_priority": true,
+      "group": "A",
+      "note": "6/12初戦"
+    },
+    {
+      "code": "CZ",
+      "name_ja": "チェコ",
+      "name_en": "Czech Republic",
+      "primary_lang": "cs",
+      "is_priority": true,
+      "group": "A",
+      "note": "6/12初戦"
+    },
+    {
+      "code": "CA",
+      "name_ja": "カナダ",
+      "name_en": "Canada",
+      "primary_lang": "en",
+      "is_priority": true,
+      "group": "B",
+      "note": "開催国・6/13初戦"
+    },
+    {
+      "code": "BA",
+      "name_ja": "ボスニア・ヘルツェゴビナ",
+      "name_en": "Bosnia and Herzegovina",
+      "primary_lang": "bs",
+      "is_priority": true,
+      "group": "B",
+      "note": "6/13初戦"
+    },
+    {
+      "code": "QA",
+      "name_ja": "カタール",
+      "name_en": "Qatar",
+      "primary_lang": "ar",
+      "is_priority": true,
+      "group": "B",
+      "note": "6/14初戦"
+    },
+    {
+      "code": "CH",
+      "name_ja": "スイス",
+      "name_en": "Switzerland",
+      "primary_lang": "de",
+      "is_priority": true,
+      "group": "B",
+      "note": "6/14初戦"
+    },
+    {
+      "code": "BR",
+      "name_ja": "ブラジル",
+      "name_en": "Brazil",
+      "primary_lang": "pt",
+      "is_priority": true,
+      "group": "C",
+      "note": "6/14初戦"
+    },
+    {
+      "code": "MA",
+      "name_ja": "モロッコ",
+      "name_en": "Morocco",
+      "primary_lang": "ar",
+      "is_priority": true,
+      "group": "C",
+      "note": "6/14初戦"
+    },
+    {
+      "code": "JP",
+      "name_ja": "日本",
+      "name_en": "Japan",
+      "primary_lang": "ja",
+      "is_priority": true,
+      "group": "F",
+      "note": "デモシナリオ主役"
+    },
+    {
+      "code": "US",
+      "name_ja": "アメリカ",
+      "name_en": "United States",
+      "primary_lang": "en",
+      "is_priority": false,
+      "group": "D"
+    },
+    {
+      "code": "PY",
+      "name_ja": "パラグアイ",
+      "name_en": "Paraguay",
+      "primary_lang": "es",
+      "is_priority": false,
+      "group": "D"
+    },
+    {
+      "code": "DE",
+      "name_ja": "ドイツ",
+      "name_en": "Germany",
+      "primary_lang": "de",
+      "is_priority": false,
+      "group": "E"
+    },
+    {
+      "code": "CW",
+      "name_ja": "キュラソー",
+      "name_en": "Curaçao",
+      "primary_lang": "nl",
+      "is_priority": false,
+      "group": "E"
+    },
+    {
+      "code": "CI",
+      "name_ja": "コートジボワール",
+      "name_en": "Ivory Coast",
+      "primary_lang": "fr",
+      "is_priority": false,
+      "group": "E"
+    },
+    {
+      "code": "EC",
+      "name_ja": "エクアドル",
+      "name_en": "Ecuador",
+      "primary_lang": "es",
+      "is_priority": false,
+      "group": "E"
+    },
+    {
+      "code": "NL",
+      "name_ja": "オランダ",
+      "name_en": "Netherlands",
+      "primary_lang": "nl",
+      "is_priority": false,
+      "group": "F"
+    },
+    {
+      "code": "SE",
+      "name_ja": "スウェーデン",
+      "name_en": "Sweden",
+      "primary_lang": "sv",
+      "is_priority": false,
+      "group": "F"
+    },
+    {
+      "code": "TN",
+      "name_ja": "チュニジア",
+      "name_en": "Tunisia",
+      "primary_lang": "ar",
+      "is_priority": false,
+      "group": "F"
+    },
+    {
+      "code": "BE",
+      "name_ja": "ベルギー",
+      "name_en": "Belgium",
+      "primary_lang": "nl",
+      "is_priority": false,
+      "group": "G"
+    },
+    {
+      "code": "EG",
+      "name_ja": "エジプト",
+      "name_en": "Egypt",
+      "primary_lang": "ar",
+      "is_priority": false,
+      "group": "G"
+    },
+    {
+      "code": "IR",
+      "name_ja": "イラン",
+      "name_en": "Iran",
+      "primary_lang": "fa",
+      "is_priority": false,
+      "group": "G"
+    },
+    {
+      "code": "NZ",
+      "name_ja": "ニュージーランド",
+      "name_en": "New Zealand",
+      "primary_lang": "en",
+      "is_priority": false,
+      "group": "G"
+    },
+    {
+      "code": "ES",
+      "name_ja": "スペイン",
+      "name_en": "Spain",
+      "primary_lang": "es",
+      "is_priority": false,
+      "group": "H"
+    },
+    {
+      "code": "CV",
+      "name_ja": "カーボベルデ",
+      "name_en": "Cape Verde",
+      "primary_lang": "pt",
+      "is_priority": false,
+      "group": "H"
+    },
+    {
+      "code": "SA",
+      "name_ja": "サウジアラビア",
+      "name_en": "Saudi Arabia",
+      "primary_lang": "ar",
+      "is_priority": false,
+      "group": "H"
+    },
+    {
+      "code": "UY",
+      "name_ja": "ウルグアイ",
+      "name_en": "Uruguay",
+      "primary_lang": "es",
+      "is_priority": false,
+      "group": "H"
+    },
+    {
+      "code": "FR",
+      "name_ja": "フランス",
+      "name_en": "France",
+      "primary_lang": "fr",
+      "is_priority": false,
+      "group": "I"
+    },
+    {
+      "code": "SN",
+      "name_ja": "セネガル",
+      "name_en": "Senegal",
+      "primary_lang": "fr",
+      "is_priority": false,
+      "group": "I"
+    },
+    {
+      "code": "IQ",
+      "name_ja": "イラク",
+      "name_en": "Iraq",
+      "primary_lang": "ar",
+      "is_priority": false,
+      "group": "I"
+    },
+    {
+      "code": "NO",
+      "name_ja": "ノルウェー",
+      "name_en": "Norway",
+      "primary_lang": "no",
+      "is_priority": false,
+      "group": "I"
+    },
+    {
+      "code": "AR",
+      "name_ja": "アルゼンチン",
+      "name_en": "Argentina",
+      "primary_lang": "es",
+      "is_priority": false,
+      "group": "J"
+    },
+    {
+      "code": "DZ",
+      "name_ja": "アルジェリア",
+      "name_en": "Algeria",
+      "primary_lang": "ar",
+      "is_priority": false,
+      "group": "J"
+    },
+    {
+      "code": "AT",
+      "name_ja": "オーストリア",
+      "name_en": "Austria",
+      "primary_lang": "de",
+      "is_priority": false,
+      "group": "J"
+    },
+    {
+      "code": "JO",
+      "name_ja": "ヨルダン",
+      "name_en": "Jordan",
+      "primary_lang": "ar",
+      "is_priority": false,
+      "group": "J"
+    },
+    {
+      "code": "PT",
+      "name_ja": "ポルトガル",
+      "name_en": "Portugal",
+      "primary_lang": "pt",
+      "is_priority": false,
+      "group": "K"
+    },
+    {
+      "code": "CD",
+      "name_ja": "コンゴ民主共和国",
+      "name_en": "DR Congo",
+      "primary_lang": "fr",
+      "is_priority": false,
+      "group": "K"
+    },
+    {
+      "code": "UZ",
+      "name_ja": "ウズベキスタン",
+      "name_en": "Uzbekistan",
+      "primary_lang": "uz",
+      "is_priority": false,
+      "group": "K"
+    },
+    {
+      "code": "CO",
+      "name_ja": "コロンビア",
+      "name_en": "Colombia",
+      "primary_lang": "es",
+      "is_priority": false,
+      "group": "K"
+    },
+    {
+      "code": "GB",
+      "name_ja": "イングランド",
+      "name_en": "England",
+      "primary_lang": "en",
+      "is_priority": false,
+      "group": "L"
+    },
+    {
+      "code": "HR",
+      "name_ja": "クロアチア",
+      "name_en": "Croatia",
+      "primary_lang": "hr",
+      "is_priority": false,
+      "group": "L"
+    },
+    {
+      "code": "GH",
+      "name_ja": "ガーナ",
+      "name_en": "Ghana",
+      "primary_lang": "en",
+      "is_priority": false,
+      "group": "L"
+    },
+    {
+      "code": "PA",
+      "name_ja": "パナマ",
+      "name_en": "Panama",
+      "primary_lang": "es",
+      "is_priority": false,
+      "group": "L"
+    },
+    {
+      "code": "AU",
+      "name_ja": "オーストラリア",
+      "name_en": "Australia",
+      "primary_lang": "en",
+      "is_priority": false,
+      "group": "?"
+    },
+    {
+      "code": "HT",
+      "name_ja": "ハイチ",
+      "name_en": "Haiti",
+      "primary_lang": "fr",
+      "is_priority": false,
+      "group": "?"
+    },
+    {
+      "code": "TR",
+      "name_ja": "トルコ",
+      "name_en": "Turkey",
+      "primary_lang": "tr",
+      "is_priority": false,
+      "group": "?"
+    },
+    {
+      "code": "SC",
+      "name_ja": "スコットランド",
+      "name_en": "Scotland",
+      "primary_lang": "en",
+      "is_priority": false,
+      "group": "?",
+      "note": "ISO国コードはGB-SCT、regionCodeはGB扱い"
+    }
+  ]
+}

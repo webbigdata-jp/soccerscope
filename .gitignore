@@ -16,6 +16,10 @@ soccer_agent/.env
 
 # node
 node_modules/
+data
 
 memo.txt
-
+# pipeline
+pipeline/data/
+pipeline/__pycache__/
+pipeline/.venv/
