@@ -10,13 +10,28 @@ export PATH="$HOME/.local/bin:/usr/local/bin:$PATH"
 # uv 標準インストーラが置く env があれば読み込む
 [ -f "$HOME/.local/bin/env" ] && . "$HOME/.local/bin/env"
 
-# 変更後
 PROJECT_DIR="/home/dev1/haishin/soccer/git"
 PIPELINE_DIR="$PROJECT_DIR/pipeline"
 LOG_DIR="/home/dev1/haishin/soccer/logs"     # ログ置き場はgit管理外のまま据え置き
-...
 cd "$PIPELINE_DIR"
-...
+
+mkdir -p "$LOG_DIR"
+LOG_FILE="$LOG_DIR/$(date +%Y%m%d_%H%M%S).log"
+log() { echo "[$(date '+%F %T')] $*"; }
+
+# 失敗したらどこで落ちたか記録（set -e により直後に終了する）
+trap 'rc=$?; log "ERROR: 失敗 line ${LINENO} (exit ${rc})。以降の処理を中止します。"' ERR
+
+log "===== START daily pipeline ====="
+log "log file: $LOG_FILE"
+
+
+# 実行コマンドをログに出しつつ走らせるヘルパ
+run() {
+  log ">>> $*"
+  "$@"
+}
+
 run uv run phase2_collect_video_ids.py
 run uv run phase3_fetch_metadata.py
 run uv run phase7_calc_buzz_score.py
