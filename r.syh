@@ -32,15 +32,6 @@ run() {
   "$@"
 }
 
-run uv run phase2_collect_video_ids.py
-run uv run phase3_fetch_metadata.py
-run uv run phase7_calc_buzz_score.py
-run uv run phase4_fetch_comments.py
-run uv run 1_embed_videos.py
-run uv run 2_load_to_mongo.py
-run uv run 3_analyze_comments.py
-run uv run 4_load_comment_analysis.py
-run uv run build_stats_page.py
 
 # --- git ---
 cd "$PROJECT_DIR"
