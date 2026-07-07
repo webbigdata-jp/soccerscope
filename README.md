@@ -1,6 +1,6 @@
 # SoccerScope  - powered by TubeSaku -
 
-**SoccerScope is an AI agent that scouts the football (soccer) videos going viral *right now* across many countries, reads the room from fan comments, and writes it up — as a report, ready-to-post social drafts, or a shareable web page — in English or Japanese.**
+**SoccerScope is a multilingual RAG AI agent for World Cup 2026 videos that scouts the football (soccer) videos going viral *right now* across many countries, reads the room from fan comments, and writes it up — as a report, ready-to-post social drafts, or a shareable web page — in English or Japanese.**
 
 It is built for independent sports journalists and creators chasing a fresh, cross-border angle — and for anyone who just wants a great story to bring to the table tomorrow.
 

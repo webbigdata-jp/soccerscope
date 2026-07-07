@@ -1,22 +1,25 @@
 #!/usr/bin/env python3
 """
-ステージ1: 動画メタデータをembedしてローカル保存
+Stage 1: Embed video metadata and save it locally.
 
-phase7のvideos全件について embedテキストを作り、Gemini で768次元embed
-（RETRIEVAL_DOCUMENT・正規化）を生成し、元メタデータ + embedding を
-videos_embedded_<timestamp>.json に保存する。
+For every video in the phase7 file, this script builds embedding text,
+creates 768-dimensional Gemini embeddings with RETRIEVAL_DOCUMENT, manually
+normalizes them, and saves the original metadata plus embedding values to
+videos_embedded_<timestamp>.json.
 
-【2段構成の前半】Gemini APIを叩くのはこのスクリプトだけ。
-MongoDB投入(ステージ2 load_to_mongo.py)をやり直しても、ここを再実行しない限り
-無料枠を消費しない。
+This is the first half of the two-stage pipeline. This is the only script that
+calls the Gemini API. Re-running the MongoDB load step (stage 2,
+load_to_mongo.py) will not consume additional free-tier quota unless this
+script is run again.
 
-事前準備:
+Setup:
     pip install google-genai numpy
     export GEMINI_API_KEY='...'
 
-実行:
-    python embed_videos.py [phase7のJSONパス]
-    （省略時はカレントの phase7_with_buzz_score_*.json を自動で探す）
+Usage:
+    python embed_videos.py [path_to_phase7_json]
+    If omitted, the latest data/phase7_with_buzz_score_*.json file in the
+    current working directory is selected automatically.
 """
 
 import os
@@ -32,31 +35,36 @@ from google.genai import types
 from dotenv import load_dotenv
 
 EMBED_MODEL = "gemini-embedding-001"
-EMBED_DIM = 768            # 後から変更不可。768で確定
-DESC_MAX_CHARS = 500       # descriptionは先頭500字（入力トークン節約・主題は冒頭に出る）
-CHUNK_SIZE = 20            # 1リクエストあたりの件数（上限250/20kトークンに対し安全側）
-SLEEP_BETWEEN_CHUNKS = 1.0 # チャンク間の軽い待機（秒）
+EMBED_DIM = 768            # Fixed at 768. Do not change after deployment.
+DESC_MAX_CHARS = 500       # Use the first 500 chars to save input tokens.
+CHUNK_SIZE = 20            # Conservative batch size against API limits.
+SLEEP_BETWEEN_CHUNKS = 1.0 # Short delay between chunks, in seconds.
 
 from pathlib import Path
 SCRIPT_DIR = Path(__file__).parent
 load_dotenv(SCRIPT_DIR.parent / 'app' / 'soccer_agent' / '.env')
+
 
 def find_phase7_path() -> str:
     if len(sys.argv) > 1:
         return sys.argv[1]
     hits = sorted(glob.glob("data/phase7_with_buzz_score_*.json"))
     if not hits:
-        print("ERROR: phase7_with_buzz_score_*.json が見つかりません。引数でパスを渡してください。",
-              file=sys.stderr)
+        print(
+            "ERROR: phase7_with_buzz_score_*.json was not found. "
+            "Pass the path as an argument.",
+            file=sys.stderr,
+        )
         sys.exit(1)
     return hits[-1]
 
 
 def build_embed_text(v: dict) -> str:
-    """embed対象: title + description(先頭500字) + 国名(en, 複数列挙)。tagsは空が多いので不使用。
+    """Build text for embedding from title, description, and country names.
 
-    phase3が (b) 多対多方式で countries 配列(+reach) を持つようになったため、
-    出現した全国の country_name_en をカンマ区切りで列挙する（rank昇順=出現順のまま）。
+    Tags are not used because they are often empty. Since phase3 now stores
+    countries as a many-to-many array with reach values, all available
+    country_name_en values are listed in their existing order.
     """
     title = v.get("title", "") or ""
     desc = (v.get("description") or "")[:DESC_MAX_CHARS]
@@ -67,16 +75,16 @@ def build_embed_text(v: dict) -> str:
 
 
 def normalize(vec) -> list:
-    """768次元は非正規化で返るため手動L2正規化（必須）。"""
+    """Apply manual L2 normalization because 768-d vectors are unnormalized."""
     arr = np.asarray(vec, dtype=float)
     norm = np.linalg.norm(arr)
     if norm == 0:
-        raise ValueError("ゼロベクトル（embed対象テキストが空の可能性）")
+        raise ValueError("Zero vector. The embedding input text may be empty.")
     return (arr / norm).tolist()
 
 
 def embed_chunk_with_retry(client: genai.Client, texts: list, max_retries: int = 4) -> list:
-    """1チャンクをembed。レート制限(429)時は指数バックオフでリトライ。"""
+    """Embed one chunk. Retry with exponential backoff on rate-limit errors."""
     for attempt in range(max_retries):
         try:
             result = client.models.embed_content(
@@ -91,64 +99,70 @@ def embed_chunk_with_retry(client: genai.Client, texts: list, max_retries: int =
         except Exception as e:  # noqa: BLE001
             msg = str(e)
             if ("429" in msg or "RESOURCE_EXHAUSTED" in msg) and attempt < max_retries - 1:
-                wait = 5 * (2 ** attempt)  # 5,10,20,40秒
-                print(f"  レート制限の可能性。{wait}秒待機してリトライします... ({attempt+1}/{max_retries})")
+                wait = 5 * (2 ** attempt)  # 5, 10, 20, 40 seconds
+                print(f"  Possible rate limit. Waiting {wait}s before retry... ({attempt+1}/{max_retries})")
                 time.sleep(wait)
             else:
                 raise
-    raise RuntimeError("embedリトライ上限に達しました。")
+    raise RuntimeError("Embedding retry limit reached.")
 
 
 def main() -> int:
     if not os.environ.get("GEMINI_API_KEY"):
-        print("ERROR: GEMINI_API_KEY が未設定です。", file=sys.stderr)
+        print("ERROR: GEMINI_API_KEY is not set.", file=sys.stderr)
         return 1
 
     path = find_phase7_path()
-    print(f"入力ファイル: {path}")
+    print(f"Input file: {path}")
     with open(path, encoding="utf-8") as f:
         data = json.load(f)
     videos = data.get("videos", [])
     if not videos:
-        print("ERROR: videos が空です。", file=sys.stderr)
+        print("ERROR: videos is empty.", file=sys.stderr)
         return 1
-    print(f"対象動画: {len(videos)}件")
+    print(f"Target videos: {len(videos)}")
 
-    # embedテキストを全件分作る（空テキストは検出して警告）
+    # Build embedding text for every video and warn on empty text.
     texts = []
     for v in videos:
         t = build_embed_text(v)
         if not t:
-            print(f"  WARNING: video_id={v.get('video_id')} のembedテキストが空です。", file=sys.stderr)
+            print(f"  WARNING: Empty embedding text for video_id={v.get('video_id')}.", file=sys.stderr)
         texts.append(t)
 
     client = genai.Client()
 
-    # チャンク分割してembed
+    # Split the input into chunks and embed each chunk.
     all_vecs = []
     n_chunks = (len(texts) + CHUNK_SIZE - 1) // CHUNK_SIZE
-    print(f"\n{CHUNK_SIZE}件ずつ {n_chunks}チャンクでembedします（768次元・正規化・RETRIEVAL_DOCUMENT）。")
+    print(
+        f"\nEmbedding {n_chunks} chunks of up to {CHUNK_SIZE} videos "
+        f"with {EMBED_DIM}-d normalized RETRIEVAL_DOCUMENT embeddings."
+    )
     for i in range(0, len(texts), CHUNK_SIZE):
         chunk = texts[i:i + CHUNK_SIZE]
         idx = i // CHUNK_SIZE + 1
-        print(f"  チャンク {idx}/{n_chunks}（{len(chunk)}件）をembed中...")
+        print(f"  Embedding chunk {idx}/{n_chunks} ({len(chunk)} items)...")
         vecs = embed_chunk_with_retry(client, chunk)
         if len(vecs) != len(chunk):
-            print(f"ERROR: 返却ベクトル数({len(vecs)})が入力数({len(chunk)})と不一致。", file=sys.stderr)
+            print(
+                f"ERROR: Returned vector count ({len(vecs)}) does not match input count ({len(chunk)}).",
+                file=sys.stderr,
+            )
             return 1
         all_vecs.extend(vecs)
         if idx < n_chunks:
             time.sleep(SLEEP_BETWEEN_CHUNKS)
 
-    assert len(all_vecs) == len(videos), "ベクトル総数と動画数が不一致"
-    print(f"\nembed完了: {len(all_vecs)}件 / 各{len(all_vecs[0])}次元")
+    assert len(all_vecs) == len(videos), "Vector count does not match video count."
+    print(f"\nEmbedding complete: {len(all_vecs)} items / {len(all_vecs[0])} dimensions each")
 
-    # 元メタデータ + embedding をマージして保存（ステージ2はphase7を読み直さない）
+    # Merge the original metadata with embeddings. Stage 2 does not reread phase7.
     out_videos = []
     for v, vec, t in zip(videos, all_vecs, texts):
-        rec = dict(v)               # phase7の元データを丸ごと保持
+        rec = dict(v)               # Keep all original phase7 metadata.
         rec["embedding"] = vec
-        rec["_embed_text"] = t      # デバッグ用（何をembedしたか）。ステージ2で無視してよい
+        rec["_embed_text"] = t      # Debug field; stage 2 may ignore it.
         out_videos.append(rec)
 
     ts = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -165,11 +179,10 @@ def main() -> int:
     }
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False)
-    print(f"\n保存しました: {out_path}")
-    print("次はステージ2 (load_to_mongo.py) でこのファイルをMongoDBに投入します。")
+    print(f"\nSaved: {out_path}")
+    print("Next, load this file into MongoDB with stage 2 (load_to_mongo.py).")
     return 0
 
 
 if __name__ == "__main__":
     sys.exit(main())
-
