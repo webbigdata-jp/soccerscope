@@ -1,29 +1,30 @@
 """
 phase7_calc_buzz_score.py
 ==========================
-【目的】
-  Phase 3 で取得したメタデータに対してバズスコアを計算し、
-  buzz_score / is_buzz フィールドを付与して保存する。
+Purpose
+  Calculate buzz scores for metadata obtained in Phase 3, add the buzz_score /
+  is_buzz fields, and save the result.
 
-【処理フロー】
-  1. data/ から最新の phase3_metadata_*.json を読み込む（--input で指定も可）
-  2. 各動画にバズスコアを計算
-  3. 上位N件を is_buzz=true としてフラグ付け（デフォルト500件、Phase 4で使用）
-  4. data/phase7_with_buzz_score_YYYYMMDD_HHMMSS.json に保存
+Processing flow
+  1. Load the latest phase3_metadata_*.json from data/ (or specify it with --input)
+  2. Calculate the buzz score for each video
+  3. Flag the top N videos as is_buzz=true (default: 500 videos, used in Phase 4)
+  4. Save to data/phase7_with_buzz_score_YYYYMMDD_HHMMSS.json
 
-【バズスコアの定義】
-  バズスコア = log10(view_count + 1) * 1.0
+Buzz score definition
+  buzz_score = log10(view_count + 1) * 1.0
              + log10(like_count + 1) * 1.5
              + log10(comment_count + 1) * 2.0
-             + 経過時間ペナルティ (新しいほど高得点)
+             + elapsed-time bonus (newer videos receive higher scores)
 
-  - log を使うのは桁外れの再生数動画に引きずられないため
-  - コメント数を最重視（コメント分析が次工程なので、コメント多い動画ほど価値が高い）
-  - 経過時間ペナルティ: 直近24時間以内なら +2.0、7日以内+1.0、それ以上0
+  - log is used so the score is not dominated by videos with exceptionally high views
+  - comment_count is weighted most heavily because comment analysis is the next step,
+    so videos with more comments are more valuable
+  - elapsed-time bonus: +2.0 within the last 24 hours, +1.0 within 7 days, otherwise 0
 
-【出力JSON】
-  Phase 3と同形式 + 各videoに buzz_score, is_buzz を追加。
-  さらに top_500_video_ids リストをトップレベルに追加（Phase 4で参照）。
+Output JSON
+  Same format as Phase 3, with buzz_score and is_buzz added to each video.
+  Also adds a top_500_video_ids list at the top level for Phase 4.
 """
 
 import os
@@ -35,27 +36,28 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 # ==========================================
-# 設定
+# Settings
 # ==========================================
 
 SCRIPT_DIR = Path(__file__).parent
 DATA_DIR = SCRIPT_DIR / "data"
 
-# バズフラグを立てる上位件数
+# Number of top videos to flag as buzz videos
 DEFAULT_TOP_N = 500
 
-# スコア重み
+# Score weights
 WEIGHT_VIEWS = 1.0
 WEIGHT_LIKES = 1.5
 WEIGHT_COMMENTS = 2.0
 
-# 経過時間ボーナス
+# Elapsed-time bonus
 BONUS_RECENT_24H = 2.0
 BONUS_RECENT_7D = 1.0
 
 # ==========================================
-# 関数
+# Functions
 # ==========================================
+
 
 def find_latest_phase3_file():
     pattern = str(DATA_DIR / 'phase3_metadata_*.json')
@@ -64,11 +66,11 @@ def find_latest_phase3_file():
 
 
 def calc_recency_bonus(published_at_str, reference_dt):
-    """published_at(ISO8601) と reference_dt を比較し、経過時間ボーナスを返す"""
+    """Compare published_at (ISO8601) with reference_dt and return the recency bonus."""
     if not published_at_str:
         return 0.0
     try:
-        # 'Z' を '+00:00' に置換してパース
+        # Replace 'Z' with '+00:00' before parsing.
         pub_dt = datetime.fromisoformat(published_at_str.replace('Z', '+00:00'))
         if pub_dt.tzinfo is None:
             pub_dt = pub_dt.replace(tzinfo=timezone.utc)
@@ -85,7 +87,7 @@ def calc_recency_bonus(published_at_str, reference_dt):
 
 
 def calc_buzz_score(video, reference_dt):
-    """1動画のバズスコアを計算する"""
+    """Calculate the buzz score for one video."""
     stats = video.get('stats', {})
     views = stats.get('view_count', 0)
     likes = stats.get('like_count', 0)
@@ -101,57 +103,57 @@ def calc_buzz_score(video, reference_dt):
 
 
 def main():
-    parser = argparse.ArgumentParser(description='Phase 7: バズスコア計算')
+    parser = argparse.ArgumentParser(description='Phase 7: Calculate buzz scores')
     parser.add_argument(
         '--input',
         type=str,
         default=None,
-        help='Phase 3 のJSONファイルパス（省略時は最新を自動選択）'
+        help='Path to the Phase 3 JSON file (automatically selects the latest file if omitted)'
     )
     parser.add_argument(
         '--top-n',
         type=int,
         default=DEFAULT_TOP_N,
-        help=f'is_buzz フラグを立てる上位件数 (デフォルト {DEFAULT_TOP_N})'
+        help=f'Number of top videos to set the is_buzz flag for (default {DEFAULT_TOP_N})'
     )
     args = parser.parse_args()
 
-    # 入力
+    # Input
     input_file = args.input or find_latest_phase3_file()
     if not input_file or not Path(input_file).exists():
-        print(f'エラー: Phase 3 のJSONファイルが見つかりません: {input_file}')
+        print(f'Error: Phase 3 JSON file was not found: {input_file}')
         return
 
-    print(f'入力ファイル: {input_file}')
+    print(f'Input file: {input_file}')
     with open(input_file, 'r', encoding='utf-8') as f:
         phase3_data = json.load(f)
 
     videos = phase3_data.get('videos', [])
     if not videos:
-        print('動画データが0件です。')
+        print('Video data is empty.')
         return
 
-    print(f'対象動画数: {len(videos)}')
+    print(f'Target videos: {len(videos)}')
 
-    # スコア計算の基準時刻 (現在UTC)
+    # Reference time for score calculation (current UTC)
     reference_dt = datetime.now(timezone.utc)
 
-    # 各動画にスコア付与
+    # Add a score to each video.
     for v in videos:
         v['buzz_score'] = calc_buzz_score(v, reference_dt)
-        v['is_buzz'] = False  # 初期値、後で上位N件にtrueをセット
+        v['is_buzz'] = False  # Initial value; set true for the top N videos later.
 
-    # スコア降順ソート
+    # Sort by score descending.
     videos.sort(key=lambda x: x['buzz_score'], reverse=True)
 
-    # 上位N件に is_buzz = True
+    # Set is_buzz = True for the top N videos.
     top_n = min(args.top_n, len(videos))
     for v in videos[:top_n]:
         v['is_buzz'] = True
 
     top_video_ids = [v['video_id'] for v in videos[:top_n]]
 
-    # 保存
+    # Save
     DATA_DIR.mkdir(exist_ok=True)
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
     output_path = DATA_DIR / f'phase7_with_buzz_score_{timestamp}.json'
@@ -168,7 +170,7 @@ def main():
             'comment_weight': WEIGHT_COMMENTS,
             'recency_bonus_24h': BONUS_RECENT_24H,
             'recency_bonus_7d': BONUS_RECENT_7D,
-            'description': 'log10(count+1)*weight の総和 + 経過時間ボーナス',
+            'description': 'Sum of log10(count+1)*weight + elapsed-time bonus',
         },
         'videos': videos,
     }
@@ -176,11 +178,11 @@ def main():
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
 
-    # サマリ
-    print(f'\n=== 完了 ===')
-    print(f'  バズフラグ付与: {top_n} 件 (上位 {top_n}/{len(videos)})')
-    print(f'  保存先: {output_path}')
-    print(f'\n=== バズスコア Top 10 ===')
+    # Summary
+    print(f'\n=== Completed ===')
+    print(f'  Buzz flag assigned: {top_n} videos (top {top_n}/{len(videos)})')
+    print(f'  Saved to: {output_path}')
+    print(f'\n=== Buzz Score Top 10 ===')
     for i, v in enumerate(videos[:10], 1):
         codes_str = ','.join(v.get('country_codes', [])) or '??'
         print(f"  {i:2d}. [{codes_str:8s}] score={v['buzz_score']:6.2f} "

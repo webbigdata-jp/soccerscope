@@ -1,29 +1,33 @@
 """
 phase2_collect_video_ids.py
 ============================
-【目的】
-  countries.json の48カ国に対して、各国 regionCode で search.list を1回ずつ実行し、
-  サッカー（W杯）関連動画のID候補プールを作成する。
+Purpose
+  For the 48 countries in countries.json, run search.list once per country with each
+  country's regionCode, and create a candidate pool of soccer/World Cup-related
+  video IDs.
 
-【処理フロー】
-  1. countries.json を読み込み
-  2. 各国に対して、主要言語のサッカー語 + 共通の "World Cup" 系を OR で繋いだクエリを生成
-  3. search.list を regionCode 指定で実行（最大50件 = 1ページ）
-  4. 重要国 (is_priority=true) は max 20件、それ以外は max 5件にトリミング
-  5. data/phase2_video_ids_YYYYMMDD.json に保存
+Processing flow
+  1. Load countries.json
+  2. For each country, build a query by joining the main-language soccer term and
+     common "World Cup" terms with OR
+  3. Run search.list with regionCode specified (up to 50 results = 1 page)
+  4. Trim important countries (is_priority=true) to max 20 results, and all others
+     to max 5 results
+  5. Save to data/phase2_video_ids_YYYYMMDD.json
 
-【レート制御】
-  - リクエスト間に SLEEP_BETWEEN_REQUESTS 秒のスリープ
-  - 429 (rateLimitExceeded) は指数バックオフで最大3回リトライ
-  - Retry-After ヘッダがあれば最優先
+Rate control
+  - Sleep for SLEEP_BETWEEN_REQUESTS seconds between requests
+  - Retry 429 (rateLimitExceeded) up to 3 times with exponential backoff
+  - Prioritize the Retry-After header if present
 
-【--retry-from オプション】
-  既存のphase2出力JSONを渡すと、エラーだった国 (error が非None または video_count=0)
-  だけを再取得して結果をマージする。フルクォータ消費を避けたい場合に使う。
+--retry-from option
+  If an existing Phase 2 output JSON is passed, only countries that failed
+  (error is non-None or video_count=0) are fetched again, and the results are
+  merged. Use this to avoid consuming the full quota.
 
-【APIクォータ】
-  search.list: 100 units × 48カ国 = 4,800 units (フル実行時)
-  --retry-from 使用時は失敗国数 × 100 units
+API quota
+  search.list: 100 units x 48 countries = 4,800 units (for a full run)
+  With --retry-from: number of failed countries x 100 units
 """
 
 import os
@@ -38,46 +42,52 @@ from googleapiclient.errors import HttpError
 from api_utils import YouTubeKeyRotator, load_youtube_api_keys
 
 # ==========================================
-# 設定
+# Settings
 # ==========================================
 
 SCRIPT_DIR = Path(__file__).parent
 DATA_DIR = SCRIPT_DIR / "data"
 COUNTRIES_FILE = SCRIPT_DIR / "countries.json"
 
-# search.list は maxResults を増やしてもクォータは1回100unitsで不変
-# （コストはページ単位。1ページ最大50件）。順位ベースの国割り当て(phase3)を
-# 公平にするため、全国一律で1ページ満タンの50件を取得する。
-# is_priority は他用途のタグとして残すが、収集本数の出し分けには使わない。
+# search.list costs 100 quota units per request even if maxResults is increased.
+# Cost is per page, and one page can contain up to 50 results. To make the
+# rank-based country allocation in Phase 3 fair, fetch a full 50-result page for
+# every country uniformly.
+# Keep is_priority as a tag for other purposes, but do not use it to vary the
+# number of collected videos.
 MAX_RESULTS_PER_COUNTRY = 50
 PAGE_MAX_RESULTS = 50
 
-# 後方互換のため名前は残す（いずれも同値）
+# Keep these names for backward compatibility. Both values are the same.
 PRIORITY_MAX_RESULTS = MAX_RESULTS_PER_COUNTRY
 NORMAL_MAX_RESULTS = MAX_RESULTS_PER_COUNTRY
 
-# リクエスト間スリープ（秒）。429防止の基本対策。
-# 連続アクセスによる一時的なレート制限(rateLimitExceeded等)を予防するため2秒に設定。
-# なお1日の総クォータ超過(quotaExceeded)はスリープでは解決しないため、
-# YouTubeKeyRotator による複数キー切替で対応する（役割分担は api_utils.py 参照）。
+# Sleep between requests in seconds. This is the basic safeguard against 429.
+# Set to 2 seconds to prevent temporary rate limits caused by rapid consecutive
+# access, such as rateLimitExceeded.
+# Daily quota exhaustion (quotaExceeded) cannot be solved by sleeping, so it is
+# handled by switching among multiple keys via YouTubeKeyRotator. See api_utils.py
+# for the division of responsibilities.
 SLEEP_BETWEEN_REQUESTS = 2.0
 
-# 共通検索語
+# Common search terms
 COMMON_KEYWORDS = ['"World Cup 2026"', '"FIFA World Cup"']
 
-# 除外語: "World Cup"系のフレーズはサッカー以外の競技（クリケット、バスケ、
-# バレーボール等にも"World Cup"を冠した大会が存在する）にもヒットしてしまう
-# ため、search.list の q パラメータの NOT(-) 演算子で明示的に除外する。
-# 例: クリケットの "ICC Women's T20 World Cup" がサッカー検索に混入していた
-# 実例があったため追加。除外語は他競技を狙い撃ちした最小限の単語に留め、
-# サッカー動画自体の取りこぼしを増やさないようにする。
+# Exclusion terms: "World Cup" phrases can also match non-soccer sports such as
+# cricket, basketball, and volleyball, because those sports also have tournaments
+# named "World Cup". Explicitly exclude them with the NOT (-) operator in the
+# search.list q parameter.
+# Example: this was added after actual contamination by cricket videos such as
+# "ICC Women's T20 World Cup". Keep exclusion terms to the minimum set targeting
+# other sports so soccer videos are not unnecessarily missed.
 EXCLUDE_KEYWORDS = [
     'cricket', 'IPL', 'basketball', 'NBA', 'volleyball',
 ]
 
 # ==========================================
-# 関数
+# Functions
 # ==========================================
+
 
 def load_countries(path):
     with open(path, 'r', encoding='utf-8') as f:
@@ -91,8 +101,9 @@ def build_query(country, soccer_words):
     parts = [soccer_word] + COMMON_KEYWORDS
     query = ' | '.join(parts)
     if EXCLUDE_KEYWORDS:
-        # NOT(-)演算子は ' -単語' の形式で末尾に追加する（公式ドキュメント準拠）。
-        # 例: 'futbol | "World Cup 2026" | "FIFA World Cup" -cricket -IPL -basketball -NBA -volleyball'
+        # Add the NOT (-) operator at the end in the form ' -word', following the
+        # official documentation.
+        # Example: 'futbol | "World Cup 2026" | "FIFA World Cup" -cricket -IPL -basketball -NBA -volleyball'
         exclude_str = ' '.join(f'-{w}' for w in EXCLUDE_KEYWORDS)
         query = f'{query} {exclude_str}'
     return query
@@ -100,12 +111,14 @@ def build_query(country, soccer_words):
 
 def search_videos_for_country(rotator, country, soccer_words, published_after, max_results, label,
                                published_before=None):
-    """1カ国分の動画IDを取得する（リトライ付き・キーローテーション付き）。
+    """Fetch video IDs for one country, with retries and key rotation.
 
-    published_before を指定すると publishedAfter との範囲指定になり、
-    特定の過去日に投稿された動画に絞り込める（--target-date 用）。
-    ただし view_count/再生数順位は常にAPI呼び出し時点(=今日)の値である点に
-    注意（過去のその時点のバズ状態そのものは復元できない。引き継ぎメモ参照）。
+    If published_before is specified, it becomes a range together with
+    publishedAfter, allowing videos posted on a specific past date to be narrowed
+    down for --target-date.
+    Note, however, that view_count and view-count ranking are always values from
+    the time of the API call (= today). The buzz state at that exact point in the
+    past cannot be reconstructed. See the handoff notes.
     """
     query = build_query(country, soccer_words)
     region_code = country['code']
@@ -124,7 +137,7 @@ def search_videos_for_country(rotator, country, soccer_words, published_after, m
     if published_before:
         base_params['publishedBefore'] = published_before
 
-    # 1段目: regionCode 付き
+    # First step: with regionCode
     try:
         response = rotator.execute(
             lambda yt: yt.search().list(regionCode=region_code, **base_params),
@@ -140,9 +153,9 @@ def search_videos_for_country(rotator, country, soccer_words, published_after, m
         }
     except HttpError as e:
         error_reason = str(e)[:200]
-        print(f"    1段目失敗 ({country['code']}): {error_reason[:120]}")
+        print(f"    First step failed ({country['code']}): {error_reason[:120]}")
 
-        # 2段目: regionCode 外して言語フォールバック
+        # Second step: remove regionCode and fall back to language
         try:
             response = rotator.execute(
                 lambda yt: yt.search().list(**base_params),
@@ -150,7 +163,7 @@ def search_videos_for_country(rotator, country, soccer_words, published_after, m
             )
             items = response.get('items', [])
             video_ids = [item['id']['videoId'] for item in items if 'videoId' in item.get('id', {})]
-            print(f'    -> 言語フォールバック成功: {len(video_ids)}件')
+            print(f'    -> Language fallback succeeded: {len(video_ids)} items')
             return {
                 'query': query,
                 'video_ids': video_ids[:max_results],
@@ -167,15 +180,16 @@ def search_videos_for_country(rotator, country, soccer_words, published_after, m
 
 
 def is_failed_entry(entry):
-    """既存JSONエントリが「失敗」か判定する。再取得対象を選ぶ用。"""
+    """Determine whether an existing JSON entry is a failure for retry selection."""
     if entry is None:
         return True
     if entry.get('error'):
         err = entry.get('error', '')
-        # regionCode重複スキップは再取得不要
+        # A skipped duplicate regionCode does not need to be fetched again.
         if err.startswith('skipped_duplicate_regionCode_'):
             return False
-        # 言語フォールバックが成功して件数も取れている場合は再取得不要
+        # If language fallback succeeded and returned results, it does not need to
+        # be fetched again.
         if err.startswith('regionCode_unsupported_fallback_to_language') and entry.get('video_count', 0) > 0:
             return False
         return True
@@ -185,88 +199,88 @@ def is_failed_entry(entry):
 
 
 def main():
-    parser = argparse.ArgumentParser(description='Phase 2: 48カ国の動画IDを収集')
+    parser = argparse.ArgumentParser(description='Phase 2: Collect video IDs from 48 countries')
     parser.add_argument('--days', type=int, default=2,
-                        help='publishedAfter の日数(過去N日)。デフォルト2日。--target-date指定時も「何日分」として使う')
+                        help='Number of days for publishedAfter (past N days). Default: 2 days. Also used as the number of days when --target-date is specified')
     parser.add_argument('--target-date', type=str, default=None,
-                        help='YYYY-MM-DD形式。指定すると、その日のUTC0時を基準に '
-                             '[target-date - days日, target-date] の範囲で publishedAfter/'
-                             'publishedBefore を設定する（過去日の取り直し用）。'
-                             '省略時は従来通り「今からdays日前」のpublishedAfterのみ。'
-                             '注意: view_count等の統計値・順位は常に実行時点(=今日)の値になる。')
+                        help='YYYY-MM-DD format. If specified, use UTC midnight on that day as the reference and set '
+                             'publishedAfter/publishedBefore for the range [target-date - days, target-date] '
+                             '(for re-fetching past dates). '
+                             'If omitted, only publishedAfter is set to "days ago from now" as before. '
+                             'Note: statistics such as view_count and ranking are always values at execution time (= today).')
     parser.add_argument('--dry-run', action='store_true',
-                        help='APIを叩かずクエリだけ表示')
+                        help='Show queries only without calling the API')
     parser.add_argument('--retry-from', type=str, default=None,
-                        help='既存phase2出力JSONを指定して失敗国のみ再取得する')
+                        help='Specify an existing Phase 2 output JSON and re-fetch only failed countries')
     parser.add_argument('--sleep', type=float, default=SLEEP_BETWEEN_REQUESTS,
-                        help=f'リクエスト間スリープ秒 (デフォルト {SLEEP_BETWEEN_REQUESTS})')
+                        help=f'Sleep seconds between requests (default {SLEEP_BETWEEN_REQUESTS})')
     args = parser.parse_args()
 
     load_dotenv(SCRIPT_DIR / '../../../.env')
     api_keys = load_youtube_api_keys()
     if not api_keys:
-        print('エラー: .env にYOUTUBE_API_KEY_TEST を設定してください。')
+        print('Error: Set YOUTUBE_API_KEY_TEST in .env.')
         return
-    print(f'利用可能なAPIキー数: {len(api_keys)}（quotaExceeded時に自動で次のキーへ切替）')
+    print(f'Available API keys: {len(api_keys)} (automatically switches to the next key on quotaExceeded)')
 
     countries, soccer_words = load_countries(COUNTRIES_FILE)
-    print(f'対象国数: {len(countries)} カ国')
+    print(f'Target countries: {len(countries)}')
     priority_count = sum(1 for c in countries if c.get('is_priority'))
-    print(f'  - 収集本数: 全国一律 max {MAX_RESULTS_PER_COUNTRY} 本/国（is_priorityは本数に影響しない）')
-    print(f'  - うち is_priority: {priority_count} カ国（タグのみ）')
-    print(f'  - リクエスト間スリープ: {args.sleep} 秒')
+    print(f'  - Collection size: uniform max {MAX_RESULTS_PER_COUNTRY} videos/country (is_priority does not affect the count)')
+    print(f'  - is_priority countries: {priority_count} (tag only)')
+    print(f'  - Sleep between requests: {args.sleep} seconds')
 
     if args.target_date:
         try:
             target_dt = datetime.strptime(args.target_date, '%Y-%m-%d').replace(tzinfo=timezone.utc)
         except ValueError:
-            print(f'エラー: --target-date は YYYY-MM-DD 形式で指定してください: {args.target_date}')
+            print(f'Error: --target-date must be specified in YYYY-MM-DD format: {args.target_date}')
             return
         published_before_dt = target_dt
         published_after_dt = target_dt - timedelta(days=args.days)
         published_before = published_before_dt.strftime('%Y-%m-%dT%H:%M:%SZ')
         published_after = published_after_dt.strftime('%Y-%m-%dT%H:%M:%SZ')
-        print(f'検索期間: {published_after} 〜 {published_before} '
-              f'(--target-date={args.target_date} 基準, UTC0時)')
-        print('  注意: view_count等の統計値・再生数順位は実行時点(今日)の値です。'
-              '過去その時点のバズ状態そのものは復元できません。')
+        print(f'Search period: {published_after} to {published_before} '
+              f'(based on --target-date={args.target_date}, UTC midnight)')
+        print('  Note: statistics such as view_count and view-count ranking are values at execution time (today). '
+              'The buzz state at that exact point in the past cannot be reconstructed.')
     else:
         published_before = None
         published_after_dt = datetime.now(timezone.utc) - timedelta(days=args.days)
         published_after = published_after_dt.strftime('%Y-%m-%dT%H:%M:%SZ')
-        print(f'検索期間: {published_after} 以降')
+        print(f'Search period: after {published_after}')
 
-    # --retry-from 処理: 既存JSON読込
+    # --retry-from processing: load existing JSON
     existing_results = {}
     if args.retry_from:
         retry_path = Path(args.retry_from)
         if not retry_path.exists():
-            print(f'エラー: --retry-from で指定したファイルが見つかりません: {retry_path}')
+            print(f'Error: The file specified by --retry-from was not found: {retry_path}')
             return
         with open(retry_path, 'r', encoding='utf-8') as f:
             existing = json.load(f)
         existing_results = existing.get('by_country', {})
-        print(f'既存ファイル: {retry_path.name} (国数 {len(existing_results)})')
-        # 検索期間も既存ファイルと揃える（時系列ずれを防ぐ）
+        print(f'Existing file: {retry_path.name} ({len(existing_results)} countries)')
+        # Align the search period with the existing file to avoid time-series drift.
         existing_published_after = existing.get('published_after')
         if existing_published_after:
             published_after = existing_published_after
-            print(f'  検索期間(after)は既存ファイルに揃える: {published_after}')
+            print(f'  Aligning search period (after) with existing file: {published_after}')
         existing_published_before = existing.get('published_before')
         if existing_published_before:
             published_before = existing_published_before
-            print(f'  検索期間(before)は既存ファイルに揃える: {published_before}')
+            print(f'  Aligning search period (before) with existing file: {published_before}')
 
         failed_codes = [c['code'] for c in countries
                         if is_failed_entry(existing_results.get(c['code']))]
-        print(f'  再取得対象: {len(failed_codes)} カ国 ({", ".join(failed_codes)})')
+        print(f'  Re-fetch targets: {len(failed_codes)} countries ({", ".join(failed_codes)})')
         target_countries = [c for c in countries if c['code'] in failed_codes]
     else:
         target_countries = countries
     print()
 
     if args.dry_run:
-        print('=== DRY RUN: クエリ一覧 ===')
+        print('=== DRY RUN: Query list ===')
         for c in target_countries:
             q = build_query(c, soccer_words)
             max_r = MAX_RESULTS_PER_COUNTRY
@@ -275,16 +289,17 @@ def main():
         return
 
     if not target_countries:
-        print('再取得対象が0カ国です。終了します。')
+        print('There are 0 countries to re-fetch. Exiting.')
         return
 
     rotator = YouTubeKeyRotator(api_keys)
 
-    # 既存結果を初期値として持つ
+    # Use existing results as the initial value.
     results = dict(existing_results)
     processed_region_codes = set()
 
-    # --retry-from で既に成功していた国の regionCode は処理済みに登録
+    # For --retry-from, register the regionCodes of countries that already
+    # succeeded as processed.
     if args.retry_from:
         for code, entry in existing_results.items():
             if not is_failed_entry(entry):
@@ -294,12 +309,12 @@ def main():
     for idx, country in enumerate(target_countries, 1):
         code = country['code']
         is_priority = country.get('is_priority', False)
-        max_results = MAX_RESULTS_PER_COUNTRY  # 全国一律
+        max_results = MAX_RESULTS_PER_COUNTRY  # Uniform across all countries
         effective_region = 'GB' if code == 'SC' else code
 
         if effective_region in processed_region_codes:
             print(f"[{idx:2d}/{len(target_countries)}] {code} ({country['name_ja']}) ... "
-                  f"regionCode={effective_region} 既処理スキップ")
+                  f"regionCode={effective_region} already processed; skipping")
             results[code] = {
                 'country_name_ja': country['name_ja'],
                 'country_name_en': country['name_en'],
@@ -328,16 +343,16 @@ def main():
             **result,
         }
         processed_region_codes.add(effective_region)
-        print(f"    -> {result['video_count']} 件取得")
+        print(f"    -> Retrieved {result['video_count']} items")
 
-        # 各リクエスト後にレート緩和スリープ
+        # Sleep after each request to reduce rate pressure.
         if idx < len(target_countries):
             time.sleep(args.sleep)
 
-    # 全国の累計
+    # Nationwide cumulative total
     total_videos = sum(v.get('video_count', 0) for v in results.values())
 
-    # 保存
+    # Save
     DATA_DIR.mkdir(exist_ok=True)
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
     if args.target_date:
@@ -361,17 +376,17 @@ def main():
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
 
-    print(f'\n=== 完了 ===')
-    print(f'  合計動画ID数: {total_videos}')
-    print(f'  保存先: {output_path}')
+    print(f'\n=== Completed ===')
+    print(f'  Total video IDs: {total_videos}')
+    print(f'  Saved to: {output_path}')
 
     error_countries = [c for c, v in results.items() if is_failed_entry(v)]
     if error_countries:
-        print(f'  失敗した国: {len(error_countries)} カ国 ({", ".join(error_countries)})')
-        print(f'  -> 失敗国だけ再取得するには:')
+        print(f'  Failed countries: {len(error_countries)} ({", ".join(error_countries)})')
+        print(f'  -> To re-fetch only failed countries:')
         print(f'     python {Path(__file__).name} --retry-from {output_path}')
     else:
-        print(f'  全国成功 ✓')
+        print(f'  All countries succeeded ✓')
 
 
 if __name__ == '__main__':
