@@ -1,25 +1,28 @@
 #!/usr/bin/env python3
 """
-build_stats_page.py — データから統計ページ(docs/<日付>/index.html)を生成する
+build_stats_page.py — Generates statistics pages (docs/<date>/index.html) from data.
 
-data/<YYYYMMDD>/ 配下の phase7_with_buzz_score_*.json（動画メタ＋stats＋buzz）と
-comment_analysis_*.json（感情・テーマ）を読み、サッカー動画バズの統計を集計して
-GitHub Pages 用の自己完結HTMLを書き出す。
+Reads phase7_with_buzz_score_*.json (video metadata + stats + buzz) and
+comment_analysis_*.json (sentiment and themes) under data/<YYYYMMDD>/, aggregates
+statistics for buzzing soccer videos, and writes a self-contained HTML page for
+GitHub Pages.
 
-仕様:
-- 出力日付は data/ 配下の YYYYMMDD フォルダ名から判定する（実行日ではない）
-- 引数なし : 最新の YYYYMMDD フォルダ1つを処理
-- -all     : data/ 配下の全 YYYYMMDD フォルダを処理し、各 docs/<日付>/ を生成
-- YYYYMMDD フォルダが1つも無い場合はエラー終了
-- phase7 / comment_analysis は同じ日付フォルダ内のファイルから読む
-- ページは英語デフォルト＋日本語トグル（再読み込みなし / localStorage 記憶）
-- 引用・拡散対策: OGP / Twitter Card / canonical / JSON-LD / 引用文コピー /
-  X・Facebook・LINE 共有 / Web Share API / リンクコピー、スマホ最適化
-- 依存ライブラリなし（標準ライブラリのみ）
+Specification:
+- The output date is determined from YYYYMMDD folder names under data/ rather than
+  the execution date.
+- No arguments: process the latest YYYYMMDD folder only.
+- -all: process all YYYYMMDD folders under data/ and generate each docs/<date>/ page.
+- Exit with an error if no YYYYMMDD folder exists.
+- phase7 and comment_analysis are read from files in the same date folder.
+- Pages default to English and provide a language toggle without reload, persisted
+  through localStorage.
+- Citation and sharing support: OGP, Twitter Card, canonical, JSON-LD, citation copy,
+  X/Facebook/LINE sharing, Web Share API, link copy, and mobile optimization.
+- No external libraries are required; the standard library is enough.
 
-実行:
-    python build_stats_page.py        # 最新の日付フォルダ
-    python build_stats_page.py -all   # 全日付フォルダ
+Run:
+    python build_stats_page.py        # Latest date folder
+    python build_stats_page.py -all   # All date folders
 """
 
 import os
@@ -30,38 +33,38 @@ import json
 import html
 from collections import Counter, defaultdict
 
-# ==== 編集ポイント：自分のURLに合わせて ====
-TUBESAKU_URL = "https://tubesaku.com"            # データ提供元
+# ==== Edit points: customize these URLs ====
+TUBESAKU_URL = "https://tubesaku.com"            # Data source
 TUBESAKU_LABEL = "TubeSaku — YouTube creator and video trend analysis"
-SEARCH_URL = "https://soccer.tubesaku.com"       # 検索ページ（旧 live agent の置き換え）
+SEARCH_URL = "https://soccer.tubesaku.com"       # Search page, replacing the old live agent
 SEARCH_LABEL = "SoccerScope World Cup 2026 Search"
-PAGE_URL = "https://webbigdata-jp.github.io/soccerscope/"  # 公開URL（OGP / canonical / JSON-LD 用）
-OGP_IMAGE_URL = PAGE_URL.rstrip("/") + "/images/soccerscope-ogp.png"  # docs/images/ に配置
+PAGE_URL = "https://webbigdata-jp.github.io/soccerscope/"  # Public URL for OGP, canonical, and JSON-LD
+OGP_IMAGE_URL = PAGE_URL.rstrip("/") + "/images/soccerscope-ogp.png"  # Place this under docs/images/
 TOP_N = 10
 WORLD_CUP_EN = "FIFA World Cup 2026"
-WORLD_CUP_JA = "FIFAワールドカップ2026"
+WORLD_CUP_JA = "FIFA World Cup 2026"
 SEO_KEYWORDS = [
     "FIFA World Cup 2026", "World Cup 2026", "2026 FIFA World Cup",
     "football video trends", "soccer video trends", "YouTube football trends",
     "viral soccer videos", "fan reactions", "sentiment analysis", "TubeSaku",
-    "ワールドカップ2026", "FIFAワールドカップ2026", "サッカー動画", "YouTubeトレンド",
-    "海外サッカー動画", "ファンコメント分析", "サッカー動画分析",
+    "World Cup 2026", "FIFA World Cup 2026", "soccer videos", "YouTube trends",
+    "international soccer videos", "fan comment analysis", "soccer video analysis",
 ]
-# ==== Schema.org / ライセンス関連 ====
+# ==== Schema.org / license-related settings ====
 ORG_NAME = "TubeSaku"
-# 検索ページ（ブランド名）。CTAボタンの行き先。
+# Search page brand name and CTA button destination.
 SEARCH_BRAND = "SOCCER·SCOPE"
-# 組織ロゴ（できれば正方形 112×112 以上を docs/images/ に配置）。無ければOGP画像で代用。
+# Organization logo. Prefer a square 112x112 or larger image under docs/images/. Use the OGP image as a fallback if absent.
 LOGO_URL = PAGE_URL.rstrip("/") + "/images/soccerscope-logo.png"
-# データセットのライセンス：集計・分析(統計値)に対して CC BY 4.0（出典 TubeSaku）。
+# Dataset license: CC BY 4.0 for aggregated and analyzed statistics, attributed to TubeSaku.
 DATA_LICENSE_URL = "https://creativecommons.org/licenses/by/4.0/"
-# ライセンスのスコープ注記（人間可読）への内部アンカー。
+# Internal anchor for the human-readable license scope note.
 DATA_USAGE_INFO = PAGE_URL.rstrip("/") + "/#data-license"
 
-# ナレーション（Gemini）設定。APIキー(GEMINI_API_KEY/GOOGLE_API_KEY)が無ければ自動でスキップ。
+# Narration (Gemini) settings. Automatically skipped when no API key is available.
 GEMINI_MODEL = os.environ.get("SOCCER_NARRATE_MODEL", "gemini-3.1-flash-lite")
-NARRATE_TOP_N = 10           # ナレーションを付ける動画数
-NARRATE_COMMENTS_PER_VIDEO = 0  # 生コメントは既定で渡さない（既存の分析結果を使う）
+NARRATE_TOP_N = 10           # Number of videos to narrate
+NARRATE_COMMENTS_PER_VIDEO = 0  # Do not pass raw comments by default; use existing analysis results.
 
 
 GTM_HEAD = """
@@ -81,8 +84,8 @@ GTM_HEAD = """
 DATA_DIR = "data"
 DOCS_DIR = "../docs"
 
-# ナレーション(②)を使う場合の API キーを .env から拾えるようにする（任意・無くても可）。
-# python-dotenv が無ければ何もしない（その場合はシェル環境変数を使う）。
+# Allow narration step 2 to load an API key from .env; optional and safe to omit.
+# If python-dotenv is unavailable, do nothing and use shell environment variables.
 try:  # noqa: SIM105
     from dotenv import load_dotenv as _load_dotenv
     for _p in (".env", os.path.join("git", "soccer_agent", ".env"), os.path.join("..", ".env")):
@@ -93,12 +96,12 @@ except Exception:  # noqa: BLE001
 
 
 def esc(s):
-    """属性値・テキスト共用のHTMLエスケープ。"""
+    """Escape HTML for both attribute values and text."""
     return html.escape("" if s is None else str(s), quote=True)
 
 
 def tspan(en, ja, cls=None, tag="span"):
-    """英語/日本語を data 属性に持ち、初期表示は英語のトグル対応要素を返す。"""
+    """Return a toggle-ready element with English/Japanese text in data attributes; English is shown initially."""
     c = f' class="{cls}"' if cls else ""
     return f'<{tag}{c} data-en="{esc(en)}" data-ja="{esc(ja)}">{esc(en)}</{tag}>'
 
@@ -121,10 +124,10 @@ def readable(date_str):
 
 
 def list_date_dirs():
-    """data/ 直下の YYYYMMDD（8桁数字）フォルダ名を昇順で返す。
-    （後方互換のため残すが、process_date系のメインロジックでは
-    resolve_target_date_files() を使う。フォルダ名は「実行日」であり
-    「収集対象日(--target-date)」と一致しない場合があるため。）"""
+    """Return YYYYMMDD folder names directly under data/ in ascending order.
+    This remains for backward compatibility, but the main process_date logic uses
+    resolve_target_date_files() because folder names are execution dates and may
+    not match collection target dates (--target-date)."""
     if not os.path.isdir(DATA_DIR):
         return []
     out = []
@@ -135,32 +138,33 @@ def list_date_dirs():
 
 
 def find_in_dir(dirpath, *patterns):
-    """指定フォルダ内で、パターンに一致する最新ファイル（ファイル名順）を返す。"""
+    """Return the latest filename-matching file in the specified folder, sorted by filename."""
     hits = []
     for pat in patterns:
         hits += glob.glob(os.path.join(dirpath, pat))
     return max(hits, key=lambda p: os.path.basename(p)) if hits else None
 
 
-# ---- target_date(収集対象日)ベースのファイル対応付け ----------------------
+# ---- File mapping based on target_date, the collection target date ----------------------
 #
-# data/<実行日>/ フォルダ名は「処理を実行した日」であり、run_backfill.sh等で
-# 過去日(--target-date)をまとめて取り直すと、1つの実行日フォルダに複数の
-# 収集対象日のファイルが混在する。さらに 3_analyze_comments.py の再実行
-# （is_soccer_related判定の遡及適用等）で comment_analysis_*.json が
-# 同じ収集セットに対して複数回・離れたタイミングで生成されることもある。
+# data/<execution-date>/ folders are named after the date the process was run.
+# When run_backfill.sh or similar scripts recollect past dates (--target-date),
+# one execution-date folder can contain files for multiple collection target dates.
+# In addition, rerunning 3_analyze_comments.py, for example to retroactively apply
+# is_soccer_related judgments, can create multiple comment_analysis_*.json files
+# for the same collection set at separate times.
 #
-# ファイル名のタイムスタンプの近さで「同じセットだろう」と推測する方式は
-# この運用では成立しない（再分析が何時間も後に走るため）。
-# 各中間JSONが持つ source_file フィールド（生成元ファイル名）を
-# comment_analysis -> phase4 -> phase7 -> phase3 -> phase2 と確実に
-# 辿ることで対応付ける。曖昧な推測は一切行わない。
+# Therefore, guessing "probably the same set" from nearby filename timestamps does
+# not work in this workflow because reanalysis can run many hours later. Instead,
+# follow the source_file fields in each intermediate JSON deterministically:
+# comment_analysis -> phase4 -> phase7 -> phase3 -> phase2. Do not use ambiguous
+# guessing at all.
 
 def _index_files_by_basename(*filename_globs):
-    """data/ 配下（直下 + 1階層下のYYYYMMDDフォルダ）を横断探索し、
-    ファイル名(basename) -> フルパス の辞書を作る。
-    同名ファイルが複数箇所にある場合はmtimeが新しい方を使う
-    （通常は起こらないが、安全側の挙動として）。"""
+    """Search across data/ directly and one-level-down YYYYMMDD folders, then build a
+    mapping from filename basename to full path. If the same basename exists in
+    multiple locations, keep the file with the newer mtime. This normally should
+    not happen, but it is the safer behavior."""
     index = {}
     search_dirs = [DATA_DIR]
     if os.path.isdir(DATA_DIR):
@@ -182,30 +186,30 @@ def _safe_load_json(path):
         with open(path, encoding="utf-8") as f:
             return json.load(f)
     except Exception as e:  # noqa: BLE001
-        print(f"  WARN: 読み込み失敗 {path}: {e}", file=sys.stderr)
+        print(f"  WARN: failed to read {path}: {e}", file=sys.stderr)
         return None
 
 
 def resolve_target_date_files():
-    """収集対象日(target_date) -> {"phase7": path, "comment_analysis": path|None,
-    "phase2": path} の辞書を、target_date昇順で返す。
+    """Return a dictionary sorted by target_date ascending:
+    target_date -> {"phase7": path, "comment_analysis": path|None, "phase2": path}.
 
-    対応付けは source_file チェーンを確実に辿って行う:
-      comment_analysis.source_file -> phase4ファイル
-      phase4.source_file           -> phase7ファイル
-      phase7.source_file           -> phase3ファイル
-      phase3.source_file           -> phase2ファイル
-      phase2.target_date           -> 収集対象日
-        （phase2に target_date フィールドが無い古い形式の場合は、
-          phase2のファイル名 phase2_video_ids_{target_date}_{ts}.json から
-          target_dateを取る。--target-date無し実行の場合はファイル名が
-          phase2_video_ids_{ts}.json のみなので、tsの日付部分を使う。
-          いずれも「ファイル名から読み取れる確定情報」であり、タイムスタンプの
-          近さによる推測ではない点に注意）。
+    Mapping is done by reliably following the source_file chain:
+      comment_analysis.source_file -> phase4 file
+      phase4.source_file           -> phase7 file
+      phase7.source_file           -> phase3 file
+      phase3.source_file           -> phase2 file
+      phase2.target_date           -> collection target date
+        For older phase2 files without a target_date field, read target_date from
+        the filename phase2_video_ids_{target_date}_{ts}.json. If it was run
+        without --target-date, the filename is only phase2_video_ids_{ts}.json, so
+        use the date portion of ts. In every case, this is deterministic
+        information read from the filename rather than a guess based on timestamp
+        proximity.
 
-    1つのtarget_dateに対して comment_analysis が複数存在する場合（再分析の
-    繰り返し）は、analysesの中身ではなく各comment_analysisファイル自身の
-    generated_at が最も新しいものを採用する。
+    If multiple comment_analysis files exist for one target_date due to repeated
+    reanalysis, adopt the one whose comment_analysis file has the newest generated_at,
+    rather than looking inside the analyses contents.
     """
     phase2_index = _index_files_by_basename("phase2_video_ids_*.json")
     phase3_index = _index_files_by_basename("phase3_metadata_*.json")
@@ -217,7 +221,7 @@ def resolve_target_date_files():
         data = _safe_load_json(phase2_path)
         if data and data.get("target_date"):
             return data["target_date"].replace("-", "")
-        # target_dateフィールドが無い場合はファイル名から読み取る
+        # If the target_date field is absent, read it from the filename.
         m = re.match(r'phase2_video_ids_(\d{8})_\d{8}_\d{6}\.json$', phase2_name)
         if m:
             return m.group(1)
@@ -226,17 +230,17 @@ def resolve_target_date_files():
             return m2.group(1)
         return None
 
-    # phase2ファイルごとの target_date をあらかじめ全部解決しておく
+    # Resolve target_date for every phase2 file in advance.
     phase2_target_date_by_name = {}
     for name, path in phase2_index.items():
         td = phase2_target_date(path, name)
         if td:
             phase2_target_date_by_name[name] = td
         else:
-            print(f"  WARN: {name} から target_date を特定できません。", file=sys.stderr)
+            print(f"  WARN: {name}  could not be resolved to a target_date.", file=sys.stderr)
 
     # comment_analysis -> phase4 -> phase7 -> phase3 -> phase2 -> target_date
-    # のチェーンを辿り、target_date -> [(generated_at, ca_path, phase7_path, phase2_path), ...]
+    # Follow the chain and build target_date -> [(generated_at, ca_path, phase7_path, phase2_path), ...]
     by_target_date = {}
     for ca_name, ca_path in ca_index.items():
         ca_data = _safe_load_json(ca_path)
@@ -245,7 +249,7 @@ def resolve_target_date_files():
         phase4_name = ca_data.get("source_file")
         phase4_path = phase4_index.get(phase4_name) if phase4_name else None
         if not phase4_path:
-            print(f"  WARN: {ca_name} の source_file='{phase4_name}' が見つかりません。スキップ。",
+            print(f"  WARN: {ca_name} source_file='{phase4_name}'  was not found. Skipping.",
                   file=sys.stderr)
             continue
 
@@ -255,7 +259,7 @@ def resolve_target_date_files():
         phase7_name = phase4_data.get("source_file")
         phase7_path = phase7_index.get(phase7_name) if phase7_name else None
         if not phase7_path:
-            print(f"  WARN: {phase4_name} の source_file='{phase7_name}' が見つかりません。スキップ。",
+            print(f"  WARN: {phase4_name} source_file='{phase7_name}'  was not found. Skipping.",
                   file=sys.stderr)
             continue
 
@@ -265,7 +269,7 @@ def resolve_target_date_files():
         phase3_name = phase7_data.get("source_file")
         phase3_path = phase3_index.get(phase3_name) if phase3_name else None
         if not phase3_path:
-            print(f"  WARN: {phase7_name} の source_file='{phase3_name}' が見つかりません。スキップ。",
+            print(f"  WARN: {phase7_name} source_file='{phase3_name}'  was not found. Skipping.",
                   file=sys.stderr)
             continue
 
@@ -274,20 +278,21 @@ def resolve_target_date_files():
             continue
         phase2_name = phase3_data.get("source_file")
         if not phase2_name or phase2_name not in phase2_target_date_by_name:
-            print(f"  WARN: {phase3_name} の source_file='{phase2_name}' "
-                  f"に対応するtarget_dateが見つかりません。スキップ。", file=sys.stderr)
+            print(f"  WARN: {phase3_name} source_file='{phase2_name}' "
+                  f"has no matching target_date. Skipping.", file=sys.stderr)
             continue
         target_date = phase2_target_date_by_name[phase2_name]
         phase2_path = phase2_index[phase2_name]
 
-        generated_at = ca_data.get("generated_at", "")  # 文字列比較で新旧判定（ISO8601想定）
+        generated_at = ca_data.get("generated_at", "")  # Determine newest/oldest through string comparison; ISO 8601 is assumed.
         by_target_date.setdefault(target_date, []).append(
             (generated_at, ca_path, phase7_path, phase2_path)
         )
 
-    # phase2はあるがcomment_analysisまで辿り着けなかった（コメント分析未実施）日も、
-    # phase2 -> phase3 -> phase7 のチェーンだけで拾えるなら拾う
-    # （comment_analysisがNoneの状態でページ生成自体は可能なため）。
+    # Also pick up days where phase2 exists but comment_analysis cannot be traced,
+    # likely because comment analysis has not been run yet, if they can be found
+    # through the phase2 -> phase3 -> phase7 chain alone. Page generation can still
+    # proceed with comment_analysis set to None.
     phase3_by_phase2name = {}
     for p3_name, p3_path in phase3_index.items():
         p3_data = _safe_load_json(p3_path)
@@ -296,15 +301,15 @@ def resolve_target_date_files():
 
     result = {}
     for target_date, candidates in by_target_date.items():
-        # generated_atが最も新しいもの（=最新の再分析結果）を採用
+        # Adopt the newest generated_at value, i.e. the latest reanalysis result.
         candidates.sort(key=lambda c: c[0])
         _generated_at, ca_path, phase7_path, phase2_path = candidates[-1]
         if len(candidates) > 1:
-            print(f"  INFO: target_date={target_date} の comment_analysis が"
-                  f"{len(candidates)}件見つかりました。最新を採用: {os.path.basename(ca_path)}")
+            print(f"  INFO: target_date={target_date} comment_analysis entries: "
+                  f"{len(candidates)} entries found. Using the latest: {os.path.basename(ca_path)}")
         result[target_date] = {"phase7": phase7_path, "comment_analysis": ca_path, "phase2": phase2_path}
 
-    # comment_analysisチェーンで拾えなかったtarget_dateを、phase2->phase3->phase7だけで補完
+    # Fill target_dates not found through the comment_analysis chain using only phase2 -> phase3 -> phase7.
     for phase2_name, target_date in phase2_target_date_by_name.items():
         if target_date in result:
             continue
@@ -312,13 +317,13 @@ def resolve_target_date_files():
         p3_candidates = phase3_by_phase2name.get(phase2_name, [])
         if not p3_candidates:
             continue
-        # 複数あれば最初に見つかったものを使う（同名衝突は通常起きない想定）
+        # If multiple exist, use the first found; name collisions are not expected normally.
         _p3_name, p3_path = p3_candidates[0]
         p3_data = _safe_load_json(p3_path)
         if not p3_data:
             continue
-        # phase7はphase3のsource_fileを参照する側なので逆引きが必要。
-        # phase7_indexの中からsource_file==p3_nameのものを探す。
+        # phase7 references the phase3 source_file, so a reverse lookup is required.
+        # Search phase7_index for the item whose source_file == p3_name.
         matched_phase7 = None
         for p7_name, p7_path in phase7_index.items():
             p7_data = _safe_load_json(p7_path)
@@ -326,11 +331,11 @@ def resolve_target_date_files():
                 matched_phase7 = p7_path
                 break
         if not matched_phase7:
-            print(f"  WARN: target_date={target_date} はcomment_analysis未生成で、"
-                  f"対応するphase7も見つからないためスキップします。", file=sys.stderr)
+            print(f"  WARN: target_date={target_date}  has no generated comment_analysis, and "
+                  f"the matching phase7 was not found, so it will be skipped.", file=sys.stderr)
             continue
-        print(f"  INFO: target_date={target_date} はcomment_analysis未生成。"
-              f"動画データのみでページ生成します。")
+        print(f"  INFO: target_date={target_date}  has no generated comment_analysis. "
+              f"Generating the page with video data only.")
         result[target_date] = {"phase7": matched_phase7, "comment_analysis": None, "phase2": phase2_path}
 
     return result
@@ -343,15 +348,18 @@ def load_json(path):
 
 def attach_countries_from_phase2(videos, phase2_path):
     """
-    (b) 多対多: phase2 の検索結果から、各動画に「出現したすべての国」を付ける。
-    同じ日付フォルダの phase2_video_ids_*.json だけを使い、API も Mongo も触らない。
+    (b) Many-to-many: attach every country where each video appeared based on phase2
+    search results. Use only phase2_video_ids_*.json from the same date folder;
+    do not call the API or MongoDB.
 
-    各 video に以下を追加する:
-      v["countries"] : 出現国コードのリスト（その国の検索結果に出た順位昇順）
-      v["reach"]     : 出現国数
-    phase2 に無い動画は v["country"]（あれば）を単独要素にフォールバックする。
+    Adds the following to each video:
+      v["countries"]: list of country codes where it appeared, sorted by ranking
+                      order in each country's search results
+      v["reach"]    : number of countries where it appeared
+    Videos absent from phase2 fall back to a single-element v["country"] value if present.
 
-    戻り値: (name_en, name_ja, lang_by_code) … code -> 表示名 / 主要言語 の辞書
+    Returns (name_en, name_ja, lang_by_code), dictionaries mapping code to display
+    name and primary language.
     """
     name_en, name_ja, lang_by_code = {}, {}, {}
     appear = {}  # vid -> [(rank, code)]
@@ -368,11 +376,11 @@ def attach_countries_from_phase2(videos, phase2_path):
         vid = v.get("video_id")
         lst = appear.get(vid)
         if lst:
-            countries = [code for _rank, code in sorted(lst)]  # 順位の良い国順
+            countries = [code for _rank, code in sorted(lst)]  # Countries with better ranks first
         else:
             c = v.get("country")
             countries = [c] if c else []
-            if c:  # フォールバック動画の表示名も拾っておく
+            if c:  # Also keep display names for fallback videos.
                 name_en.setdefault(c, v.get("country_name_en") or v.get("country_name_ja") or c)
                 name_ja.setdefault(c, v.get("country_name_ja") or v.get("country_name_en") or c)
                 lang_by_code.setdefault(c, v.get("primary_lang", ""))
@@ -382,10 +390,11 @@ def attach_countries_from_phase2(videos, phase2_path):
 
 
 def aggregate_team_mentions(analyses):
-    """comment_analysis 各動画の mentioned_teams を集計し、言及数の多い順に返す。
-    各 analysis は mentioned_teams:[{team, sentiment(positive/neutral/negative), mention_count}]
-    を持つ想定。無ければ空リスト（=セクション非表示）。
-    戻り値: [{team, mentions, positive, neutral, negative, lean}] を mentions 降順。
+    """Aggregate mentioned_teams from each comment_analysis video and return them in
+    descending order by mention count. Each analysis is expected to have
+    mentioned_teams: [{team, sentiment(positive/neutral/negative), mention_count}].
+    If absent, return an empty list so the section is hidden.
+    Returns [{team, mentions, positive, neutral, negative, lean}] sorted by mentions descending.
     """
     agg = {}
     for a in analyses.values():
@@ -407,20 +416,22 @@ def aggregate_team_mentions(analyses):
 
 
 def narrate_top_videos(top_videos, analyses, name_en, lang_by_code):
-    """上位動画に日英の短いコメントを Gemini で付ける（②）。
-    APIキー未設定 / SDK未導入 / 失敗時は {} を返してスキップ（ページ生成は継続）。
-    嘘防止のため、コメントは全世界1プールである事を前提に「各国民の意見の創作」を禁じ、
-    出現国・言語・全体感情・言及チームなどの事実のみを根拠にさせる。
-    戻り値: {video_id: {"en": str, "ja": str}}
+    """Add short English/Japanese blurbs to top videos with Gemini, step 2.
+    If the API key is unset, the SDK is unavailable, or generation fails, return {}
+    and skip narration while continuing page generation. To prevent fabrication,
+    assume comments are one global pool and prohibit inventing per-nationality
+    opinions. Use only facts such as countries where the video appeared, languages,
+    overall sentiment, and mentioned teams.
+    Returns {video_id: {"en": str, "ja": str}}.
     """
     if not (os.environ.get("GEMINI_API_KEY")):
-        print("  ナレーション: APIキー未設定のためスキップ", file=sys.stderr)
+        print("  Narration: API key is not set, skipping", file=sys.stderr)
         return {}
     try:
         from google import genai
         from google.genai import types
     except Exception as e:  # noqa: BLE001
-        print(f"  ナレーション: google-genai 未導入のためスキップ ({e})", file=sys.stderr)
+        print(f"  Narration: google-genai is not installed, skipping ({e})", file=sys.stderr)
         return {}
 
     items = []
@@ -467,7 +478,7 @@ def narrate_top_videos(top_videos, analyses, name_en, lang_by_code):
         )
         data = json.loads(resp.text)
     except Exception as e:  # noqa: BLE001
-        print(f"  ナレーション: 生成失敗のためスキップ ({e})", file=sys.stderr)
+        print(f"  Narration: generation failed, skipping ({e})", file=sys.stderr)
         return {}
 
     out = {}
@@ -476,11 +487,11 @@ def narrate_top_videos(top_videos, analyses, name_en, lang_by_code):
         if vid:
             out[vid] = {"en": (d.get("blurb_en") or "").strip(),
                         "ja": (d.get("blurb_ja") or "").strip()}
-    print(f"  ナレーション: {len(out)}/{len(items)} 件生成")
+    print(f"  Narration: {len(out)}/{len(items)} generated")
     return out
 
 
-# ---- 共通: クライアント側のトグル / 共有 JS（素の文字列。f-string にしない）----
+# ---- Shared client-side toggle and sharing JS. Raw string; do not make it an f-string. ----
 PAGE_JS = """
 <script>
 (function(){
@@ -503,7 +514,7 @@ PAGE_JS = """
     var ct = document.getElementById('citeText');
     if(ct && c.cite && c.cite[l]) ct.textContent = c.cite[l];
     var btn = document.getElementById('langBtn');
-    if(btn) btn.textContent = (l==='en') ? '日本語' : 'English';
+    if(btn) btn.textContent = (l==='en') ? 'Japanese' : 'English';
     store(l);
   }
   function shareUrl(){ var c=cfg(); return c.url || location.href; }
@@ -567,7 +578,7 @@ PAGE_JS = """
 
 def ss_config_script(url, title_en, title_ja, desc_en, desc_ja,
                      share_en, share_ja, cite_en, cite_ja):
-    """言語別の title / desc / 共有文 / 引用文を JS に渡す（XSS安全に json.dumps）。"""
+    """Pass language-specific title, description, share text, and citation text to JS using XSS-safe json.dumps."""
     cfg = {
         "url": url,
         "title": {"en": title_en, "ja": title_ja},
@@ -580,7 +591,7 @@ def ss_config_script(url, title_en, title_ja, desc_en, desc_ja,
 
 
 def head_meta(title_en, desc_en, canonical_url):
-    """OGP / Twitter Card / canonical（英語=デフォルトをクローラに渡す）。"""
+    """OGP, Twitter Card, and canonical metadata. Crawlers receive English as the default."""
     img_alt = "SoccerScope — FIFA World Cup 2026 YouTube football trends"
     return (
         '<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">'
@@ -606,12 +617,13 @@ def head_meta(title_en, desc_en, canonical_url):
     )
 
 
-# --- Schema.org 共通エンティティ & UI部品 -------------------------------------
+# --- Shared Schema.org entities and UI components -------------------------------------
 
 def world_cup_event():
-    """ワールドカップ2026を表す完全な SportsEvent。
-    Google Event の必須(name/startDate/location)＋推奨(endDate/eventStatus/
-    eventAttendanceMode/organizer/description)を充足し、構造化データエラーを解消する。"""
+    """Return a complete SportsEvent for World Cup 2026. This satisfies required
+    Google Event fields (name/startDate/location) and recommended fields
+    (endDate/eventStatus/eventAttendanceMode/organizer/description), avoiding
+    structured data errors."""
     return {
         "@type": "SportsEvent",
         "name": WORLD_CUP_EN,
@@ -635,7 +647,7 @@ def world_cup_event():
 
 
 def organization_jsonld():
-    """発行組織(TubeSaku)。検索でのロゴ表示・ナレッジグラフ向け。"""
+    """Publisher organization, TubeSaku, for search logo display and Knowledge Graph use."""
     return {
         "@context": "https://schema.org", "@type": "Organization",
         "name": ORG_NAME, "url": TUBESAKU_URL, "logo": LOGO_URL,
@@ -644,7 +656,7 @@ def organization_jsonld():
 
 
 def website_jsonld():
-    """サイト全体を表す WebSite エンティティ。"""
+    """WebSite entity representing the entire site."""
     return {
         "@context": "https://schema.org", "@type": "WebSite",
         "name": "SoccerScope",
@@ -656,7 +668,7 @@ def website_jsonld():
 
 
 def breadcrumb_jsonld(readable_date, dated_url):
-    """日別ページ用パンくず（Home → 日付）。Googleのパンくずリッチリザルト対応。"""
+    """Breadcrumbs for daily pages, Home -> date, compatible with Google breadcrumb rich results."""
     return {
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
@@ -668,63 +680,63 @@ def breadcrumb_jsonld(readable_date, dated_url):
 
 
 def jsonld_blocks(*objs):
-    """複数のJSON-LDオブジェクトを <script> ブロック群にまとめる。"""
+    """Combine multiple JSON-LD objects into script blocks."""
     return "".join('<script type="application/ld+json">'
                    + json.dumps(o, ensure_ascii=False) + "</script>" for o in objs)
 
 
 def search_cta_html():
-    """検索ページ(SOCCER·SCOPE / soccer.tubesaku.com)への目立つCTAボタン。"""
+    """Prominent CTA button to the search page, SOCCER·SCOPE / soccer.tubesaku.com."""
     return (
         '<div class="cta-wrap">'
         f'<a class="cta" href="{SEARCH_URL}" rel="noopener">'
         + tspan("⚽ Search World Cup 2026 videos & creators",
-                "⚽ ワールドカップ2026の動画・クリエイターを検索")
+                "⚽ Search World Cup 2026 videos and creators")
         + '<span class="cta-arrow num">&rarr;</span></a>'
         + tspan(f"Open {SEARCH_BRAND} — search engine for World Cup 2026 football videos, creators & posts",
-                f"{SEARCH_BRAND} を開く — ワールドカップ2026のサッカー動画・クリエイター・投稿を検索",
+                f"Open {SEARCH_BRAND} — search World Cup 2026 soccer videos, creators, and posts",
                 cls="cta-sub")
         + '</div>'
     )
 
 
 def license_note_html():
-    """フッター用の人間可読なライセンス注記（CC BY 4.0＋YouTube素材は対象外）。"""
+    """Human-readable license note for the footer, covering CC BY 4.0 and excluding YouTube assets."""
     return (
         '<p class="license" id="data-license">'
         + tspan("Statistics & analysis by TubeSaku are licensed under ",
-                "TubeSaku による統計・分析は ")
+                "Statistics and analysis by TubeSaku are licensed under ")
         + f'<a href="{DATA_LICENSE_URL}" rel="noopener license">CC BY 4.0</a>'
         + tspan(". Underlying YouTube videos, titles, thumbnails and comments remain the property "
                 "of YouTube and their respective creators, and are not covered by this license.",
-                " で提供されます。元となる YouTube 動画・タイトル・サムネイル・コメント等の権利は "
-                "YouTube および各制作者に帰属し、本ライセンスの対象には含まれません。")
+                " The underlying YouTube videos, titles, thumbnails, comments, and similar assets remain the property of "
+                "YouTube and their respective creators, and are not covered by this license.")
         + '</p>'
     )
 
 
 def share_cite_section(heading_en, heading_ja, cite_en):
-    """共有ボタン＋引用ブロック。引用枠は英語を初期表示し、言語切替で __SS__ から差し替え。"""
+    """Sharing buttons plus a citation block. The citation starts in English and is swapped from __SS__ on language change."""
     return (
         '<section class="card">'
         '<h2>' + tspan(heading_en, heading_ja) + '</h2>'
         '<div class="share">'
-        + tspan("Share", "共有", cls="sbtn primary", tag="button").replace("<button", '<button id="shareBtn"')
+        + tspan("Share", "Share", cls="sbtn primary", tag="button").replace("<button", '<button id="shareBtn"')
         + '<a href="#" data-share="x" class="sbtn">X</a>'
         + '<a href="#" data-share="facebook" class="sbtn">Facebook</a>'
         + '<a href="#" data-share="line" class="sbtn">LINE</a>'
-        + tspan("Copy link", "リンクをコピー", cls="sbtn", tag="button").replace("<button", '<button id="copyLinkBtn"')
+        + tspan("Copy link", "Copy link", cls="sbtn", tag="button").replace("<button", '<button id="copyLinkBtn"')
         + '</div>'
         '<div class="cite">'
-        + tspan("Cite this snapshot", "このデータを引用", cls="cite-h")
+        + tspan("Cite this snapshot", "Cite this snapshot", cls="cite-h")
         + f'<code id="citeText">{esc(cite_en)}</code>'
-        + tspan("Copy citation", "引用文をコピー", cls="sbtn", tag="button").replace("<button", '<button id="copyCiteBtn"')
+        + tspan("Copy citation", "Copy citation", cls="sbtn", tag="button").replace("<button", '<button id="copyCiteBtn"')
         + '</div>'
         '</section>'
     )
 
 
-# 共通スタイル（言語トグル・共有・引用・トースト）。素の文字列。
+# Shared styles for the language toggle, sharing, citation, and toast. Raw string.
 SHARED_UI_CSS = (
     ".topbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}"
     ".langtog{background:transparent;border:1px solid var(--line);color:var(--text);border-radius:999px;"
@@ -747,7 +759,7 @@ SHARED_UI_CSS = (
     "color:#06231a;font-weight:700;padding:11px 20px;border-radius:999px;opacity:0;pointer-events:none;"
     "transition:opacity .25s,transform .25s;font-size:13.5px;z-index:60}"
     "#toast.show{opacity:1;transform:translateX(-50%) translateY(0)}"
-    # --- 検索ページへのCTA ---
+    # --- CTA to the search page ---
     ".cta-wrap{margin:22px 0 6px;display:flex;flex-direction:column;gap:9px;align-items:flex-start}"
     ".cta{display:inline-flex;align-items:center;gap:12px;background:var(--pitch);color:#06231a;"
     "font-weight:800;font-size:16px;letter-spacing:.01em;padding:15px 26px;border-radius:999px;"
@@ -756,17 +768,17 @@ SHARED_UI_CSS = (
     ".cta:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(22,224,138,.42);filter:brightness(1.05);color:#06231a}"
     ".cta .cta-arrow{font-size:18px}"
     ".cta-sub{font-size:12px;color:var(--muted2);letter-spacing:.02em}"
-    # --- ライセンス注記 ---
+    # --- License note ---
     ".license{color:var(--muted2);font-size:11.5px;line-height:1.65;margin:20px 0 0;max-width:72ch}"
     ".license a{color:var(--muted)}"
     "@media(max-width:640px){.cta{width:100%;justify-content:center;text-align:center}.cta-wrap{align-items:stretch}}"
 )
 
 
-# ============================ ルート一覧ページ ============================
+# ============================ Root index page ============================
 
 def build_root_index():
-    """docs/ 配下の日付フォルダを走査し、各日付ページへのリンク一覧 docs/index.html を作る。"""
+    """Scan date folders under docs/ and build docs/index.html as a list of links to each daily page."""
     if not os.path.isdir(DOCS_DIR):
         return
     days = []
@@ -785,20 +797,20 @@ def build_root_index():
             except Exception:  # noqa: BLE001
                 summary = {}
         days.append((name, summary))
-    days.sort(key=lambda x: x[0], reverse=True)  # 新しい順
+    days.sort(key=lambda x: x[0], reverse=True)  # Newest first
 
     rows = []
     for name, s in days:
         bits_en, bits_ja = [], []
         if s.get("videos_analyzed") is not None:
             bits_en.append(f"{fmt(s['videos_analyzed'])} videos")
-            bits_ja.append(f"{fmt(s['videos_analyzed'])}本")
+            bits_ja.append(f"{fmt(s['videos_analyzed'])} videos")
         if s.get("countries") is not None:
             bits_en.append(f"{s['countries']} countries")
-            bits_ja.append(f"{s['countries']}カ国")
+            bits_ja.append(f"{s['countries']} countries")
         if (s.get("totals") or {}).get("views"):
             bits_en.append(f"{fmt(s['totals']['views'])} views")
-            bits_ja.append(f"{fmt(s['totals']['views'])}回再生")
+            bits_ja.append(f"{fmt(s['totals']['views'])} views")
         meta_en = " · ".join(bits_en)
         meta_ja = " · ".join(bits_ja)
         rows.append(
@@ -807,27 +819,27 @@ def build_root_index():
             f'<span class="go num">&rarr;</span></a>'
         )
     days_html = "\n".join(rows) if rows else (
-        '<p class="lead">' + tspan("No snapshots yet.", "スナップショットはまだありません。") + "</p>"
+        '<p class="lead">' + tspan("No snapshots yet.", "No snapshots yet.") + "</p>"
     )
 
     page_url = PAGE_URL.rstrip("/") + "/"
     title_en = "SoccerScope — FIFA World Cup 2026 YouTube Trends & Fan Reactions"
-    title_ja = "SoccerScope — FIFAワールドカップ2026のYouTubeトレンド分析"
+    title_ja = "SoccerScope — FIFA World Cup 2026 YouTube Trend Analysis"
     desc_en = ("Daily FIFA World Cup 2026 statistics on YouTube football videos trending worldwide — "
                "views, countries, fan sentiment, teams, and themes. Data & analysis by TubeSaku.")
-    desc_ja = ("FIFAワールドカップ2026に関連して世界で話題のYouTubeサッカー動画の日次統計 — "
-               "再生数・対象国・ファン感情・代表チーム・トレンド話題。データ・分析：TubeSaku。")
+    desc_ja = ("Daily statistics on YouTube soccer videos trending worldwide for FIFA World Cup 2026 — "
+               "views, countries, fan sentiment, mentioned national teams, and trending topics. Data and analysis by TubeSaku.")
     share_en = ("⚽ Daily FIFA World Cup 2026 YouTube football trends — "
                 "viral videos, fan sentiment & themes. SoccerScope by TubeSaku")
-    share_ja = ("⚽ FIFAワールドカップ2026のYouTubeサッカー動画トレンドを毎日データ化 — "
-                "再生数・感情・話題。SoccerScope（TubeSaku）")
+    share_ja = ("⚽ Daily YouTube soccer video trends for FIFA World Cup 2026 — "
+                "views, sentiment, and topics. SoccerScope by TubeSaku")
     cite_en = f"SoccerScope by TubeSaku — daily FIFA World Cup 2026 YouTube football trend snapshots. {page_url}"
-    cite_ja = f"SoccerScope（TubeSaku）— FIFAワールドカップ2026 YouTubeサッカー動画トレンドの日次スナップショット。{page_url}"
+    cite_ja = f"SoccerScope by TubeSaku — daily FIFA World Cup 2026 YouTube soccer video trend snapshots. {page_url}"
 
     json_ld = {
         "@context": "https://schema.org", "@type": "Dataset",
         "name": "SoccerScope — FIFA World Cup 2026 YouTube Football Trends (daily snapshots)",
-        "alternateName": ["World Cup 2026 YouTube Trends", "ワールドカップ2026 サッカー動画トレンド"],
+        "alternateName": ["World Cup 2026 YouTube Trends", "World Cup 2026 Soccer Video Trends"],
         "description": ("Daily statistics on trending FIFA World Cup 2026 football (soccer) videos across countries: "
                         "view counts, audience sentiment, mentioned teams and themes."),
         "url": page_url,
@@ -882,42 +894,42 @@ def build_root_index():
         + "@media(max-width:640px){.day{flex-wrap:wrap}.day .d{flex-basis:auto}.day .m{flex-basis:100%}}"
     )
 
-    h1_html = ('<h1>' + tspan("FIFA World Cup 2026 YouTube trends, ", "FIFAワールドカップ2026のYouTubeトレンドを、")
-               + tspan("in data", "データで", cls="gold") + tspan(".", "。") + '</h1>')
+    h1_html = ('<h1>' + tspan("FIFA World Cup 2026 YouTube trends, ", "FIFA World Cup 2026 YouTube trends, ")
+               + tspan("in data", "in data", cls="gold") + tspan(".", ".") + '</h1>')
 
     lead_html = (
         '<p class="lead">'
         + tspan("Daily snapshots of FIFA World Cup 2026 football videos trending on YouTube across countries — "
                 "views, fan sentiment, mentioned teams and themes. Data & analysis by ",
-                "FIFAワールドカップ2026に関連して国をまたいで話題になっているYouTubeサッカー動画の日次スナップショット — "
-                "再生数・ファンの感情・代表チーム言及・トレンド話題。データ・分析：")
+                "Daily snapshots of YouTube soccer videos trending across countries for FIFA World Cup 2026 — "
+                "views, fan sentiment, national-team mentions, and trending topics. Data and analysis: ")
         + f'<a href="{TUBESAKU_URL}" rel="noopener"><strong>{esc(TUBESAKU_LABEL)}</strong></a>'
-        + tspan(".", "。") + '</p>'
+        + tspan(".", ".") + '</p>'
     )
 
 
     faq_html = (
         '<section class="card"><h2>'
-        + tspan("What makes this World Cup data useful?", "このワールドカップデータで何がわかるか") + '</h2>'
+        + tspan("What makes this World Cup data useful?", "What makes this World Cup data useful?") + '</h2>'
         + '<p class="lead">'
         + tspan("The pages combine YouTube football video trend signals, country coverage, view counts, fan-comment sentiment and mentioned national teams. This makes SoccerScope useful for World Cup 2026 content planning, football creator discovery, media research and sponsor research.",
-                "YouTubeサッカー動画のトレンド信号、対象国、再生数、ファンコメントの感情、言及された代表チームを組み合わせています。ワールドカップ2026のコンテンツ企画、サッカー系クリエイター発掘、メディア調査、スポンサー調査に使えます。")
+                "The pages combine YouTube soccer video trend signals, country coverage, view counts, fan-comment sentiment, and mentioned national teams. SoccerScope is useful for World Cup 2026 content planning, soccer creator discovery, media research, and sponsor research.")
         + '</p></section>'
     )
 
     credit_html = (
         '<section class="credit">'
-        + tspan("Data & analysis powered by ", "データ・分析：") + " "
+        + tspan("Data & analysis powered by ", "Data and analysis: ") + " "
         + f'<a href="{TUBESAKU_URL}" rel="noopener">{esc(TUBESAKU_LABEL)}</a>'
-        + tspan(".", "。") + '<br>'
-        + tspan("Search World Cup 2026 football videos and creators: ", "ワールドカップ2026関連のサッカー動画・クリエイターを検索：") + " "
+        + tspan(".", ".") + '<br>'
+        + tspan("Search World Cup 2026 football videos and creators: ", "Search World Cup 2026 soccer videos and creators: ") + " "
         + f'<a href="{SEARCH_URL}" rel="noopener">{esc(SEARCH_LABEL)}</a>'
         + '</section>'
     )
 
     footer_html = (
         '<footer>'
-        + tspan("Updated daily during the FIFA World Cup 2026", "FIFAワールドカップ2026期間中は毎日更新")
+        + tspan("Updated daily during the FIFA World Cup 2026", "Updated daily during the FIFA World Cup 2026")
         + f'<span><a href="{TUBESAKU_URL}" rel="noopener">{esc(TUBESAKU_URL)}</a></span>'
         + '</footer>'
     )
@@ -939,17 +951,17 @@ def build_root_index():
         '<meta name="msvalidate.01" content="40662D5BA70BBEC0B1E069CC25FCEF09" />'
         "</head><body><div class=\"wrap\">"
         '<header><div class="topbar"><div class="brand">SOCCER<span class="dot">·</span>SCOPE</div>'
-        '<button id="langBtn" class="langtog">日本語</button></div>'
+        '<button id="langBtn" class="langtog">Japanese</button></div>'
         + h1_html + lead_html + search_cta_html() + '</header>'
-        + '<h2>' + tspan("Daily snapshots", "日別スナップショット") + '</h2>'
+        + '<h2>' + tspan("Daily snapshots", "Daily snapshots") + '</h2>'
         + days_html
-        + share_cite_section("Share & cite", "シェア・引用", cite_en)
+        + share_cite_section("Share & cite", "Share & cite", cite_en)
         + faq_html
         + credit_html
         + license_note_html()
         + footer_html
         + '</div>'
-        + '<div id="toast" data-en="Copied!" data-ja="コピーしました">Copied!</div>'
+        + '<div id="toast" data-en="Copied!" data-ja="Copied!">Copied!</div>'
         + PAGE_JS
         + "</body></html>"
     )
@@ -995,27 +1007,28 @@ def build_root_index():
             f"- Search app: {SEARCH_URL}\n"
             f"- Data provider: {TUBESAKU_URL}\n"
         )
-    print(f"  書き出し: {os.path.join(DOCS_DIR, 'sitemap.xml')}")
-    print(f"  書き出し: {os.path.join(DOCS_DIR, 'robots.txt')}")
-    print(f"  書き出し: {os.path.join(DOCS_DIR, 'llms.txt')}")
+    print(f"  Wrote: {os.path.join(DOCS_DIR, 'sitemap.xml')}")
+    print(f"  Wrote: {os.path.join(DOCS_DIR, 'robots.txt')}")
+    print(f"  Wrote: {os.path.join(DOCS_DIR, 'llms.txt')}")
 
 
-# ============================ 日次ページ ============================
+# ============================ Daily page ============================
 
 def build_day_page(date_str, phase7_path, ca_path, phase2_path):
-    """1日分のデータを集計し docs/<date_str>/{index.html, stats.json} を書き出す。"""
+    """Aggregate one day of data and write docs/<date_str>/{index.html, stats.json}."""
     videos = load_json(phase7_path).get("videos", [])
     if not videos:
-        print(f"  WARN: {phase7_path} の videos が空。スキップ。", file=sys.stderr)
+        print(f"  WARN: {phase7_path} has an empty videos list. Skipping.", file=sys.stderr)
         return False
 
-    # ---- comment_analysis を先読みし、is_soccer_related==False の動画を除外 ----
-    # 4_load_comment_analysis.py は同じ判定でMongoDBから動画を削除しているが、
-    # build_stats_page.py は data/ の中間JSON(phase7)を直接読むため、MongoDB側の
-    # 削除とは独立に同じフィルタをここでも適用する必要がある（そうしないと、
-    # 既にMongoDBから削除済みのサッカー非関連動画が統計ページにだけ残ってしまう）。
-    # comment_analysisがまだ無い動画（分析未実施）は除外しない（false確定情報が
-    # 無い限り、誤って除外しすぎないようにするため）。
+    # ---- Preload comment_analysis and exclude videos whose is_soccer_related is False ----
+    # 4_load_comment_analysis.py removes videos from MongoDB using the same judgment,
+    # but build_stats_page.py reads the intermediate JSON under data/ directly.
+    # Therefore, the same filter must also be applied here independently of MongoDB
+    # deletion; otherwise, non-soccer videos already removed from MongoDB would
+    # remain only on the statistics page. Videos without comment_analysis yet,
+    # meaning unanalyzed videos, are not excluded unless there is confirmed false
+    # information, to avoid over-excluding by mistake.
     analyses = {}
     if ca_path:
         analyses = load_json(ca_path).get("analyses", {})
@@ -1029,38 +1042,39 @@ def build_day_page(date_str, phase7_path, ca_path, phase2_path):
             continue
         filtered_videos.append(v)
     if excluded_count:
-        print(f"  サッカー非関連のため除外: {excluded_count}件 "
+        print(f"  Excluded as non-soccer-related: {excluded_count} items "
               f"(is_soccer_related=false in {os.path.basename(ca_path)})")
     videos = filtered_videos
     if not videos:
-        print(f"  WARN: {phase7_path} の動画が全てサッカー非関連として除外されました。スキップ。",
+        print(f"  WARN: {phase7_path} videos were all excluded as non-soccer-related. Skipping.",
               file=sys.stderr)
         return False
 
-    # team言及集計・ナレーション等で使うanalysesも、除外後のvideosに含まれる
-    # video_idだけに絞る（除外したクリケット動画等のmentioned_teamsが
-    # チームランキングに混入しないようにするため）。
+    # Also restrict analyses used for team-mention aggregation and narration to
+    # video_ids that remain in the filtered videos, so mentioned_teams from excluded
+    # cricket videos or similar items do not enter the team ranking.
     remaining_ids = {v.get("video_id") for v in videos}
     analyses = {vid: a for vid, a in analyses.items() if vid in remaining_ids}
 
-    # (b) 多対多: phase2 から各動画に「出現したすべての国」を付ける。
-    # API・Mongo は触らない。phase2 が無ければ phase7 の単一 country にフォールバック。
-    # phase2_path は resolve_target_date_files() で同じ収集セットとして
-    # 対応付けられたものを使う（同ディレクトリ内の「最新ファイル」探索はしない。
-    # 1ディレクトリに複数日分が混在するケースがあるため）。
+    # (b) Many-to-many: attach every country where each video appeared from phase2.
+    # Do not call the API or MongoDB. If phase2 is absent, fall back to the single
+    # country in phase7. Use the phase2_path mapped to the same collection set by
+    # resolve_target_date_files(); do not search for the latest file in the same
+    # directory because one directory can contain multiple days.
     country_en, country_ja, lang_by_code = attach_countries_from_phase2(videos, phase2_path)
     if phase2_path:
-        print(f"  countries付与(b): {len(videos)}件 "
+        print(f"  countries attached (b): {len(videos)} items "
               f"(phase2={os.path.basename(phase2_path)})")
     else:
-        print(f"  WARN: phase2 が無いため country(単一)のままフォールバック。", file=sys.stderr)
+        print(f"  WARN: phase2 is absent, so falling back to the single country value.", file=sys.stderr)
 
-    # ---- 動画系の集計 ----
+    # ---- Video-related aggregation ----
     n_videos = len(videos)
 
-    # 国別の量的ランキングは廃止（同一言語の国が同じバイラルを共有し、視聴回数も
-    # 全世界1値のため、何を指標にしても同値で並ぶ＝意味を成さない）。
-    # 「どの国で話題か」は動画単位の事実として残す。
+    # Country-level quantitative rankings are removed because countries sharing the
+    # same language share the same viral items, and view counts are one global
+    # value, so any metric ties and becomes meaningless. Keep "which countries it
+    # trended in" as a video-level fact.
     countries_seen = set()
     total_views = total_likes = total_comments = 0
     for v in videos:
@@ -1075,8 +1089,9 @@ def build_day_page(date_str, phase7_path, ca_path, phase2_path):
         videos, key=lambda x: int(x.get("stats", {}).get("view_count", 0) or 0), reverse=True
     )[:TOP_N]
 
-    # reach（出現国数）降順。attach_countries_from_phase2は既に呼ばれた後なので
-    # 各動画にreachが付与済み。同率の場合は再生数で安定的にタイブレークする。
+    # Sort by reach, the number of countries where it appeared, descending.
+    # attach_countries_from_phase2 has already run, so each video has reach.
+    # Break ties stably by view count.
     top_by_reach = sorted(
         videos,
         key=lambda x: (int(x.get("reach", 0) or 0),
@@ -1084,7 +1099,7 @@ def build_day_page(date_str, phase7_path, ca_path, phase2_path):
         reverse=True,
     )[:TOP_N]
 
-    # ---- 感情・テーマの集計 ----
+    # ---- Sentiment and theme aggregation ----
     sentiment = None
     pos_themes = neg_themes = []
     n_analyzed = 0
@@ -1114,19 +1129,19 @@ def build_day_page(date_str, phase7_path, ca_path, phase2_path):
         pos_themes = sorted(pos_map.values(), key=lambda d: d["count"], reverse=True)[:8]
         neg_themes = sorted(neg_map.values(), key=lambda d: d["count"], reverse=True)[:8]
 
-    # ---- ① ヒーロー指標: 言及の多い代表チーム（コメント由来＝国の偏りと無関係に信頼できる）----
+    # ---- Hero metric: most-mentioned national teams, reliable because it is comment-derived and independent of country bias ----
     top_teams = aggregate_team_mentions(analyses)
     max_team = max((t["mentions"] for t in top_teams), default=1) or 1
 
-    # ---- ② 上位動画への日英ナレーション（出現国・言語・言及チームベース）----
+    # ---- Step 2: English/Japanese narration for top videos based on countries, languages, and mentioned teams ----
     narration = narrate_top_videos(top_by_views, analyses, country_en, lang_by_code)
 
-    # ---- URL / 日付 ----
+    # ---- URL / date ----
     readable_date = readable(date_str)
     page_url = PAGE_URL.rstrip("/") + "/"
     dated_url = page_url + date_str + "/"
 
-    # ---- 機械可読データ（stats.json）----
+    # ---- Machine-readable data, stats.json ----
     stats_payload = {
         "generated": readable_date,
         "videos_analyzed": n_videos,
@@ -1164,7 +1179,7 @@ def build_day_page(date_str, phase7_path, ca_path, phase2_path):
     json_ld = {
         "@context": "https://schema.org", "@type": "Dataset",
         "name": f"SoccerScope — FIFA World Cup 2026 YouTube Football Trends Dataset ({readable_date})",
-        "alternateName": [f"World Cup 2026 YouTube Trends {readable_date}", f"ワールドカップ2026 サッカー動画トレンド {readable_date}"],
+        "alternateName": [f"World Cup 2026 YouTube Trends {readable_date}", f"World Cup 2026 Soccer Video Trends {readable_date}"],
         "description": (f"Open statistics on FIFA World Cup 2026 football (soccer) videos trending across {n_countries} countries: "
                         "view counts, audience sentiment, mentioned teams, and trending themes."),
         "url": dated_url,
@@ -1192,10 +1207,10 @@ def build_day_page(date_str, phase7_path, ca_path, phase2_path):
     json_ld_html = ('<script type="application/ld+json">'
                     + json.dumps(json_ld, ensure_ascii=False) + "</script>")
 
-    # ---- 行 ----
-    # ① 言及チーム ランキング（バー=言及数の比率、感情の傾きを色で）
+    # ---- Rows ----
+    # Team-mention ranking. Bars show mention-count ratios, and color shows sentiment lean.
     _lean_color = {"positive": "var(--pitch)", "negative": "#d64545", "neutral": "#9aa0a6"}
-    _lean_ja = {"positive": "好意的", "negative": "否定的", "neutral": "中立"}
+    _lean_ja = {"positive": "Positive", "negative": "Negative", "neutral": "Neutral"}
     team_rows = "\n".join(
         f'<div class="row"><span class="lbl">{esc(t["team"])} '
         f'<em data-en="{t["lean"]}" data-ja="{_lean_ja[t["lean"]]}">{t["lean"]}</em></span>'
@@ -1204,16 +1219,16 @@ def build_day_page(date_str, phase7_path, ca_path, phase2_path):
         for t in top_teams[:TOP_N]
     ) or (
         '<p class="muted" data-en="No team-mention data for this day."'
-        ' data-ja="この日付には言及チームのデータがありません。">No team-mention data for this day.</p>'
+        ' data-ja="No team-mention data for this day.">No team-mention data for this day.</p>'
     )
 
     def _country_label(v):
         codes = v.get("countries", [])
         reach = v.get("reach", 0)
         head = ", ".join(country_en.get(c, c) for c in codes[:3])
-        head_ja = "・".join(country_ja.get(c, c) for c in codes[:3])
+        head_ja = ", ".join(country_ja.get(c, c) for c in codes[:3])
         if reach > 3:
-            return (f"{esc(head)} +{reach-3}", f"{esc(head_ja)} 他{reach-3}カ国")
+            return (f"{esc(head)} +{reach-3}", f"{esc(head_ja)} +{reach-3} countries")
         return (esc(head or "—"), esc(head_ja or "—"))
 
     def _video_li(v, highlight="views"):
@@ -1227,14 +1242,14 @@ def build_day_page(date_str, phase7_path, ca_path, phase2_path):
             reach = v.get("reach", 0)
             metric_html = (
                 f'<b class="num">{fmt(reach)}</b> '
-                f'<span data-en="countries" data-ja="カ国でランクイン">countries</span>'
+                f'<span data-en="countries" data-ja="countries">countries</span>'
                 f' · <b class="num">{fmt(v.get("stats",{}).get("view_count",0))}</b> '
-                f'<span data-en="views" data-ja="回再生">views</span>'
+                f'<span data-en="views" data-ja="views">views</span>'
             )
         else:
             metric_html = (
                 f'<b class="num">{fmt(v.get("stats",{}).get("view_count",0))}</b> '
-                f'<span data-en="views" data-ja="回再生">views</span>'
+                f'<span data-en="views" data-ja="views">views</span>'
             )
         return (
             f'<li><a href="{esc(v.get("url",""))}" target="_blank" rel="noopener">'
@@ -1250,17 +1265,17 @@ def build_day_page(date_str, phase7_path, ca_path, phase2_path):
     if sentiment:
         sub = tspan(
             f"Average sentiment across {fmt(total_comments_analyzed)} analyzed comments on {n_analyzed} videos.",
-            f"動画{n_analyzed}本・コメント{fmt(total_comments_analyzed)}件を分析した平均感情。",
+            f"Average sentiment across {n_analyzed} videos and {fmt(total_comments_analyzed)} analyzed comments.",
             cls="sub")
         sentiment_html = (
             '<section class="card">'
-            + '<h2>' + tspan("How fans feel", "ファンの反応") + '</h2>'
+            + '<h2>' + tspan("How fans feel", "How fans feel") + '</h2>'
             + sub
-            + f'<div class="row"><span class="lbl">{tspan("Positive","ポジティブ")}</span>'
+            + f'<div class="row"><span class="lbl">{tspan("Positive","Positive")}</span>'
               f'{bar(sentiment["positive"], "var(--pitch)")}<span class="val num">{sentiment["positive"]:.0f}%</span></div>'
-            + f'<div class="row"><span class="lbl">{tspan("Neutral","中立")}</span>'
+            + f'<div class="row"><span class="lbl">{tspan("Neutral","Neutral")}</span>'
               f'{bar(sentiment["neutral"], "#6b7b73")}<span class="val num">{sentiment["neutral"]:.0f}%</span></div>'
-            + f'<div class="row"><span class="lbl">{tspan("Negative","ネガティブ")}</span>'
+            + f'<div class="row"><span class="lbl">{tspan("Negative","Negative")}</span>'
               f'{bar(sentiment["negative"], "#ff6b5e")}<span class="val num">{sentiment["negative"]:.0f}%</span></div>'
             + '</section>'
         )
@@ -1275,27 +1290,27 @@ def build_day_page(date_str, phase7_path, ca_path, phase2_path):
             f"<b class='num'>{fmt(d['count'])}</b></li>" for d in neg_themes)
         themes_html = (
             '<section class="grid2">'
-            + '<div class="card"><h2>' + tspan("Top positive themes", "ポジティブな話題トップ")
+            + '<div class="card"><h2>' + tspan("Top positive themes", "Top positive themes")
             + f'</h2><ul class="themes pos">{pos_li}</ul></div>'
-            + '<div class="card"><h2>' + tspan("Top negative themes", "ネガティブな話題トップ")
+            + '<div class="card"><h2>' + tspan("Top negative themes", "Top negative themes")
             + f'</h2><ul class="themes neg">{neg_li}</ul></div>'
             + '</section>'
         )
 
-    # ---- 共有・引用テキスト ----
+    # ---- Share and citation text ----
     title_en = f"FIFA World Cup 2026 YouTube Trends — {readable_date} | SoccerScope"
-    title_ja = f"FIFAワールドカップ2026 YouTube動画トレンド — {readable_date} | SoccerScope"
+    title_ja = f"FIFA World Cup 2026 YouTube Video Trends — {readable_date} | SoccerScope"
     desc_en = (f"{readable_date} snapshot of FIFA World Cup 2026 YouTube football videos going viral across {n_countries} countries — "
                "views, fan sentiment, mentioned teams and trending themes. Data & analysis by TubeSaku.")
-    desc_ja = (f"{readable_date}時点のFIFAワールドカップ2026関連YouTubeサッカー動画トレンド。{n_countries}カ国のバズ動画、再生数、ファン感情、代表チーム言及、話題を分析。データ・分析：TubeSaku。")
+    desc_ja = (f"FIFA World Cup 2026 YouTube soccer video trends as of {readable_date}. Analyzes buzzing videos across {n_countries} countries, views, fan sentiment, national-team mentions, and topics. Data and analysis by TubeSaku.")
     share_en = (f"⚽ FIFA World Cup 2026 YouTube trends: {fmt(n_videos)} football videos from {n_countries} countries · "
                 f"{fmt(total_views)} views — see fan reactions. SoccerScope by TubeSaku")
-    share_ja = (f"⚽ FIFAワールドカップ2026 YouTubeトレンド：{n_countries}カ国のサッカー動画{fmt(n_videos)}本・総再生{fmt(total_views)}回。"
-                "ファンの反応をデータで。SoccerScope（TubeSaku）")
+    share_ja = (f"⚽ FIFA World Cup 2026 YouTube trends: {fmt(n_videos)} soccer videos across {n_countries} countries with {fmt(total_views)} total views. "
+                "Fan reactions in data. SoccerScope by TubeSaku")
     cite_en = f"SoccerScope by TubeSaku — FIFA World Cup 2026 YouTube football trends snapshot {readable_date}. {dated_url}"
-    cite_ja = f"SoccerScope（TubeSaku）— FIFAワールドカップ2026 YouTubeサッカー動画トレンド {readable_date} 時点。{dated_url}"
+    cite_ja = f"SoccerScope by TubeSaku — FIFA World Cup 2026 YouTube soccer video trends as of {readable_date}. {dated_url}"
 
-    # ---- CSS（既存デザイン踏襲 + 共通UI）。素の文字列で連結 ----
+    # ---- CSS, retaining the existing design plus shared UI. Concatenated as raw strings. ----
     css = (
         ":root{--ink:#0a0f0d;--surface:#111b17;--surface2:#16221d;--line:#23332c;--pitch:#16e08a;--gold:#ffd23f;"
         "--text:#f1f6f3;--muted:#8ba096;--muted2:#5f7268}"
@@ -1341,42 +1356,42 @@ def build_day_page(date_str, phase7_path, ca_path, phase2_path):
 
     crumb = (
         '<p class="crumb"><a href="../">'
-        + tspan("← All dates", "← 日付一覧") + '</a> · '
-        + tspan(f"snapshot {readable_date}", f"{readable_date} 時点") + '</p>'
+        + tspan("← All dates", "← All dates") + '</a> · '
+        + tspan(f"snapshot {readable_date}", f"snapshot {readable_date}") + '</p>'
     )
 
-    h1_html = ('<h1>' + tspan("FIFA World Cup 2026 YouTube trends, ", "FIFAワールドカップ2026のYouTubeトレンドを、")
-               + tspan("in data", "データで", cls="gold") + tspan(".", "。") + '</h1>')
+    h1_html = ('<h1>' + tspan("FIFA World Cup 2026 YouTube trends, ", "FIFA World Cup 2026 YouTube trends, ")
+               + tspan("in data", "in data", cls="gold") + tspan(".", ".") + '</h1>')
 
     lead_html = (
         '<p class="lead">'
         + tspan("Open statistics from a cross-country dataset of FIFA World Cup 2026 YouTube football videos — "
                 "what's getting watched, which teams are mentioned, and how fans react. Data & analysis by ",
-                "FIFAワールドカップ2026に関連して各国で話題のYouTubeサッカー動画を横断的に集めたオープン統計 — "
-                "何が観られ、どの代表チームが語られ、ファンがどう反応しているか。データ・分析：")
+                "Open statistics that collect YouTube soccer videos trending across countries for FIFA World Cup 2026 — "
+                "what is being watched, which national teams are discussed, and how fans react. Data and analysis: ")
         + f'<a href="{TUBESAKU_URL}" rel="noopener"><strong>{esc(TUBESAKU_LABEL)}</strong></a>'
-        + tspan(".", "。") + '</p>'
+        + tspan(".", ".") + '</p>'
     )
 
     stats_block = (
         '<div class="stats">'
         f'<div class="stat"><div class="n num">{fmt(n_videos)}</div>'
-        f'<div class="l">{tspan("videos analyzed","分析した動画")}</div></div>'
+        f'<div class="l">{tspan("videos analyzed","videos analyzed")}</div></div>'
         f'<div class="stat"><div class="n num">{n_countries}</div>'
-        f'<div class="l">{tspan("countries","対象国")}</div></div>'
+        f'<div class="l">{tspan("countries","countries")}</div></div>'
         f'<div class="stat"><div class="n num gold">{fmt(total_views)}</div>'
-        f'<div class="l">{tspan("total views","総再生回数")}</div></div>'
+        f'<div class="l">{tspan("total views","total views")}</div></div>'
         f'<div class="stat"><div class="n num">{fmt(total_comments)}</div>'
-        f'<div class="l">{tspan("total comments","総コメント数")}</div></div>'
+        f'<div class="l">{tspan("total comments","total comments")}</div></div>'
         '</div>'
     )
 
     credit_html = (
         '<section class="credit">'
-        + tspan("Data & analysis powered by ", "データ・分析：") + " "
+        + tspan("Data & analysis powered by ", "Data and analysis: ") + " "
         + f'<a href="{TUBESAKU_URL}" rel="noopener">{esc(TUBESAKU_LABEL)}</a>'
-        + tspan(".", "。") + '<br>'
-        + tspan("Search World Cup 2026 football videos and creators: ", "ワールドカップ2026関連のサッカー動画・クリエイターを検索：") + " "
+        + tspan(".", ".") + '<br>'
+        + tspan("Search World Cup 2026 football videos and creators: ", "Search World Cup 2026 soccer videos and creators: ") + " "
         + f'<a href="{SEARCH_URL}" rel="noopener">{esc(SEARCH_LABEL)}</a>'
         + '</section>'
     )
@@ -1384,7 +1399,7 @@ def build_day_page(date_str, phase7_path, ca_path, phase2_path):
     footer_html = (
         '<footer>'
         + tspan(f"Generated {readable_date} · built with Google ADK · Gemini · MongoDB Atlas Vector Search",
-                f"{readable_date} 生成 · Google ADK · Gemini · MongoDB Atlas Vector Search 使用")
+                f"Generated {readable_date} · Google ADK · Gemini · MongoDB Atlas Vector Search")
         + f'<span><a href="{TUBESAKU_URL}" rel="noopener">{esc(TUBESAKU_URL)}</a></span>'
         + '</footer>'
     )
@@ -1405,40 +1420,40 @@ def build_day_page(date_str, phase7_path, ca_path, phase2_path):
         '<link href="https://fonts.googleapis.com/css2?family=Anton&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">'
         f"<style>{css}</style></head><body><div class=\"wrap\">"
         '<header><div class="topbar"><div class="brand">SOCCER<span class="dot">·</span>SCOPE</div>'
-        '<button id="langBtn" class="langtog">日本語</button></div>'
+        '<button id="langBtn" class="langtog">Japanese</button></div>'
         + crumb + h1_html + lead_html + search_cta_html() + stats_block + '</header>'
         + '<section class="card"><h2>'
         + tspan(f"Most-talked-about teams (top {TOP_N})",
-                f"最も語られている代表チーム（トップ{TOP_N}）")
+                f"Most-mentioned national teams (top {TOP_N})")
         + '</h2>'
         + tspan("Ranked by how often national teams are mentioned in analyzed World Cup 2026 fan comments, "
                 "with the overall sentiment lean.",
-                "ワールドカップ2026関連の分析対象コメント内で各代表チームが言及された回数のランキング（感情の傾き付き）。",
+                "Ranking of how often each national team was mentioned in analyzed World Cup 2026-related comments, with sentiment lean.",
                 cls="muted", tag="p")
         + f'{team_rows}</section>'
         + '<section class="card"><h2>'
-        + tspan("Most-watched trending videos", "最も再生されたトレンド動画")
+        + tspan("Most-watched trending videos", "Most-watched trending videos")
         + f'</h2><ol class="videos">{video_rows}</ol></section>'
         + '<section class="card"><h2>'
-        + tspan("Most cross-country trending videos", "最も多くの国でランクインした動画")
+        + tspan("Most cross-country trending videos", "Most cross-country trending videos")
         + '</h2>'
         + tspan(f"World Cup 2026 football videos that surfaced in the most countries' YouTube trend searches (top {TOP_N}).",
-                f"YouTube検索結果で最も多くの国にまたがって出現したワールドカップ2026関連サッカー動画（トップ{TOP_N}）。",
+                f"World Cup 2026-related soccer videos that appeared across the most countries in YouTube search results (top {TOP_N}).",
                 cls="muted", tag="p")
         + f'<ol class="videos">{video_rows_by_reach}</ol></section>'
         + sentiment_html
         + themes_html
-        + share_cite_section("Share & cite", "シェア・引用", cite_en)
+        + share_cite_section("Share & cite", "Share & cite", cite_en)
         + credit_html
         + license_note_html()
         + footer_html
         + '</div>'
-        + '<div id="toast" data-en="Copied!" data-ja="コピーしました">Copied!</div>'
+        + '<div id="toast" data-en="Copied!" data-ja="Copied!">Copied!</div>'
         + PAGE_JS
         + "</body></html>"
     )
 
-    # ---- 出力 ----
+    # ---- Output ----
     day_dir = os.path.join(DOCS_DIR, date_str)
     os.makedirs(day_dir, exist_ok=True)
     out = os.path.join(day_dir, "index.html")
@@ -1448,18 +1463,18 @@ def build_day_page(date_str, phase7_path, ca_path, phase2_path):
     with open(stats_out, "w", encoding="utf-8") as f:
         json.dump(stats_payload, f, ensure_ascii=False, indent=2)
 
-    print(f"  書き出し: {out}")
-    print(f"  書き出し: {stats_out}")
+    print(f"  Wrote: {out}")
+    print(f"  Wrote: {stats_out}")
     return True
 
 
 def process_date(date_str, files):
-    """resolve_target_date_files() が返した1日分のファイルセットでページを生成する。"""
+    """Generate a page from one day of file sets returned by resolve_target_date_files()."""
     phase7_path = files["phase7"]
     ca_path = files["comment_analysis"]
     phase2_path = files["phase2"]
     print(f"[{date_str}] videos: {os.path.basename(phase7_path)}"
-          f" / comments: {os.path.basename(ca_path) if ca_path else '(なし)'}"
+          f" / comments: {os.path.basename(ca_path) if ca_path else '(none)'}"
           f" / phase2: {os.path.basename(phase2_path)}")
     return build_day_page(date_str, phase7_path, ca_path, phase2_path)
 
@@ -1469,13 +1484,13 @@ def main() -> int:
 
     by_target_date = resolve_target_date_files()
     if not by_target_date:
-        print(f"ERROR: {DATA_DIR}/ 配下から収集対象日(--target-date)に対応する"
-              f"phase2/phase7のセットが見つかりません。", file=sys.stderr)
+        print(f"ERROR: Could not find a phase2/phase7 set under {DATA_DIR}/ "
+              f"that matches the collection target date (--target-date).", file=sys.stderr)
         return 1
 
     all_dates = sorted(by_target_date.keys())
-    targets = all_dates if do_all else [all_dates[-1]]  # 末尾＝target_dateが最も新しい日
-    print(f"対象: {', '.join(targets)}" + (" (-all)" if do_all else " (最新)"))
+    targets = all_dates if do_all else [all_dates[-1]]  # Last item is the newest target_date.
+    print(f"Targets: {', '.join(targets)}" + (" (-all)" if do_all else " (latest)"))
 
     ok = 0
     for d in targets:
@@ -1483,14 +1498,14 @@ def main() -> int:
             ok += 1
 
     if ok == 0:
-        print("ERROR: 生成できたページがありません。", file=sys.stderr)
+        print("ERROR: No pages were generated.", file=sys.stderr)
         return 1
 
-    # ルートの日付一覧を再生成（1回だけ）
+    # Regenerate the root date list once.
     build_root_index()
-    print(f"\n生成: {ok}/{len(targets)} 日分。docs/index.html（日付一覧）を再生成。")
-    print("→ git add docs/ && commit && push、Settings>Pages を /docs に設定。")
-    print("→ OGP画像は docs/images/soccerscope-ogp.png に配置（1200×630推奨）。")
+    print(f"\nGenerated: {ok}/{len(targets)} days. Regenerated docs/index.html (date list).")
+    print("-> git add docs/ && commit && push; set Settings > Pages to /docs.")
+    print("-> Place the OGP image at docs/images/soccerscope-ogp.png; 1200x630 recommended.")
     return 0
 
 

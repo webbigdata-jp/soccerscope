@@ -1,27 +1,28 @@
 """
 SoccerScope — Web backend (FastAPI)
 
-独自Web UI のためのバックエンド。
-  - 既存の ADK エージェント（soccer_agent.agent.root_agent）を ADK Runner で実行する。
-  - フロントから受け取る {query, format, lang} を、エージェント本体を改変せずに
-    「プロンプトへ指示を注入」する形で出力形式（report / sns / webpage）と
-    出力言語（ja / en）に反映する。
-  - 同一オリジンで静的フロント（static/index.html）も配信する。
+Backend for the custom Web UI.
+  - Runs the existing ADK agent (soccer_agent.agent.root_agent) through the ADK Runner.
+  - Reflects {query, format, lang} received from the frontend in the output format
+    (report / sns / webpage) and output language (ja / en) by injecting instructions
+    into the prompt without modifying the agent itself.
+  - Also serves the static frontend (static/index.html) from the same origin.
 
-エージェント(agent.py)は無改変。書き込み系は持たず、読み出しは agent 内の
-search_videos → 公式MongoDB MCP 経由（MCP統合要件を維持）。
+The agent (agent.py) is left unchanged. It has no write operations, and reads are
+performed by search_videos inside the agent through the official MongoDB MCP
+(maintaining the MCP integration requirement).
 
-ローカル実行:
+Local run:
     uvicorn main:app --host 0.0.0.0 --port 8080
 Cloud Run:
-    Dockerfile 同梱（Python + Node 22）。README.md 参照。
+    Dockerfile included (Python + Node 22). See README.md.
 """
 
 import os
 import uuid
 
-# --- .env を読み込む（agent.py はインポート時に MONGODB_URI を参照するので、
-#     エージェント取り込みより前に読み込む。Cloud Run では .env が無くても無害）---
+# --- Load .env. agent.py reads MONGODB_URI at import time, so this must happen
+#     before importing the agent. It is harmless on Cloud Run even when .env is absent. ---
 try:
     from dotenv import load_dotenv
 
@@ -43,35 +44,35 @@ from google.genai import types
 from google.adk.runners import Runner
 from google.adk.sessions import InMemorySessionService
 
-from soccer_agent.agent import root_agent  # noqa: E402  (.env 読み込み後にimport)
+from soccer_agent.agent import root_agent  # noqa: E402  (import after loading .env)
 
 APP_NAME = "soccerscope"
 
-# ② レートリミット（IP別、インメモリ）
+# ② Rate limit (per IP, in memory)
 limiter = Limiter(key_func=get_remote_address)
 
-# ① クエリ長上限（文字数）
+# ① Query length limit (characters)
 QUERY_MAX_LEN = 500
 
-# Runner / Session は起動時に一度だけ構築（root_agent は使い回す）
+# Build Runner / Session only once at startup (reuse root_agent).
 _session_service = InMemorySessionService()
 _runner = Runner(agent=root_agent, app_name=APP_NAME, session_service=_session_service)
 
 
-# --- フロントから来る選択肢を、エージェントへの「指示文」に変換する ----------
-# エージェントの INSTRUCTION 側に既にある記事/SNS/HTML生成フローを、ここから
-# 明示的に呼び分ける。エージェント本体は触らない。
+# --- Convert frontend options into instruction text for the agent. -------------
+# Explicitly selects the article / SNS / HTML generation flows already present on
+# the agent INSTRUCTION side from here. The agent itself is not modified.
 FORMAT_DIRECTIVES = {
-    # レポート: マークダウン記事（国別セクション＋総合コメント）
+    # Report: Markdown article (country sections + overall synthesis)
     "report": (
         "OUTPUT FORMAT = REPORT. Produce a complete Markdown article exactly as "
         "described in your COMPOSING ARTICLES flow: a punchy title and short lead, "
         "one section per country (country name + flag, a 1-2 sentence buzz summary, "
         "the thumbnail as a Markdown image, and a [watch] link), sentiment where "
-        "available, and a closing insightful synthesis (総合コメント). "
+        "available, and a closing insightful synthesis (overall comment). "
         "Output Markdown only — do NOT wrap it in a code block, do NOT output raw HTML."
     ),
-    # SNS: X投稿ドラフト 2-3本
+    # SNS: 2-3 X post drafts
     "sns": (
         "OUTPUT FORMAT = SNS POSTS. Output 2-3 short, ready-to-post social/X drafts "
         "based on the buzzing videos. Each draft: punchy, 1-2 relevant hashtags, and "
@@ -79,12 +80,12 @@ FORMAT_DIRECTIVES = {
         "with its number (1. / 2. / 3.). Do not add an article or extra commentary "
         "around the drafts — output the posts only."
     ),
-    # Webページ: レポートと同じマークダウン記事を返す（見た目はフロントで“ページ風”に整える）
+    # Web page: return the same Markdown article as the report (the frontend styles it as a page).
     "webpage": (
         "OUTPUT FORMAT = WEB FEATURE PAGE. Produce a complete, shareable Markdown "
         "feature article as in your COMPOSING ARTICLES flow (title + lead, one section "
         "per country with flag + thumbnail image + watch link + sentiment, and a strong "
-        "closing 総合コメント). Make it engaging and presentation-ready. "
+        "closing overall comment). Make it engaging and presentation-ready. "
         "Output Markdown only — do NOT output raw HTML or a code block."
     ),
 }
@@ -112,7 +113,7 @@ def _build_prompt(query: str, fmt: str, lang: str) -> str:
 
 
 async def _run_agent(prompt: str) -> str:
-    """1リクエスト = 1セッションでエージェントを実行し、最終応答テキストを返す。"""
+    """Run the agent with one session per request and return the final response text."""
     user_id = "web"
     session_id = uuid.uuid4().hex
     await _session_service.create_session(
@@ -124,7 +125,7 @@ async def _run_agent(prompt: str) -> str:
     async for event in _runner.run_async(
         user_id=user_id, session_id=session_id, new_message=content
     ):
-        # 最終応答のテキストのみ集約（途中のツール呼び出しイベントは無視）
+        # Aggregate only the final response text (ignore intermediate tool-call events).
         if event.is_final_response() and getattr(event, "content", None):
             for part in (event.content.parts or []):
                 if getattr(part, "text", None):
@@ -141,13 +142,13 @@ class GenerateRequest(BaseModel):
 
 app = FastAPI(title="SoccerScope")
 
-# ② slowapi をアプリに接続
+# ② Connect slowapi to the app.
 app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],     # 本番は提出URLのオリジンに絞ってよい
+    allow_origins=["*"],     # In production, this may be restricted to the submission URL origin.
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -159,9 +160,9 @@ async def healthz():
 
 
 @app.post("/api/generate")
-@limiter.limit("3/minute")          # ② IP別 1分間に3リクエストまで
+@limiter.limit("3/minute")          # ② Up to 3 requests per minute per IP.
 async def generate(req: GenerateRequest, request: Request):
-    # ① クエリ長チェック
+    # ① Check query length.
     if len(req.query) > QUERY_MAX_LEN:
         raise HTTPException(
             status_code=400,
@@ -186,7 +187,7 @@ async def generate(req: GenerateRequest, request: Request):
     return {"format": req.format, "lang": req.lang, "content": content}
 
 
-# 静的フロント（最後にマウント：上の API ルートが優先される）
+# Static frontend (mount last: the API routes above take precedence).
 app.mount("/", StaticFiles(directory="static", html=True), name="static")
 
 

@@ -1,4 +1,4 @@
-# --- Agent (既存 agent.py が必要とするもの) ---
+# --- Agent for Gemini agent.py ---
 google-adk>=2.1.0
 google-genai>=1.75.0
 mcp>=1.0.0
@@ -8,10 +8,11 @@ fastapi>=0.115.0
 uvicorn[standard]>=0.30.0
 python-dotenv>=1.0.0
 
-# pymongo は書き込みバッチ（別系統）用。Webバックエンドの読み出しは MCP 経由なので必須ではないが、
-# 日次更新バッチを同一リポジトリに置く想定で入れておく。
+# pymongo is for write batches (a separate flow). Web backend reads go through MCP,
+# so it is not strictly required, but it is included because the daily update batch
+# is expected to live in the same repository.
 pymongo[srv]>=4.6.0
 
 
-# API利用制限
+# API rate limiting
 slowapi>=0.1.9
